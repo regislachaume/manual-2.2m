@@ -1,0 +1,112 @@
+#! /bin/sh
+if [ "`uname`" = "Linux" ]; then enable -n echo; fi
+if [ "`uname`" = "Linux" ]; then enable -n echo; fi
+if [ "`uname`" = "Linux" ]; then enable -n echo; fi
+if [ "`uname`" = "Linux" ]; then enable -n echo; fi
+#**********************************************************************
+# E.S.O. - VLT project
+#
+# "@(#) $Id: wfinsStartUp,v 4.3 2008/08/02 15:34:42 vltsccm Exp $"
+#
+# who       when      what
+# --------  --------  ----------------------------------------------
+# parias   2008-11-25 testing!!!
+# ikastine 2004-10-05 standby command is populated only to ICS - not 
+# for DCS 
+# rsoto    2004-06-30 nohup command added to wfiStartIcs and wfiStartOs
+# ikastine 2003-07-17 rtd starts always at xrtd2p2
+# ikastine 2003-07-16 re-orginaized and daisycommLite removed
+# ikastine 2002-12-21 added default stat if display is not set as 
+# wanted
+# sbaeza  2002-03-27  added dbRestore 
+# jibsen  2002-01-10  vcsolac start up removed
+# jibsen  2000-11-15  Minimal man page added 
+# e2p2mgr  08/11/00  created
+#
+#**********************************************************************
+#   NAME
+#       wfinsStartUp - script to start WFI SW
+#
+#   SYNOPSIS
+#       wfinsStartUp
+#
+#   DESCRIPTION
+#
+#   FILES
+#
+#   ENVIRONMENT
+#
+#   RETURN VALUES
+#
+#   CAUTIONS
+#
+#   EXAMPLES
+#
+#   SEE ALSO
+#
+#   BUGS     
+#
+#---------------------------------------------------------------------
+#
+#----------------------
+# send message to log
+#
+#tooLogComment "wfinsStart was started at `date`"
+
+#disp=`echo $DISPLAY`
+#echo $disp
+
+#---------------
+# kill
+#
+#wfinsShutDown
+
+sleep 3 "Stoping ICS and OS"
+wfiStopIcs
+wfoStopOs
+
+#---------------------
+# restoring filters
+#---------------------
+#dbRestore -f $INTROOT/config/Filter.dat
+
+#echo "Starting RTD..."
+# RTD  
+#nohup rtd -display xrtd2p2:0.0 \
+#	-camera wfov \
+#	-attach 1 \
+#	-rtd_geometry 1264x994+0+0 \
+#	-panel_orient vertical \
+#	> /dev/null &
+
+echo "Starting icswsControl"
+nohup icswsControl > /dev/null &
+
+sleep 3
+echo "Sending INIT to icswsControl. BE PATIENT"
+msgSend w2p2wfi icswsControl INIT "" 0
+sleep 10
+
+nohup wfiStartIcs &
+nohup wfoStartOs &
+sleep 30
+#sleep 50
+
+echo "Sending STANDBY to OS exposure control"
+msgSend w2p2wfi os0Control_wfiOs STANDBY "ICS" 0
+
+echo "Sending ONLINE to OS exposure control"
+msgSend w2p2wfi os0Control_wfiOs ONLINE "" 0
+
+# start OS gui
+#echo "Start OS gui"
+#nohup e2p2OSgui &
+
+echo "WFI Start up ready."
+echo "Please do an exposure with e2p2Osgui."
+#echo "Check logMonitor and output of this script"
+#echo "Sleeping 20 seconds and exit ..."
+#sleep 20
+
+#
+# ___oOo___

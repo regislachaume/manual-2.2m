@@ -1,0 +1,59 @@
+\contentsline {procedure}{\numberline {1.1}{\ignorespaces Telescope and instrument startup}}{19}{procedure.1.1}
+\contentsline {procedure}{\numberline {2.1}{\ignorespaces WFI afternoon calibrations}}{29}{procedure.2.1}
+\contentsline {procedure}{\numberline {2.2}{\ignorespaces FEROS afternoon calibrations}}{30}{procedure.2.2}
+\contentsline {procedure}{\numberline {3.1}{\ignorespaces Dome opening.}}{31}{procedure.3.1}
+\contentsline {procedure}{\numberline {3.2}{\ignorespaces Making instrument ready}}{32}{procedure.3.2}
+\contentsline {procedure}{\numberline {4.1}{\ignorespaces Taking sky flats with WFI}}{33}{procedure.4.1}
+\contentsline {procedure}{\numberline {4.2}{\ignorespaces Ensure that pointing is correct using FEROS}}{34}{procedure.4.2}
+\contentsline {procedure}{\numberline {4.3}{\ignorespaces WFI pointing}}{35}{procedure.4.3}
+\contentsline {procedure}{\numberline {4.4}{\ignorespaces WFI photometric standards}}{36}{procedure.4.4}
+\contentsline {procedure}{\numberline {4.5}{\ignorespaces FEROS focusing}}{36}{procedure.4.5}
+\contentsline {procedure}{\numberline {4.6}{\ignorespaces Focus and/or spectrophotometric standard}}{37}{procedure.4.6}
+\contentsline {procedure}{\numberline {4.7}{\ignorespaces FEROS radial velocity standards}}{37}{procedure.4.7}
+\contentsline {procedure}{\numberline {4.8}{\ignorespaces GROND evening flat fields}}{38}{procedure.4.8}
+\contentsline {procedure}{\numberline {4.9}{\ignorespaces GROND morning flat fields}}{38}{procedure.4.9}
+\contentsline {procedure}{\numberline {5.1}{\ignorespaces Switch to WFI observations}}{41}{procedure.5.1}
+\contentsline {procedure}{\numberline {5.2}{\ignorespaces Guiding with WFI}}{42}{procedure.5.2}
+\contentsline {procedure}{\numberline {5.3}{\ignorespaces Restart guiding with WFI}}{42}{procedure.5.3}
+\contentsline {procedure}{\numberline {5.4}{\ignorespaces Switch to FEROS observation}}{43}{procedure.5.4}
+\contentsline {procedure}{\numberline {5.5}{\ignorespaces Guide a FEROS observation using reflection on the fibre head}}{45}{procedure.5.5}
+\contentsline {procedure}{\numberline {5.6}{\ignorespaces Guide a FEROS observation blindly using off-fibre reference}}{45}{procedure.5.6}
+\contentsline {procedure}{\numberline {5.7}{\ignorespaces Guide FEROS observation with the WFI guide camera}}{45}{procedure.5.7}
+\contentsline {procedure}{\numberline {5.8}{\ignorespaces Switch to GROND observations}}{46}{procedure.5.8}
+\contentsline {procedure}{\numberline {5.9}{\ignorespaces React to an automatic trigger}}{47}{procedure.5.9}
+\contentsline {procedure}{\numberline {5.10}{\ignorespaces Guide with GROND}}{47}{procedure.5.10}
+\contentsline {procedure}{\numberline {5.11}{\ignorespaces Skip the preset}}{48}{procedure.5.11}
+\contentsline {procedure}{\numberline {6.1}{\ignorespaces Close the dome.}}{49}{procedure.6.1}
+\contentsline {procedure}{\numberline {6.2}{\ignorespaces Put the instrument offline.}}{50}{procedure.6.2}
+\contentsline {procedure}{\numberline {6.3}{\ignorespaces Tidy folders}}{51}{procedure.6.3}
+\contentsline {procedure}{\numberline {6.4}{\ignorespaces Launch morning health checks and internal calibrations}}{51}{procedure.6.4}
+\contentsline {procedure}{\numberline {7.1}{\ignorespaces Transfer OBs from one's computer to the telescope, using p2pp check-in}}{53}{procedure.7.1}
+\contentsline {procedure}{\numberline {7.2}{\ignorespaces Transfer OBs from one's computer to the telescope, using manual file transfer.}}{53}{procedure.7.2}
+\contentsline {procedure}{\numberline {8.1}{\ignorespaces Investigate and fix the reason for the absence of flux in an instrument}}{55}{procedure.8.1}
+\contentsline {procedure}{\numberline {8.2}{\ignorespaces Observe when the autoguider fails}}{55}{procedure.8.2}
+\contentsline {procedure}{\numberline {8.3}{\ignorespaces Restart the GROND autoguider}}{57}{procedure.8.3}
+\contentsline {procedure}{\numberline {8.4}{\ignorespaces Restart the FEROS autoguider}}{57}{procedure.8.4}
+\contentsline {procedure}{\numberline {8.5}{\ignorespaces Fix WFI autoguider issues}}{58}{procedure.8.5}
+\contentsline {procedure}{\numberline {8.6}{\ignorespaces Fix OB start error}}{58}{procedure.8.6}
+\contentsline {procedure}{\numberline {8.7}{\ignorespaces Fix stalling of an OB}}{59}{procedure.8.7}
+\contentsline {procedure}{\numberline {8.8}{\ignorespaces Investigate and fix a crash ocurring before the start of an optical exposure}}{59}{procedure.8.8}
+\contentsline {procedure}{\numberline {8.9}{\ignorespaces Fix a crash during an exposure}}{60}{procedure.8.9}
+\contentsline {procedure}{\numberline {8.10}{\ignorespaces Remove the ADC from the optical path of FEROS}}{62}{procedure.8.10}
+\contentsline {procedure}{\numberline {8.11}{\ignorespaces Fix the absence of focusing after FEROS ADC enters}}{63}{procedure.8.11}
+\contentsline {procedure}{\numberline {8.12}{\ignorespaces Reset the exposure number}}{63}{procedure.8.12}
+\contentsline {procedure}{\numberline {8.13}{\ignorespaces Restart the FEROS data reduction software and data subscriber}}{64}{procedure.8.13}
+\contentsline {procedure}{\numberline {8.14}{\ignorespaces Restart the data handler.}}{64}{procedure.8.14}
+\contentsline {procedure}{\numberline {8.15}{\ignorespaces Set the hydraulics for remote control}}{66}{procedure.8.15}
+\contentsline {procedure}{\numberline {8.16}{\ignorespaces Fix FEROS AG LCU during start-up}}{66}{procedure.8.16}
+\contentsline {procedure}{\numberline {8.17}{\ignorespaces Fix the telescope not initialized popup}}{67}{procedure.8.17}
+\contentsline {procedure}{\numberline {8.18}{\ignorespaces Quick TCS restart}}{67}{procedure.8.18}
+\contentsline {procedure}{\numberline {8.19}{\ignorespaces Solve the connection issue with the VME}}{68}{procedure.8.19}
+\contentsline {procedure}{\numberline {8.20}{\ignorespaces Fix telescope focus issues}}{68}{procedure.8.20}
+\contentsline {procedure}{\numberline {8.21}{\ignorespaces Unstuck the TCS Setup panel}}{69}{procedure.8.21}
+\contentsline {procedure}{\numberline {8.22}{\ignorespaces Manually close the main mirror cover}}{69}{procedure.8.22}
+\contentsline {procedure}{\numberline {8.23}{\ignorespaces Set the dome for remote control}}{70}{procedure.8.23}
+\contentsline {procedure}{\numberline {8.24}{\ignorespaces Unlocking the grond M3 mirror}}{70}{procedure.8.24}
+\contentsline {procedure}{\numberline {8.25}{\ignorespaces Deep reset of GROND IRACE (verify this!)}}{72}{procedure.8.25}
+\contentsline {procedure}{\numberline {8.26}{\ignorespaces Recover the mouse pointer}}{72}{procedure.8.26}
+\contentsline {procedure}{\numberline {8.27}{\ignorespaces Fix WFI pointing issues.}}{73}{procedure.8.27}
+\contentsline {procedure}{\numberline {8.28}{\ignorespaces Preset manually to zenith.}}{73}{procedure.8.28}
