@@ -2683,10 +2683,27 @@ FEROS DRS, you will need to restart processes on the data handling machine w2p2p
 
 \subsection{WFI}
 
+The commonest issues are:
 \begin{itemize}
   \item \gls{tcs} is \texttt{OFF} after startup on the Control Panel\\
    This is harmless. Use menu \texttt{Gen. Options} $\rightarrow$ \texttt{Refresh Database Events}.
+  \item WFI startup stops with an error during \texttt{WFI Init/Online}\\
+       It most likely requires a power cycle of the WFI electronics, see below.
 \end{itemize}
+
+\procedure{Help WFI to get ONLINE}
+\begin{enumerate}
+  \item Ensure that the error comes from electronics configuration not being read\\
+	Locate or open a \texttt{logMonitor}\\
+	If it was not active, choose to inspect the last 500 lines\\	
+	Find red error ``Failed to dispatch command for camera LOADED OK''.\\
+	Lines below and above contain ``C40 ping failed'' and ``Could not download FIERA config''
+  \item If it is the case, go to the telescope floor.
+  \item Power cycle the WFI electronics located at the bottom of the telescope.
+  \item Do a full WFI restart
+  \item If the error happens again, reboot the FIERA workstation followed by a full restart\\
+	In a terminal, type \texttt{rsh -l fcdrun wwffcd reboot}, wait 2--3 minutes, then restart WFI.
+\end{enumerate}
 
 \subsection{Hydraulics cannot be switched on/off}
 \label{sec:hydr-loc}
