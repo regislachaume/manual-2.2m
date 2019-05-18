@@ -888,7 +888,7 @@ A bit before sunset if doing sky flats or at sunset otherwise, you can ready the
                     \item On the \texttt{Telescope Setup} panel, click \texttt{Tel Init}
                     \item Wait for the telescope status of  the \texttt{Telescope Control} to go from \texttt{WaitIni} to \texttt{Slew} (2 min)
                 \end{enumerate}
-            \item Open the main mirror cover
+	\item\label{list:mirropen}Open the main mirror cover
             \begin{enumerate}
                \item Click \texttt{Open} under the \texttt{Main Mirror Cover}.
                \item Wait for opening to complete (2 min) befor starting the flat-field \gls{ob}
@@ -2691,18 +2691,37 @@ The commonest issues are:
        It most likely requires a power cycle of the WFI electronics, see below.
 \end{itemize}
 
+\begin{figure}[ht]
+	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-1.png}
+	\hglue 0.02\linewidth
+	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-2.png}
+	\caption{WFI electronics.  The box on the right controls the power and can be used to power cycle.}
+	\label{fig:wfielectronics}
+\end{figure}
+
 \procedure{Help WFI to get ONLINE}
 \begin{enumerate}
-  \item Ensure that the error comes from electronics configuration not being read\\
-	Locate or open a \texttt{logMonitor}\\
-	If it was not active, choose to inspect the last 500 lines\\	
-	Find red error ``Failed to dispatch command for camera LOADED OK''.\\
-	Lines below and above contain ``C40 ping failed'' and ``Could not download FIERA config''
-  \item If it is the case, go to the telescope floor.
-  \item Power cycle the WFI electronics located at the bottom of the telescope.
-  \item Do a full WFI restart
-  \item If the error happens again, reboot the FIERA workstation followed by a full restart\\
-	In a terminal, type \texttt{rsh -l fcdrun wwffcd reboot}, wait 2--3 minutes, then restart WFI.
+  \item Ensure that the error comes from WFI electronics configuration not being read
+	\begin{enumerate}
+		\item Locate or open a \texttt{logMonitor}
+		\item If it was not active, choose to inspect the last 500 lines
+		\item Find red error ``Failed to dispatch command for camera LOADED OK''.
+		\item Lines below and above contain ``C40 ping failed'' and ``Could not download FIERA config''
+	\end{enumerate}
+  \item\label{list:wfionline:reboot} Reboot the FIERA workstation
+	\begin{itemize}
+		\item In a terminal, type \texttt{rsh -l fcdrun wwffcdd reboot}
+	        \item Wait for 1--2 minutes for it to get back online (you may check with \texttt{ping wwffcd})
+	\end{itemize}
+  \item Power cycle the WFI electronics 
+	\begin{itemize}
+		\item Go to the telescope floor
+		\item Locate the WFI power unit close to the FIERA electronics
+			(Fig.~\ref{fig:wfielectronics})
+		\item Switch it off, wait for 30 secodns, then on.
+	\end{itemize}
+	\item\label{list:wfionline:restart} Do a full WFI restart
+	\item If the error happens again, redo steps \ref{list:wfionline:reboot}--\ref{list:wfionline:restart}.
 \end{enumerate}
 
 \subsection{Hydraulics cannot be switched on/off}

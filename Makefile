@@ -5,5 +5,4 @@ file:
 	pdflatex operation-manual
 
 publish:
-	make file
-	/home/lachaume/bin/mpgcopymanual
+	scp operation-manual.pdf lachaume@black.astro.puc.cl:.www/2.2m/operations/operation-manual.pdf
