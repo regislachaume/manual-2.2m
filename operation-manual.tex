@@ -305,7 +305,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 %%%%
 %%%% WFI
 %%%%
-  \item \textbf{\gls{wfi} restart (14 min, in case of problems, see Fig.~\ref{fig:wfi-restart})}\\
+  \item \label{list:wfistartup}\textbf{\gls{wfi} restart (14 min, in case of problems, see Fig.~\ref{fig:wfi-restart})}\\
         If no problem occurred during the last night, try steps \ref{list:wfisu-filtre}--\ref{list:wfitest}.  If an issue happens, do the full start-up.
         \begin{enumerate}
           \item On the screen \texttt{BOB Wide Field Imager}, go to the \texttt{StartUp} virtual desktop.\label{list:wfi1}
@@ -2695,34 +2695,49 @@ The commonest issues are:
 	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-1.png}
 	\hglue 0.02\linewidth
 	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-2.png}
-	\caption{WFI electronics.  The box on the right controls the power and can be used to power cycle.}
+	\caption{WFI electronics.  The box on the right controls the power and can be used to power cycle.
+The box on the left contains the electronics boards that one may need to unplug and replug.}
 	\label{fig:wfielectronics}
 \end{figure}
 
-\procedure{Help WFI to get ONLINE}
+\procedure{Fix WFI init error}
 \begin{enumerate}
-  \item Ensure that the error comes from WFI electronics configuration not being read
-	\begin{enumerate}
-		\item Locate or open a \texttt{logMonitor}
-		\item If it was not active, choose to inspect the last 500 lines
-		\item Find red error ``Failed to dispatch command for camera LOADED OK''.
-		\item Lines below and above contain ``C40 ping failed'' and ``Could not download FIERA config''
-	\end{enumerate}
+  \item Determin whether WFI passes the hardware self-test
+    \begin{enumerate}
+	\item Locate or open a \texttt{logMonitor}
+	\item If it was not active, choose to inspect the last 500 lines
+	\item Find red error ``Failed to dispatch command for camera LOADED OK''.
+	\item Lines below and above contain ``C40 ping failed'' and ``Could not download FIERA config''
+	\item You can also check directly whether WFI passes the self-test\\
+              In a terminal, type \texttt{rsh -l fcdrun wwffcd "export DISPLAY=\$DISPLAY; fcdtestseq"}
+    \end{enumerate}
   \item\label{list:wfionline:reboot} Reboot the FIERA workstation
-	\begin{itemize}
+	\begin{enumerate}
 		\item In a terminal, type \texttt{rsh -l fcdrun wwffcdd reboot}
-	        \item Wait for 1--2 minutes for it to get back online (you may check with \texttt{ping wwffcd})
-	\end{itemize}
-  \item Power cycle the WFI electronics 
-	\begin{itemize}
+	        \item Wait for 1--2 minutes for it to get back online\\
+		      You may check in a terminal using \texttt{ping wwffcd}
+	\end{enumerate}
+  \item If WFI doesn't pass the self-test, power cycle the WFI electronics 
+	\begin{enumerate}
 		\item Go to the telescope floor
 		\item Locate the WFI power unit close to the FIERA electronics
 			(Fig.~\ref{fig:wfielectronics})
-		\item Switch it off, wait for 30 secodns, then on.
-	\end{itemize}
-	\item\label{list:wfionline:restart} Do a full WFI restart
-	\item If the error happens again, redo steps \ref{list:wfionline:reboot}--\ref{list:wfionline:restart}.
+		\item Switch it off
+                \item Wait for 30 seconds.\\
+                      (On a 2nd or 3rd attempt, you may try to unplug/replug the electronics boards if you dare.)
+		\item Switch it on.
+	\end{enumerate}
+  \item  If WFI passes the self-test, do a restart of the FIERA
+        \begin{enumerate}
+		\item In a terminal, type \texttt{fcdCtrl}
+                \item On the emerging GUI, click \texttt{Shutdown}
+                \item On the emerging GUI, click \texttt{Startup}
+		\item Wait for FIERA to restart (1 min ?)
+        \end{enumerate}
+  \item\label{list:wfionline:restart} Do a full WFI restart (see Proc.~\ref{proc:startup} point~\ref{list:wfistartup} and Fig.~\ref{fig:wfi-restart})
+  \item You may have to redo steps \ref{list:wfionline:reboot}--\ref{list:wfionline:restart} until WFI can finish the full restart.
 \end{enumerate}
+
 
 \subsection{Hydraulics cannot be switched on/off}
 \label{sec:hydr-loc}
