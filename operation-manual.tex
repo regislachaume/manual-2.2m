@@ -2129,39 +2129,46 @@ It is possible to go on observing with GROND and FEROS while restarting the auto
 \end{enumerate}
 
 \subsection{GROND}
-If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see Procedure~\ref{proc:agmodules}.  You will need to uncheck them just before starting the guider software. 
+If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see Procedure~\ref{proc:agmodules}.  You will need to uncheck them just before starting the guider software with \texttt{e2p2StartTCCDs}.
 
 \procedure{Restart the GROND autoguider}
 \begin{enumerate}
-\item In a terminal of the \texttt{Autoguider GROND \& FEROS} screen, try steps c \& d. If it doesn't work, do steps a--d:
-\begin{enumerate}
-   \item \texttt{lccBoot l2p2agr}
-   \item \texttt{scanei}, disable and enable l2p2agr (See Fig.~\ref{fig:agscanei})
-   \item \texttt{e2p2StopTCCDs gag}
-   \item \texttt{e2p2StartTCCDs gag}
-\end{enumerate}
-\item In a terminal: 
-\begin{enumerate}
-  \item Check that the autoguider machine answers ping with \texttt{ping l2p2agr}.
-  \item\label{rloginagr} If it does, log into it with \texttt{rlogin l2p2agr}
-  \item\label{rebootagr} Reboot it with \texttt{reboot}
-\end{enumerate}
+   \item\label{list:gag1} If in a hurry try the quick restart (1--2 min)
+   \begin{enumerate}
+       \item On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
+       \item Type \texttt{e2p2StopTCCDs gag} and wait for command to finish
+       \item Type \texttt{e2p2StartTCCDs gag} and wait for command to finish
+   \end{enumerate}
+   \item If you have time or \ref{list:gag1} does not solve the issue,
+   go for the full restart (3--4 min)
+   \begin{enumerate}
+       \item On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
+       \item Type \texttt{lccBoot l2p2agr}
+       \item Wait for the command to finish (1--2 min)
+       \item Type \texttt{scanei} to open the scanei GUI
+       \begin{enumerate}
+	   \item Check that l2p2agr is \texttt{ENABLED}
+	   \item If not, enable l2p2agr (see Fig~\ref{fig:agscanei})
+	   \item Close the GUI
+       \end{enumerate}
+       \item Type \texttt{e2p2StartTCCDs gag}
+   \end{enumerate}
 \end{enumerate}
 
 \subsection{FEROS}
-If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see Procedure~\ref{proc:agmodules}.  You will need to uncheck them before starting the guider software (step~\ref{lab:fag2}). 
+If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see Procedure~\ref{proc:agmodules}.  You will need to uncheck them before starting the guider software with \texttt{e2p2StartTCCDs} (step~\ref{lab:fag2}). 
 
 \procedure{Restart the FEROS autoguider}
 \label{proc:restartfag}
 \begin{enumerate}
-    \item Restart the \gls{ag} software.
+    \item Restart the \gls{ag} software (1--2 min).
         \begin{enumerate}
             \item\label{lab:fag0} On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
             \item Type \texttt{e2p2StopTCCDs fag}
             \item\label{lab:fag1} Type \texttt{e2p2StartTCCDs fag}
             \item\label{lab:fag2} Wait for about 1--2 min for the command to exit succesfully.
         \end{enumerate}
-    \item If the problem persists or an error pops up in step~\ref{lab:fag2}, reboot the \gls{ag} \gls{lcu}.     
+    \item If the problem persists or an error pops up in step~\ref{lab:fag2}, reboot the \gls{ag} \gls{lcu} (3--4 min) 
         \begin{enumerate}
             \item Type \texttt{lccBoot l2p2cam}
             \item Type \texttt{scanei} to open the scanei GUI
@@ -2172,14 +2179,14 @@ If you want to observe while fixing the issue you need to deactivate the modules
             \end{enumerate}
             \item Perform steps \ref{lab:fag0}, \ref{lab:fag1}, \ref{lab:fag2}.
         \end{enumerate}
-    \item If the problem persists or an error pops up in step~\ref{lab:fag2}, perform a hardware reset of the \gls{lcu}.
+    \item If the problem persists or an error pops up in step~\ref{lab:fag2}, perform a hardware reset of the \gls{lcu} (15 min)
     \begin{enumerate}
        \item Go to the FEROS room located in the telescope enclosure. 
        \item Locate the big blue rack tower (Fig.~\ref{fig:l2p2cam-rack}).
        \item On the lower racks, near to l2p2cam label, push a small RST button (Fig.~\ref{fig:l2p2cam-rst}).
        \item Perform steps \ref{lab:fag0}, \ref{lab:fag1}, \ref{lab:fag2}.
     \end{enumerate}
-    \item If this does not solve the issue, power cycle the \gls{lcu}
+    \item If this does not solve the issue, power cycle the \gls{lcu} (15 min)
     \begin{enumerate}
         \item Go to the FEROS room located in the telescope enclosure. 
         \item On the back of the rack tower, unplug and replug the lower rack (Fig.~\ref{fig:l2p2cam-pow}).
