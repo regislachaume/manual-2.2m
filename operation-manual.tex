@@ -3141,25 +3141,55 @@ In that case, the telescope should be parked to zenith manually.
           Click \texttt{Initialize} below \texttt{Telescope}  in \texttt{the TCS Setup Panel}
 \end{enumerate}
 
-
-
 \section{Web pages}
 
 \subsection{2.2m Environmental Monitor stuck}
-%If the 2.2m Environmental Monitor is stuck.
+If the 2.2m Environmental Monitor is stuck.
+
+\procedure{Restart the 2.2m environmental monitor}
 \begin{enumerate}
   \item Go to screen \texttt{Telescope Control Software}.
   \item In a terminal, execute command \texttt{e2p2StartEnvMon}
-  \item After a few minutes refresh \texttt{http://www.ls.eso.org/lasilla/sciops/2p2/EnvMon}.
+  \item After a few minutes refresh \url{http://www.ls.eso.org/lasilla/sciops/2p2/EnvMon}.
 \end{enumerate}
 
 \subsection{All sky camera}
 If the all sky camera LASCAM is stuck
 \begin{enumerate}
-  \item Use the Danish 1.54m camera at \texttt{http://allsky-dk154.asu.cas.cz/}
-       \texttt{}
+  \item Use the Danish 1.54m camera at \url{http://allsky-dk154.asu.cas.cz/}
   \item Ask an ESO TIO to restart LASCAM.
 \end{enumerate}
+
+\section{ESO database issues}
+
+\procedure{Data do not appear in the database}
+\begin{enumerate}
+   \item Wait for one or two days after the data is taken because there may be a lag
+   \item If all observations including the calibrations do not show up,
+         you can restart the data handler\\
+         See Procedure~\ref{sec:DHrestart}
+   \item If only a particular set of observations loaded directly from bob
+         are impacted, check that the PID is correct
+         \begin{enumerate}
+           \item Open the OBs (usually in OBD directory on bob machine)
+           \item Check that the ESO PID has a valid format.
+           \begin{itemize}
+               \item Science OBs must start with a leading
+                 zero for science PIDs, e.g. 0103.A-9001(A)
+               \item Calibration OBs should not have a leading zero, e.g 60.A-0040(Z) 
+           \end{itemize}
+           \item Check that the ESO PID has been assigned 
+              \begin{enumerate}
+                \item Open the ESO Observing Schedule Query Form\\
+                      \url{http://archive.eso.org/wdb/wdb/eso/sched\_rep\_arc/form}
+                \item Fill telescope (\texttt{La Silla -{}- 2.2 m}) and period 
+                \item Click \texttt{Search}
+              \end{enumerate}
+           \item If not assigned or invalid format, contact User Support Department at ESO to fix it.
+     \end{enumerate}
+   \item Data taken as \texttt{TEST} (daily checks) do not apear in the archive.
+\end{enumerate}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
 
