@@ -150,7 +150,7 @@ contents={\begin{tikzpicture}[remember picture,overlay]
     \color{ocre}\rule{\linewidth}{190pt}
 \end{minipage}\hspace{0.04\linewidth}%
 \begin{minipage}{0.56\linewidth}
-The new operational scheme at the La Silla 2.2~metres telescope involves
+Since 2013, the operations at the La Silla 2.2~metres telescope involve
 minimal support by ESO.  This guide intends to familiarise observers with 
 the operations.\\[2ex]
 Version: \today.
@@ -1914,7 +1914,7 @@ If nothing works, you must ask for support from an ESO TIO.  ESO is still respon
 One should close the protective shutters of \gls{wfi} and \gls{grond},  cut the communication between instruments 
 and \gls{tcs}, and ensure mirrors let light directly to \gls{wfi} for dome flats.
 
-\procedure{Put the instrument offline.}
+\procedure{Put the instruments offline}
 \begin{enumerate}
 \item Close the \gls{wfi} protective shutter.\\
       Check on the General State panel in the WFI monitor (Fig.~\ref{fig:wfigen}) that \texttt{Protective Shutter State} is \texttt{CLOSED}.\\
@@ -1936,25 +1936,22 @@ and \gls{tcs}, and ensure mirrors let light directly to \gls{wfi} for dome flats
 
 \section{Dome}
 
-Turn off ventilation and hydraulics using the \gls{domefunc} (\gls{windows}, Fig.~\ref{fig:domefunc}). If it is required, use the password on left side of the screen.
+Turn off ventilation and hydraulics using the \gls{domefunc} (\gls{windows}, Fig.~\ref{fig:domefunc}). If it is required, use the good seeing password.
 \begin{enumerate}
   \item Turn off the dome ventilation.\\
         Click \texttt{Dome Air} if the button just above it is green.
   \item Turn off the hydraulics.\\
         Click \texttt{HydrOff}. The button above \texttt{Hydr} should go red. 
-  \item Turn off the drives.\\
-        Click \texttt{DrivesOff}. The button above \texttt{Drives} should go red.
 \end{enumerate}
 
 \section{Tidying folders}
 
-Night data are moved to a night directory and disk space is checked.
+Scripts move the data of the previous nights are to a subdirectory directory and and remove old ones (already in the ESO archive) if disk space is needed.  It can be done any time (night, day) on a daily basis for WFI and FEROS.  The GROND team manages the data.
 
 \procedure{Tidy folders}
 \begin{enumerate}
   \item On the \gls{wfi} screen, type \~{}\texttt{/bin/sciopsTidyMess.sh} in a terminal (wfi xterm).
   \item On the \gls{feros} screen, type \~{}\texttt{/bin/sciopsTidyMess.sh} in a terminal.
-  \item On the \gls{grond} workstation, <check it with GROND team>.
 \end{enumerate}
 
 \section{Health checks \& internal calibrations}
