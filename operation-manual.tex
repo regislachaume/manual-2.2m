@@ -307,12 +307,12 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 %%%%
 %%%% WFI
 %%%%
-  \item \label{list:wfistartup}\textbf{\gls{wfi} restart (14 min, in case of problems, see Fig.~\ref{fig:wfi-restart})}\\
+  \item \label{list:wfistartup}\textbf{\gls{wfi} restart (8 min, in case of problems, see Fig.~\ref{fig:wfi-restart})}\\
         If no problem occurred during the last night, try steps \ref{list:wfisu-filtre}--\ref{list:wfitest}.  If an issue happens, do the full start-up.
         \begin{enumerate}
           \item On the screen \texttt{BOB Wide Field Imager}, go to the \texttt{StartUp} virtual desktop.\label{list:wfi1}
           \item In a terminal, \texttt{osf2p2StartUp ini WFI F8}, where ini is your initials (Fig.~\ref{fig:wfisu-launch}).
-          \item On the dialog, choose \texttt{FULL} startup (Fig.~\ref{fig:wfisu-full}).
+          \item On the dialog, choose \texttt{DAILY} startup (Fig.~\ref{fig:wfisu-full}).
           \item Click \texttt{START} on the appearing window (\texttt{ESO220 WEEKLY FULL STARTUP}, see Fig.~\ref{fig:wfisu-start}). 
           \item Wait until the start-up window says \texttt{SCRIPT finished} (about 11 minutes).\\
           A black text window gives indication on the process (Fig.~\ref{fig:wfisu-log})
@@ -2198,14 +2198,21 @@ Failure of the \gls{wfi} autoguider will generally be silent.  It will just do n
 
 If the quick 30 seconds fix does not work, it is not possible to observe with WFI during the 15--35 minute-long fix, but it should be possible to go on with GROND or FEROS with no guarantee though---the \gls{tcs} has the bad habit of communicating with the WFI computers for focus. 
 
-Try in this order
 \procedure{Fix WFI autoguider issues}
+Try in this order
 \begin{enumerate}
   \item\label{wfiagrestart}
        On the \gls{tcs} screen, restart the autoguider (30 s)
     \begin{enumerate}
        \item Use left-click menu \texttt{Stop Autoguider}
        \item Use left-click menu \texttt{Start Auoguider}
+    \end{enumerate}
+  \item If \texttt{Retrieve Field} gives the error \texttt{Error opening RPC connection}, restart the WFI technical CCD.
+    \begin{enumerate}
+       \item On the WFI screen, locate or open a terminal.
+       \item Type \texttt{wfinsStopTCCDS} and wait for it to complete
+       \item Type \texttt{wfinsStartTCCDS} and wait for it to complet (2 min)
+       \item Perform the AG restart of point~\ref{wfiagrestart}
     \end{enumerate}
   \item If an autoguider process is suspended, restart the \gls{tcs}
     \begin{enumerate}
@@ -2803,7 +2810,7 @@ If the start-up stalls with \texttt{telescope not initialised}, you probably for
     \item Manually initialise the telescope
         \begin{enumerate}
             \item\label{lab:notinit1} 
-                In a terminal type \texttt{\textasciitilde/bin/telinit}
+                In a terminal type \texttt{\home/bin/telinit}
             \item If an error reads "cannot initialise the 
                 telescope at more than 45 degrees from zenith"
                 \begin{enumerate}
@@ -2822,9 +2829,15 @@ Many \gls{tcs} issues are solved by a fast restart, with a time loss of $\approx
 
 \procedure{Quick TCS restart}
 \begin{itemize}
- \item Type \texttt{e2p2NewShutDown} and wait for it to complete.
- \item Type \texttt{e2p2NewStartUp} and wait for it to complete.
- \item On the \gls{tcs} setup panel (Fig~\ref{fig:tcssetup}) press \texttt{Initialize} under \texttt{Telescope}.
+ \item Preset to zenith
+    \begin{itemize}
+	\item On the \gls{tcs} setup panel (Fig~\ref{fig:tcssetup}), click \texttt{Zenith} under \texttt{Fixed Presets}.
+        \item Alternatively, if panel is frozen, type \texttt{\home/bin/presetzenith} in a terminal.
+    \end{itemize}
+ \item Execute the fast restart.\\
+       Type \texttt{e2p2NewStartUp} and wait for it to complete.
+ \item Initialise the telescope\\
+       On the \gls{tcs} setup panel (Fig~\ref{fig:tcssetup}) press \texttt{Initialize} under \texttt{Telescope}.
 \end{itemize}
 
 \subsection{No connection with VME}
@@ -2889,15 +2902,11 @@ If you need to close when the panel is stuck, a few command lines are available 
 
 \procedure{Unstuck the TCS Setup panel}
 \label{proc:unstuckTCSpanel}
-\begin{itemize}
-  \item Identify the process id of the panel\\
-        Type \texttt{ps aux | grep tcsSetup} in a terminal.
-  \item See which process depends on it\\
-        Type \texttt{pstree -a <process id>}
-  \item If process \texttt{rs232} (dome controls) is listed, kill it.\\
-        Type \texttt{ps aux | grep rs232}\\
-        Type \texttt{kill <process id>}
-\end{itemize}
+\begin{enumerate}
+  \item In a terminal type \texttt{killall rs232}\\
+        If ``no process killed'' appears, this procedure will not be useful.
+  \item If the panel gets stuck again quickly (10--20 s), a restart of the TCS usually fixes the issue. 
+\end{enumerate}
 
 \subsection{Main mirror cover cannot be moved}
 \begin{figure}
