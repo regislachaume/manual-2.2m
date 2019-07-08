@@ -324,7 +324,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 %%%%
 %%%% WFI
 %%%%
-  \item \label{list:wfistartup}\textbf{\gls{wfi} restart (8 min, in case of problems, see Fig.~\ref{fig:wfi-restart})}\\
+  \item \label{list:wfistartup}\textbf{\gls{wfi} restart (8 min, in case of problems, see Fig.~\ref{fig:wfi-restart})}
         \begin{enumerate}
           \item On the screen \texttt{BOB Wide Field Imager}, go to the \texttt{StartUp} virtual desktop.\label{list:wfi1}
           \item In a terminal, \texttt{osf2p2StartUp ini WFI F8}, where ini is your initials (Fig.~\ref{fig:wfisu-launch}).
@@ -342,16 +342,16 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 \item other windows go to the desktop bearing their name, on the right screen. 
             \end{itemize}
           \item Wait for the filtre wheel to be set to a specific filtre (1--2 min)\label{list:wfisu-filtre}
-                \begin{itemize}
+                \begin{enumerate}
                     \item Locate the \texttt{Filter} field on the \texttt{WFI General State} panel
-                    \item If it stays in \texttt{MOVING} or you skipped full restart, reset filtre wheel (Sect.~ \ref{sec:crashfiltre}).
-                \end{itemize}
+                    \item If it stays in \texttt{MOVING} for more than 2 minutes or you skipped full restart, reset filtre wheel (Procedure~\ref{proc:filtrereset})
+                \end{enumerate}
           \item In \gls{bob}, execute \texttt{testOB.obd} (1 min)
              \label{list:wfitest}
-             \begin{itemize}
+             \begin{enumerate}
                \item Import it with \fetchob.
                \item Click the \texttt{Start} button. 
-             \end{itemize}
+             \end{enumerate}
         \end{enumerate}
 %%%%
 %%%% TCS
@@ -359,13 +359,13 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
   \item \textbf{\gls{tcs} restart (17 min, daily, see Fig.~\ref{fig:tcs-restart})}
         \begin{enumerate}
         \item\label{lab:hydron} Go to web browser on screen \texttt{Dome webcam \& hydraulics} to activate hydraulics (Fig.~\ref{fig:tcssu-hydr}). 
-             \begin{itemize}
+             \begin{enumerate}
                \item Find the \gls{domefunc} (tab called \texttt{ADAM 6000…})\\
                      If it is not there, open it with the bookmark \texttt{Dome controls}.\\
                      Use the good seeing password if necessary.
                \item Click \texttt{HydOn}, then button \texttt{Hydr} goes green.
                \item Click \texttt{DrivesOn}, then button \texttt{Drives} goes green.
-             \end{itemize}
+             \end{enumerate}
              It may be needed to click two or three times to get green buttons.
              \label{list:hydr}
           \item On the screen \texttt{Telescope Control Software}, go the the \texttt{StartUp} virtual desktop.\label{list:tcs1}
@@ -491,13 +491,13 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
              \item Fetch \gls{ob} with \wmenu{File}{Load OBs,From file…}.
              \item Click \texttt{Start}.
              \item If you haven't done the full start-up, the first attempt should fail, you need to
-             \begin{itemize}
+             \begin{enumerate}
                 \item Click \texttt{OK} on the error popups, one should say \texttt{error closing w2p2cam}
                 \item Wait for the exposure to finish
                 \item In \gls{bob}, click on \texttt{Reset status}
                 \item Click on start again.
                 \item If error persists, close \gls{bob} and open it again
-             \end{itemize} 
+             \end{enumerate} 
              \item Set telescope back to FEROS/WFI (0.5 min)\\
              In a terminal type, \texttt{grondM3 WFI \&\& grondMC CLOSE \&\& grondCS CLOSE}.
            \end{enumerate}
@@ -2077,6 +2077,114 @@ Then, go to \gls{bob} and use the menu \texttt{Configure} $\rightarrow$ \texttt{
 
 %----------------------------------------------------------------------------------------
 
+\chapter{Software maintenance}
+\label{sec:reboots}
+
+\section{Monthly}
+
+About once a month a weekly software maintenance should be done for prophyllaxy.
+
+\procedure{Monthly software maintenance}
+\label{proc:monthly}
+\begin{enumerate}
+\item \label{list:soft:stop} Stop some processes and applications (2 min)
+  \begin{enumerate}
+     \item On the p2pp/ot screen, exit applications
+     \begin{enumerate}
+      \item Locate the main \gls{ot} window with the execution sequence and exit it.
+      \item Locate any open \gls{p2pp} window and exit it
+     \end{enumerate}
+     \item On the pipeline screen, stop pipeline processes
+             \begin{enumerate}
+                \item Open or locate a terminal
+                \item Type \texttt{doControl stop}
+                \item Type \texttt{stopRBS}
+             \end{enumerate}
+     \item On the FEROS DRS screen, stop data processes following the first two points of Procedure~\ref{sec:FEROSDRSrestart}
+             \begin{enumerate}
+                \item Stop and close the Data subscriber and the FEROS DRS panel (point~\ref{list:stopDRS})
+                \item Kill processes and remove lock files (point~\ref{list:killDRS})
+             \end{enumerate}
+   \end{enumerate}
+\item \label{list:soft:exit} Exit all sessions except \gls{grond} (1 min)
+    \begin{enumerate}
+        \item On the \gls{tcs} screen, exit the X environment
+        \item On the \gls{wfi} screen, exit the X environment
+        \item On the \gls{feros} screen, exit the X environment
+        \item On the GROND and FEROS AG screen, exit the X environment
+        \item On the \gls{grond} screen, exit the X environment
+        \item On the p2pp/ot screen, exit the X environment
+        \item On the pipeline workstation, exit the X environment
+        \item On the FEROS DRS workstation, exit the X environment
+    \end{enumerate}
+\item \label{list:soft:power}Power cycle all black Dell boxes except \gls{grond}'s (2 min) 
+\item Log into all sessions (2 min)
+\begin{enumerate}
+    \item On the \gls{tcs} screen, login as \texttt{tcs}
+    \item On the \gls{wfi} screen, login as \texttt{wfi}
+    \item On the \gls{feros} screen, login as \texttt{feros}
+    \item On the FEROS and GROND AG screen, login as \texttt{cam}
+    \item On the GROND screen, login as \texttt{grond}
+    \item On the p2pp/ot workstation, login as \texttt{visitor}
+    \item On the pipeline workstation, login as \texttt{pipeline}
+    \item On the FEROS DRS workstation, login as \texttt{astro}
+\end{enumerate}
+\item Reboot workstations (except GROND)
+\begin{enumerate}
+    \item On the \gls{tcs} screen, open a tcs terminal and type \texttt{reboot}
+    \item On the \gls{wfi} screen, open a wfi terminal and type \texttt{reboot} 
+    \item On the \gls{feros} screen, open a feros terminal and type \texttt{reboot}
+    \item On the FEROS DRS screen, open a terminal type \texttt{reboot} as root
+    \item On the pipeline screen, open a terminal type \texttt{reboot} as root
+    \item On the p2pp/ot screen, open a terminal type \texttt{reboot} as root
+\end{enumerate}
+\item Wait for the reboots to complete (20--30 min). You can check with any of the following:
+    \begin{itemize}
+        \item The terminal disappears when clicked on
+        \item From a grond terminal, type \texttt{ping <machine>}.
+             \begin{itemize}
+             \item <machine> can be w2p2tcs, w2p2ins (WFI), wferos, w2p2dhs (OT/p2pp), w2p2pl (pipeline), w2p2off (FEROS DRS). 
+             \item Reboot is not done if \texttt{No route to host} is answered.
+             \item When ping starts sending internet speed stats reboot is almost complete (less than one minute left).
+             \end{itemize}
+    \end{itemize}
+\item Restart some processes and applications
+    \begin{enumerate}
+        \item On the p2pp/ot screen, open \gls{ot}
+        \item On the pipeline workstation
+             \begin{enumerate}
+                \item Open  a terminal
+                \item Type \texttt{dhsSubscribeControl start pipeline -backsince <date>}\\
+            pick <date> a few days ago
+                \item Type \texttt{doControl start wfi,feros}
+                \item Type \texttt{startRBS pipeline.config}
+             \end{enumerate}
+        \item On the FEROS DRS workstation, follow the last point of Procedure~\ref{sec:FEROSDRSrestart} in order to
+             \begin{enumerate}
+                \item Open and configure data subscriber (point~\ref{list:DS})
+                \item Open the FEROS DRS panel (point~\ref{list:DRS})
+             \end{enumerate}
+    \end{enumerate}
+\item \label{list:soft:tcs}Perform a full \gls{tcs} restart
+\end{enumerate}
+
+\section{Every six months}
+
+Every six months a weekly software maintenance has an additional step with the reboot of the user workstation.
+
+\procedure{Monthly software maintenance}
+\begin{enumerate}
+\item Stop processes and exit sessions (steps~\ref{list:soft:stop}--\ref{list:soft:exit} of Procedure~\ref{proc:monthly})
+\item Have a reboot of the user workstation done (15 min?)
+    \begin{enumerate}
+        \item Contact IT at Paranal (Josefina Urrutia) 
+        \item Coordinate a reboot of user workstation \texttt{uws2p2}
+        \item Wait for their confirmation that it is done
+    \end{enumerate}
+\item Power cycle dell boxes, log into sessions, reboot workstations, restart processes, and start-up TCS (steps~\ref{list:soft:power}--\ref{list:soft:tcs})
+\end{enumerate}
+
+
 \chapter{Troubleshooting}
 \label{sec:trouble}
 
@@ -2490,7 +2598,7 @@ bob must be killed and restarted.
 \subsection{Crash during filtre change in WFI}
 \label{sec:crashfiltre}
 
-\procedure{Fix a WFI filtre change crash}
+\procedure{Fix a WFI filtre change crash}\label{proc:filtrereset}
 If the OB crashes at the moment to change the filtre using \gls{wfi} and the \texttt{Filter Name} status is \texttt{Moving} on the WFI General State panel (Fig.~\ref{fig:wfigen})
  \begin{enumerate}
       \item On the \texttt{e2p2 OS GUI} (Fig.~\ref{fig:wfios}), select the filtre on the \texttt{Filter} option below \texttt{Setup Instrument}.\label{list:filtchange1}
@@ -2623,30 +2731,41 @@ If you cannot start the FEROS DRS this might be for the following reason: when r
 
 \procedure{Restart the FEROS data reduction software and data subscriber}
 \label{sec:FEROSDRSrestart}
-  \begin{itemize} 
-    \item Stop Data Subscriber and \gls{drs} at the \gls{drs} computer (Fig.~\ref{fig:datasubscriber}).
-    \item Type \texttt{killall -9 ferosReduceQueuedIms}  
-    \item Type \texttt{rm -f /data/reduced/.ferosQueueIms/.ferosReduceQueuedIms*.pid}
-    \item Type \texttt{killall -9 ferosQueueIms}
-    \item Type \texttt{rm -f /data/reduced/.ferosQueueIms/.ferosQueueIms*.pid}
-    \item Then restart the Data Subscriber and FEROS DRS:
-    \begin{itemize}
-        \item Left click start Data Subscriber
-        \item Configure Data Subscriber (Fig.~\ref{fig:datasubconfig}).
-            \begin{itemize}
+  \begin{enumerate} 
+    \item \label{list:stopDRS}Stop Data Subscriber and \gls{drs} at the \gls{drs} computer (Fig.~\ref{fig:datasubscriber}).
+      \begin{enumerate}
+          \item Stop and close the data subscriber\\
+                If window is frozen, you can use \texttt{xkill} from a terminal.
+          \item Stop and close the FEROS DRS panel\\
+                If window is frozen, you can use \texttt{xkill} from a terminal.
+      \end{enumerate}
+    \item \label{list:killDRS}Kill processes and tidy lock files
+    \begin{enumerate}
+    \item Type \texttt{killall -9 ferosReduceQueuedIms}\\
+          It either returns \texttt{no process killed} or nothing.  
+    \item Type \texttt{rm -f /data/reduced/.ferosQueueIms/.ferosReduceQueuedIms*.pid}\\
+          It is either silent or gives error \texttt{no file removed}
+    \item Type \texttt{killall -9 ferosQueueIms}\\
+          It either returns \texttt{no process killed} or nothing.  
+    \item Type \texttt{rm -f /data/reduced/.ferosQueueIms/.ferosQueueIms*.pid}\\
+          It is either silent or gives error \texttt{no file removed}
+    \end{enumerate}
+    \item Restart the Data Subscriber and FEROS DRS
+    \begin{enumerate}
+        \item \label{list:DS} Left click start Data Subscriber and configure it  (Fig.~\ref{fig:datasubconfig}).
+            \begin{enumerate}
                 \item \texttt{Program ID: service}
                 \item \texttt{Observer Name: service}
                 \item \texttt{Rename to Keyword: Name on INS ws}
-             \end{itemize}
-        \item Left click start \texttt{FEROS DRS}, start from top to bottom
-            \begin{itemize}
+             \end{enumerate}
+        \item \label{list:DRS} Left click start \texttt{FEROS DRS}, start from top to bottom
+            \begin{enumerate}
                 \item Start \texttt{Queue Image Status}
                 \item Start \texttt{MIDAS Session Status}
                 \item Start \texttt{Reduced Queued Image}
-            \end{itemize}
-    \end{itemize}
-    
-  \end{itemize}
+            \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
   
 Similarly, when rebooting the w2p2off with active Data Subsriber, the watch-dog log file may survive. Do:
 \begin{itemize}
