@@ -407,6 +407,27 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 \item Other windows go to the desktop bearing their name, on the left screen. 
                 \item Ignore window \texttt{CSS ALARM DISPLAY} (Fig.~\ref{fig:wfialarm}) if it pops up on the \gls{wfi} screen.
              \end{itemize}     
+          \item Ensure that the pointing model is correct.
+          \begin{enumerate}
+            \item Check that the sidereal time is correct.\\
+                  Compare the \texttt{TCS Control Panel} and the wall clock
+            \item\label{list:pmcheck:wfi} Select \gls{wfi} pointing model.
+               \begin{enumerate}
+                  \item On the \texttt{TCS Status} panel, use \wmenu{Instrument selection}{WFI}
+                  \item On the emerging popup select \texttt{Continue}
+               \end{enumerate}
+            \item\label{list:pmcheck:setup} Check the pointing model parameters are non zero
+               \begin{enumerate}
+                  \item Locate the \texttt{TCS Setup Panel}
+                  \item Look values of ID, IH, and CH under \texttt{Pointing Model Data}
+               \end{enumerate} 
+            \item If they are zero, fix the pointing model.
+                \begin{enumerate}
+                  \item Locate or open a tcs terminal 
+                  \item Type \texttt{\home/bin/fixPointing.sh} and wait for command to return (15 s)
+                  \item Redo steps \ref{list:pmcheck:wfi}--\ref{list:pmcheck:setup}
+                \end{enumerate}
+          \end{enumerate}
         \end{enumerate}
 %%%%
 %%%%  FEROS
@@ -2111,7 +2132,7 @@ About once a month a weekly software maintenance should be done for prophyllaxy.
         \item On the \gls{tcs} screen, exit the X environment
         \item On the \gls{wfi} screen, exit the X environment
         \item On the \gls{feros} screen, exit the X environment
-        \item On the GROND and FEROS AG screen, exit the X environment
+        \item On the GROND and FEROS \gls{ag} screen, exit the X environment
         \item On the \gls{grond} screen, exit the X environment
         \item On the p2pp/ot screen, exit the X environment
         \item On the pipeline workstation, exit the X environment
@@ -2125,9 +2146,9 @@ About once a month a weekly software maintenance should be done for prophyllaxy.
     \item On the \gls{feros} screen, login as \texttt{feros}
     \item On the FEROS and GROND AG screen, login as \texttt{cam}
     \item On the GROND screen, login as \texttt{grond}
-    \item On the p2pp/ot workstation, login as \texttt{visitor}
+    \item On the \gls{p2pp}/\gls{ot} workstation, login as \texttt{dhs}
     \item On the pipeline workstation, login as \texttt{pipeline}
-    \item On the FEROS DRS workstation, login as \texttt{astro}
+    \item On the FEROS \gls{drs} workstation, login as \texttt{astro}
 \end{enumerate}
 \item Reboot workstations (except GROND)
 \begin{enumerate}
@@ -2150,7 +2171,7 @@ About once a month a weekly software maintenance should be done for prophyllaxy.
     \end{itemize}
 \item Restart some processes and applications
     \begin{enumerate}
-        \item On the p2pp/ot screen, open \gls{ot}
+        \item On the \gls{p2pp}/\gls{ot} screen, open \gls{ot}
         \item On the pipeline workstation
              \begin{enumerate}
                 \item Open  a terminal
@@ -2209,7 +2230,7 @@ Every six months a weekly software maintenance has an additional step with the r
         on the \gls{tcs} machine, \ref{fig:tcsauxfunc}). 
   \item \textit{(\gls{grond})} the protective and cold shutters are \texttt{OPEN} (\gls{grond} control,
         Fig.~\ref{fig:grondcon}).  Use \texttt{grondMC OPEN} and \texttt{grondCS OPEN} in the terminal if necessary.
-  \item \textit{(\gls{grond})} If images look like biases, restart FIERA.\\
+  \item \textit{(\gls{grond})} If images look like biases, restart \gls{fiera}.\\
   On the \texttt{FIERA Control Panel} do \texttt{Shutdown} / \texttt{Startup}.
 \end{itemize}
 
@@ -2449,7 +2470,7 @@ order, until problem is fixed.
     \begin{enumerate}
        \item If error \texttt{closing w2p2cam environment}
        \begin{enumerate}
-          \item If a FIERA exposure is running in \texttt{GROND Control}, click \texttt{End} or let it finish.
+          \item If a \gls{fiera} exposure is running in \texttt{GROND Control}, click \texttt{End} or let it finish.
           \item Type \texttt{grondSHUTTER} in a terminal.
        \end{enumerate} 
        \item If the error mentions \gls{irace}
@@ -2458,7 +2479,7 @@ order, until problem is fixed.
             \item Locate the \texttt{Infrared Acquisition Module} (Fig.~\ref{fig:grondirace})
             \item Click \texttt{Reset} on the lower left part of the panel
             \item Select from menu \texttt{Online} $\rightarrow$ \texttt{Online}
-            \item If it fails, you may need $\approx 40$\,min to deep restart (Procedure~\ref{proc:iracerestart}) IRACE.
+            \item If it fails, you may need $\approx 40$\,min to deep restart (Procedure~\ref{proc:iracerestart}) \gls{irace}.
        \end{enumerate}
        \item Ensure only one \gls{bob} is running
          \begin{enumerate}
@@ -2882,11 +2903,11 @@ The box on the left contains the electronics boards that one may need to unplug 
 	\item Locate or open a \texttt{logMonitor}
 	\item If it was not active, choose to inspect the last 500 lines
 	\item Find red error ``Failed to dispatch command for camera LOADED OK''.
-	\item Lines below and above contain ``C40 ping failed'' and ``Could not download FIERA config''
+	\item Lines below and above contain ``C40 ping failed'' and ``Could not download \gls{fiera} config''
 	\item You can also check directly whether WFI passes the self-test\\
               In a terminal, type \texttt{rsh -l fcdrun wwffcd "export DISPLAY=\$DISPLAY; fcdtestseq"}
     \end{enumerate}
-  \item\label{list:wfionline:reboot} Reboot the FIERA workstation
+  \item\label{list:wfionline:reboot} Reboot the \gls{fiera} workstation
 	\begin{enumerate}
 		\item In a terminal, type \texttt{rsh -l fcdrun wwffcdd reboot}
 	        \item Wait for 1--2 minutes for it to get back online\\
@@ -2902,12 +2923,12 @@ The box on the left contains the electronics boards that one may need to unplug 
                       (On a 2nd or 3rd attempt, you may try to unplug/replug the electronics boards if you dare.)
 		\item Switch it on.
 	\end{enumerate}
-  \item  If WFI passes the self-test, do a restart of the FIERA
+  \item  If WFI passes the self-test, do a restart of the \gls{fiera} 
         \begin{enumerate}
 		\item In a terminal, type \texttt{fcdCtrl}
                 \item On the emerging GUI, click \texttt{Shutdown}
                 \item On the emerging GUI, click \texttt{Startup}
-		\item Wait for FIERA to restart (1 min ?)
+		\item Wait for \gls{fiera} to restart (1 min ?)
         \end{enumerate}
   \item\label{list:wfionline:restart} Do a full WFI restart (see Proc.~\ref{proc:startup} point~\ref{list:wfistartup} and Fig.~\ref{fig:wfi-restart})
   \item You may have to redo steps \ref{list:wfionline:reboot}--\ref{list:wfionline:restart} until WFI can finish the full restart.
@@ -3176,29 +3197,29 @@ It is a very tricky problem, randomly solved by a string of last resort reboots 
 
 \begin{figure}
 \centering
-\subfigure[GROND IRACE box]{%
+\subfigure[GROND \gls{irace} box]{%
 \includegraphics[width=.49\linewidth]{dome/dome-grond-irace.jpg}%
 }%
 \hspace{0.01\linewidth}%
 \subfigure[GROND IRACE switch]{%
 \includegraphics[width=.49\linewidth]{dome/dome-grond-irace-switch.jpg}%
 }%
-\caption[The GROND IRACE box]{The GROND infrared electronics (IRACE) box below the main mirror of the telescope.  The power switch
+\caption[The GROND IRACE box]{The GROND infrared electronics (\gls{irace}) box below the main mirror of the telescope.  The power switch
 is located towards the pier.}
 \label{fig:grond-irace}
 \end{figure}
 
 An OB starts with the optical exposure but nothing happens in the infrared and
-the OB stalls. If \texttt{grondFM} doesn't solve the issue, this may need a full reset of the IRACE (IR electronics).
+the OB stalls. If \texttt{grondFM} doesn't solve the issue, this may need a full reset of the \gls{irace} (IR electronics).
  
 \procedure{Deep reset of GROND IRACE (verify this!)}
 \label{proc:iracerestart}
 \begin{enumerate}
   \item In a GROND terminal, do \texttt{grinsStop} as user  \texttt{grondmgr}.
   \item Go to the computer room of the telescope building.
-  \item Locate the IRACE workstation (Fig.~\ref{fig:computer-room}) and shut it down.
+  \item Locate the \gls{irace} workstation (Fig.~\ref{fig:computer-room}) and shut it down.
   \item Go to the dome 
-  \item Locate the power switch of the IRACE box (Fig.~\ref{fig:grond-irace}) below the main mirror.
+  \item Locate the power switch of the \gls{irace} box (Fig.~\ref{fig:grond-irace}) below the main mirror.
   \item Switch it off for 10 seconds then on again.
   \item Go back to the computer room and start the IRACE workstation.
   \item Go back to the control room and reboot the GROND workstation.
@@ -3585,7 +3606,7 @@ Computer         & Login    & User     & Monitor(s)                 & Descriptio
                  &          & visitor  & p2pp \& ot                 & visitors (p2pp)\\
 \texttt{w2p2off} & astro    & astro    & FEROS pipeline             & data \& pipelines\\
 \texttt{w2p2pl}  & pipeline & pipeline & w2p2pl pipeline            & WFI/FEROS data handling\\       
-\texttt{wgrond}  & grond    & grond    & GROND BOB / FIERA / IRACE  & basic user\\
+\texttt{wgrond}  & grond    & grond    & GROND BOB / \gls{fiera} / \gls{irace}  & basic user\\
                  &          & grondmgr & ---                        & startup, \gls{bob}, commands\\
 \hline
 \end{tabular}
@@ -3598,7 +3619,8 @@ Computer         & Login    & User     & Monitor(s)                 & Descriptio
 \hline
 Component                 &  User name                                            & Password hint\\
 \hline\hline
-Graphical interface user  & tcs, cam, feros, wfi, grond, astro, visitor, pipeline & .5a$\cdots$\\
+Graphical interface user  & tcs, cam, feros, wfi, grond, dhs, pipeline & .5a$\cdots$\\
+Other users               & visitor, service                           & .5a$\cdots$\\
 Instrument manager        & ferosmgr, grondmgr, wfimgr                            & pin2$\cdots$\\
 Workstation administrator & root                                                  & 2be1$\cdots$\\
 Remedy tickets            & 2p2                                                   & .5a$\cdots$\\
