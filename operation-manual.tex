@@ -325,7 +325,6 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 %%%% WFI
 %%%%
   \item \label{list:wfistartup}\textbf{\gls{wfi} restart (8 min, in case of problems, see Fig.~\ref{fig:wfi-restart})}\\
-        If no problem occurred during the last night, try steps \ref{list:wfisu-filtre}--\ref{list:wfitest}.  If an issue happens, do the full start-up.
         \begin{enumerate}
           \item On the screen \texttt{BOB Wide Field Imager}, go to the \texttt{StartUp} virtual desktop.\label{list:wfi1}
           \item In a terminal, \texttt{osf2p2StartUp ini WFI F8}, where ini is your initials (Fig.~\ref{fig:wfisu-launch}).
@@ -342,12 +341,12 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 \item \gls{rtd} goes to all desktops, on the left screen.
                 \item other windows go to the desktop bearing their name, on the right screen. 
             \end{itemize}
-          \item Wait for the filter wheel to be set to a specific filter (1--2 min)\label{list:wfisu-filtre}
+          \item Wait for the filtre wheel to be set to a specific filtre (1--2 min)\label{list:wfisu-filtre}
                 \begin{itemize}
                     \item Locate the \texttt{Filter} field on the \texttt{WFI General State} panel
-                    \item If it stays in \texttt{MOVING} or you skipped full restart, reset filtre wheel (Sect.~ \ref{sec:crashfilter}).
+                    \item If it stays in \texttt{MOVING} or you skipped full restart, reset filtre wheel (Sect.~ \ref{sec:crashfiltre}).
                 \end{itemize}
-          \item In \gls{bob}, execute \texttt{testBias.obd} (1 min)
+          \item In \gls{bob}, execute \texttt{testOB.obd} (1 min)
              \label{list:wfitest}
              \begin{itemize}
                \item Import it with \fetchob.
@@ -380,17 +379,25 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
           \item Be proactive to handle some appearing pop-ups (in a 14 minutes lapse) 
           \begin{enumerate}
              \item One asking to check hydraulics and telescope is parked among other things (Fig.~\ref{fig:tcssu-check}).\\
-                   You can check each point and then click \texttt{OK}          
+                   Take your time to check each point and then click \texttt{OK}          
              \item One asking to switch on flat-field lamp\label{list:tcsonline} (Fig.~\ref{fig:tcssu-lampon})\\
                    Lamp should be on, check no one is in the dome, then click \texttt{OK}.\\
                    If it's off,  on \texttt{FAUX functions} panel on desktop \texttt{TCS Status}, select \texttt{200V} under \texttt{FLAT FIELD LAMP}\\
                    Then, telescope will do movement checks.
              \item One asks to check for CCD alarms to be enabled (Fig.~\ref{fig:tcssu-alarm})\\
                    Go to the large, black text window where all numbers below the two \texttt{Al Enab} should be ones.
-             \item One asks to check that the flat-field lamp is off.\\
-                   If not, on \texttt{FAUX functions} panel on desktop \texttt{TCS Status}, select \texttt{OFF} under \texttt{FLAT FIELD LAMP}          
+             \item One asks to check that the flat-field lamp is off and telemetry active.
+                \begin{enumerate}
+                 \item If flat-field lamp is on, turn it off unless you will do flats.\\
+                   On \texttt{FAUX functions} panel select \texttt{OFF} under \texttt{FLAT FIELD LAMP}          
+                 \item On the \texttt{Telemetry} panel, ensure that the FEROS telemetry module is \texttt{active}\\
+                       If not, activate it on the FEROS screen using \texttt{fcdTelemetry} (see Procedure~\ref{proc:telemetry})
+                 \item On the \texttt{Telemetry} panel, ensure that the WFI telemetry module is \texttt{active}\\
+                       If not, activate it on the WFI screen using \texttt{fcdTelemetry} (see Procedure~\ref{proc:telemetry})
+                 \item If a telemetry was restarted, panel must be closed and reopened (see Procedure~\ref{proc:telemetry})
+                 \end{enumerate}
           \end{enumerate}
-          \item The \texttt{Telemetry} panel should have appeared and start-up window say \texttt{SCRIPT finished}.
+          \item The start-up window say \texttt{SCRIPT finished}.
              \label{list:tcsbooted}
           \item Close startup window.
           \item Close emerging PDF.
@@ -472,7 +479,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
              \item In the same terminal, execute \texttt{grondGRI}.
              \item In the same terminal, execute \texttt{grondSHUTTER \&\& grondFM} (might take 1 min).
            \end{enumerate}
-         \item From \gls{bob}, execute the test \gls{ob} \texttt{1min1TD\_test.obd}, see Fig.~\ref{fig:grondbob} (1 min)
+         \item From \gls{bob}, execute the test \gls{ob} \texttt{testOB.obd}, see Fig.~\ref{fig:grondbob} (1 min)
            \begin{enumerate}
              \item Ensure \gls{tcs} is \texttt{OFF} (red button) by clicking \texttt{TCS OFF}.
              \item Fetch \gls{ob} with \wmenu{File}{Load OBs,From file…} 
@@ -560,7 +567,12 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 		          Leave at least the last three nights.\\
 		          Example: \texttt{rm -rf /data/reduced/2018-01-* /data/reduced/FEROS/2018-01-*}
 		\end{enumerate}
-	\end{enumerate}
+	\end{enumerate} 
+    \item\textbf{Afternoon calibrations can be done right after start-up} (see Sect.~\ref{daycal})
+        \begin{itemize}
+        \item \gls{wfi} flats may be done in parallel starting from point~\ref{list:tcsonline}
+        \item \gls{feros} standard calibration may be done in parallel starting from point~\ref{list:grond}
+        \end{itemize}
 \end{enumerate}
 \newpage
 
@@ -816,9 +828,9 @@ Internal calibrations and health checks are typically left running in the mornin
                  \item Open the flat template, left-clicking on the triangle of \texttt{WFI\_img\_cal\_DomeFlat\_new}
                  \item Open the instrument section, left-click on the triangle of section \texttt{INS}
                  \item Use \wmenu{Interface}{Engineering}.
-                 \item Middle-click the filter name, fill in value, and type enter.\\
+                 \item Middle-click the filtre name, fill in value, and type enter.\\
                        Name is \texttt{ESONNN\_name/width} (\texttt{NNN}: number, \texttt{name}: filtre name or wavelength)\\
-                       In virtual desktop \texttt{WFI ICS}, a filter list is found below \texttt{SETUP Instrument}
+                       In virtual desktop \texttt{WFI ICS}, a filtre list is found below \texttt{SETUP Instrument}
                  \item Deactivate the filtres you don't want.\\
                        Right-click the triangles to get a thumb down
               \end{enumerate}       
@@ -1014,7 +1026,7 @@ If slack is closed, open a browser with the following link: https://slack.com/si
 \paragraph{Flat-fielding}
 \begin{enumerate}
   \item \gls{wfi} flats can be done from sunset to sun at $-10$ degrees elevations depending on filtre.\\
-        Standard filters have that order: U, V, R, I, and B.
+        Standard filtres have that order: U, V, R, I, and B.
   \item \gls{grond} flats are extensive and run from sun at $-4$ to $-9$ degrees elevation.\\
         To be started when 2s J-band exposures feature a
         relatively flat field with 20\,000 counts.
@@ -1072,14 +1084,14 @@ The procedure has been somehow modified (January 2014).
     \end{itemize}
   \item If not doing the standard filtres, customise \gls{ob}.
     \begin{enumerate}
-       \item For non standard filtres, edit the filter names.
+       \item For non standard filtres, edit the filtre names.
              \label{list:editfilt} 
               \begin{enumerate}
                  \item Open the flat template, left-clicking on the triangle of \texttt{WFI\_img\_cal\_DomeFlat}
                  \item Open the instrument section, left-click on the triangle of section \texttt{INS}
                  \item Use \wmenu{Inteferface}{Engineering}.
-                 \item Middle-click the filter name, fill in value, and type enter.\\
-                      (In virtual desktop \texttt{OS GUI}, a filter list is found below \texttt{SETUP Instrument})
+                 \item Middle-click the filtre name, fill in value, and type enter.\\
+                      (In virtual desktop \texttt{OS GUI}, a filtre list is found below \texttt{SETUP Instrument})
               \end{enumerate}
        \item Deactivate unneeded templates.\\
              Right-click the triangles to get a thumb down.
@@ -1525,7 +1537,7 @@ overheads by parallelising preset and mirror movements.  However, beware that so
   \item Proceed with the observation, typically by clicking on pop-up asking for guiding.
 \end{enumerate}
 
-After a filter change or when running several observing blocks on the same
+After a filtre change or when running several observing blocks on the same
 field, it is possible to reacquire guiding within a few seconds instead of the
 full procedure (1 min).  
 
@@ -2475,17 +2487,20 @@ focus that cannot be done:
 If the OB crashes before the pop-up asking for manual preset, it means
 bob must be killed and restarted.
 
-\subsection{Crash during filter change in WFI}
-\label{sec:crashfilter}
-If the OB crashes at the moment to change the filter using \gls{wfi} and the \texttt{Filter Name} status is \texttt{Moving} on the WFI General State panel (Fig.~\ref{fig:wfigen})
+\subsection{Crash during filtre change in WFI}
+\label{sec:crashfiltre}
+
+\procedure{Fix a WFI filtre change crash}
+If the OB crashes at the moment to change the filtre using \gls{wfi} and the \texttt{Filter Name} status is \texttt{Moving} on the WFI General State panel (Fig.~\ref{fig:wfigen})
  \begin{enumerate}
-      \item On the \texttt{e2p2 OS GUI} (Fig.~\ref{fig:wfios}), select the filter on the \texttt{Filter} option below \texttt{Setup Instrument}.
-      \item Click on the \texttt{Apply} button.\\
-           In case one gets an error message like this: ``icswsERR\_MOVE\_FILTER : Error during movement of filter. ErrNo:7 ErrString: NO DETECTION", reset the filter controller
-           \begin{itemize}
+      \item On the \texttt{e2p2 OS GUI} (Fig.~\ref{fig:wfios}), select the filtre on the \texttt{Filter} option below \texttt{Setup Instrument}.\label{list:filtchange1}
+      \item Click on the \texttt{Apply} button.
+      \item Wait for filtre \texttt{Filter Name} to change from \texttt{Moving} to selected filtre (up to to 2\,min)\label{list:filtchange2}
+      \item In case of error: ``icswsERR\_MOVE\_FILTER : Error during movement of filtre. ErrNo:7 ErrString: NO DETECTION'', reset the filtre controller
+           \begin{enumerate}
            \item On the \gls{auxfunc} (Fig.~\ref{fig:tcsauxfunc}) in the \gls{tcs}, click on the \texttt{RESET} button below \texttt {WFI FILTER CONTROLLER}.
-           \item Repeat steps 1 \& 2.
-           \end{itemize}
+           \item Repeat steps \ref{list:filtchange1}--\ref{list:filtchange2}.
+           \end{enumerate}
  \end{enumerate}
 
 \section{Focus issues}
@@ -2513,9 +2528,9 @@ The \gls{wfi} focus sequence may fail to communicate the focus offsets to the te
 be rebooted.
 \end{itemize}
 
-\subsection{No focus offset when filters are changed}
+\subsection{No focus offset when filtres are changed}
 \label{sec:filfocoffset}
-The focus sequence is run for a specific filter, when changing filters during an OB, the TCS should apply a focus offset, which should be seen in the TCS Control Panel, M2 Focus. If no offset is applied, check if in the \gls{wfi} state manager, the Focusing flag should be \texttt{True}. The ESO people were not really clear on that.
+The focus sequence is run for a specific filtre, when changing filtres during an OB, the TCS should apply a focus offset, which should be seen in the TCS Control Panel, M2 Focus. If no offset is applied, check if in the \gls{wfi} state manager, the Focusing flag should be \texttt{True}. The ESO people were not really clear on that.
 
 
 \section{FEROS ADC}
@@ -2690,16 +2705,20 @@ FEROS DRS, you will need to restart processes on the data handling machine w2p2p
         \item Type \texttt{vccEnvStart -e \$RTAPENV}
         \item Redo the full startup procedure
       \end{itemize}
- \item There is a problem with the FEROS telemetry at TCS (window should show some graphs, Fig.~\ref{fig:tcstelemetry}):
-      \begin{itemize}
-        \item Go to FEROS screen
-        \item Type \texttt{fcdTelemetry \&}
-        \item Press \texttt{START}
-        \item Go to TCS
-        \item Close Telemetry window
-        \item Type \texttt{sciops2p2Telemetry \&}
-      \end{itemize}
+ \item There is a problem with the FEROS telemetry at TCS (window should show some graphs, Fig.~\ref{fig:tcstelemetry}), run Procedure~\ref{proc:telemetry}
 \end{itemize}
+
+\procedure{Activate FEROS or WFI telemetry}
+\label{proc:telemetry}
+\begin{enumerate}
+    \item Go to FEROS or WFI screen
+    \item Open or locate a terminal and type \texttt{fcdTelemetry \&}
+    \item On the emerging \texttt{FIERA - Telemetry} GUI, press \texttt{Start}
+    \item Close the GUI
+    \item Go to TCS screen
+    \item Close the \texttt{ESO 220 General Telemetry Panel}
+    \item Open or locate a terminal and type \texttt{sciops2p2Telemetry \&}
+\end{enumerate}
 
 \begin{figure}[t!]
 \begin{minipage}{0.48\linewidth}
@@ -2732,7 +2751,7 @@ The commonest issues are:
 	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-1.png}
 	\hglue 0.02\linewidth
 	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-2.png}
-	\caption{WFI electronics.  The box on the right controls the power and can be used to power cycle.
+	\caption[WFI electronics: power cycle button and boards]{WFI electronics.  The box on the right controls the power and can be used to power cycle.
 The box on the left contains the electronics boards that one may need to unplug and replug.}
 	\label{fig:wfielectronics}
 \end{figure}
@@ -3081,7 +3100,7 @@ This is common on the \gls{wfi} screens.
 \begin{enumerate}
     \item Power cycle the black Intel box connected to the failing screen.\\
           Press power button for 5\,s, wait 5--10\,s, switch it on, wait for
-          start-up (1--2\,min)\\
+          start-up (1--2\,min)
     \item Log in\\ 
           For WFI, user wfi (other logins in Table~\ref{fig:computers}).
     \item Open the panels from a terminal.\\
