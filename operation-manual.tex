@@ -1,8 +1,18 @@
-\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+\documentclass[11pt,fleqn]{book} 
 
-%\usepackage[subfigure]{tocloft}
-%\newlistof{procedure}{lop}{\listprocedurename}
 \makeatletter
+\renewcommand{\p@enumii}[1]{\theenumi#1}
+\renewcommand{\p@enumiii}[1]{\theenumi\theenumii#1}
+%\renewcommand{\p@enumiv}[1]{\theenumi\theenumii\theenumiii(#1)}
+\renewcommand\theenumi{\Alph{enumi}}
+\renewcommand\theenumii{\arabic{enumii}}
+\renewcommand\theenumiii{\alph{enumiii}}
+\renewcommand\theenumiv{\roman{enumiv}}
+\renewcommand\labelenumi{\Alph{enumi}.}
+\renewcommand\labelenumii{\theenumi\theenumii.}
+\renewcommand\labelenumiii{\theenumiii.}
+\renewcommand\labelenumiv{(\theenumiv)}
+
 \newcommand\listprocedurename{List of procedures}
 \newcommand\listofprocedures{%
     \if@twocolumn
@@ -61,6 +71,13 @@
 \usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
 \usepackage{makeidx} % Required to make an index
 \makeindex % Tells LaTeX to create the files required for indexing
+
+
+%\usepackage{enumitem}
+%\setlist[enumerate,1]{label*=\Alph*.,ref=\Alph*}
+%\setlist[enumerate,2]{label*=\arabic*.,ref=\arabic*}
+%\setlist[enumerate,3]{label*=\alph*.,ref=\alpha*}
+%\setlist[enumerate,4]{label*=\roman*.,ref=\roman*}
 
 
 %----------------------------------------------------------------------------------------
@@ -410,19 +427,26 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
               \item Other windows go to the desktop bearing their names, on the right screen.
               \item There are two \texttt{rtd}s and two \texttt{logMonitor}s, you can close one of each.
            \end{itemize}
-         \item\label{lab:ferosonline} On \texttt{FEROS General State} panel, use \wmenu{Instrument}{ONLINE}.
-         \item In \gls{bob}, run \texttt{FEROS\_ech\_cal\_bias.obd} (1--2 min)
+         \item\label{lab:ferosonline} Put the instrument online (1 min)
+            \begin{enumerate}
+                \item On \texttt{FEROS General State} panel, use \wmenu{Instrument}{ONLINE}
+                \item Wait for \texttt{State} to indicate \texttt{ONLINE}
+            \end{enumerate}
+         \item Perform a test OB with telescope communication
            \begin{enumerate}
-             \item Fetch it with \fetchob (\texttt{/OBD/Templates/}).
-             \item Click \texttt{Start} (takes about 1 min).
-             \item If points \ref{lab:ferosstartup}--\ref{lab:ferosbooted} were skipped, it will fail on the first attempt and proceed.
-            \item Click \texttt{OK} on the error popups, one should say \texttt{error closing w2p2cam}
-            \item Wait for the exposure to finish
-            \item In \gls{bob}, click on \texttt{Reset status}
-            \item Click on start again.
-            \item Wait for \gls{ob} to finish.
+             \item On \texttt{FEROS General State} panel, select \wmenu{Telescope}{ENABLE} 
+             \item In \gls{bob}, run \texttt{testOB.obd} (1--2 min)
+             \begin{enumerate}
+               \item Fetch it with \fetchob (\texttt{/OBD/Templates/}).
+               \item \label{list:ferostestob} Click \texttt{Start} 
+               \item Wait for the exposure to finish (takes about 1 min).
+               \item If points \ref{lab:ferosstartup}--\ref{lab:ferosbooted} were skipped, it will fail on the first attempt and proceed.
+              \item Click \texttt{OK} on the error popups, one should say \texttt{error closing w2p2cam}
+              \item In \gls{bob}, click on \texttt{Reset status}
+              \item Re-run it (point \ref{list:ferostestob}).
+            \end{enumerate}
+            \item \texttt{FEROS General State} panel, select \wmenu{Telescope}{IGNORE}
            \end{enumerate}
-          \item On \texttt{FEROS General State} panel, use \wmenu{Instrument}{IGNORE}.
         \end{enumerate}
 %%%%
 %%%% GROND
