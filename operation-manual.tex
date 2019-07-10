@@ -39,11 +39,10 @@
 
 \makeatother
 \def\procref#1{Procedure~\ref{proc:#1}, p.~\pageref{proc:#1}}
-\def\procrefp#1{(\procref{#1})}
 \def\figref#1{Fig.~\ref{fig:#1}, p.~\pageref{fig:#1}}
 \def\figureref#1{Figure.~\ref{fig:#1}, p.~\pageref{fig:#1}}
 \def\secref#1{Sect.~\ref{sec:#1}, p.~\pageref{sec:#1}}
-
+\def\chapref#1{Chapter.~\ref{chap:#1}, p.~\pageref{chap:#1}}
 \def\home{\textasciitilde{}}
 
 \newcommand{\procedure}[1]{
@@ -236,12 +235,13 @@ In most nights, a support astronomer is present in the afternoon and the first p
 
 When no service astronomer is present (e.g. last part of the night), visiting astronomers will be asked to perform service observations for other groups, both for the follow-up of gamma-ray bursts and time-domain programmes.  The number of allocated nights for visitors takes the average time loss into account, in case more down time, compensation will be considered in service mode.  Since 2017, a long-term monitoring of quasi-stellar objects takes 1.5 to 2 hours daily, and targets of opportunity about 1 hour (15\% long-term average).  MPIA observers may be ask for additional service observations for the MPIA.
 
-Sections~\ref{sec:startup}--\ref{nightops} can be seen as a step-by-step guide
-of the operations from the daily startup to the night time. Many of the steps
-need some knowledge of the \gls{ob} management and of the \gls{bob} interface,
-which are presented in Section~\ref{ob}.  Section~\ref{sec:trouble} lists fixes
-to common issues at the telescope.  We present the software components more in
-detail in Section~\ref{compo}.
+Chapters~\ref{chap:startup}--\ref{chap:nightops} can be seen as a step-by-step
+guide of the operations from the daily startup to the night time. Many of the
+steps need some knowledge of the \gls{ob} management and of the \gls{bob}
+interface, which are presented in Chapter~\ref{chap:ob}.
+Chapter~\ref{chap:reboots} details monthly preventive software maintenance.
+Chapter~\ref{chap:trouble} lists fixes to common issues at the telescope.  We
+present the software components more in detail in Chapter~\ref{chap:compo}.
 
 \section{Security}
 
@@ -306,7 +306,7 @@ a computer to use the \gls{tcs}, the dome controls, the bottom of the telescope.
 
 
 \chapter{Early afternoon: daily start-up}
-\label{sec:startup}
+\label{chap:startup}
 
 Start-up should take about one hour, but small technical issues can lengthen it significantly.  Ideally, it should be done early enough in the afternoon (2--3 pm in Winter, 3--4 pm in Summer), so that dome flat fields can be done before the nitrogen of \gls{wfi} is refilled.  Also, complicated issues should be diagnosed early, so that you benefit from the day-time support from ESO engineers.  Night time support is not provided except for emergencies.
 
@@ -315,6 +315,7 @@ For an experienced observer alone in Winter, a later start-up can be done by opt
 The \gls{tcs} and the \gls{wfi} are entangled.  In particular, the \gls{wfi} \gls{ics} controls the focus and pointing, and the \gls{tcs} controls the \gls{wfi} \gls{ag}.  For this reason, the \gls{wfi} should be rebooted before the \gls{tcs}.  The other instruments, \gls{grond} and \gls{feros}, are more independent and need a later restart. Also, the \gls{feros} and \gls{grond} \gls{ag} should be checked and the \gls{feros} \gls{drs} set to the right date.
 
 \section{Outline}
+\label{sec:startupoutline}
 
 To be on the safe side, the start-up sequence shall be performed in this order below. To gain a bit more time one can do \ref{list:hydr}--\ref{list:tcs1} during \ref{list:wfi1}--\ref{list:wfibooted} and
 \ref{list:tcsboot}--\ref{list:tcsbooted} during
@@ -354,7 +355,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
           \item Wait for the filtre wheel to be set to a specific filtre (1--2 min)\label{list:wfisu-filtre}
                 \begin{enumerate}
                     \item Locate the \texttt{Filter} field on the \texttt{WFI General State} panel
-                    \item If it stays in \texttt{MOVING} for more than 2 minutes or you skipped full restart, reset filtre wheel \procrefp{filtrereset}. 
+                    \item If it stays in \texttt{MOVING} for more than 2 minutes or you skipped full restart, reset filtre wheel (\procref{filtrereset}). 
                 \end{enumerate}
           \item In \gls{bob}, execute \texttt{testOB.obd} (1 min)
              \label{list:wfitest}
@@ -386,7 +387,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 If an error message appears on the \gls{wfi} screen, click \texttt{OK}. 
           \item Launch the start-up script
           \begin{enumerate}
-             \item On the \gls{tcs} screen, type \texttt{osf2p2StartUp ini ALL F8}, where ini is your initials.\label{list:tcsboot} (\figref{tcssu-launch})\\
+             \item In the terminal type \texttt{osf2p2StartUp ini ALL F8}, with \texttt{ini} = your initials.\label{list:tcsboot} (\figref{tcssu-launch})\\
                    Make sure \gls{wfi} is fully booted (\ref{list:wfibooted}) before going on with the \gls{tcs} start-up.
               \item Click \texttt{START} on the appearing startup window titled \texttt{ESO220 DAILY STARTUP} (\figref{tcssu-start})
           \end{enumerate}
@@ -396,8 +397,8 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                    Take your time to check each point and then click \texttt{OK}          
              \item One asking to switch on flat-field lamp\label{list:tcsonline} (\figref{tcssu-lampon})\\
                    Lamp should be on, check no one is in the dome, then click \texttt{OK}.\\
-                   If it's off,  on \texttt{FAUX functions} panel on desktop \texttt{TCS Status}, select \texttt{200V} under \texttt{FLAT FIELD LAMP}\\
-                   Then, telescope will do movement checks.
+                   If it's off, on \texttt{FAUX functions} panel select \texttt{200V} under \texttt{FLAT FIELD LAMP}\\
+                   Then, telescope will do movement checks you can monitor on the webcam.
              \item One asks to check for CCD alarms to be enabled (\figref{tcssu-alarm})\\
                    Go to the large, black text window where all numbers below the two \texttt{Al Enab} should be ones.
              \item One asks to check that the flat-field lamp is off and telemetry active.
@@ -429,9 +430,10 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 \item Under \texttt{AG Field Acquisition}, click \texttt{Retrieve Field}
                 \item\label{list:ccdstat} Under \texttt{Autoguider} look that \texttt{CCD Stat} goes to \texttt{Pending} and \texttt{integrating} (10--15 s)
                 \item\label{list:skycatro} Check that an image is read out on the \texttt{skycat} window (30 s)
+                \item Select \wmenu{View}{Autoscale}
                 \item If steps \ref{list:ccdstat}--\ref{list:skycatro} do not work, see \procref{fixwfiag}.
-                \item On the \texttt{skycat} window, use \wmenu{TCS}{Pick reference star}
-                \item On the window that appears, click \texttt{Cancel Operation}
+                \item On the \texttt{skycat} window, use \wmenu{TCS}{Pick Reference Star...}
+                \item On emerging window (title \texttt{Pick Reference Star}), click \texttt{Cancel Operation}
           \end{enumerate}
           \item Ensure that the pointing model is correct (1 min).
           \begin{enumerate}
@@ -523,7 +525,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
          \begin{enumerate}
            \item Type \texttt{grinsStop}, wait for shutdown window to finish and disappear.\label{list:grinsstop}
             \item Type \texttt{grinsStart} and click \texttt{Continue} on the pop-up.
-            \item Wait for startup window to finish and disappear (a few minutes). If an error about ``reply timed out'' appears, then close the startup window and repeat from \ref{list:grinsstop}. \label{list:grinsstart}
+            \item Wait for startup window to finish and disappear (a few minutes).\\If an error about ``reply timed out'' appears, then close the startup window and repeat from \ref{list:grinsstop}.\label{list:grinsstart}
             \item Rearrange windows.
             \item Use \wmenu{Instrument}{ONLINE} in the GROND control panel (\figref{grondcon}).\label{list:grondonline}
          \end{enumerate}
@@ -622,7 +624,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 		          Example: \texttt{rm -rf /data/reduced/2018-01-* /data/reduced/FEROS/2018-01-*}
 		\end{enumerate}
 	\end{enumerate} 
-    \item\textbf{Afternoon calibrations can be done right after start-up} (see chapter.~\ref{daycal})
+    \item\textbf{Afternoon calibrations can be done right after start-up} (see \chapref{daycal})
         \begin{itemize}
         \item \gls{wfi} flats may be done in parallel starting from point~\ref{list:tcsonline}
         \item \gls{feros} standard calibration may be done in parallel starting from point~\ref{list:grond}
@@ -822,11 +824,11 @@ is receiving data in real time (green checkbox).}
 
 
 \chapter{Afternoon: Day-time calibrations}
-\label{daycal}
+\label{chap:daycal}
 
 The day-time observations use \glspl{ob} either stored in \gls{bob} or in a
 \gls{ot} queue.  Managing \glspl{ob} with \gls{bob} and \gls{ot} is
-explained in more detail in Sect.~\ref{ob}.
+explained in more detail in \chapref{ob}.
 
 \section{WFI}
 Internal calibrations and health checks are typically left running in the morning after the dome has been closed.  See Sect.~\ref{sec:clocal}.
@@ -935,7 +937,7 @@ GROND calibrations are left running in the morning after the dome has been close
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Sunset: Getting ready}
-\label{sec:sunset}
+\label{chap:sunset}
 
 \section{Opening}
 \label{sec:open}
@@ -943,7 +945,7 @@ GROND calibrations are left running in the morning after the dome has been close
 Opening should take place about one or two hours before sunset if conditions allow it. In case of doubts, always ask to the day-time Telescope \& Instrument Operator of ESO.
 
 \procedure{Dome opening and telescope readying}
-\label{list:open}
+\label{proc:open}
 \begin{enumerate}
 \item Check that the slit is oriented opposite to the Sun. It does not apply when opening at night.
         \begin{enumerate}
@@ -1005,7 +1007,7 @@ A bit before sunset if doing sky flats or at sunset otherwise, you can ready the
 \section{Making the instruments ready (at sunset)}
 \label{sec:insprep}
 
-\procedure{Making instrument ready}
+\procedure{Making instrument ready}\label{proc:insready}
 \begin{enumerate}
    \item Activate the connection between instruments and telescopes
        \begin{enumerate}
@@ -1072,33 +1074,49 @@ If slack is closed, open a browser with the following link: https://slack.com/si
 %-------------------------------------------------------
 
 \chapter{Twilight: On-sky calibrations}
-\label{nightcal}
+\label{chap:nightcal}
 
 
 \section{Outline}
 
-\paragraph{Flat-fielding}
 \begin{enumerate}
-  \item \gls{wfi} flats can be done from sunset to sun at $-10$ degrees elevations depending on filtre.\\
-        Standard filtres have that order: U, V, R, I, and B.
-  \item \gls{grond} flats are extensive and run from sun at $-4$ to $-9$ degrees elevation.\\
+    \item Flat-fielding
+    \begin{enumerate}
+        \item \gls{wfi} flats can be done from sunset to sun at $-10$ degrees elevations depending on filtre.\\
+        Standard filtres have that order: U, V, R, I, and B.\\
+        Done daily if possible.
+        \item \gls{grond} flats are extensive and run from sun at $-4$ to $-9$ degrees elevation.\\
         To be started when 2s J-band exposures feature a
-        relatively flat field with 20\,000 counts.
-\end{enumerate}
-
-\paragraph{Pointing \& Focus}
-\begin{enumerate}
-  \item Pointing should be performed daily with \gls{wfi}
-        using an \gls{ob} from \gls{bob}.
-  \item \gls{feros} focus should be performed nightly using an \gls{ob} from
-        the \gls{ot} calibration queue.
-  \item \gls{wfi} focus should be done closest to science observations.
-\end{enumerate} 
-
-\paragraph{Standards}
-\begin{enumerate}
-  \item \gls{feros} focus includes an optional spectrophotometric standard.
-  \item \gls{wfi} \& \gls{grond} standard fields are available from their respective \glspl{bob}.
+        relatively flat field with 20\,000 counts.\\
+        Done weekly.
+    \end{enumerate}
+    \item Pointing \& Focus
+    \begin{enumerate}
+        \item Pointing check should be performed daily.  One basically points at
+        a bright star and checks it falls where expected.  You may use
+        one of these methods:
+        \begin{itemize} 
+            \item with \gls{wfi}, using an \gls{ob} from \gls{bob}.
+            \item with \gls{feros}, using a standard or focus \gls{ob}.
+        \end{itemize}
+        \item Focus is best done daily.  If conditions are stable, at the beginning of the night, but may be delayed in case of bad seeing, fast varying temperature, or late opening.  
+        \begin{enumerate}
+            \item \gls{feros} focus should be performed nightly using an \gls{ob} from \gls{bob}
+            \item \gls{wfi} focus should be done closest to science observations.
+            \item \gls{grond} focus is usually not performed.
+        \end{enumerate}
+    \end{enumerate} 
+    \item Standards
+    \begin{enumerate}
+        \item The \gls{feros} standards are
+        \begin{enumerate}
+            \item Spectrophotometric standards included in the Focus+Standard \gls{ob}s.
+            \item Radial velocity standards by IAU and Soubiran, available from \gls{bob}
+        \end{enumerate}
+        \item \gls{wfi} Landolt standard fields are available from \gls{bob}.
+        \item \gls{grond} SDSS standard fields are available from \gls{bob}.\\
+            The \gls{grond} team usually explicitly asks for them.    
+    \end{enumerate}
 \end{enumerate}
 
 \section{WFI}
@@ -1114,10 +1132,10 @@ The procedure has been somehow modified (January 2014).
 
 \procedure{Taking sky flats with WFI}
 \begin{enumerate}
-  \item If not done, check that dome and main mirror cover are open (\secref{open}, point~\ref{list:open}). 
-  \item If not done, check \gls{grond} and \gls{feros} mirrors (\secref{insprep}, point~\ref{list:checkmirror}).
-  \item If not done, check that the WFI main cover is open (\secref{insprep}, point~\ref{list:opencov}).
-  \item If not done, point the telescope to an empty field (\secref{open}, point~\ref{list:presetempty}).
+  \item If not done, check that dome and main mirror cover are open (\procref{open}). 
+  \item If not done, check \gls{grond} and \gls{feros} mirrors (\procref{insready}, point~\ref{list:checkmirror}).
+  \item If not done, check that the WFI main cover is open (\procref{insready}, point~\ref{list:opencov}).
+  \item If not done, point the telescope to an empty field (\procref{ready}, point~\ref{list:presetempty}).
       \begin{enumerate}
          \item Go to \texttt{TCS control panel} the on screen \texttt{Telescope Control Software}.
          \item Below \texttt{Catalogue handling} click \texttt{Cat. Select}.
@@ -1308,7 +1326,7 @@ You can choose focus only, or focus and standard, which takes only 5 min more.  
 
 \procedure{FEROS focusing}
 \begin{enumerate}
-  \item Check that dome and main mirror are open (\secref{open}, point~\ref{list:open}).\label{list:ferosfocus1}
+  \item Check that dome and main mirror are open (\procref{open}).\label{list:ferosfocus1}
   \item Check \gls{grond} and \gls{feros} mirrors (on \gls{wfi} and \gls{feros}, respectively. \secref{insprep}, point~\ref{list:checkmirror}).
   \item Check that the WFI main cover is open (\secref{insprep}, point~\ref{list:opencov}).
   \item Select instrument \texttt{feros} on the \texttt{TCS Status} panel (screen \texttt{Telescope Control Software}).
@@ -1393,11 +1411,11 @@ Before taking evening flat fields, check the relevant items of ``no flux or litt
 \procedure{GROND evening flat fields}
 \gls{grond} flat field \gls{ob} lasts about 30 min.
 \begin{enumerate}
-  \item If not done, check that dome and main mirror are open (\secref{open}, point~\ref{list:open}). 
-  \item If not done, point the telescope to an empty field (\secref{open}, point~\ref{list:presetempty}).
+  \item If not done, check that dome and main mirror are open (\procref{open}).
+  \item If not done, point the telescope to an empty field (\procref{ready}, point~\ref{list:presetempty}).
   \item If not done, set the dome in automatic.
   \item Go to \texttt{GROND BOB} screen.
-  \item If not done in the evening, do some prophylaxis (\secref{startup}, points~\ref{list:grond-prophylaxis} and \ref{list:grond-testtcs})
+  \item If not done in the evening, do some prophylaxis (\procref{startup}, points~\ref{list:grond-prophylaxis} and \ref{list:grond-testtcs})
      \begin{enumerate}
        \item Close \gls{bob}.
        \item In the terminal, type \texttt{grondGRI}.
@@ -1441,7 +1459,7 @@ Before taking evening flat fields, check the relevant items of ``no flux or litt
 The procedure lasts 7 min.
 \begin{enumerate}
        \item Select an SDSS standard field close to the meridian\\
-             In \gls{bob} use \fetchob{} and select one in subfolder \texttt{Standards}\\
+             In \gls{bob} use \fetchob{} and select one in subfolder \texttt{Standards}
        \item Execute it by clicking \texttt{Start}
        \item You can ignore guiding and click \texttt{OK} if the \texttt{ob asks for it}
 \end{enumerate}
@@ -1491,7 +1509,7 @@ In the GROND Control panel (\figref{grondcon}), click \texttt{RRM ONLINE} at the
 %----------------------------------------------------------------------------------------
 
 \chapter{Night: Observing}
-\label{nightops}
+\label{chap:nightops}
 
 \section{WFI}
 
@@ -1513,7 +1531,7 @@ At the beginning of an observation, you may have have popups asking
 For an observation with large dithers (\texttt{COMBINED.OFFSET} is \texttt{F}) the
 guiding will be asked at the beginning of each exposure.  It will also be asked for if at the beginning of a new template if the filtre is changed.
 
-Error popups may also appear, see \secref{trouble}.
+Error popups may also appear, see \chapref{trouble}.
 
 \subsection{Switching to WFI}
 
@@ -1957,7 +1975,7 @@ it is already on or acquire it right after the first exposure begins.  On \gls{w
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Morning: Closing \& Calibrations}
-\label{closing}
+\label{chap:closing}
 
 \section{Panels referred to}
 When closing, you may need panels that are not automatically opened at startup. Here is how to find and open them.
@@ -2068,7 +2086,7 @@ Lauch health checks and internal calibrations.
 %----------------------------------------------------------------------------------------
 
 \chapter{Managing observing blocks}
-\label{ob}
+\label{chap:ob}
 
 \section{Transferring OBs from one's laptop}
 
@@ -2132,7 +2150,7 @@ Then, go to \gls{bob} and use the menu \texttt{Configure} $\rightarrow$ \texttt{
 %----------------------------------------------------------------------------------------
 
 \chapter{Software maintenance}
-\label{sec:reboots}
+\label{chap:reboots}
 
 \section{Monthly}
 
@@ -2240,7 +2258,7 @@ Every six months a weekly software maintenance has an additional step with the r
 
 
 \chapter{Troubleshooting}
-\label{sec:trouble}
+\label{chap:trouble}
 
 \section{No flux or little flux}
 \label{sec:noflux}
@@ -3427,7 +3445,7 @@ If the all sky camera LASCAM is stuck
 
 
 \chapter{Main systems}
-\label{compo}
+\label{chap:compo}
 
 
 \begin{figure}[!ht]
