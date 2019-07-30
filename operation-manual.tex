@@ -108,9 +108,27 @@
 \newacronym{wfi}{WFI}{wide-field imager}
 \newacronym{grond}{GROND}{Gamma-Ray Burst Optical/Near-Infrared Detector}
 \newacronym{feros}{FEROS}{Fibre-fed Extended Range Optical Spectrograph}
-\newglossaryentry{lcu}{name=LCU,description={Logical control unit, machine in a rack that controls an instrument or telescope subsystem}}
-\newglossaryentry{windows}{name=Windows desktop,description={Rightmost computer in the control room that controls the dome}}
-\newglossaryentry{adam}{name=ADAM,description={Telescope hydraulics and mirror cover control system}}
+\newglossaryentry{uws2p2}{name=\texttt{uws2p2},sort=uws2p2,description={User worksation of the 2.2m metre telescope. All workstation are virtually run on it.}}
+\newglossaryentry{w2p2tcs}{name=\texttt{w2p2tcs},sort=w2p2tcs,description={Workstation of the Telescope Control software}}
+\newglossaryentry{w2p2ins}{name=\texttt{w2p2ing},sort=w2p2ins,description={Workstation of WFI}}
+\newglossaryentry{wferos}{name=\texttt{wferos},sort=wferos,description={Workstation of FEROS}}
+\newglossaryentry{wgrond}{name=\texttt{wgrond},sort=wgrond,description={Workstation of GROND}}
+\newglossaryentry{wwffcd}{name=\texttt{wwffcd},sort=wwffcd,description={Workstation controlling the WFI detector electronics (FIERA)}}
+\newglossaryentry{wfefcd}{name=\texttt{wfefcd},sort=wfefcd,description={Workstation controlling the FEROS detector electronics (FIERA)}}
+\newglossaryentry{wgrccd}{name=\texttt{wgrccd},sort=wgrccd,description={Workstation controlling the GROND optical detector electronics (FIERA)}}
+\newglossaryentry{wgrdcs}{name=\texttt{wgrdcs},sort=wgrdcs,description={Workstation controlling the GROND infrared detector electronics (FIERA)}}
+\newglossaryentry{w2p2dhs}{name=\texttt{w2p2dhs},sort=w2p2dhs,description={Workstation controlling the observing blocks}}
+\newglossaryentry{w2p2off}{name=\texttt{w2p2off},sort=w2p2off,description={Workstation controlling the reduction of FEROS data}}
+\newglossaryentry{w2p2pl}{name=\texttt{w2p2pl},sort=w2p2pl,description={Workstation controlling the communication with the ESO database}}
+\newglossaryentry{l2p2agr}{name=\texttt{l2p2agr},sort=l2p2agr,description={LCU controlling the GROND autoguider}}
+\newglossaryentry{l2p2cam}{name=\texttt{l2p2cam},sort=l2p2cam,description={LCU controlling the FEROS autoguider}}
+\newglossaryentry{lfeics1}{name=\texttt{lfeics1},sort=lfeics1,description={LCU of the FEROS instrument control software}}
+\newglossaryentry{lte2p2}{name=\texttt{lte2p2},sort=lte2p2,description={LCU of the telescope control software}}
+\newglossaryentry{preset}{name=preset,description={Telescope movements (right ascensio, declination, and secondary mirror focusing) needed to point at a new source. It is also used as a verb to refer to the action of ordering the telescope to move.}}
+\newglossaryentry{ds}{name=data subscriber,description={Software that fetches the FEROS data for reduction.}}
+\newglossaryentry{lcu}{name=LCU,description={Logical control unit, machine in a rack that controls an instrument or telescope subsystem.}}
+\newglossaryentry{windows}{name=Windows desktop,description={Rightmost computer in the control room that controls the dome.}}
+\newglossaryentry{adam}{name=ADAM,description={Telescope hydraulics and mirror cover control system.}}
 \newglossaryentry{midas}{name=MIDAS,description={The well known reduction software}}
 \newglossaryentry{fiera}{name=FIERA,description={Electronics systems controlling the optical detectors}}
 \newglossaryentry{irace}{name=IRACE,description={Electronics systems controlling the infrared detectors.}}
@@ -382,7 +400,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
              \label{list:hydr}
           \item On the screen \texttt{Telescope Control Software}, go the the \texttt{StartUp} virtual desktop.\label{list:tcs1}
           \item If \texttt{Cannot read "@w2p2wfi…"} pop-up can be seen on the \gls{tcs} screen (\figref{tcssu-error}), click \texttt{OK}.
-          \item In a terminal type \texttt{lccBoot lte2p2} and wait for command to end (2 min, \figref{tcssu-boot})\\
+          \item In a terminal type \texttt{lccBoot \gls{lte2p2}} and wait for command to end (2 min, \figref{tcssu-boot})\\
                 If none is there, you can open one with \mmenu{TCS User}{tcs xterm}.\\
                 If an error message appears on the \gls{wfi} screen, click \texttt{OK}. 
           \item Launch the start-up script
@@ -520,7 +538,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
         \begin{enumerate}
          \item Go to screen \texttt{GROND BOB}.
          \item Locate or open a terminal with user \texttt{grondmgr}.\\
-               You can use \mmenu{GROND user}{grondmgr on wgrond}
+               You can use \mmenu{GROND user}{grondmgr on \gls{wgrond}}
          \item In the case of a power cut or issues with GROND, restart the instrument (5 min)
          \begin{enumerate}
            \item Type \texttt{grinsStop}, wait for shutdown window to finish and disappear.\label{list:grinsstop}
@@ -686,7 +704,7 @@ Don't forget to rearrange all these windows.
 \subfigure[On the TCS machine, give \texttt{OK} to this error.]{%
 \hspace{0.2\linewidth}\includegraphics[width=0.6\linewidth]{tcs/tcsreboot-initerror.png}\label{fig:tcssu-error}\hspace{0.2\linewidth}%
 }
-\subfigure[Reboot lte2p2 machine.]{%
+\subfigure[Reboot \gls{lte2p2} machine.]{%
 \hspace{0.1\linewidth}\includegraphics[width=0.8\linewidth]{tcs/tcsreboot-lccboot.png}\label{fig:tcssu-boot}\hspace{0.1\linewidth}%
 }
 \subfigure[Launch the reboot from the terminal.]{%
@@ -849,11 +867,11 @@ Internal calibrations and health checks are typically left running in the mornin
                     \item On the \texttt{Telescope Setup} panel, click \texttt{Tel Init}
                     \item Wait for the telescope status of  the \texttt{Telescope Control} to go from \texttt{WaitIni} to \texttt{Slew} (2 min)
                 \end{enumerate}
-            \item Preset to flat-field screen
+            \item \Gls{preset} to flat-field screen
             \begin{enumerate}
                 \item Go to the \texttt{TCS Setup Panel} (\figref{tcssetup}) on screen \texttt{Telescope Control Software}.
                 \item Put \texttt{Dome} on \texttt{automatic}.
-                \item Preset the telescope to flat-field screen.\\
+                \item \Gls{preset} the telescope to flat-field screen.\\
                   Click \texttt{FF Scr} below \texttt{Fixed Presets}
                 \item Wait for the movement to complete (2 min) before starting the flat-field \gls{ob}.\\
                   On the \texttt{TCS Control Panel} (\figref{tcs}) telescope status is \texttt{Slew}.
@@ -988,7 +1006,7 @@ A bit before sunset if doing sky flats or at sunset otherwise, you can ready the
                \item Wait for opening to complete (2 min) befor starting the flat-field \gls{ob}
             \end{enumerate}
         \end{enumerate}
-        \item Preset to an empty field if doing sky flats, a test with GROND, or readying before sunset
+        \item \Gls{preset} to an empty field if doing sky flats, a test with GROND, or readying before sunset
                \label{list:presetempty}         
             \begin{enumerate}
             \item Go to the \gls{tcs} Control Panel (\figref{tcs}) 
@@ -1173,7 +1191,7 @@ The procedure has been somehow modified (January 2014).
       \item Click \texttt{Start}.
       \item For each template
        \begin{enumerate}
-         \item Click \texttt{OK} to pop-up asking to preset.
+         \item Click \texttt{OK} to pop-up asking to \gls{preset}.
          \item After one minute, a pop-up estimates the exposure time.\\
            In the evening, if the message is
            \begin{itemize}
@@ -1536,7 +1554,7 @@ Error popups may also appear, see \chapref{trouble}.
 \subsection{Switching to WFI}
 
 You may start an OB once point \ref{list:pmwfi} has been done.  This minimises
-overheads by parallelising preset and mirror movements.  However, beware that some acquisition templates (movetopixel and movetogap) don't ask before taking the acquistion image, so you should be faster than preset.  
+overheads by parallelising \gls{preset} and mirror movements.  However, beware that some acquisition templates (movetopixel and movetogap) don't ask before taking the acquistion image, so you should be faster than preset.  
 
 \procedure{Switch to WFI observations}
 \begin{enumerate}
@@ -1646,7 +1664,7 @@ It is not possible to do it after a focus sequence.
 \label{sec:switchingFeros}
 
 You can start an OB once point \ref{list:pmferos} has been done.  This minimises
-overheads by parallelising preset, mirror movements, and autoguider settings
+overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
 
 \procedure{Switch to FEROS observation}
 \begin{enumerate}
@@ -1811,7 +1829,7 @@ This is the preferred method in bad weather or for faint targets.  When the FERO
 
 \subsection{Switching to GROND}
 
-You can start an OB once point \ref{list:switch-mcclose} has been done.  This minimises overheads by parallelising preset, mirror movements, and autoguiding configuration.  If the Moon is between the first target and the current position or you are on a bright star, you should manually preset with the main cover closed to avoid blinding the IR detector.
+You can start an OB once point \ref{list:switch-mcclose} has been done.  This minimises overheads by parallelising \gls{preset}, mirror movements, and autoguiding configuration.  If the Moon is between the first target and the current position or you are on a bright star, you should manually preset with the main cover closed to avoid blinding the IR detector.
 
 \procedure{Switch to GROND observations}
 \begin{enumerate}
@@ -1866,7 +1884,7 @@ You can start an OB once point \ref{list:switch-mcclose} has been done.  This mi
   \begin{enumerate}
     \item Go the the \texttt{bob+gen state} workspace of screen \texttt{FEROS BOB}
     \item In \texttt{bob}, fetch \gls{ob} and click \texttt{Start}
-    \item Wait for preset to near or reach target\\
+    \item Wait for \gls{preset} to near or reach target\\
           Look on the Rose Diagram of the \texttt{TCS Setup Panel} on the \texttt{TCS} screen.
     \item Open the main cover
     \begin{enumerate}
@@ -1888,9 +1906,9 @@ You can start an OB once point \ref{list:switch-mcclose} has been done.  This mi
     \begin{itemize}
         \item \textit{(\gls{feros})} click \texttt{END} on \texttt{FEROS Control}
         \item \textit{(\gls{wfi})} click \texttt{END} on \texttt{WFI General State} panel.\\
-        If WFI wasn't read out and preset is started, frame is lost.
+        If WFI wasn't read out and \gls{preset} is started, frame is lost.
     \end{itemize}
-  \item Click \texttt{OK} on the trigger to start preset.\\
+  \item Click \texttt{OK} on the trigger to start \gls{preset}.\\
         Preset will be automatic after 30 seconds.
   \item Set up the autoguider (unless you were observing with GROND).\\
         Go to the screen \texttt{Autoguider GROND \& FEROS}
@@ -1943,9 +1961,11 @@ There are three ways to run an OB: use a template in \gls{bob} and modify it on 
 
 \subsection{Skip the preset}
 
-If the telescope is already on the right target, you can skip the preset when
-starting an OB. For observations requiring guiding, you should make sure that
-it is already on or acquire it right after the first exposure begins.  On \gls{wfi}, it should be avoided if the observing template sets \texttt{RETURN} to F (false) and pointing position is important.
+If the telescope is already on the right target, you can skip the \gls{preset}
+when starting an OB. For observations requiring guiding, you should make sure
+that it is already on or acquire it right after the first exposure begins.  On
+\gls{wfi}, it should be avoided if the observing template sets \texttt{RETURN}
+to F (false) and pointing position is important.
 
 \procedure{Skip the preset}
 \begin{itemize}
@@ -1962,7 +1982,7 @@ it is already on or acquire it right after the first exposure begins.  On \gls{w
     \end{enumerate}
     \item Standard observation with FEROS or GROND
     \begin{enumerate}
-        \item In \gls{bob}, deactivate the preset template\\
+        \item In \gls{bob}, deactivate the \gls{preset} template\\
               Use right click on the triangle.
         \item Ensure guiding is working if needed
         \item Start the OB.
@@ -2154,7 +2174,7 @@ Then, go to \gls{bob} and use the menu \texttt{Configure} $\rightarrow$ \texttt{
 
 \section{Monthly}
 
-About once a month a weekly software maintenance should be done for prophyllaxy.
+About once a month a software maintenance should be done for prophyllaxy.
 
 \procedure{Monthly software maintenance}
 \label{proc:monthly}
@@ -2174,7 +2194,7 @@ About once a month a weekly software maintenance should be done for prophyllaxy.
              \end{enumerate}
      \item On the FEROS DRS screen, stop data processes following the first two points of \procref{FEROSDRSrestart}
              \begin{enumerate}
-                \item Stop and close the Data subscriber and the FEROS DRS panel (point~\ref{list:stopDRS})
+                \item Stop and close the \gls{ds} and the FEROS \gls{drs} panel (point~\ref{list:stopDRS})
                 \item Kill processes and remove lock files (point~\ref{list:killDRS})
              \end{enumerate}
    \end{enumerate}
@@ -2215,7 +2235,7 @@ About once a month a weekly software maintenance should be done for prophyllaxy.
         \item The terminal disappears when clicked on
         \item From a grond terminal, type \texttt{ping <machine>}.
              \begin{itemize}
-             \item <machine> can be w2p2tcs, w2p2ins (WFI), wferos, w2p2dhs (OT/p2pp), w2p2pl (pipeline), w2p2off (FEROS DRS). 
+             \item <machine> can be \gls{w2p2tcs}, \gls{w2p2ins} (WFI), \gls{wferos}, \gls{w2p2dhs} (OT/p2pp), \gls{w2p2pl} (pipeline), \gls{w2p2off} (FEROS DRS). 
              \item Reboot is not done if \texttt{No route to host} is answered.
              \item When ping starts sending internet speed stats reboot is almost complete (less than one minute left).
              \end{itemize}
@@ -2233,7 +2253,7 @@ About once a month a weekly software maintenance should be done for prophyllaxy.
              \end{enumerate}
         \item On the FEROS DRS workstation, follow the last point of \procref{FEROSDRSrestart} in order to
              \begin{enumerate}
-                \item Open and configure data subscriber (point~\ref{list:DS})
+                \item Open and configure \gls{ds} (point~\ref{list:DS})
                 \item Open the FEROS DRS panel (point~\ref{list:DRS})
              \end{enumerate}
     \end{enumerate}
@@ -2250,7 +2270,7 @@ Every six months a weekly software maintenance has an additional step with the r
 \item Have a reboot of the user workstation done (15 min?)
     \begin{enumerate}
         \item Contact IT at Paranal (Josefina Urrutia) 
-        \item Coordinate a reboot of user workstation \texttt{uws2p2}
+        \item Coordinate a reboot of user workstation \gls{uws2p2}
         \item Wait for their confirmation that it is done
     \end{enumerate}
 \item Power cycle dell boxes, log into sessions, reboot workstations, restart processes, and start-up TCS (steps~\ref{list:soft:power}--\ref{list:soft:tcs})
@@ -2293,11 +2313,11 @@ Every six months a weekly software maintenance has an additional step with the r
     \includegraphics[width=0.3\linewidth]{feros/l2p2cam-rack.jpg}%
     \label{fig:l2p2cam-rack}%
 }\hfill
-\subfigure[\text{l2p2cam reset}]{
+\subfigure[\text{\gls{l2p2cam} reset}]{
     \includegraphics[width=0.3\linewidth]{feros/l2p2cam-front.jpg}%
     \label{fig:l2p2cam-rst}%
 }\hfill
-\subfigure[\text{l2p2cam power cycle}]{%
+\subfigure[\text{\gls{l2p2cam} power cycle}]{%
     \includegraphics[width=0.3\linewidth]{feros/l2p2cam-back.jpg}%
     \label{fig:l2p2cam-pow}%
 }
@@ -2310,7 +2330,7 @@ Every six months a weekly software maintenance has an additional step with the r
 \subfigure[\texttt{scanei}]{%
   \includegraphics[width=\linewidth]{ag/ag-scanei-0.png}
 }\\
-\subfigure[Click on l2p2cam or l2p2agr (top right)]{%
+\subfigure[Click on \gls{l2p2cam} or \gls{l2p2agr} (top right)]{%
   \includegraphics[width=\linewidth]{ag/ag-scanei-1.png}
 }
 \end{minipage}
@@ -2359,7 +2379,7 @@ If you want to observe while fixing the issue you need to deactivate the modules
    go for the full restart (3--4 min)
    \begin{enumerate}
        \item On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
-       \item Type \texttt{lccBoot l2p2agr}
+       \item Type \texttt{lccBoot \gls{l2p2agr}}
        \item Wait for the command to finish (1--2 min)
        \item Type \texttt{scanei} to open the scanei GUI
        \begin{enumerate}
@@ -2386,7 +2406,7 @@ If you want to observe while fixing the issue you need to deactivate the modules
         \end{enumerate}
     \item If the problem persists or an error pops up in step~\ref{lab:fag2}, reboot the \gls{ag} \gls{lcu} (3--4 min) 
         \begin{enumerate}
-            \item Type \texttt{lccBoot l2p2cam}
+            \item Type \texttt{lccBoot \gls{l2p2cam}}
             \item Type \texttt{scanei} to open the scanei GUI
             \begin{enumerate}
                 \item Check that l2p2cam is ENABLED
@@ -2453,7 +2473,7 @@ Try in this order
     \end{enumerate}
     \item Reboot the \gls{wfi} SPARC station and dependencies (15--35 min).
     \begin{itemize}
-        \item From a terminal type \texttt{rlogin wwffcd -l fcdrun}
+        \item From a terminal type \texttt{rlogin \gls{wwffcd} -l fcdrun}
         \item Once logged in, type \texttt{reboot}
         \item Wait for reboot to complete (a few minutes)\\
               In a terminal type \texttt{ping wffcd} and wait until it shows packets.
@@ -2489,6 +2509,8 @@ If an OB issues an error within seconds of being started.
 \end{enumerate}
 
 \subsection{OB stalls before starting to observe}
+
+It may happen that an OB stalls, that means, nothing is happening.  No error is reported but the telescope does not move, no integration seems to take place and the \gls{bob} windows has stopped to give information about what is going on.
 
 \procedure{Fix stalling of an OB}
 \begin{itemize}
@@ -2574,7 +2596,7 @@ order, until problem is fixed.
              \begin{enumerate}
                \item Type \texttt{scanei \&} 
                \item Go to the opening GUI titled \texttt{CSS Scan System}.
-               \item Check that \texttt{wwffcd} and \texttt{w2p2tcs} are \texttt{ENABLED}
+               \item Check that \gls{wwffcd} and \gls{w2p2tcs} are \texttt{ENABLED}
                \item If either environment is \texttt{DISABLED}, proceed with these points
                \item Click on \texttt{DISABLED}
                \item In emerging GUI, click \texttt{Enable} just below \texttt{Environment}.
@@ -2664,7 +2686,7 @@ order, until problem is fixed.
 If a timeout error occurs relating to \texttt{FOCOFF} or some message about
 focus that cannot be done:
 \begin{itemize}
-  \item (\gls{grond}) Disable and enable w2p2tcs in \texttt{scanei}.
+  \item (\gls{grond}) Disable and enable \gls{w2p2tcs} in \texttt{scanei}.
   \item (\gls{wfi}) See \secref{wfifocseq}.
 \end{itemize}
 
@@ -2783,37 +2805,55 @@ preset to the theoretical focus displayed on the \gls{tcs} main panel.
 
 \subsection{FEROS exposure number is close to 10\,000}
 
-If it goes past 10\,000, the reduction software will fail.
-
+If it goes past 10\,000, the reduction software will fail.  It is very easy to fixe before it has reached the limit.
 \procedure{Reset the exposure number}
-\label{sec:FEROSDRSresetnum}
-\begin{itemize}
-    \item Close the DRS.
+\label{proc:FEROSDRSresetnum}
+\begin{enumerate}
+    \item Close the \gls{feros} \gls{drs}.
     \item Open file \texttt{/data/reduced/FEROS/.feroNNNN} and replace number by \texttt{0000}.
     \item Open the DRS again.
-\end{itemize}
+\end{enumerate}
+
+If the exposure number has reached the limit, the observations for that night will not be reduced, unless the following procedure is performed.
+
+\procedure{Fix a FEROS exposure number going above 10\,000}
+\label{proc:FEROSfix10000}
+\begin{enumerate}
+    \item Stop \gls{ds} and \gls{drs} (point~\ref{list:stopDRS} of \procref{FEROSDRSrestart}).
+    \item Kill processes and tidy lock files (point~\ref{list:killDRS} of \procref{FEROSDRSrestart}).
+    \item Remove the night directory of the reduced data\\
+          In a terminal, type \texttt{rm -rf /data/reduced/FEROS/yyyy-mm-dd},
+          where the date is \texttt{yyyy-mm-dd}
+    \item Change the \gls{feros} exposure number (\procref{FEROSDRSresetnum})
+    \item Restart the \gls{ds} (point~\ref{list:DS} of \procref{FEROSDRSrestart}).
+    \item Restart the \gls{drs} (point~\ref{list:DRS} of \procref{FEROSDRSrestart}).
+\end{enumerate}
+
 
 \subsection{FEROS DRS fails}
 
 Check that
 \begin{itemize}
-    \item There has been a full standard calibration done on the same day with the same setup (binning and readout speed).
-    \item The exposure number is smaller than 10\,000.
+    \item A full standard calibration has been done\\
+          It should be on the same day with the same setup (binning and readout speed).
+    \item The exposure number is smaller than 10\,000.\\
+          In a terminal, write \texttt{cat /data/reduced/FEROS/.feroNNNN}.\\
+          If number is above 10\,000, go to \procref{FEROSfix10000}.
 \end{itemize}
 
-\subsection{Problems to restart the FEROS-DRS and Data Subscriber}
+\subsection{Problems to restart the FEROS-DRS and data subscriber}
 
 
-If you cannot start the FEROS DRS this might be for the following reason: when rebooting w2p2off without bringing down the pipline before, a hidden lock file may survive. If all other attempts have failed to start the DRS, follow these steps.
+If you cannot start the \gls{feros} \gls{drs} this might be for the following reason: when rebooting \gls{w2p2off} without bringing down the pipline before, a hidden lock file may survive. If all other attempts have failed to start the DRS, follow these steps.
 
 \procedure{Restart the FEROS data reduction software and data subscriber}
 \label{proc:FEROSDRSrestart}
   \begin{enumerate} 
-    \item \label{list:stopDRS}Stop Data Subscriber and \gls{drs} at the \gls{drs} computer (\figref{datasubscriber}).
+    \item \label{list:stopDRS}Stop \gls{ds} and \gls{drs} at the \gls{drs} computer (\figref{datasubscriber}).
       \begin{enumerate}
-          \item Stop and close the data subscriber\\
+          \item Stop and close the \gls{ds}\\
                 If window is frozen, you can use \texttt{xkill} from a terminal.
-          \item Stop and close the FEROS DRS panel\\
+          \item Stop and close the \gls{drs} panel\\
                 If window is frozen, you can use \texttt{xkill} from a terminal.
       \end{enumerate}
     \item \label{list:killDRS}Kill processes and tidy lock files
@@ -2827,9 +2867,9 @@ If you cannot start the FEROS DRS this might be for the following reason: when r
     \item Type \texttt{rm -f /data/reduced/.ferosQueueIms/.ferosQueueIms*.pid}\\
           It is either silent or gives error \texttt{no file removed}
     \end{enumerate}
-    \item Restart the Data Subscriber and FEROS DRS
+    \item Restart the \gls{ds} and \gls{drs}
     \begin{enumerate}
-        \item \label{list:DS} Left click start Data Subscriber and configure it  (\figref{datasubconfig}).
+        \item \label{list:DS} Left click start \gls{ds} and configure it  (\figref{datasubconfig}).
             \begin{enumerate}
                 \item \texttt{Program ID: service}
                 \item \texttt{Observer Name: service}
@@ -2844,7 +2884,7 @@ If you cannot start the FEROS DRS this might be for the following reason: when r
     \end{enumerate}
 \end{enumerate}
   
-Similarly, when rebooting the w2p2off with active Data Subsriber, the watch-dog log file may survive. Do:
+Similarly, when rebooting the \gls{w2p2off} with active \gls{ds}, the watch-dog log file may survive. Do:
 \begin{itemize}
     \item Start \texttt{cd \$ DHS\_LOG} (which corresponds currently to /data/msg)
     \item Remove the PID files therein
@@ -2852,7 +2892,7 @@ Similarly, when rebooting the w2p2off with active Data Subsriber, the watch-dog 
 
 \begin{figure}[t!]
 \begin{minipage}{0.48\linewidth}
-\subfigure[\texttt{\gls{feros} data subscriber.}]{%
+\subfigure[\texttt{\gls{feros} \gls{ds}.}]{%
 \includegraphics[width=\linewidth]{drs/datasubscriber.png}
 \label{fig:datasubscriber}
 }
@@ -2864,18 +2904,18 @@ Similarly, when rebooting the w2p2off with active Data Subsriber, the watch-dog 
 \label{fig:datasubconfig}
 }
 \end{minipage}
-\caption{\gls{feros} Data Subscriber.}
+\caption{\gls{feros} \gls{ds}.}
 \end{figure}
 
 \subsection{Data won't show up}
 
 If data taken with FEROS do not show up in the ESO archive and/or in the
-FEROS DRS, you will need to restart processes on the data handling machine w2p2pl (username pipeline).
+FEROS DRS, you will need to restart processes on the data handling machine \gls{w2p2pl} (username pipeline).
 
 \procedure{Restart the data handler.}
 \label{proc:DHrestart}
 \begin{enumerate} 
-    \item Go to screen \texttt{w2p2pl Pipline}
+    \item Go to screen \texttt{\gls{w2p2pl} Pipline}
     \item In a terminal you will need to type some of the following
         \begin{enumerate}
             \item \texttt{dhsSubscribeControl start pipeline -backsince <date>}\\where <date> in the format YYYY-MM-DD is where you want to start again.
@@ -2966,13 +3006,13 @@ The box on the left contains the electronics boards that one may need to unplug 
 	\item Find red error ``Failed to dispatch command for camera LOADED OK''.
 	\item Lines below and above contain ``C40 ping failed'' and ``Could not download \gls{fiera} config''
 	\item You can also check directly whether WFI passes the self-test\\
-              In a terminal, type \texttt{rsh -l fcdrun wwffcd "export DISPLAY=\$DISPLAY; fcdtestseq"}
+              In a terminal, type \texttt{rsh -l fcdrun \gls{wwffcd} "export DISPLAY=\$DISPLAY; fcdtestseq"}
     \end{enumerate}
   \item\label{list:wfionline:reboot} Reboot the \gls{fiera} workstation
 	\begin{enumerate}
-		\item In a terminal, type \texttt{rsh -l fcdrun wwffcdd reboot}
+		\item In a terminal, type \texttt{rsh -l fcdrun \gls{wwffcd} reboot}
 	        \item Wait for 1--2 minutes for it to get back online\\
-		      You may check in a terminal using \texttt{ping wwffcd}
+		      You may check in a terminal using \texttt{ping \gls{wwffcd}}
 	\end{enumerate}
   \item If WFI doesn't pass the self-test, power cycle the WFI electronics 
 	\begin{enumerate}
@@ -3011,7 +3051,7 @@ You need to go to the dome.
 \end{enumerate}
 
 \section{TCS issues}
-\subsection{Start-up fails with l2p2cam error}
+\subsection{Start-up fails with \gls{l2p2cam} error}
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{tcs/TCS-l2p2cam.jpg}
@@ -3028,7 +3068,7 @@ If the start-Up stalls with error \texttt{could not send command "PING" to l2p2c
             \item Type \texttt{rsh l2p2cam reboot}\\
                   If it gives an error, proceed to step~\ref{lab:startupfag2}
             \item Wait for 1--2 min for the reboot to complete 
-            \item Check that the LCU is up using \texttt{ping l2p2cam}
+            \item Check that the LCU is up using \texttt{ping \gls{l2p2cam}}
             \item Press \texttt{CONTINUE} in the Start/Shutdown panel\\
                   If it gives the same error popup, proceed to step~\ref{lab:startupfag2}. 
         \end{enumerate}
@@ -3073,7 +3113,7 @@ Many \gls{tcs} issues are solved by a fast restart, with a time loss of $\approx
 
 \procedure{Quick TCS restart}
 \begin{itemize}
- \item Preset to zenith
+ \item \gls{preset} to zenith
     \begin{itemize}
 	\item On the \gls{tcs} setup panel (\figref{tcssetup}), click \texttt{Zenith} under \texttt{Fixed Presets}.
         \item Alternatively, if panel is frozen, type \texttt{\home/bin/presetzenith} in a terminal.
@@ -3112,7 +3152,7 @@ the yellow 'd' label. \emph{Centre:} To hard reboot the VME, press the small red
     \item If you just switched hydraulics on, wait for a few minutes to see
         if connection is back.
     \item Do a remote reboot of the VME.\\
-          Type \texttt{lccBoot lte2p2} in a terminal.
+          Type \texttt{lccBoot \gls{lte2p2}} in a terminal.
     \item Do a manual reboot of the VME in the dome.
     \begin{enumerate}
         \item Go to the computer room of the telescope enclosure.
@@ -3508,18 +3548,18 @@ input with \texttt{Store}, then the racquet in the centre (\texttt{$-$RA},
 \end{figure}
 The \gls{ag} in the \gls{tcs} can be used for \gls{wfi} and \gls{feros} observations.
 
-The \gls{ag} Field Acquisition and Autoguider areas of the main \gls{tcs} control panel
-(\figref{tcs}) give control over \gls{wfi} \gls{ag}.  The buttons of
-interest are \texttt{Retrieve field} (to probe the \gls{ag} field, displayed
-in \figref{tcsag}), \texttt{Box to
-star} (to start the guiding when a guide star has been picked) and \texttt{Off}
-(to turn off the \gls{ag}).  Tuning of the \gls{ag} (e.g. integration time) can be done 
-on  the Autoguider area of the \gls{tcs} setup panel (\figref{tcssetup}).
+The \gls{ag} Field Acquisition and Autoguider areas of the main \gls{tcs}
+control panel (\figref{tcs}) give control over \gls{wfi} \gls{ag}.  The buttons
+of interest are \texttt{Retrieve field} (to probe the \gls{ag} field, displayed
+in \figref{tcsag}), \texttt{Box to star} (to start the guiding when a guide
+star has been picked) and \texttt{Off} (to turn off the \gls{ag}).  Tuning of
+the \gls{ag} (e.g. integration time) can be done on  the Autoguider area of the
+\gls{tcs} setup panel (\figref{tcssetup}).
 
-Note that guiding must be set \texttt{Off} at the end of a \gls{feros} observation
-using the \gls{wfi} \gls{ag}. The buttons \texttt{Stop Monitoring} and \texttt{Start Monitoring} are
-useful after a change of filtres on the same field, for they avoid
-a \texttt{Retrieve Field}.
+Note that guiding must be set \texttt{Off} at the end of a \gls{feros}
+observation using the \gls{wfi} \gls{ag}. The buttons \texttt{Stop Monitoring}
+and \texttt{Start Monitoring} are useful after a change of filtres on the same
+field, for they avoid a \texttt{Retrieve Field}.
 
 Differential guiding can be set, but a particular care should be paid
 to units (here arcsec/hour).
@@ -3657,18 +3697,18 @@ Other components may need reboots, they are given in Table~\ref{tab:reboots}.
 \begin{tabular}{lllll}
 \hline
 Computer         & Login    & User     & Monitor(s)                 & Description\\\hline\hline
-\texttt{w2p2tcs} & tcs      & tcs      & Telescope Control Software & \gls{tcs}\\
-                 & cam      & cam      & Autoguider GROND \& FEROS  & Autoguiders\\
-\texttt{w2p2ins} & wfi      & wfi      & Wide Field Imager BOB      & WFI user\\
-                 &          & wfimgr   & ---                        & manager account\\
-\texttt{wferos}  & feros    & feros    & FEROS BOB                  & basic user\\
-                 &          & ferosmgr & ---                        & manager account\\
-\texttt{w2p2dhs} & dhs      & service  & p2p2 \& ot                 & service observations (ot)\\
-                 &          & visitor  & p2pp \& ot                 & visitors (p2pp)\\
-\texttt{w2p2off} & astro    & astro    & FEROS pipeline             & data \& pipelines\\
-\texttt{w2p2pl}  & pipeline & pipeline & w2p2pl pipeline            & WFI/FEROS data handling\\       
-\texttt{wgrond}  & grond    & grond    & GROND BOB / \gls{fiera} / \gls{irace}  & basic user\\
-                 &          & grondmgr & ---                        & startup, \gls{bob}, commands\\
+\gls{w2p2tcs} & tcs      & tcs      & Telescope Control Software & \gls{tcs}\\
+              & cam      & cam      & Autoguider GROND \& FEROS  & Autoguiders\\
+\gls{w2p2ins} & wfi      & wfi      & Wide Field Imager BOB      & WFI user\\
+              &          & wfimgr   & ---                        & manager account\\
+\gls{wferos}  & feros    & feros    & FEROS BOB                  & basic user\\
+              &          & ferosmgr & ---                        & manager account\\
+\gls{w2p2dhs} & dhs      & service  & p2p2 \& ot                 & service observations (ot)\\
+              &          & visitor  & p2pp \& ot                 & visitors (p2pp)\\
+\gls{w2p2off} & astro    & astro    & FEROS pipeline             & data \& pipelines\\
+\gls{w2p2pl}  & pipeline & pipeline & w2p2pl pipeline            & WFI/FEROS data handling\\       
+\gls{wgrond}  & grond    & grond    & GROND BOB / \gls{fiera} / \gls{irace}  & basic user\\
+              &          & grondmgr & ---                        & startup, \gls{bob}, commands\\
 \hline
 \end{tabular}
 \end{table}
@@ -3700,25 +3740,25 @@ p2pp for MPIA             & MPGUtility, MPGDDT                                  
 \hline
 Component   & Reboot command                       & Alternative reboots\\
 \hline\hline
-TCS LCU/VME & \texttt{lccBoot lte2p2}              & \texttt{rsh vxte2p2 reboot}\\ 
+TCS LCU/VME & \texttt{lccBoot \gls{lte2p2}}        & \texttt{rsh vxte2p2 reboot}\\ 
             &                                      & Reset button, VME rack, computer room at telescope$^\ast$\\
 \hline
-WFI FIERA   & \texttt{lccBoot wwffcd}$^\star$      & \texttt{rsh -l fcdrun wwffcd reboot}\\
+WFI FIERA   & \texttt{lccBoot \gls{wwffcd}}$^\star$& \texttt{rsh -l fcdrun wwffcd reboot}\\
 \hline
-FEROS LCU   & \texttt{lccBoot lfeics1}             & FEROS ICS, menu \texttt{LCU} $\rightarrow$ \texttt{Reboot}\\
+FEROS LCU   & \texttt{lccBoot \gls{lfeics1}}       & FEROS ICS, menu \texttt{LCU} $\rightarrow$ \texttt{Reboot}\\
             &                                      & \texttt{rsh -l fcdrun lfeics1 reboot}\\
-FEROS AG    & \texttt{lccBoot w2p2cam}             & \texttt{rsh l2p2cam reboot}\\
+FEROS AG    & \texttt{lccBoot w2p2cam}             & \texttt{rsh \gls{l2p2cam} reboot}\\
             &                                      & Reset button, rack, FEROS room at telescope$^\ast$\\
             &                                      & Unplug rack, FEROS room at telescope$^\ast$\\
-FEROS FIERA & \texttt{lccBoot wfefcd}$^\star$      & \texttt{rsh -l fcdrun wfefcd reboot}\\
+FEROS FIERA & \texttt{lccBoot \gls{wfefcd}}$^\star$& \texttt{rsh -l fcdrun wfefcd reboot}\\
 \hline
-GROND FIERA &                                      & \texttt{rsh root@wgrccd reboot}\\
+GROND FIERA &                                      & \texttt{rsh root@\gls{wgrccd} reboot}\\
             &                                      & Power switch, FIERA WS, computer room at telescope$^\ast$\\
 GROND IRACE &                                      & \texttt{rsh root@wgrdcs reboot}\\
             &                                      & Power switch, IRACE WS, computer room at telescope$^\ast$\\
-GROND AG    & \texttt{lccBoot w2p2agr}             & \texttt{rsh l2p2agr reboot}\\
+GROND AG    & \texttt{lccBoot w2p2agr}             & \texttt{rsh \gls{l2p2agr} reboot}\\
 \hline
-User WS     & \multicolumn{2}{l}{call at Paranal 5959 to reboot uws2p2, first close all terminals}\\
+User WS     & \multicolumn{2}{l}{call at Paranal 5959 to reboot \gls{uws2p2}, first close all terminals}\\
 \hline
 \multicolumn{3}{l}{$^\star$ Untested.\quad $^\ast$ Manual reboot needed if soft fails.}\\
 \hline
