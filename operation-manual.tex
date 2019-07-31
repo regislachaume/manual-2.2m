@@ -42,7 +42,7 @@
 \def\figref#1{Fig.~\ref{fig:#1}, p.~\pageref{fig:#1}}
 \def\figureref#1{Figure.~\ref{fig:#1}, p.~\pageref{fig:#1}}
 \def\secref#1{Sect.~\ref{sec:#1}, p.~\pageref{sec:#1}}
-\def\chapref#1{Chapter.~\ref{chap:#1}, p.~\pageref{chap:#1}}
+\def\chapref#1{Chapter~\ref{chap:#1}, p.~\pageref{chap:#1}}
 \def\home{\textasciitilde{}}
 
 \newcommand{\procedure}[1]{
@@ -95,27 +95,73 @@
 \usepackage{glossaries}
 \renewcommand*{\glspostdescription}{}
 \makeglossaries
-\newacronym[sort=bob]{bob}{\texttt{bob}}{broker for observing blocks}
 \newacronym{drs}{DRS}{data reduction software}
-\newacronym[sort=ot]{ot}{\texttt{ot}}{observing tool}
-\newacronym[sort=p2pp]{p2pp}{\texttt{p2pp}}{phase 2 preparation tool}
-\newacronym{ob}{OB}{observing block}
 \newacronym{tcs}{TCS}{telescope control software}
 \newacronym{ics}{ICS}{instrument control software}
+\newacronym{tio}{TIO}{telescope and instrument operator}
 \newacronym{adc}{ADC}{atmospheric diffraction corrector}
-\newacronym{rtd}{RTD}{real time display}
 \newacronym{ag}{AG}{autoguider}
 \newacronym{wfi}{WFI}{wide-field imager}
+\newacronym{mpia}{MPIA}{Max-Planck Institut für Astronomie.}
+\newacronym{mpe}{MPE}{Max-Planck Institute for extraterrestrial Physics.}
 \newacronym{grond}{GROND}{Gamma-Ray Burst Optical/Near-Infrared Detector}
 \newacronym{feros}{FEROS}{Fibre-fed Extended Range Optical Spectrograph}
-\newglossaryentry{uws2p2}{name=\texttt{uws2p2},sort=uws2p2,description={User worksation of the 2.2m metre telescope. All workstation are virtually run on it.}}
+\newglossaryentry{acquisition}{name=acquisition,description={Part of an observing block that prepares the telescope (preset) and instrument (filtre change, mirror setups, etc.) for an observation.}}
+\newglossaryentry{stall}{name=stall,description={Stalling refers to stopping doing anything without an error being displayed or reaching complete state.  As it is silent, it is easy to lose time for a stalled OB...}}
+\newglossaryentry{mc}{name=main cover,description={Refers to the protective shutter of GROND}}
+\newglossaryentry{focus}{name=focus,description={Telescope focusing uses the secondary mirror. GROND focus is usually not touched. WFI and FEROS focus need regular (about daily) focus sequences to be performed.}}
+\newglossaryentry{main mirror}{name=main mirror,description={Primary mirror of the telescope.  It has a cover that needs to be open for observing and but should be closed when dome slit is being opened or closed.}}
+\newglossaryentry{ot}{name=\texttt{ot},sort=ot,description={observing tool, the application that can be used to manage the observing blocks for service observations}}
+\newglossaryentry{lascam}{name=LASCAM,description={La Silla all-sky camera}}
+\newglossaryentry{standard field}{name=standard field,description={A field containing various standard star with well known magnitudes.  It is used to calibrate the flux response of WFI (Landolt fields) and GROND (Landolt and SDSS fields).}}
+\newglossaryentry{spectrophotometric standard}{name=spectrophotometric standard,description={A star with a stable and well-known flux energy distribution used to determine the transmission of FEROS + telescope + atmosphere.}}
+\newglossaryentry{rv standard}{name=radial velocity standard,description={A star with a stable radial velocity used to calibrate or check the calibration of FEROS.}}
+\newglossaryentry{rose diagram}{name=\texttt{rose diagram},sort=rose diagram,description={Diagram of the telescope position, slit orientation, and Moon displayed on the Telescope Control Panel.}}
+\newglossaryentry{telemetry}{name=telemetry,description={Telemetry panels indicate the state of WFI and GROND detectors, in particular vacuum and temperature. A text-based telemetry module (logging) for GROND is to be manually started a reboot.}}
+\newglossaryentry{TCS control panel}{name=\texttt{TCS Control Panel},sort=TCS control panel,description={Graphical user interface showing the state of the telescope and WFI autoguider. Normally placed on the \texttt{Control} virtual desktop of the Telescope Control Software screen.}}
+\newglossaryentry{TCS status panel}{name=\texttt{TCS Status Panel},sort=TCS status panel,description={Graphical user interface showing the state of the telescope modules and pointing model. Normally placed on the \texttt{Status} virtual desktop of the Telescope Control Software screen.}}
+\newglossaryentry{TCS setup panel}{name=\texttt{TCS Setup Panel},sort=TCS setup panel,description={Graphical user interface allowing to modify the state of the telescope (opening/closing) and WFI autoguiding (parameters). Normally place on the \texttt{Setup} virtual desktop of the  Telescope Control Software screen.}}
+\newglossaryentry{p2pp}{name=\texttt{p2pp},sort=p2pp,description={phase 2 preparation tool, the application used by observers and PIs to create their observing blocks and execute them on the mountain.}}
+\newglossaryentry{bob}{name=\texttt{bob},sort=bob,description={broker for observing blocks, the application that reads observing blocks and sends commands to the telescope and instrument so that observation is performed. The \texttt{bob} panel is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
+\newglossaryentry{General State}{name=General State,description={The \texttt{General State} panel of each instrument displays its status (integrations going on, basic telemetry, shutters, etc.).  It is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
+\newglossaryentry{ICS Control}{name=\texttt{ICS Control},sort=ICS Control,description={The \texttt{ICS Control} panel of an instrument allows to modify its state (mirrors, shutters, exposures).  It is usually placed in the virtual desktop \texttt{ICS}}}
+\newglossaryentry{ob}{name=OB,description={observing block, a file containing the information needed to instruct the telescope to perform an observation}}
+\newglossaryentry{rrm}{name=RRM,description={rapid response mode, the system that allows GROND to swiftly and automatically take command of the telescope to start observing when a satellite detects a possible transient.}}
+\newglossaryentry{TCCD}{name=TCCD,description={A technical CCD a used for guiding and, in the case of FEROS, acquisition. The name pops up in the command line when restarting autoguiding cameras, e.g. \texttt{e2p2StartTCCDs}}}
+\newglossaryentry{SCCD}{name=SCCD,description={Science CCD.  The name pops up in the command line when restarting an instrument step by step, e.g. \texttt{wfinsStartTCCDS}}}
+\newglossaryentry{template}{name=template,description={Atomic part of an observing block, with a single function, such as the acquisition or a set of integrations with a single instrument configuration (filtre, readout mode).}}
+\newglossaryentry{irtd}{name=\texttt{irtd},sort=irtd,description={infrared real time display, an imaging application used to display the $J, H, K$ bands of GROND.}}
+\newglossaryentry{rtd}{name=\texttt{rtd},sort=rtd,description={real time display, an imaging application used to display the optical CCD images of WFI, FEROS, and GROND.}}
+\newglossaryentry{skycat}{name=\texttt{skycat},sort=skycat,description={Imaging application developed at ESO that can be seen as a simplified \texttt{ds9}.}}
+\newglossaryentry{vme}{name=VME,description={virtual machine environment, used metonymously to describe the logical control unit (see LCU) controlling the telescope. (VME describes the operating system running on logical control units, but this manual will not use this definition.)}}
+\newglossaryentry{flip mirror}{name=flip mirror,description={Flip mirror, mirror in the infrared arm of GROND that allows fast dithering while optical is exposing. See grondFM}}
+\newglossaryentry{grondSHUTTER}{name=\texttt{grondSHUTTER},sort=grondSHUTTER,description={Command that resets the shutters of the optical CCDs of GROND}}
+\newglossaryentry{grondFM}{name=\texttt{grondFM},sort=grondFM,description={Command that controls the infrared flip mirror of GROND}}
+\newglossaryentry{grondGRI}{name=\texttt{grondGRI},sort=grondGRI,description={Command to reinitialise the events server of GROND}}
+\newglossaryentry{cs}{name=cold shutter,description={Shutter of the infrared arm of GROND. It stays continuously open during and between observations. It will be closed during calibrations. Not to be confused with the main cover (protective shutter) or the shutters of the optical CCDs.}}
+\newglossaryentry{protective shutter}{name=protective shutter,description={Protective shutter of WFI, that remains open during the night. Not to be confused with the shutter of the optical CCDs that open for integration only. (For GROND it is generally called main cover, see grondMC)}}
+\newglossaryentry{grondCS}{name=grondCS,description={Command controlling the shutter of the infrared arm of GROND}}
+\newglossaryentry{grondMC}{name=grondMC,description={Command controlling the main cover (a.k.a. protective cover or main shutter) of GROND}}
+\newglossaryentry{uws2p2}{name=\texttt{uws2p2},sort=uws2p2,description={User workstation of the 2.2m metre telescope. All workstation are virtually run on it.}}
 \newglossaryentry{w2p2tcs}{name=\texttt{w2p2tcs},sort=w2p2tcs,description={Workstation of the Telescope Control software}}
+\newglossaryentry{slit}{name=dome slit,description={Dome slit, through which it is observed when open}}
 \newglossaryentry{w2p2ins}{name=\texttt{w2p2ing},sort=w2p2ins,description={Workstation of WFI}}
+\newglossaryentry{mirr3}{name=mirr3,description={FEROS M3 mirror}}
+\newglossaryentry{grondM3}{name=grondM3,description={GROND M3 mirror and command controlling it}}
+\newglossaryentry{dome flats}{name=dome flat fields,description={Flat fields acquired on the flat field screen on the dome, using a lamp for illumination.}}
+\newglossaryentry{sky flats}{name=sky flat fields,description={Flat fields acquired on the twilight sky.}}
+\newglossaryentry{pointing}{name=pointing,description={Pointing refers to the part of preset consisting of moving the telescope to the target. It may also refer to a check of the pointing accuracy.}}
+\newglossaryentry{pointing model}{name=pointing model,description={Set of parameters controlling the pointing of the telescope.}}
 \newglossaryentry{wferos}{name=\texttt{wferos},sort=wferos,description={Workstation of FEROS}}
 \newglossaryentry{wgrond}{name=\texttt{wgrond},sort=wgrond,description={Workstation of GROND}}
+\newglossaryentry{power cycle}{name=power cycle,description={Action consisting of switching off an electronic device, waiting for a few seconds, and switching it back on.}}
 \newglossaryentry{wwffcd}{name=\texttt{wwffcd},sort=wwffcd,description={Workstation controlling the WFI detector electronics (FIERA)}}
 \newglossaryentry{wfefcd}{name=\texttt{wfefcd},sort=wfefcd,description={Workstation controlling the FEROS detector electronics (FIERA)}}
 \newglossaryentry{wgrccd}{name=\texttt{wgrccd},sort=wgrccd,description={Workstation controlling the GROND optical detector electronics (FIERA)}}
+\newglossaryentry{desktop}{name={virtual desktop},description={A virtual desktop, or desktop, is a working environment showing on the screen of the linux/unix workstations. It is possible to switch between them on the same machine, achieving the same result as having more screens.}} 
+\newglossaryentry{M3}{name=M3,description={Tertiary mirror. There are two tertiary mirrors, one for GROND (trumps FEROS and WFI) and one for FEROS (trumps WFI). WFI is at the secondary focus and gets the light if neither of the tertiaries is inserted in the optical path.}}
+\newglossaryentry{computer room}{name={computer room},description={Computer room located in the first floor of the telescope building. (There is also a site-wide computer room below the main control room, but we don't have access to it, so it will not be mentioned in this manual.)}}
+\newglossaryentry{control room}{name={control room},description={Control room, located in the New Operation Building below the main building that contains the hotel and dining room.  (There is also an old, partly functional, control room on the first floor of the telescope building, but otherwise specified, this manual refers to the main control room.)}}
 \newglossaryentry{wgrdcs}{name=\texttt{wgrdcs},sort=wgrdcs,description={Workstation controlling the GROND infrared detector electronics (FIERA)}}
 \newglossaryentry{w2p2dhs}{name=\texttt{w2p2dhs},sort=w2p2dhs,description={Workstation controlling the observing blocks}}
 \newglossaryentry{w2p2off}{name=\texttt{w2p2off},sort=w2p2off,description={Workstation controlling the reduction of FEROS data}}
@@ -124,10 +170,11 @@
 \newglossaryentry{l2p2cam}{name=\texttt{l2p2cam},sort=l2p2cam,description={LCU controlling the FEROS autoguider}}
 \newglossaryentry{lfeics1}{name=\texttt{lfeics1},sort=lfeics1,description={LCU of the FEROS instrument control software}}
 \newglossaryentry{lte2p2}{name=\texttt{lte2p2},sort=lte2p2,description={LCU of the telescope control software}}
-\newglossaryentry{preset}{name=preset,description={Telescope movements (right ascensio, declination, and secondary mirror focusing) needed to point at a new source. It is also used as a verb to refer to the action of ordering the telescope to move.}}
+\newglossaryentry{preset}{name=preset,description={Telescope movements (right ascension, declination, and secondary mirror focusing) needed to point at a new source. It is also used as a verb to refer to the action of ordering the telescope to move.}}
 \newglossaryentry{ds}{name=data subscriber,description={Software that fetches the FEROS data for reduction.}}
 \newglossaryentry{lcu}{name=LCU,description={Logical control unit, machine in a rack that controls an instrument or telescope subsystem.}}
 \newglossaryentry{windows}{name=Windows desktop,description={Rightmost computer in the control room that controls the dome.}}
+\newglossaryentry{dome}{name=dome,description={Part of the telescope building on the second floor containing the observing floor, telescope, and enclosure.  It can also refer to the moving part of the enclosure.}}
 \newglossaryentry{adam}{name=ADAM,description={Telescope hydraulics and mirror cover control system.}}
 \newglossaryentry{midas}{name=MIDAS,description={The well known reduction software}}
 \newglossaryentry{fiera}{name=FIERA,description={Electronics systems controlling the optical detectors}}
@@ -227,13 +274,13 @@ The operational scheme at the La Silla 2.2~metres telescope involves minimal sup
 
 \section{Control room}
 
-First of all, the control room, is located below the main ESO building, the one with the dining room.  It is still shared with the two ESO telescopes, the NTT and the 3.6\,m. If everything works without technical issue, you can do everything from there without any need to access the telescope building.
+First of all, the \gls{control room}, is located below the main ESO building, the one with the dining room.  It is still shared with the two ESO telescopes, the NTT and the 3.6\,m. If everything works without technical issue, you can do everything from there without any need to access the telescope building.
 
 \figureref{saladecontrol}  below shows the location of the different components of the controls.  Screens, keyboards, and mice are labeled to avoid confusion.
 
 \begin{figure}[!ht] \includegraphics[width=\linewidth]{saladecontrol.pdf}
 \caption[Layout of the telescope controls]{Layout of the telescope controls.  From right to left: \gls{windows} 
-controlling and monitoring the dome, \acrlong{tcs}, \acrshort{wfi} controls,
+controlling and monitoring the \gls{dome}, \acrlong{tcs}, \acrshort{wfi} controls,
 \acrshort{feros} controls (bottom) and skype laptop connected to the \acrshort{grond}
 remote observers (top), GROND controls, \acrshort{p2pp} machine where
 \acrshort{ob}s are crafted and loaded by the visiting astronomer, and,
@@ -247,11 +294,13 @@ In most nights, a support astronomer is present in the afternoon and the first p
 
 \begin{figure}[!ht]
 \includegraphics[width=\linewidth]{operations-time-flow.pdf}
-\caption{Time flow of operations in the afternoon and twilights. Afternoon setup and calibrations should be started at least 2.5 hours before sunset to leave a small buffer for technical issues. This example is giving for a late fall night (May 15th), with presence required for about 15~hours.}
+\caption[Time flow of afternoon and twilight observations]{Time flow of operations in the afternoon and twilights. Afternoon setup and calibrations should be started at least 2.5 hours before sunset to leave a small buffer for technical issues. This example is giving for a late fall night (May 15th), with presence required for about 15~hours.}
 \label{fig:timeflow}
 \end{figure}
 
-When no service astronomer is present (e.g. last part of the night), visiting astronomers will be asked to perform service observations for other groups, both for the follow-up of gamma-ray bursts and time-domain programmes.  The number of allocated nights for visitors takes the average time loss into account, in case more down time, compensation will be considered in service mode.  Since 2017, a long-term monitoring of quasi-stellar objects takes 1.5 to 2 hours daily, and targets of opportunity about 1 hour (15\% long-term average).  MPIA observers may be ask for additional service observations for the MPIA.
+Support astronomers perform or help to perform observations in service mode for the follow-up of gamma-ray bursts and transients (15\% of time as of 2019) and time-domain programmes (15\% of time as of 2019). They ensure that visitors correctly share their time with these other programmes.  In addition, during \gls{mpia} time, they also have they monitor the different MPIA programmes and ensure they are observed according to their priority and weather conditions. It includes real-time assessment and decisions, guided by the instructions of the different PIs, in particular during service mode.  During \gls{mpe} and Chilean time, they are mostly supporting observations and are not expecting to take real-time decisions concerning these programmes.  If service mode for MPE or Chile is offered, it is more similar to a ``delegated visitor'' mode where instructions by the PI are expected.
+
+When no service astronomer is present (e.g. last part of the night), visiting astronomers will be asked to perform service observations for other groups, both for the follow-up of gamma-ray bursts and time-domain programmes.  The number of allocated nights for visitors takes the average time loss into account, in case more down time, compensation will be considered in service mode.  Since 2017, a long-term monitoring of quasi-stellar objects takes 1.5 to 2 hours daily, and targets of opportunity about 1 hour (15\% long-term average).  \gls{mpia} observers may be ask for additional service observations for the MPIA.
 
 Chapters~\ref{chap:startup}--\ref{chap:nightops} can be seen as a step-by-step
 guide of the operations from the daily startup to the night time. Many of the
@@ -265,8 +314,8 @@ present the software components more in detail in Chapter~\ref{chap:compo}.
 
 The main guidelines to avoid bodily harm are:
 \begin{itemize}
-\item Don't move the telescope or dome before checking no one is in the way.  During the day, ESO technicians may address some issues or refill the instrument with nitrogen.  If you operate from the remote control room, check the dome webcam.
-\item If you need to go to the dome, leave a conspicuous message in the control room and put the telescope in local control from the computer room of the telescope building.
+\item Don't move the telescope or \gls{dome} before checking no one is in the way.  During the day, ESO technicians may address some issues or refill the instrument with nitrogen.  If you operate from the remote \gls{control room}, check the dome \gls{webcam}.
+\item If you need to go to the \gls{dome}, leave a conspicuous message in the \gls{control room} and put the telescope in local control from the \gls{computer room} of the telescope building.
 \item If you drive by night, go very slowly and defensively as you may not see a pedestrian or a dark donkey.  
 \item If you walk, take the incoming traffic side and be very careful at night. Drivers don't use lights.
 \end{itemize}
@@ -282,11 +331,11 @@ ESO has the duty to ensure telescope safety but you have to be proactive, too.  
 
 \section{Telescope building}
 
-It is sometimes necessary to physically access the telescope building where there is an old control room (\figref{old-control-room}), a computer room to physically access some relevant workstations (\figref{computer-room}), the FEROS room, and, obviously, the dome (\figref{dome}).  
+It is sometimes necessary to physically access the telescope building where there is an old control room (\figref{old-control-room}), a \gls{computer room} to physically access some relevant workstations (\figref{computer-room}), the FEROS room, and, obviously, the \gls{dome} (\figref{dome}).  
 
-Some subsystems are controlled by machines gathered in big rack towers, these machines are called \gls{lcu} or sometimes VME.  There are also workstations controlling coordinating with one or more LCUs, they look like a normal desktop computer tower usually with no screen or keyboard.
+Some subsystems are controlled by machines gathered in big rack towers, these machines are called \gls{lcu} or sometimes \gls{vme}.  There are also workstations controlling coordinating with one or more LCUs, they look like a normal desktop computer tower usually with no screen or keyboard.
 
-In the dome itself, many electronic boxes attached at the telescope (see \figref{dome}) may need being ``power cycled'', that is switched off and on.  It is also possible to locally take control of telescope, dome, and mirror motion.
+In the \gls{dome} itself, many electronic boxes attached at the telescope (see \figref{dome}) may need a \gls{power cycle}, that is being switched off and on.  It is also possible to locally take control of telescope, dome, and mirror motion.
 
 \begin{figure}[!ht]
 \centering
@@ -298,14 +347,14 @@ In the dome itself, many electronic boxes attached at the telescope (see \figref
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.7\linewidth]{dome/dome-computer-room.jpg}
-\caption[Entering the computer room in the telescope building]{Entering the computer room in the telescope building. In front slightly to the left is the VME rack.} 
+\caption[Entering the computer room in the telescope building]{Entering the \gls{computer room} in the telescope building. In front slightly to the left is the \gls{vme} rack.} 
 \label{fig:computer-room}
 \end{figure}
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=0.7\linewidth]{dome/dome.jpg}
-\caption[Entering the dome]{Entering the dome, from left to right: the \gls{adam} controls,
+\caption[Entering the dome]{Entering the \gls{dome}, from left to right: the \gls{adam} controls,
 a computer to use the \gls{tcs}, the dome controls, the bottom of the telescope.}
 \label{fig:dome}
 \end{figure}
@@ -326,11 +375,11 @@ a computer to use the \gls{tcs}, the dome controls, the bottom of the telescope.
 \chapter{Early afternoon: daily start-up}
 \label{chap:startup}
 
-Start-up should take about one hour, but small technical issues can lengthen it significantly.  Ideally, it should be done early enough in the afternoon (2--3 pm in Winter, 3--4 pm in Summer), so that dome flat fields can be done before the nitrogen of \gls{wfi} is refilled.  Also, complicated issues should be diagnosed early, so that you benefit from the day-time support from ESO engineers.  Night time support is not provided except for emergencies.
+Start-up should take about one hour, but small technical issues can lengthen it significantly.  Ideally, it should be done early enough in the afternoon (2--3 pm in Winter, 3--4 pm in Summer), so that \gls{dome flats} can be done before the nitrogen of \gls{wfi} is refilled.  Also, complicated issues should be diagnosed early, so that you benefit from the day-time support from ESO engineers.  Night time support is not provided except for emergencies.
 
-For an experienced observer alone in Winter, a later start-up can be done by optimising and hoping for the best (see \figref{timeflow-eve}), but the risk is to lack time to perform dome flats and/or losing the very beginning of the night to technical issues.
+For an experienced observer alone in Winter, a later start-up can be done by optimising and hoping for the best (see \figref{timeflow-eve}), but the risk is to lack time to perform \gls{dome flats} and/or losing the very beginning of the night to technical issues.
 
-The \gls{tcs} and the \gls{wfi} are entangled.  In particular, the \gls{wfi} \gls{ics} controls the focus and pointing, and the \gls{tcs} controls the \gls{wfi} \gls{ag}.  For this reason, the \gls{wfi} should be rebooted before the \gls{tcs}.  The other instruments, \gls{grond} and \gls{feros}, are more independent and need a later restart. Also, the \gls{feros} and \gls{grond} \gls{ag} should be checked and the \gls{feros} \gls{drs} set to the right date.
+The \gls{tcs} and the \gls{wfi} are entangled.  In particular, the \gls{wfi} \gls{ics} controls the \gls{focus} and \gls{pointing}, and the \gls{tcs} controls the \gls{wfi} \gls{ag}.  For this reason, the \gls{wfi} should be rebooted before the \gls{tcs}.  The other instruments, \gls{grond} and \gls{feros}, are more independent and need a later restart. Also, the \gls{feros} and \gls{grond} \gls{ag} should be checked and the \gls{feros} \gls{drs} set to the right date.
 
 \section{Outline}
 \label{sec:startupoutline}
@@ -343,7 +392,7 @@ To be on the safe side, the start-up sequence shall be performed in this order b
 If under time pressure, you can also do some day-time calibrations in parallel. \figureref{timeflow-eve} gives a time-optimised flow of the day-time start-up and calibrations, showing what can be done in parallel.  It should be started latest 2.5 hours before sunset.
 \begin{figure}
 \includegraphics[width=\linewidth]{operations-time-flow-evening.pdf}
-\caption{Operations time flow in the evening, doing start-up, calibrations, and tests in parallel.  It should start latest 2.5 hours before sunset (see horizontal axis at the top).  The time of the day, given in universal time on the bottom horizontal axis, corresponds to a date close to fall equinox (September 15th).}
+\caption[Time-flow of afternoon operations]{Operations time flow in the evening, doing start-up, calibrations, and tests in parallel.  It should start latest 2.5 hours before sunset (see horizontal axis at the top).  The time of the day, given in universal time on the bottom horizontal axis, corresponds to a date close to fall equinox (September 15th).}
 \label{fig:timeflow-eve}
 \end{figure}
 
@@ -355,7 +404,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 %%%%
   \item \label{list:wfistartup}\textbf{\gls{wfi} restart (8 min, in case of problems, see \figref{wfi-restart})}
         \begin{enumerate}
-          \item On the screen \texttt{BOB Wide Field Imager}, go to the \texttt{StartUp} virtual desktop.\label{list:wfi1}
+          \item On the screen \texttt{BOB Wide Field Imager}, go to the \texttt{StartUp} \gls{desktop}.\label{list:wfi1}
           \item In a terminal, \texttt{osf2p2StartUp ini WFI F8}, where ini is your initials (\figref{wfisu-launch}).
           \item On the dialog, choose \texttt{DAILY} startup (\figref{wfisu-full}).
           \item Click \texttt{START} on the appearing window (\texttt{ESO220 WEEKLY FULL STARTUP}, see \figref{wfisu-start}). 
@@ -364,15 +413,15 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 \label{list:wfibooted}
           \item Close the startup window (\figref{wfisu-start})
           \item Close the emerging PDF (\figref{wfisu-pdf}).
-          \item Rearrange windows to the corresponding desktops (1 min, see \figref{wfisu-windows})
+          \item Rearrange windows to the corresponding \gls{desktop}s (1 min, see \figref{wfisu-windows})
              \label{list:wfiwin}
              \begin{itemize}
-                \item \gls{rtd} goes to all desktops, on the left screen.
-                \item other windows go to the desktop bearing their name, on the right screen. 
+                \item \gls{rtd} goes to all \gls{desktop}s, on the left screen.
+                \item other windows go to the \gls{desktop} bearing their name, on the right screen. 
             \end{itemize}
           \item Wait for the filtre wheel to be set to a specific filtre (1--2 min)\label{list:wfisu-filtre}
                 \begin{enumerate}
-                    \item Locate the \texttt{Filter} field on the \texttt{WFI General State} panel
+                    \item Locate the \texttt{Filter} field on the \texttt{WFI \gls{General State}} panel
                     \item If it stays in \texttt{MOVING} for more than 2 minutes or you skipped full restart, reset filtre wheel (\procref{filtrereset}). 
                 \end{enumerate}
           \item In \gls{bob}, execute \texttt{testOB.obd} (1 min)
@@ -398,7 +447,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
              \end{enumerate}
              It may be needed to click two or three times to get green buttons.
              \label{list:hydr}
-          \item On the screen \texttt{Telescope Control Software}, go the the \texttt{StartUp} virtual desktop.\label{list:tcs1}
+          \item On the screen \texttt{Telescope Control Software}, go the the \texttt{StartUp} \gls{desktop}.\label{list:tcs1}
           \item If \texttt{Cannot read "@w2p2wfi…"} pop-up can be seen on the \gls{tcs} screen (\figref{tcssu-error}), click \texttt{OK}.
           \item In a terminal type \texttt{lccBoot \gls{lte2p2}} and wait for command to end (2 min, \figref{tcssu-boot})\\
                 If none is there, you can open one with \mmenu{TCS User}{tcs xterm}.\\
@@ -414,20 +463,20 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
              \item One asking to check hydraulics and telescope is parked among other things (\figref{tcssu-check}).\\
                    Take your time to check each point and then click \texttt{OK}          
              \item One asking to switch on flat-field lamp\label{list:tcsonline} (\figref{tcssu-lampon})\\
-                   Lamp should be on, check no one is in the dome, then click \texttt{OK}.\\
+                   Lamp should be on, check no one is in the \gls{dome}, then click \texttt{OK}.\\
                    If it's off, on \texttt{FAUX functions} panel select \texttt{200V} under \texttt{FLAT FIELD LAMP}\\
                    Then, telescope will do movement checks you can monitor on the webcam.
              \item One asks to check for CCD alarms to be enabled (\figref{tcssu-alarm})\\
                    Go to the large, black text window where all numbers below the two \texttt{Al Enab} should be ones.
-             \item One asks to check that the flat-field lamp is off and telemetry active.
+             \item One asks to check that the flat-field lamp is off and \gls{telemetry} active.
                 \begin{enumerate}
-                 \item If flat-field lamp is on, turn it off unless you will do flats.\\
+                 \item If flat-field lamp is on, turn it off unless you will do \gls{dome flats}.\\
                    On \texttt{FAUX functions} panel select \texttt{OFF} under \texttt{FLAT FIELD LAMP}          
-                 \item On the \texttt{Telemetry} panel, ensure that the FEROS telemetry module is \texttt{active}\\
+                 \item On the \texttt{Telemetry} panel, ensure that the FEROS \gls{telemetry} module is \texttt{active}\\
                        If not, activate it on the FEROS screen using \texttt{fcdTelemetry} (see \procref{telemetry})
-                 \item On the \texttt{Telemetry} panel, ensure that the WFI telemetry module is \texttt{active}\\
+                 \item On the \texttt{Telemetry} panel, ensure that the WFI \gls{telemetry} module is \texttt{active}\\
                        If not, activate it on the WFI screen using \texttt{fcdTelemetry} (see \procref{telemetry})
-                 \item If a telemetry was restarted, panel must be closed and reopened (see \procref{telemetry})
+                 \item If a \gls{telemetry} was restarted, panel must be closed and reopened (see \procref{telemetry})
                  \end{enumerate}
           \end{enumerate}
           \item Perform some post-start-up tidying
@@ -435,39 +484,39 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                    \item Make sure the start-up window indicates \texttt{SCRIPT finished}.\label{list:tcsbooted}
                    \item Close startup window.
                    \item Close emerging PDF.
-                   \item Rearrange windows to the corresponding desktops (1 min)
+                   \item Rearrange windows to the corresponding \gls{desktop}s (1 min)
              \begin{itemize}
-                \item \texttt{skycat} go to all desktops, on the right screen.
-                \item Other windows go to the desktop bearing their name, on the left screen. 
+                \item \gls{skycat} go to all \gls{desktop}s, on the right screen.
+                \item Other windows go to the \gls{desktop} bearing their name, on the left screen. 
                 \item Ignore window \texttt{CSS ALARM DISPLAY} (\figref{wfialarm}) if it pops up on the \gls{wfi} screen.
              \end{itemize}     
                 \end{enumerate}
           \item Check and set up the \gls{wfi} \gls{ag} (1 min)
           \begin{enumerate}
-                \item Go to the \texttt{TCS Control Panel}
+                \item Go to the \gls{TCS control panel}
                 \item Under \texttt{AG Field Acquisition}, click \texttt{Retrieve Field}
                 \item\label{list:ccdstat} Under \texttt{Autoguider} look that \texttt{CCD Stat} goes to \texttt{Pending} and \texttt{integrating} (10--15 s)
-                \item\label{list:skycatro} Check that an image is read out on the \texttt{skycat} window (30 s)
+                \item\label{list:skycatro} Check that an image is read out on the \gls{skycat} window (30 s)
                 \item Select \wmenu{View}{Autoscale}
                 \item If steps \ref{list:ccdstat}--\ref{list:skycatro} do not work, see \procref{fixwfiag}.
-                \item On the \texttt{skycat} window, use \wmenu{TCS}{Pick Reference Star...}
+                \item On the \gls{skycat} window, use \wmenu{TCS}{Pick Reference Star...}
                 \item On emerging window (title \texttt{Pick Reference Star}), click \texttt{Cancel Operation}
           \end{enumerate}
-          \item Ensure that the pointing model is correct (1 min).
+          \item Ensure that the \gls{pointing model} is correct (1 min).
           \begin{enumerate}
             \item Check that the sidereal time is correct.\\
-                  Compare the \texttt{TCS Control Panel} and the wall clock
-            \item\label{list:pmcheck:wfi} Select \gls{wfi} pointing model.
+                  Compare the \gls{TCS control panel} and the wall clock
+            \item\label{list:pmcheck:wfi} Select \gls{wfi} \gls{pointing model}.
                \begin{enumerate}
-                  \item On the \texttt{TCS Status} panel, use \wmenu{Instrument selection}{WFI}
+                  \item On the \gls{TCS status panel}, use \wmenu{Instrument selection}{WFI}
                   \item On the emerging popup select \texttt{Continue}
                \end{enumerate}
-            \item\label{list:pmcheck:setup} Check the pointing model parameters are non zero
+            \item\label{list:pmcheck:setup} Check the \gls{pointing model} parameters are non zero
                \begin{enumerate}
-                  \item Locate the \texttt{TCS Setup Panel}
+                  \item Locate the \gls{TCS setup panel}
                   \item Look values of ID, IH, and CH under \texttt{Pointing Model Data}
                \end{enumerate} 
-            \item If they are zero, fix the pointing model.
+            \item If they are zero, fix the \gls{pointing model}.
                 \begin{enumerate}
                   \item Locate or open a tcs terminal 
                   \item Type \texttt{\home/bin/fixPointing.sh} and wait for command to return (15 s)
@@ -483,7 +532,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
         Under time pressure, you can skip points \ref{lab:ferosstartup}--\ref{lab:ferosbooted}, accepting an increased risk of night-time issues.
         \label{list:feros}
         \begin{enumerate}
-         \item \label{lab:ferosstartup} On the screen \texttt{FEROS BOB},  go the the \texttt{StartUp} virtual desktop.
+         \item \label{lab:ferosstartup} On the screen \texttt{FEROS BOB},  go the the \texttt{StartUp} \gls{desktop}.
          \item Launch the weekly full start-up script (2 min)
          \begin{enumerate}
             \item In a terminal type \texttt{osf2p2StartUp ini FEROS F8}, where ini is your initials. (\figref{feosu-launch})\\
@@ -504,19 +553,19 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 \item Wait for the large, grey window to close itself (3 min)
                 \item\label{lab:ferosonline} Put the instrument online (1 min)
                 \begin{enumerate}
-                   \item On \texttt{FEROS General State} panel, use \wmenu{Instrument}{ONLINE}
+                   \item On \texttt{FEROS \gls{General State}} panel, use \wmenu{Instrument}{ONLINE}
                    \item Wait for \texttt{State} to indicate \texttt{ONLINE}
                 \end{enumerate}
             \end{enumerate}
-         \item \label{lab:ferosbooted} Rearrange windows to the corresponding desktops (1 min, see \figref{feosu-windows})
+         \item \label{lab:ferosbooted} Rearrange windows to the corresponding \gls{desktop}s (1 min, see \figref{feosu-windows})
             \begin{itemize}
-              \item \gls{rtd} goes to all desktops, on the left screen.
-              \item Other windows go to the desktop bearing their names, on the right screen.
+              \item \gls{rtd} goes to all \gls{desktop}s, on the left screen.
+              \item Other windows go to the \gls{desktop} bearing their names, on the right screen.
               \item There are two \texttt{rtd}s and two \texttt{logMonitor}s, you can close one of each.
            \end{itemize}
-         \item Perform a test OB with telescope communication (1--2 min)
+         \item Perform a test \gls{ob} with telescope communication (1--2 min)
            \begin{enumerate}
-             \item On \texttt{FEROS General State} panel, select \wmenu{Telescope}{ENABLE} 
+             \item On \texttt{FEROS \gls{General State}} panel, select \wmenu{Telescope}{ENABLE} 
              \item In \gls{bob}, run \texttt{testOB.obd} (1--2 min)
              \begin{enumerate}
                \item Fetch it with \fetchob (\texttt{/OBD/Templates/}).
@@ -527,7 +576,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
               \item In \gls{bob}, click on \texttt{Reset status}
               \item Re-run it (point \ref{list:ferostestob}).
             \end{enumerate}
-            \item \texttt{FEROS General State} panel, select \wmenu{Telescope}{IGNORE}
+            \item \texttt{FEROS \gls{General State}} panel, select \wmenu{Telescope}{IGNORE}
            \end{enumerate}
         \end{enumerate}
 %%%%
@@ -551,8 +600,8 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
            \begin{enumerate}
              \item Close \gls{bob}.
              \item Launch \gls{bob} from the terminal as user \texttt{grondmgr} (type \texttt{bob \&}).
-             \item In the same terminal, execute \texttt{grondGRI}.
-             \item In the same terminal, execute \texttt{grondSHUTTER \&\& grondFM} (might take 1 min).
+             \item In the same terminal, execute \texttt{\gls{grondGRI}}.
+             \item In the same terminal, execute \texttt{\gls{grondSHUTTER} \&\& \gls{grondFM}} (might take 1 min).
            \end{enumerate}
          \item From \gls{bob}, execute the test \gls{ob} \texttt{testOB.obd}, see \figref{grondbob} (1 min)
            \begin{enumerate}
@@ -574,7 +623,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 \item If error persists, close \gls{bob} and open it again
              \end{enumerate} 
              \item Set telescope back to FEROS/WFI (0.5 min)\\
-             In a terminal type, \texttt{grondM3 WFI \&\& grondMC CLOSE \&\& grondCS CLOSE}.
+             In a terminal type, \texttt{\gls{grondM3} WFI \&\& \gls{grondMC} CLOSE \&\& \gls{grondCS} CLOSE}.
            \end{enumerate}
          \item If a restart (point \ref{list:grinsstart}) was done, set the image displays (1 min).
             \begin{enumerate}
@@ -582,7 +631,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                \item Find the \gls{rtd} window (griz images).
                \item Check that image is flipped along both axes and rotated (see \figref{flip}).
                \item Go to the \texttt{GROND infrared (IRACE)} screen.
-               \item Find the irtd window (JHK images).               
+               \item Find the \gls{irtd} window (JHK images).               
                \item Check that images are received live.\\
                      The left column should have a green button with text \texttt{Stop} (see \figref{iflip}).\\
                      If it is gray with text \texttt{Start}, click it so that it gets as describe above.
@@ -594,8 +643,8 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
   \item \textbf{\gls{feros} and \gls{grond} guide cameras setup} (3--8 min)\label{list:ag}
         \begin{enumerate}
            \item Go to the \texttt{Autoguider GROND \& FEROS} screen. 
-           \item Rearrange windows to their corresponding virtual desktops (1 min)\\
-                 \texttt{Autoguiding} window should go to all desktops.
+           \item Rearrange windows to their corresponding \gls{desktop}s (1 min)\\
+                 \texttt{Autoguiding} window should go to all \gls{desktop}s.
            \item Use numbers 6, 3, 0.02 below \texttt{Autoguider control} and click \texttt{Apply}.
            \item Check the \gls{grond} autoguider (1--4 min)
                \begin{enumerate}
@@ -622,7 +671,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
         \item Change the date  (1 min)
         \label{list:drs}
 		\begin{enumerate}
-		  \item Go to the \texttt{DRS:main} workspace of screen \texttt{FEROS pipeline}
+		  \item Go to the \texttt{DRS:main} \gls{desktop} of screen \texttt{FEROS pipeline}
 		  \item Locate or open FEROS DRS window\\
                 It opens with left-click \mmenu{FEROS User}{FEROS DRS} 
 		  \item \texttt{Stop} the \texttt{Reduce Queued Image Status}
@@ -633,7 +682,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 		\end{enumerate}
 		\item Free disk space (1--4 min)
 		\begin{enumerate}
-		    \item Go to \texttt{Visitor} workspace of screen \texttt{FEROS pipeline}
+		    \item Go to \texttt{Visitor} \gls{desktop} of screen \texttt{FEROS pipeline}
 		    \item Use or open a terminal
 		    \item If df -h /data indicates more than 80\% disk usage, proceed
 		    \item Delete the oldest nights in \texttt{/data/raw}, \texttt{/data/reduced}, and
@@ -644,7 +693,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
 	\end{enumerate} 
     \item\textbf{Afternoon calibrations can be done right after start-up} (see \chapref{daycal})
         \begin{itemize}
-        \item \gls{wfi} flats may be done in parallel starting from point~\ref{list:tcsonline}
+        \item \gls{wfi} \gls{dome flats} may be done in parallel starting from point~\ref{list:tcsonline}
         \item \gls{feros} standard calibration may be done in parallel starting from point~\ref{list:grond}
         \end{itemize}
 \end{enumerate}
@@ -736,7 +785,7 @@ After clicking \texttt{OK}, telescope should move.]{
 \hspace{0.2\linewidth}\includegraphics[width=0.6\linewidth]{tcs/tcsreboot-7.jpg}\hspace{0.2\linewidth}%
 }%
 \end{minipage}
-\caption[Telescope control software restart]{\acrshort{tcs} restart. As for \acrshort{wfi} there is a black terminal log) and process ends with a PDF log being popped up.  Emergent windows hould be rearranged to their respective desktops.  The \acrshort{rtd}  isplay should go to all desktops on the left screen, the other windows n the right screen.}
+\caption[Telescope control software restart]{\acrshort{tcs} restart. As for \acrshort{wfi} there is a black terminal log) and process ends with a PDF log being popped up.  Emergent windows should be rearranged to their respective \gls{desktop}s.  The \gls{rtd} display should go to all desktops on the left screen, the other windows n the right screen.}
 \label{fig:tcs-restart}
 \end{figure}
 %%%%
@@ -766,7 +815,7 @@ is enabled in the FEROS control window.]{%
   \includegraphics[width=0.31\linewidth]{feros/ferosreboot-4.png}\label{fig:feosu-start2}%
 }\hfill
 \subfigure[When finished, rearrange the windows to their corresponding
-desktops.  \gls{rtd}, \gls{bob} and FEROS control go to \texttt{BOB+OS}.]{
+\gls{desktop}s.  \gls{rtd}, \gls{bob} and FEROS control go to \texttt{BOB+OS}.]{
   \includegraphics[width=0.45\linewidth]{feros/ferosreboot-5.png}\label{fig:feosu-windows}%
 }\hfill\null
 \caption{\gls{feros} restart.}
@@ -849,74 +898,75 @@ The day-time observations use \glspl{ob} either stored in \gls{bob} or in a
 explained in more detail in \chapref{ob}.
 
 \section{WFI}
-Internal calibrations and health checks are typically left running in the morning after the dome has been closed.  See Sect.~\ref{sec:clocal}.
+Internal calibrations and health checks are typically left running in the morning after the \gls{slit} has been closed.  See Sect.~\ref{sec:clocal}.
 
 \procedure{WFI dome flat-fields}
    \begin{enumerate}
-     \item Ensure that no one is in the dome nor will enter it.
+     \item Ensure that no one is in the \gls{dome} nor will enter it before
+     starting the \gls{dome flats}.
      \item Prepare the telescope.
          \begin{enumerate}
-            \item If hydraulics is off, switch it on and wait for connection with VME
+            \item If hydraulics is off, switch it on and wait for connection with \gls{vme} 
                 \begin{enumerate}
-                    \item On the \texttt{Dome Auxiliary Functions} panel click \texttt{Hydr On} then \texttt{Drives On}.
-                    \item On the \texttt{Telscope Control} panel, check if red message appears  \texttt{no connection}.
+                    \item On the \gls{domefunc} panel click \texttt{Hydr On} then \texttt{Drives On}.
+                    \item On the \gls{TCS control panel}, check if red message appears  \texttt{no connection}.
                     \item If it is the case, wait for it to disappear (about 2 min)
                 \end{enumerate}
             \item If hydraulics were off, initialise telescope
                 \begin{enumerate}
-                    \item On the \texttt{Telescope Setup} panel, click \texttt{Tel Init}
-                    \item Wait for the telescope status of  the \texttt{Telescope Control} to go from \texttt{WaitIni} to \texttt{Slew} (2 min)
+                    \item On the \gls{TCS setup panel}, click \texttt{Tel Init}
+                    \item Wait for the telescope status on the \texttt{TCS control panel} to go from \texttt{WaitIni} to \texttt{Slew} (2 min)
                 \end{enumerate}
             \item \Gls{preset} to flat-field screen
             \begin{enumerate}
-                \item Go to the \texttt{TCS Setup Panel} (\figref{tcssetup}) on screen \texttt{Telescope Control Software}.
+                \item Go to the \gls{TCS setup panel} (\figref{tcssetup}) on screen \texttt{Telescope Control Software}.
                 \item Put \texttt{Dome} on \texttt{automatic}.
                 \item \Gls{preset} the telescope to flat-field screen.\\
                   Click \texttt{FF Scr} below \texttt{Fixed Presets}
                 \item Wait for the movement to complete (2 min) before starting the flat-field \gls{ob}.\\
-                  On the \texttt{TCS Control Panel} (\figref{tcs}) telescope status is \texttt{Slew}.
+                  On the \gls{TCS control panel} (\figref{tcs}) telescope status is \texttt{Slew}.
             \end{enumerate}
             \item Prepare shutters and mirrors
             \begin{enumerate}
                \item Click \texttt{Open} under the \texttt{Main Mirror Cover}.
-               \item Wait for opening to complete (2 min) befor starting the flat-field \gls{ob}
-               \item Open the \gls{wfi} protective shutter.\\
+               \item Wait for opening to complete (2 min) before starting the flat-field \gls{ob}
+               \item Open the \gls{wfi} \gls{protective shutter}.\\
                      In the \gls{auxfunc} (\figref{tcsauxfunc}), \texttt{OPEN} the \texttt{WFI PROTECTIVE SHUTTER}.
-               \item Ensure the GROND mirror is on WFI
-               \item Ensure the FEROS mirror is on FEROS
+               \item Ensure the GROND \gls{M3} mirror is on WFI
+               \item Ensure the FEROS \gls{mirr3} mirror is on FEROS
              \end{enumerate}
          \end{enumerate}
      \item Prepare the flat-field \gls{ob}
      \begin{enumerate}
         \item Go to \gls{bob} on the screen \texttt{BOB Wide Field Imager}.
-        \item Fetch \gls{bob} from file (\fetchob) looking in subfolder \texttt{DomeFlats}.
+        \item Fetch \gls{bob} from file (\fetchob) looking in sub-folder \texttt{DomeFlats}.
         \begin{itemize}
            \item If observing in UBVRI standard filtres: \texttt{DomeFlatCalPlan\_new.obd} (25 min).
-           \item During an observing period or a visitor run, a custom OB may be used\\
+           \item During an observing period or a visitor run, a custom \gls{ob} may be used\\
     For instance: \texttt{DomeFlatsP103.obd} or \texttt{DomeFlatsVisitorName.obd}
            \item To choose filtres on the fly: \texttt{DomeFlatGeneric\_new.obd}.
            \item To test all filtres: \texttt{DomeFlatAllSnapshot.obd} (1 flat per filtre, 2 hrs 30 min).
         \end{itemize}
         \item If choosing filtres on the fly, customise the ob
               \begin{enumerate}
-                 \item Open the flat template, left-clicking on the triangle of \texttt{WFI\_img\_cal\_DomeFlat\_new}
+                 \item Open the \gls{dome flats} \gls{template}, left-clicking on the triangle of \texttt{WFI\_img\_cal\_DomeFlat\_new}
                  \item Open the instrument section, left-click on the triangle of section \texttt{INS}
                  \item Use \wmenu{Interface}{Engineering}.
                  \item Middle-click the filtre name, fill in value, and type enter.\\
                        Name is \texttt{ESONNN\_name/width} (\texttt{NNN}: number, \texttt{name}: filtre name or wavelength)\\
-                       In virtual desktop \texttt{WFI ICS}, a filtre list is found below \texttt{SETUP Instrument}
+                       In \gls{desktop} \texttt{WFI ICS}, a filtre list is found below \texttt{SETUP Instrument}
                  \item Deactivate the filtres you don't want.\\
                        Right-click the triangles to get a thumb down
               \end{enumerate}       
      \end{enumerate}
      \item Execute \gls{ob} (15--30 min usually).
-     \item If no other types of flats are done, park the telescope 
+     \item If no other types of flats fields are done, park the telescope 
      \begin{enumerate}
-         \item Go to the \texttt{TCS Setup Panel} on screen \texttt{Telescope Control Software}.
+         \item Go to the \gls{TCS setup panel} on screen \texttt{Telescope Control Software}.
          \item \texttt{Close} to the \texttt{Main Mirror Cover}.
-         \item Set the dome in \texttt{Manual}.
+         \item Set the \gls{dome} in \texttt{Manual}.
          \item Click \texttt{Zenith} below \texttt{Fixed Presets} (2 min)
-         \item Close the \gls{wfi} protective shutter.\\
+         \item Close the \gls{wfi} \gls{protective shutter}.\\
            In the \gls{auxfunc} (\figref{tcsauxfunc}), \texttt{CLOSE} the \texttt{WFI PROTECTIVE SHUTTER}.
      \end{enumerate}
      \item If telescope will stay idle for hours, switch hydraulics off.
@@ -926,13 +976,13 @@ Internal calibrations and health checks are typically left running in the mornin
 
 \section{FEROS}
 
-A linearity check is left running in the morning (see Sect.~\ref{sec:clocal}). The standard \gls{feros} calibration is generally done after startup.  It is internal in a separate room, so it can be done while doing telescope movements, going to the dome, or even \gls{wfi} or \gls{feros} observations.
+A linearity check is left running in the morning (see Sect.~\ref{sec:clocal}). The standard \gls{feros} calibration is generally done after startup.  It is internal in a separate room, so it can be done while doing telescope movements, going to the \gls{dome}, or even \gls{wfi} or \gls{feros} observations.
 
 \procedure{FEROS afternoon calibrations}
 \begin{enumerate}
   \item Go to screen \texttt{FEROS BOB}.
   \item Check that FEROS does not communicate with the telescope\\
-        On the \texttt{FEROS General State} panel, use \wmenu{Telescope}{Ignore}.
+        On the \texttt{FEROS \gls{General State}} panel, use \wmenu{Telescope}{Ignore}.
   \item Execute \texttt{StanCalNorm.obd} from \gls{bob} ($\approx 1$\,h).
     \begin{enumerate}
        \item Use \fetchob.
@@ -941,7 +991,7 @@ A linearity check is left running in the morning (see Sect.~\ref{sec:clocal}). T
   \item Check that the \gls{drs} has processed it.  \textbf{While Fabry-Pérot stays installed, it will fail.}
     \begin{enumerate}
       \item Find a white graphics with title \texttt{OBJ FIB GUESS}.
-      \item The wavelength solution should have $4 \times 10^{-3}$ Angstroem
+      \item The wavelength solution should have $4 \times 10^{-3}$ Angstrom
          rms or less and look flat.
       \item If not, restart calibration if possible.
     \end{enumerate}
@@ -949,7 +999,7 @@ A linearity check is left running in the morning (see Sect.~\ref{sec:clocal}). T
 
 \section{GROND}
 
-GROND calibrations are left running in the morning after the dome has been closed (see Sect.~\ref{sec:clocal}). Some observers may ask for GROND linearity calibration using dome flats, providing the observing blocks and a detailed explanation.
+GROND calibrations are left running in the morning after the \gls{dome} has been closed (see Sect.~\ref{sec:clocal}). Some observers may ask for GROND linearity calibration using \gls{dome flats}, providing the observing blocks and a detailed explanation.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -965,12 +1015,12 @@ Opening should take place about one or two hours before sunset if conditions all
 \procedure{Dome opening and telescope readying}
 \label{proc:open}
 \begin{enumerate}
-\item Check that the slit is oriented opposite to the Sun. It does not apply when opening at night.
+\item Check that the \gls{slit} is oriented opposite to the Sun. It does not apply when opening at night.
         \begin{enumerate}
-            \item On the \texttt{rose diagram} of the \texttt{TCS Control Panel}, it should be to the East
-            \item If not, rotate manually in the \texttt{TCS Setup Panel}
+            \item On the \gls{rose diagram} of the \gls{TCS control panel}, it should be to the East
+            \item If not, rotate manually in the \gls{TCS setup panel}
         \end{enumerate}
-\item Open the slit\label{list:slitopen}
+\item Open the \gls{slit}\label{list:slitopen}
          \begin{enumerate}
            \item Go to the \gls{tcs} setup panel (\figref{tcssetup})
            \item Check that the value below \texttt{Main Mirror Cover} is \texttt{closed}.
@@ -983,33 +1033,33 @@ Opening should take place about one or two hours before sunset if conditions all
 
 \section{Telescope readying}
 
-A bit before sunset if doing sky flats or at sunset otherwise, you can ready the telescope and point to an empty field.
+A bit before sunset if doing \gls{sky flats} or at sunset otherwise, you can ready the telescope and point to an empty field.
 
 \procedure{Telescope readying}\label{proc:ready}
 \begin{enumerate}
 \item Prepare the telescope
          \begin{enumerate}
-            \item If hydraulics is off, switch it on and wait for connection with VME
+            \item If hydraulics is off, switch it on and wait for connection with \gls{vme} 
                 \begin{enumerate}
-                    \item On the \texttt{Dome Auxiliary Functions} panel click \texttt{Hydr On} then \texttt{Drives On}.
-                    \item On the \texttt{Telscope Control} panel, check if red message appears  \texttt{no connection}.
+                    \item On the \gls{domefunc} panel click \texttt{Hydr On} then \texttt{Drives On}.
+                    \item On the \gls{TCS control panel}, check if red message appears  \texttt{no connection}.
                     \item If it is the case, wait for it to disappear (about 2 min)
                 \end{enumerate}
             \item If hydraulics were off, initialise telescope
                 \begin{enumerate}
                     \item On the \texttt{Telescope Setup} panel, click \texttt{Tel Init}
-                    \item Wait for the telescope status of  the \texttt{Telescope Control} to go from \texttt{WaitIni} to \texttt{Slew} (2 min)
+                    \item Wait for the telescope status of  the \gls{TCS control panel} to go from \texttt{WaitIni} to \texttt{Slew} (2 min)
                 \end{enumerate}
-	\item\label{list:mirropen}Open the main mirror cover
+	\item\label{list:mirropen}Open the \gls{main mirror} cover
             \begin{enumerate}
                \item Click \texttt{Open} under the \texttt{Main Mirror Cover}.
-               \item Wait for opening to complete (2 min) befor starting the flat-field \gls{ob}
+               \item Wait for opening to complete (2 min) before starting the flat-field \gls{ob}
             \end{enumerate}
         \end{enumerate}
-        \item \Gls{preset} to an empty field if doing sky flats, a test with GROND, or readying before sunset
+        \item \Gls{preset} to an empty field if doing \gls{sky flats}, a test with GROND, or readying before sunset
                \label{list:presetempty}         
             \begin{enumerate}
-            \item Go to the \gls{tcs} Control Panel (\figref{tcs}) 
+            \item Go to the \gls{TCS control panel} (\figref{tcs}) 
             \item Below \texttt{Catalogue Handling} click \texttt{Cat. Select}.
             \item Choose \texttt{Empty Fields 2011}
             \item Select field with \texttt{Up} and \texttt{Dwn}.\\
@@ -1017,7 +1067,7 @@ A bit before sunset if doing sky flats or at sunset otherwise, you can ready the
                   Consider field quality: excellent, good, OK, poor.
             \item Click \texttt{Preset}.
             \end{enumerate}      
-         \item Set the dome motion in automatic.\label{list:domeauto}\\
+         \item Set the \gls{dome} motion in automatic.\label{list:domeauto}\\
                On the \gls{tcs} setup panel (\figref{tcssetup}), below \texttt{Dome}, select the checkbox \texttt{Automatic}.
 \end{enumerate}
 
@@ -1041,32 +1091,32 @@ A bit before sunset if doing sky flats or at sunset otherwise, you can ready the
     \label{list:opencov}
      \begin{enumerate}
         \item In the \gls{auxfunc} (\figref{tcsauxfunc}), open the 
-              \gls{wfi} protective shutter.
-        \item For \gls{grond} observations, in a terminal open the main cover, the cold shutter, and the optical ones through these commands
+              \gls{wfi} \gls{protective shutter}.
+        \item For \gls{grond} observations, in a terminal open the \gls{mc}, the \gls{cs}, and the optical ones through these commands
             \begin{enumerate}
-              \item \texttt{grondMC OPEN}
-              \item \texttt{grondCS OPEN}
-              \item \texttt{grondSHUTTER}
+              \item \texttt{\gls{grondMC} OPEN}
+              \item \texttt{\gls{grondCS} OPEN}
+              \item \gls{grondSHUTTER}
             \end{enumerate}
      \end{enumerate}
   \item Check for mirrors
      \label{list:checkmirror}
      \begin{enumerate}
-        \item Check \gls{feros} mirror (\texttt{M3 Selected Mirror}) on the \gls{feros} control panel (\figref{feroscon}).\\
-              If necessary, set \texttt{mirr3} motor on the \gls{ics} (\figref{ferosics})
+        \item Check \gls{feros} mirror (\texttt{\gls{M3} Selected Mirror}) on the \gls{feros} control panel (\figref{feroscon}).\\
+              If necessary, set \texttt{\gls{mirr3}} motor on the \gls{ics} (\figref{ferosics})
               \begin{itemize}
                 \item to \texttt{WFI} for observations with \gls{wfi} or \gls{grond};
                 \item to \texttt{FEROS} for observations with \gls{feros}.
               \end{itemize}
-              (Select the \texttt{mirr3} check box, select instrument, click \texttt{SETUP}, unselect checkbox.)
-        \item Check \gls{grond} mirror on the \gls{grond} control (\figref{grondcon}).\\
+              (Select the \texttt{\gls{mirr3}} check box, select instrument, click \texttt{SETUP}, deselect checkbox.)
+        \item Check \gls{grond} \gls{M3} mirror on the \gls{grond} control (\figref{grondcon}).\\
               If necessary, type 
               \begin{itemize}
-                  \item \texttt{grondM3 WFI} for \gls{feros} or \gls{wfi} observations
-                  \item \texttt{grondM3 GROND} for \gls{grond} observations.
+                  \item \texttt{\gls{grondM3} WFI} for \gls{feros} or \gls{wfi} observations
+                  \item \texttt{\gls{grondM3} GROND} for \gls{grond} observations.
               \end{itemize}
      \end{enumerate}
-  \item If no test OB with TCS on was done during the start-up, try to run a \gls{grond} test OB (\texttt{1min1TD\_test.obd}) on sky using \gls{bob} (\figref{grondbob}).
+  \item If no test \gls{ob} with TCS on was done during the start-up, try to run a \gls{grond} test OB (\texttt{1min1TD\_test.obd}) on sky using \gls{bob} (\figref{grondbob}).
      \begin{enumerate}
        \item Fetch \gls{ob} with \fetchob.
        \item Click \texttt{Start}.      
@@ -1078,7 +1128,7 @@ A bit before sunset if doing sky flats or at sunset otherwise, you can ready the
                 \item Click on start again.
                 \item If error persists, close \gls{bob} and open it again
              \end{itemize} 
-       \item For other errors, do a \texttt{grondSHUTTER}, close bob and open it again.
+       \item For other errors, do a \gls{grondSHUTTER}, close bob and open it again.
      \end{enumerate}
 \end{enumerate}
 
@@ -1100,10 +1150,10 @@ If slack is closed, open a browser with the following link: https://slack.com/si
 \begin{enumerate}
     \item Flat-fielding
     \begin{enumerate}
-        \item \gls{wfi} flats can be done from sunset to sun at $-10$ degrees elevations depending on filtre.\\
+        \item \gls{wfi} \gls{sky flats} can be done from sunset to sun at $-10$ degrees elevations depending on filtre.\\
         Standard filtres have that order: U, V, R, I, and B.\\
         Done daily if possible.
-        \item \gls{grond} flats are extensive and run from sun at $-4$ to $-9$ degrees elevation.\\
+        \item \gls{grond} \gls{sky flats} are extensive and run from sun at $-4$ to $-9$ degrees elevation.\\
         To be started when 2s J-band exposures feature a
         relatively flat field with 20\,000 counts.\\
         Done weekly.
@@ -1115,24 +1165,24 @@ If slack is closed, open a browser with the following link: https://slack.com/si
         one of these methods:
         \begin{itemize} 
             \item with \gls{wfi}, using an \gls{ob} from \gls{bob}.
-            \item with \gls{feros}, using a standard or focus \gls{ob}.
+            \item with \gls{feros}, using a \gls{spectrophotometric standard} or \gls{focus} \gls{ob}.
         \end{itemize}
         \item Focus is best done daily.  If conditions are stable, at the beginning of the night, but may be delayed in case of bad seeing, fast varying temperature, or late opening.  
         \begin{enumerate}
-            \item \gls{feros} focus should be performed nightly using an \gls{ob} from \gls{bob}
-            \item \gls{wfi} focus should be done closest to science observations.
-            \item \gls{grond} focus is usually not performed.
+            \item \gls{feros} \gls{focus} should be performed nightly using an \gls{ob} from \gls{bob}
+            \item \gls{wfi} \gls{focus} should be done closest to science observations.
+            \item \gls{grond} \gls{focus} is usually not performed.
         \end{enumerate}
     \end{enumerate} 
     \item Standards
     \begin{enumerate}
         \item The \gls{feros} standards are
         \begin{enumerate}
-            \item Spectrophotometric standards included in the Focus+Standard \gls{ob}s.
-            \item Radial velocity standards by IAU and Soubiran, available from \gls{bob}
+            \item \Glspl{spectrophotometric standard} included in the Focus+Standard \glspl{ob}.
+            \item \Glspl{rv standard} by IAU and Soubiran, available from \gls{bob}
         \end{enumerate}
-        \item \gls{wfi} Landolt standard fields are available from \gls{bob}.
-        \item \gls{grond} SDSS standard fields are available from \gls{bob}.\\
+        \item \gls{wfi} Landolt \glspl{standard field} are available from \gls{bob}.
+        \item \gls{grond} SDSS \glspl{standard field} are available from \gls{bob}.\\
             The \gls{grond} team usually explicitly asks for them.    
     \end{enumerate}
 \end{enumerate}
@@ -1142,7 +1192,7 @@ If slack is closed, open a browser with the following link: https://slack.com/si
 
 \subsection{Sky flats}
 \label{sec:wfiflats}
-Sky flats in most narrow-band filtres and the darkest broad-band ones ($U$ \& $V$) should be started right at sunset or slightly before sunrise.  The brightest
+\Gls{sky flats} in most narrow-band filtres and the darkest broad-band ones ($U$ \& $V$) should be started right at sunset or slightly before sunrise.  The brightest
 broad band filtres ($R$, $I$, $B$) can be obtained with the sun at $-6$ to
 $-9$ degrees approximately.  It is possible to obtain the five standard filtres in one twilight provided they are started at sunset or in the morning twilight when the sun is at $-9$ degrees.
 
@@ -1150,9 +1200,9 @@ The procedure has been somehow modified (January 2014).
 
 \procedure{Taking sky flats with WFI}
 \begin{enumerate}
-  \item If not done, check that dome and main mirror cover are open (\procref{open}). 
-  \item If not done, check \gls{grond} and \gls{feros} mirrors (\procref{insready}, point~\ref{list:checkmirror}).
-  \item If not done, check that the WFI main cover is open (\procref{insready}, point~\ref{list:opencov}).
+  \item If not done, check that \gls{dome} and \gls{main mirror} cover are open (\procref{open}). 
+  \item If not done, check \gls{grond} \gls{M3} and \gls{feros} \gls{mirr3} mirrors (\procref{insready}, point~\ref{list:checkmirror}).
+  \item If not done, check that the WFI \gls{protective shutter} is open (\procref{insready}, point~\ref{list:opencov}).
   \item If not done, point the telescope to an empty field (\procref{ready}, point~\ref{list:presetempty}).
       \begin{enumerate}
          \item Go to \texttt{TCS control panel} the on screen \texttt{Telescope Control Software}.
@@ -1164,12 +1214,12 @@ The procedure has been somehow modified (January 2014).
          \item Click \texttt{Preset}.
       \end{enumerate}
   \item Go to \gls{bob} on screen \texttt{BOB Wide Field Imager}.
-  \item Fetch sky flat \gls{ob} from file (\fetchob).\\
+  \item Fetch \gls{sky flats} \gls{ob} from file (\fetchob).\\
         (Go to folder \texttt{.../TEMPLATES/OBD/SkyFlats/})
     \begin{itemize}
        \item For standard filtres use \texttt{SkyFlatsEveningCalPlan.obd}\\
            (\texttt{SkyFlatsMorningCalPlan.obd} in the morning)
-       \item Some other filtres have their own flat OBs (e.g. \texttt{SkyFlatsI203}).
+       \item Some other filtres have their own flat \glspl{ob} (e.g. \texttt{SkyFlatsI203}).
        \item For a set of non standard filtres use \texttt{SkyFlatsGeneric.obd}.
     \end{itemize}
   \item If not doing the standard filtres, customise \gls{ob}.
@@ -1177,30 +1227,24 @@ The procedure has been somehow modified (January 2014).
        \item For non standard filtres, edit the filtre names.
              \label{list:editfilt} 
               \begin{enumerate}
-                 \item Open the flat template, left-clicking on the triangle of \texttt{WFI\_img\_cal\_DomeFlat}
+                 \item Open the \gls{sky flats} \gls{template}, left-clicking on the triangle of \texttt{WFI\_img\_cal\_DomeFlat}
                  \item Open the instrument section, left-click on the triangle of section \texttt{INS}
-                 \item Use \wmenu{Inteferface}{Engineering}.
+                 \item Use \wmenu{Interface}{Engineering}.
                  \item Middle-click the filtre name, fill in value, and type enter.\\
-                      (In virtual desktop \texttt{OS GUI}, a filtre list is found below \texttt{SETUP Instrument})
+                      (In \gls{desktop} \texttt{OS GUI}, a filtre list is found below \texttt{SETUP Instrument})
               \end{enumerate}
-       \item Deactivate unneeded templates.\\
+       \item Deactivate unneeded \gls{template}s.\\
              Right-click the triangles to get a thumb down.
     \end{enumerate}
   \item Execute \gls{ob}
     \begin{enumerate}
       \item Click \texttt{Start}.
-      \item For each template
+      \item For each \gls{template}
        \begin{enumerate}
-         \item Click \texttt{OK} to pop-up asking to \gls{preset}.
-         \item After one minute, a pop-up estimates the exposure time.\\
-           In the evening, if the message is
-           \begin{itemize}
-             \item an error message and a dimm test image ($\le 400$\,ADU), skip this template
-           \end{itemize}
-           In the morning, if the message is
-           \begin{itemize}
-             \item an error message and a bright test image ($\ge 20$\,kADU), skip this template
-           \end{itemize}
+         \item \label{list:flattestexp}A test exposure is taken. (1 min)
+         \item A pop-up estimates the exposure time. (a few seconds)
+         \item If it is too late (too dim in the evening), the \gls{template} will be skipped.
+         \item If it is too early (too bright in the evening), the \gls{template} will restart from point~\ref{list:flattestexp}.
        \end{enumerate}
     \end{enumerate}
 \end{enumerate}
@@ -1210,50 +1254,49 @@ The procedure has been somehow modified (January 2014).
 
 \subsubsection{Pointing with FEROS}
 
-If starting with FEROS, you can use the focus and/or standard star OB to check pointing.
+If starting with FEROS, you can use the \gls{focus} and/or \gls{spectrophotometric standard} star \gls{ob} to check \gls{pointing}.
 
 \procedure{Ensure that pointing is correct using FEROS}
 \begin{enumerate}
-  \item Update the model parameters
+  \item Update the \gls{pointing model} parameters
   \begin{enumerate}
      \item Go to the \texttt{Telescope Control Software} workstation.
      \item Open or use a UNIX terminal.
      \item Type  \~{}\texttt{/bin/fixPointing.sh}
   \end{enumerate}
-  \item Change pointing model to FEROS.
+  \item Change \gls{pointing model} to FEROS.
   \begin{enumerate}
-    \item Go to the \texttt{TCS Status Panel} (workspace \texttt{Status}, see \figref{tcsstatus}).
+    \item Go to the \gls{TCS status panel} (\gls{desktop} \texttt{Status}, see \figref{tcsstatus}).
     \item Use \wmenu{Instrument selection}{FEROS}
   \end{enumerate}
   \item Check the sidereal time
   \begin{enumerate}
-    \item On the digital clock of the control room, switch display to sidereal time.
-    \item Go to the \texttt{TCS Control Panel} (workspace \texttt{Control}).
+    \item On the digital clock of the \gls{control room}, switch display to sidereal time.
+    \item Go to the \gls{TCS control panel} (\gls{desktop} \texttt{Control}).
     \item The sidereal time of the TCS Control Panel should lag by approximately 5 s. 
   \end{enumerate}
-  \item Point at a FEROS focus/standard star. See \secref{ferosfocus}.
+  \item Point at a FEROS \gls{focus}/\gls{spectrophotometric standard} star. See \secref{ferosfocus}.
 \end{enumerate}
 
 \subsubsection{Pointing and autoguider test with WFI}
 
-If things go well, the bright star used for the test that should fall a few hundreds of pixels from the centre of the mozaic in the South-West direction. 
-
+If things go well, the bright star used for the \gls{pointing} test should fall a few hundreds of pixels from the centre of the mosaic in the North-West direction (as of 2019). 
 \procedure{WFI pointing}
 \begin{enumerate}
   \item Switch the instrument to \gls{wfi} on the \gls{tcs} status panel.\\
     (\texttt{Instrument Selection}, \figref{tcsstatus}. Do it even if it already says \gls{wfi}).\label{list:switchwfi}
-  \item If not done, check that dome and main mirror are open, and dome is in automatic.\\
+  \item If not done, check that dome and \gls{main mirror} are open, and dome is in automatic.\\
     (Refer to \secref{open}, points~\ref{list:slitopen}, \ref{list:mirropen} and \ref{list:domeauto}). 
-  \item If not done, check \gls{grond} and \gls{feros} mirrors (\secref{insprep}, point~\ref{list:checkmirror}).
-  \item If not done, check that the WFI main cover is open (\secref{insprep}, point~\ref{list:opencov})\label{list:pointing:opencov}.
+  \item If not done, check \gls{grond} \gls{M3} and \gls{feros} \gls{mirr3} mirrors (\secref{insprep}, point~\ref{list:checkmirror}).
+  \item If not done, check that the WFI \gls{protective shutter} is open (\secref{insprep}, point~\ref{list:opencov})\label{list:pointing:opencov}.
   \item Go to \gls{bob} on screen \texttt{BOB Wide Field Imager}.
-  \item Fetch pointing \gls{ob} from file (\fetchob).\\
+  \item Fetch \gls{pointing} \gls{ob} from file (\fetchob).\\
         (Go to folder \texttt{.../TEMPLATES/OBD/Pointing/})
         \begin{itemize}
-           \item OBs are \texttt{Pointing-<ra>h.obd}, where \texttt{<ra>} is the right ascension.
+           \item \glspl{ob} are \texttt{Pointing-<ra>h.obd}, where \texttt{<ra>} is the right ascension.
            \item Chose an OB with \texttt{<ra>} close to sidereal time.
         \end{itemize} 
-  \item After the exposure is taken, accept ``refine acquisition''.\\
+  \item After the exposure is taken, accept ``refine \gls{acquisition}''.\\
         A small form asking for the star's coordinates will appear.
   \item Use \texttt{Pick Object} in the \texttt{view} option of the \gls{rtd} to obtain the star's pixel coordinates.  
   \item Input the pixel coordinates.\\
@@ -1267,16 +1310,16 @@ If things go well, the bright star used for the test that should fall a few hund
       \item You did not forget Points \ref{list:switchwfi}-\ref{list:pointing:opencov}.
       \item The sidereal time of the \gls{tcs} is correct within seconds.
       \item The pointing parameters of the \gls{tcs} are correct.
-      \item Check that the star does not fall into the gap between two CCDs. (Give coordinates falling in the gap to the pop-up, offset and reaquire. 
-      \item Once you have a star, as long as the offset is large, use \texttt{offset and reaquire}
-      \item If the correct pointing model is selected, that should not take more than 2-4 repeats (max 10 min).
+      \item Check that the star does not fall into the gap between two CCDs. (Give coordinates falling in the gap to the pop-up, offset and reacquire. 
+      \item Once you have a star, as long as the offset is large, use \texttt{offset and reacquire}
+      \item If the correct \gls{pointing model} is selected, that should not take more than 2-4 repeats (max 10 min).
     \end{enumerate}
-  \item At that point, the pointing is done, and a small test of the
+  \item At that point, the \gls{pointing} is done, and a small test of the
         autoguider is done.\\
-        If it crashes, it has no impact on the pointing
+        If it crashes, it has no impact on the \gls{pointing}
         check.  You can skip it if you do not intend to use the WFI autoguider.
   \item When asked, acquire a guide star on the \gls{tcs}.\\
-        On the \gls{tcs} Control Panel, follow the steps of \secref{guidewfi}\\
+        On the \gls{TCS control panel}, follow the steps of \secref{guidewfi}\\
         If it is still too bright to click on a guide star, click on background.
   \item Click \texttt{OK} to the popup asking for guiding on the \gls{wfi} workstation.
   \item Wait for a short exposure to read out (30 sec).
@@ -1290,27 +1333,27 @@ Preset the telescope to the field to be observed.
 
 Then, fetch a file from folder \texttt{.../TEMPLATES/OBD/Focus/}.  Focus in the band to be observed. Otherwise, V-band should be OK (focusV.obd).
 
-Try to guide. If guiding is instable, better to have it off.
+Try to guide. If guiding is unstable, better to have it off.
 
-When focus sequence has been taken ($\approx 6$ min), click \texttt{OK}
-before you go to the MIDAS window (in the Midas desktop), then left-click and right-click on the upper star in whatever vertical sequence to measure focus.  
+When \gls{focus} sequence has been taken ($\approx 6$ min), click \texttt{OK}
+before you go to the MIDAS window (in the Midas \gls{desktop}), then left-click and right-click on the upper star in whatever vertical sequence to measure \gls{focus}.  
 
-Many times, you cannot adjust the measuring box with the up and down keys, so the focus is badly estimated (the fits do not have a parabolic shape).  In that case, choose to remeasure it and the box should become adjustable (e.g. choose the upper star on other sequence).
+Many times, you cannot adjust the measuring box with the up and down keys, so the \gls{focus} is badly estimated (the fits do not have a parabolic shape).  In that case, choose to remeasure it and the box should become adjustable (e.g. choose the upper star on other sequence).
 
 
 
 \subsection{Standard fields (quick tips)}
 
-\procedure{WFI photometric standards}
+\procedure{WFI photometric standard fields}
 \begin{enumerate}
   \item Go to screen \texttt{BOB Wide Field Imager}.
   \item If not done, switch the instrument to \gls{wfi} on the \gls{tcs} status panel
         (\figref{tcsstatus}).
-  \item Fetch standard \gls{ob} from list 
+  \item Fetch \gls{standard field} \gls{ob} from list 
     \begin{enumerate}
        \item Use \fetchob.
        \item Go to folder \texttt{.../TEMPLATES/OBD/Standards/}.
-       \item Select OB
+       \item Select \gls{ob}
           \begin{itemize}
             \item If good image quality in $U$ is needed, select \texttt{Standard-<RA>-<name>-UBVRI.obd}.
             \item If not, select  \texttt{Standard-noAG-<RA>-<name>-UBVRI.obd} (no guiding).
@@ -1319,10 +1362,10 @@ Many times, you cannot adjust the measuring box with the up and down keys, so th
    \item Customize OB.
      \begin{itemize}
        \item If non-standard filtres are needed, edit filtre names (\secref{wfiflats}, item~\ref{list:editfilt}).
-       \item Deactivate unneeded templates.\\
+       \item Deactivate unneeded \gls{template}s.\\
                (Right-click the triangles to get a thumb down.)
      \end{itemize}
-   \item Execute OB (20 min).
+   \item Execute \gls{ob} (20 min).
      \begin{enumerate}
         \item Click \texttt{Start}.
         \item For each filtre
@@ -1337,18 +1380,18 @@ Many times, you cannot adjust the measuring box with the up and down keys, so th
 
 
 \section{FEROS}
-You can choose focus only, or focus and standard, which takes only 5 min more.  Radial Velocity (RV) standard can be taken any time needed (they take 5-10 minutes with overheads).
+You can choose \gls{focus} only, or \gls{focus} and \gls{spectrophotometric standard}, which takes only 5 min more.  A \gls{rv standard} can be taken any time needed (they take 5-10 minutes with overheads).
 
 \subsection{Focus}
 \label{sec:ferosfocus}
 
 \procedure{FEROS focusing}
 \begin{enumerate}
-  \item Check that dome and main mirror are open (\procref{open}).\label{list:ferosfocus1}
-  \item Check \gls{grond} and \gls{feros} mirrors (on \gls{wfi} and \gls{feros}, respectively. \secref{insprep}, point~\ref{list:checkmirror}).
-  \item Check that the WFI main cover is open (\secref{insprep}, point~\ref{list:opencov}).
-  \item Select instrument \texttt{feros} on the \texttt{TCS Status} panel (screen \texttt{Telescope Control Software}).
-  \item Got to \gls{bob} on screen \texttt{FEROS OB} and fetch focus \gls{ob}:
+  \item Check that dome and \gls{main mirror} are open (\procref{open}).\label{list:ferosfocus1}
+  \item Check \gls{grond} \gls{M3} and \gls{feros} \gls{mirr3} mirrors (on \gls{wfi} and \gls{feros}, respectively. \secref{insprep}, point~\ref{list:checkmirror}).
+  \item Check that the WFI \gls{protective shutter} is open (\secref{insprep}, point~\ref{list:opencov}).
+  \item Select instrument \texttt{feros} on the \gls{TCS status panel} (screen \texttt{Telescope Control Software}).
+  \item Got to \gls{bob} on screen \texttt{FEROS \gls{ob}} and fetch \gls{focus} \gls{ob}:
   \begin{enumerate}
      \item Use \fetchob.
      \item Select directory \texttt{.../TEMPLATES/OBD/Focus/}.
@@ -1356,24 +1399,24 @@ You can choose focus only, or focus and standard, which takes only 5 min more.  
   \end{enumerate}
   \item Click \texttt{Start}.
   \item Acquire object on fibre and guide (see \secref{switchingFeros}, point~\ref{list:autoguiderFeros}, \& \secref{ferosguiding}).
-  \item Perform the focus
+  \item Perform the \gls{focus}
   \begin{enumerate}
      \item On the \texttt{Autoguiding} window, select numbers 6, 3, 0.2.
      \item After about 30\,s, click \texttt{OK} to pop-up asking to ensure loop time is more than 3.
-     \item A pop-up asks and suggest a focus estimate
+     \item A pop-up asks and suggest a \gls{focus} estimate
        \begin{enumerate}
          \item If number is in range 300--500, it should be fine, click \texttt{OK}.
          \item If not, fill in last remembered value or, if you don't have any, 400, then click \texttt{OK}.
        \end{enumerate}
-     \item Shortly after, a pop-up asks to select a star to focus on
+     \item Shortly after, a pop-up asks to select a star to \gls{focus} on
         \begin{enumerate}
            \item A \texttt{MIDAS} image appears, left and right-click on a non-saturated source. 
            \item Click \texttt{OK} to pop-up
         \end{enumerate}
-     \item After about 5--10 min a fit to focus is done and a pop-up asks whether it is correct
+     \item After about 5--10 min a fit to \gls{focus} is done and a pop-up asks whether it is correct
         \begin{enumerate}
            \item If it seems correct, click \texttt{OK}.
-           \item If it seems incorrect, but you can spot a good focus value by eye
+           \item If it seems incorrect, but you can spot a good \gls{focus} value by eye
              \begin{itemize}
                 \item Click \texttt{No} 
                 \item Give guesstimate to new pop-up
@@ -1386,7 +1429,7 @@ You can choose focus only, or focus and standard, which takes only 5 min more.  
 
 \subsection{Focus and spectrophotometric standard}
 
-You may deactivate the focus sequence by thumbing down the second template in \gls{bob} (10 min without focus).
+You may deactivate the \gls{focus} sequence by thumbing down the second \gls{template} in \gls{bob} (10 min without focus).
 
 \procedure{Focus and/or spectrophotometric standard}
 \begin{enumerate}
@@ -1395,15 +1438,16 @@ You may deactivate the focus sequence by thumbing down the second template in \g
      \item \gls{ob} directory is \texttt{.../TEMPLATES/OBD/Focus+Standard}
      \item \gls{ob} name is \texttt{Focus+Standard-<ra>….obd} with \texttt{<ra>} close to sidereal time. 
    \end{itemize}
-\item After focus is done, change integration time to 0.01 on the \texttt{Autoguiding} window.
+\item After \gls{focus} is done, change integration time to 0.01 on the \texttt{Autoguiding} window.
 \item Two pop-ups will ask to wait for object to be centred on the fibre.  Wait for it to occur and click \texttt{OK}.
+\item Wait for \gls{spectrophotometric standard} template to integrate and read out (1 min)
 \end{enumerate}
 
 \subsection{Radial velocity standards}
 
 \procedure{FEROS radial velocity standards}
 \begin{enumerate}
-  \item Got to \gls{bob} on screen \texttt{FEROS OB} and fetch standard \gls{ob}:
+  \item Got to \gls{bob} on screen \texttt{FEROS \gls{ob}} and fetch \gls{rv standard} \gls{ob}:
   \begin{enumerate}
      \item Use \fetchob.
      \item Select directory \texttt{../TEMPLATES/OBD/RVStandard}.
@@ -1413,7 +1457,7 @@ You may deactivate the focus sequence by thumbing down the second template in \g
   \begin{enumerate}
     \item In the \texttt{e2p2 RTD} window, click \texttt{Centering} (below \texttt{Image Control}), then click on the object.
     \item In the \texttt{Autoguiding} window, set the integration time if necessary.
-    \item OK on popups (\texttt{FEROS OB}) when the object is centred.
+    \item OK on popups (\texttt{FEROS \gls{ob}}) when the object is centred.
   \end{enumerate}  
     
 \end{enumerate}
@@ -1424,30 +1468,30 @@ You may deactivate the focus sequence by thumbing down the second template in \g
 
 \paragraph{Evening flats}
 
-Before taking evening flat fields, check the relevant items of ``no flux or little flux'' in \secref{noflux}. In particular the main mirror cover should be open and the dome set in automatic.  The sky flats typically start when the sun is 4 degrees below the horizon.  To be able to start on time, the following procedure should be started right at sunset.
+Before taking evening flat fields, check the relevant items of ``no flux or little flux'' in \secref{noflux}. In particular the \gls{main mirror} cover should be open and the dome set in automatic.  The \gls{sky flats} typically start when the sun is 4 degrees below the horizon.  To be able to start on time, the following procedure should be started right at sunset.
 
 \procedure{GROND evening flat fields}
 \gls{grond} flat field \gls{ob} lasts about 30 min.
 \begin{enumerate}
-  \item If not done, check that dome and main mirror are open (\procref{open}).
+  \item If not done, check that dome and \gls{main mirror} are open (\procref{open}).
   \item If not done, point the telescope to an empty field (\procref{ready}, point~\ref{list:presetempty}).
   \item If not done, set the dome in automatic.
   \item Go to \texttt{GROND BOB} screen.
   \item If not done in the evening, do some prophylaxis (\procref{startup}, points~\ref{list:grond-prophylaxis} and \ref{list:grond-testtcs})
      \begin{enumerate}
        \item Close \gls{bob}.
-       \item In the terminal, type \texttt{grondGRI}.
-       \item In the terminal, type \texttt{grondSHUTTER \&\& grondFM} (may last 1 min).
+       \item In the terminal, type \gls{grondGRI}.
+       \item In the terminal, type \texttt{\gls{grondSHUTTER} \&\& \gls{grondFM}} (may last 1 min).
        \item From the terminal, launch a new \gls{bob} with \texttt{bob \&}.
        \item Execute a \texttt{1min1TD\_test.obd} with \gls{tcs} \texttt{ON}.
      \end{enumerate}
-  \item Set mirror and open shutters
+  \item Insert \gls{M3} mirror and open shutters
      \begin{enumerate}
-       \item In the terminal, type \texttt{grondM3 GROND}.
-       \item In the terminal, type \texttt{grondMC OPEN}.
-       \item In the terminal, type \texttt{grondCS OPEN}.
+       \item In the terminal, type \texttt{\gls{grondM3} GROND}.
+       \item In the terminal, type \texttt{\gls{grondMC} OPEN}.
+       \item In the terminal, type \texttt{\gls{grondCS} OPEN}.
      \end{enumerate}
-  \item Get sky flat \gls{ob} ready\\
+  \item Get \gls{sky flats} \gls{ob} ready\\
          In \gls{bob}, fetch \gls{ob} \texttt{GROND\_img\_cal\_skyflats\_ev}\\
          (use \texttt{Flats/} folder).
   \item Monitor the $J$-band counts.
@@ -1461,12 +1505,12 @@ Before taking evening flat fields, check the relevant items of ``no flux or litt
               \end{itemize}
            \item Draw cuts in the infrared image.
               \begin{itemize}
-                 \item Go the the \texttt{irtd} window.
+                 \item Go the the \gls{irtd} window.
                  \item Go the the $J$-band (right handside)
                  \item Use \wmenu{View}{Cuts…}, then click \texttt{OK} on the pop-up.
                  \item Draw a diagonal on the image with the mouse.
               \end{itemize}
-           \item Wait for the cuts to look flat and with about 20\,000 counts. This should occurr when the sun is about 4 degrees below the horizon.
+           \item Wait for the cuts to look flat and with about 20\,000 counts. This should occur when the sun is about 4 degrees below the horizon.
         \end{enumerate}
   \item When counts are OK, on the \texttt{GROND BOB} screen, click \texttt{Start} in \gls{bob}. 
 \end{enumerate}
@@ -1476,27 +1520,27 @@ Before taking evening flat fields, check the relevant items of ``no flux or litt
 \procedure{GROND standard field observation}
 The procedure lasts 7 min.
 \begin{enumerate}
-       \item Select an SDSS standard field close to the meridian\\
-             In \gls{bob} use \fetchob{} and select one in subfolder \texttt{Standards}
+       \item Select an SDSS \gls{standard field} close to the meridian\\
+             In \gls{bob} use \fetchob{} and select one in sub-folder \texttt{Standards}
        \item Execute it by clicking \texttt{Start}
        \item You can ignore guiding and click \texttt{OK} if the \texttt{ob asks for it}
 \end{enumerate}
 
 
 \paragraph{Morning flats}
-Morning flat fields are trickier to get right. They should be started when the sun is at 9 degrees below horizon.
+Morning \gls{sky flats} are trickier to get right. They should be started when the sun is at 9 degrees below horizon.
 
 \procedure{GROND morning flat fields}
 \begin{enumerate}
   \item Point the telescope to an empty field as explained in \secref{open}.
   \item Go to \texttt{GROND BOB} screen.
-  \item Set mirrors and open shutters (if you were not already with \gls{grond})
+  \item Insert \gls{M3} mirror and open shutters (if you were not already with \gls{grond})
      \begin{enumerate}
-       \item In the terminal, type \texttt{grondM3 GROND}.
-       \item In the terminal, type \texttt{grondMC OPEN}.
-       \item In the terminal, type \texttt{grondCS OPEN}.
+       \item In the terminal, type \texttt{\gls{grondM3} GROND}.
+       \item In the terminal, type \texttt{\gls{grondMC} OPEN}.
+       \item In the terminal, type \texttt{\gls{grondCS} OPEN}.
      \end{enumerate}
-  \item Get sky flat \gls{ob} ready\\
+  \item Get \gls{sky flats} \gls{ob} ready\\
         In \gls{bob}, fetch \gls{ob} \texttt{GROND\_img\_cal\_skyflats\_mo}.\\
                (Use \texttt{Flats/} folder.)
   \item When sun is at 9 degrees below horizon, click \texttt{Start} on \gls{bob}.
@@ -1504,22 +1548,17 @@ Morning flat fields are trickier to get right. They should be started when the s
 
 \subsection{Focus}
 
-The focus of \gls{grond} is stable and managed periodically by the MPE team.  Defocused observations can be obtained by specifying a focus offset in the \gls{ob}.
+The \gls{focus} of \gls{grond} is stable and managed periodically by the \gls{mpe} team.  Defocused observations can be obtained by specifying a \gls{focus} offset in the \gls{ob}.
 
 The \gls{ag} can also be focused separately from the instrument, in case of defocused observations (I don't remember how to open the new GUI though).
 
 
 \subsection{Photometric standard fields}
 
-There are \glspl{ob} for Landolt and SDSS standard fields that can be fetched from file with \gls{bob} (10 min).
+There are \glspl{ob} for Landolt and SDSS \glspl{standard field} that can be fetched from file with \gls{bob} (10 min).
 
 \subsection{RRM online}
-In the GROND Control panel (\figref{grondcon}), click \texttt{RRM ONLINE} at the end of the twilight (beginning of the night) to allow for remote observations with this instrument.
-
-
-
-
-
+In the \texttt{GROND \gls{General State}} panel (\figref{grondcon}), click \texttt{\gls{rrm} ONLINE} at the end of the twilight (beginning of the night) to allow for remote observations with this instrument.
 
 
 
@@ -1547,51 +1586,51 @@ At the beginning of an observation, you may have have popups asking
 \end{itemize}
 
 For an observation with large dithers (\texttt{COMBINED.OFFSET} is \texttt{F}) the
-guiding will be asked at the beginning of each exposure.  It will also be asked for if at the beginning of a new template if the filtre is changed.
+guiding will be asked at the beginning of each exposure.  It will also be asked for if at the beginning of a new \gls{template} if the filtre is changed.
 
 Error popups may also appear, see \chapref{trouble}.
 
 \subsection{Switching to WFI}
 
-You may start an OB once point \ref{list:pmwfi} has been done.  This minimises
-overheads by parallelising \gls{preset} and mirror movements.  However, beware that some acquisition templates (movetopixel and movetogap) don't ask before taking the acquistion image, so you should be faster than preset.  
+You may start an \gls{ob} once point \ref{list:pmwfi} has been done.  This minimises
+overheads by parallelising \gls{preset} and mirror movements.  However, beware that some\gls{acquisition} \gls{template}s (movetopixel and movetogap) don't ask before taking the acquisition image, so you should be faster than preset.  
 
 \procedure{Switch to WFI observations}
 \begin{enumerate}
-  \item Open the \gls{wfi} main cover.
-  \item Switch the pointing model to \gls{wfi}.\label{list:pmwfi}
+  \item Open the \gls{wfi} \gls{protective shutter}.
+  \item Switch the \gls{pointing model} to \gls{wfi}.\label{list:pmwfi}
   \begin{enumerate}
     \item Go to screen \texttt{Telescope Control Software}.
-    \item Go to the \texttt{TCS Status Panel} (workspace \texttt{Status}, see \figref{tcsstatus}). 
+    \item Go to the \gls{TCS status panel} (\gls{desktop} \texttt{Status}, see \figref{tcsstatus}). 
     \item Use \wmenu{Instrument selection}{WFI}
   \end{enumerate}
-  \item Check the \gls{grond} M3 mirror.\\
+  \item Check the \gls{grond} \gls{M3} mirror.\\
         Go to screen \texttt{GROND BOB}.
   \begin{enumerate}
-      \item Ensure that the mirror is on \gls{wfi}.\label{list:wfi:checkm3}
+      \item Ensure that the \gls{M3} mirror is on \gls{wfi}.\label{list:wfi:checkm3}
       \begin{enumerate}
-         \item Go to the \texttt{GROND Control} panel (workspace \texttt{BOB+OS}).
-         \item Check the value of \texttt{GROND M3}.
+         \item Go to the \texttt{GROND Control} panel (\gls{desktop} \texttt{BOB+OS}).
+         \item Check the value of \texttt{GROND \gls{M3}}.
       \end{enumerate}
       \item If it is on \gls{grond}, set it to \gls{wfi}.\\
-            In a terminal, type \texttt{grondM3 WFI}.\\
+            In a terminal, type \texttt{\gls{grondM3} WFI}.\\
             Redo point \ref{list:wfi:checkm3} (value should be MOVING then WFI).
   \end{enumerate}
-  \item Check the \gls{feros} \texttt{mirr3} mirror.\\
+  \item Check the \gls{feros} \texttt{\gls{mirr3}} mirror.\\
         Go to screen \texttt{FEROS BOB}.
   \begin{enumerate}
       \item Ensure that the mirror is on \gls{wfi}
       \begin{enumerate}
-         \item Go to the \texttt{FEROS Control} panel (workspace \texttt{BOB+OS}).
-         \item Check the value of \texttt{M3 Selected Mirror}.
+         \item Go to the \texttt{FEROS Control} panel (\gls{desktop} \texttt{BOB+OS}).
+         \item Check the value of \texttt{\gls{M3} Selected Mirror}.
       \end{enumerate}
       \item If it is on \gls{feros}, set it to \gls{wfi}.
       \begin{enumerate}
-         \item Go to the \texttt{FEROS ICS Control} panel (workspace \texttt{ICS}).
-         \item Select the \texttt{mirr3} checkbox (in green) under the \texttt{Motors} section.
+         \item Go to the \texttt{FEROS \gls{ICS Control}} panel (\gls{desktop} \texttt{ICS}).
+         \item Select the \texttt{\gls{mirr3}} checkbox (in green) under the \texttt{Motors} section.
          \item Select \texttt{WFI} on the same line.
          \item Click \texttt{SETUP} at the bottom of the panel.
-         \item Unselect the \texttt{mirr3} checkbox.
+         \item Deselect the \texttt{\gls{mirr3}} checkbox.
       \end{enumerate}  
   \end{enumerate}
 \end{enumerate}
@@ -1604,20 +1643,20 @@ overheads by parallelising \gls{preset} and mirror movements.  However, beware t
     \item On the \gls{tcs} workstation, acquire the guide field
     \begin{enumerate}
         \item Go to screen \texttt{Telescope Control Software}.
-        \item Locate the \texttt{TCS Control Panel} (\figref{tcs}).
+        \item Locate the \gls{TCS control panel} (\figref{tcs}).
         \item Click \texttt{Retrieve Field} below \texttt{AG Field Acquisition}.
     \end{enumerate}
     \item On the autoguider windows (\figref{tcsag}), chose the guide star
     \begin{enumerate}
-        \item Wait ($\approx 30$\,s) for \texttt{skycat} to read out the guide field.
+        \item Wait ($\approx 30$\,s) for \gls{skycat} to read out the guide field.
         \item On the same window, click \texttt{Auto Set Cut Levels}.
         \item Open the \texttt{Pick Reference Star} window if necessary.\\
           In \texttt{skycat} chose \wmenu{TCS}{Pick Reference Star}.
         \item Pick the reference star\\
           On the \texttt{Pick Reference Star} window click \texttt{Pick}\\
-          On the \texttt{skycat} window, click a bright star not too close to the border. 
+          On the \gls{skycat} window, click a bright star not too close to the border. 
   \end{enumerate}
-  \item On the \texttt{TCS Control Panel} (\figref{tcs}) start the guiding
+  \item On the \gls{TCS control panel} (\figref{tcs}) start the guiding
   \begin{enumerate}
         \item Activate the guiding\\
               Click \texttt{Box to Star} below \texttt{Autoguider}.
@@ -1631,13 +1670,13 @@ After a filtre change or when running several observing blocks on the same
 field, it is possible to reacquire guiding within a few seconds instead of the
 full procedure (1 min).  
 
-It is not possible to do it after a focus sequence. 
+It is not possible to do it after a \gls{focus} sequence. 
 
 \procedure{Restart guiding with WFI}
 \label{proc:quickguide}
 \begin{enumerate}
     \item On the \gls{tcs} machine, go to screen \texttt{Telescope Control Software}.
-    \item On the \texttt{TCS Control Panel} (\figref{tcs})
+    \item On the \gls{TCS control panel} (\figref{tcs})
     \begin{enumerate}
         \item Click \texttt{Start monitoring} 
         \item Click \texttt{Stop monitoring}  
@@ -1645,9 +1684,9 @@ It is not possible to do it after a focus sequence.
     \item Select the star on the autoguider windows (\figref{tcsag}) 
     \begin{enumerate}
         \item Click \texttt{Pick object} in the \texttt{Pick reference star} window.
-        \item Click on the star in the \texttt{skycat} window.
+        \item Click on the star in the \gls{skycat} window.
     \end{enumerate}
-    \item On the \texttt{TCS Control Panel} (\figref{tcs}) start the guiding
+    \item On the \gls{TCS control panel} (\figref{tcs}) start the guiding
     \begin{enumerate}
         \item Activate the guiding\\
               Click \texttt{Box to Star} below \texttt{Autoguider}.
@@ -1663,39 +1702,39 @@ It is not possible to do it after a focus sequence.
 \subsection{Switching to FEROS}
 \label{sec:switchingFeros}
 
-You can start an OB once point \ref{list:pmferos} has been done.  This minimises
+You can start an \gls{ob} once point \ref{list:pmferos} has been done.  This minimises
 overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
 
 \procedure{Switch to FEROS observation}
 \begin{enumerate}
-  \item Switch the pointing model to \gls{feros}.
+  \item Switch the \gls{pointing model} to \gls{feros}.
   \begin{enumerate}
     \item Go to screen \texttt{Telescope Control Software}.
-    \item Go to the \texttt{TCS Status Panel} (workspace \texttt{Status}, see \figref{tcsstatus}). 
+    \item Go to the \gls{TCS status panel} (\gls{desktop} \texttt{Status}, see \figref{tcsstatus}). 
     \item Use \wmenu{Instrument selection}{FEROS}
   \end{enumerate}
-  \item Ensure the \gls{feros} \texttt{mirr3} mirror is on FEROS.\label{list:pmferos}
+  \item Ensure the \gls{feros} \texttt{\gls{mirr3}} mirror is on FEROS.\label{list:pmferos}
   \begin{enumerate}
-    \item Go to he \texttt{FEROS Control} panel on workspace \texttt{BOB+gen state} on screen \texttt{FEROS BOB}.
+    \item Go to he \texttt{FEROS Control} panel on \gls{desktop} \texttt{BOB+gen state} on screen \texttt{FEROS BOB}.
     \item If the value of \texttt{M3 Selected Mirror} is WFI, set it to \gls{feros}
     \begin{enumerate}
-      \item Go to the \texttt{FEROS ICS Control} panel (workspace \texttt{ICS}).
-      \item Select the \texttt{mirr3} checkbox (in green) under the \texttt{Motors} section.
+      \item Go to the \texttt{FEROS \gls{ICS Control}} panel (\gls{desktop} \texttt{ICS}).
+      \item Select the \texttt{\gls{mirr3}} checkbox (in green) under the \texttt{Motors} section.
       \item Select \texttt{FEROS} on the same line.
       \item Click \texttt{SETUP} at the bottom of the panel.
-      \item Unselect the \texttt{mirr3} checkbox.
+      \item Deselect the \texttt{\gls{mirr3}} checkbox.
     \end{enumerate}   
   \end{enumerate}
-  \item Ensure the \gls{grond} M3 mirror is on \gls{wfi}.
+  \item Ensure the \gls{grond} \gls{M3} mirror is on \gls{wfi}.
   \begin{enumerate}
-    \item Go to he \texttt{GROND general state} panel on workspace \texttt{bob+gen space} of screen \texttt{GROND BOB}
-    \item If the value \texttt{GROND M3} is \gls{grond} send it to \gls{wfi}.\\
-          In a terminal, type \texttt{grondM3 WFI}.
-    \item Check that value \texttt{GROND M3} goes to \texttt{MOVING} then \texttt{WFI} (2 min)
+    \item Go to he \texttt{GROND general state} panel on \gls{desktop} \texttt{bob+gen space} of screen \texttt{GROND BOB}
+    \item If the value \texttt{GROND \gls{M3}} is \gls{grond} send it to \gls{wfi}.\\
+          In a terminal, type \texttt{\gls{grondM3} WFI}.
+    \item Check that value \texttt{GROND \gls{M3}} goes to \texttt{MOVING} then \texttt{WFI} (2 min)
   \end{enumerate}
   \item Set up the autoguider\label{list:autoguiderFeros} 
   \begin{enumerate}
-    \item Go to the \texttt{FEROS} workspace of screen \texttt{Autoguider GROND \& FEROS}
+    \item Go to the \texttt{FEROS} \gls{desktop} of screen \texttt{Autoguider GROND \& FEROS}
     \item Set up the autoguiding properties. (See \figref{agswitch})
     \begin{enumerate}
       \item Go to window \texttt{Autoguider}\\
@@ -1705,7 +1744,7 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
       \item Select autoguiding loop times.\\
             Under \texttt{Autoguider control} fill in the numbers from top to bottom
       \begin{itemize}
-        \item For focus: 6, 3, 0.02
+        \item For \gls{focus}: 6, 3, 0.02
         \item For science targets adapt last number to magnitude (0.001--2.999).
       \end{itemize}
       \item Restart exposure so that guider takes new values into account.
@@ -1739,7 +1778,7 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
   \end{enumerate}
   \item Start the observation.
   \begin{enumerate}
-    \item Go the the \texttt{bob+gen state} workspace of screen \texttt{FEROS BOB}
+    \item Go the the \texttt{bob+gen state} \gls{desktop} of screen \texttt{FEROS BOB}
     \item In \texttt{bob}, fetch \gls{ob} and click \texttt{Start}
   \end{enumerate}
 \end{enumerate}
@@ -1781,7 +1820,7 @@ It is possible to guide blind using another star of the field in the fibre head 
   \item Choose integration times (6, 3, $x$ for bright targets with $x < 3$).
   \item Set reference to a star of the field.
   \item Start guiding.
-  \item \textbf{Important:}  at the end of the OB, set the reference back to fibre position.
+  \item \textbf{Important:}  at the end of the \gls{ob}, set the reference back to fibre position.
 \end{enumerate}
 
 \paragraph{Using WFI}
@@ -1794,7 +1833,7 @@ This is the preferred method in bad weather or for faint targets.  When the FERO
   In window \texttt{E2P2 Real Time Display}, click \texttt{Centering} below \texttt{Image Control} and click on the target. 
   \item Change filtre to limit the defocus in the \gls{wfi} \gls{ag}
   \begin{enumerate}
-    \item Go to the workstation \texttt{WFI BOB}, workspace \texttt{OS GUI}.
+    \item Go to the workstation \texttt{WFI BOB}, \gls{desktop} \texttt{OS GUI}.
     \item In panel \texttt{e2p2 OS GUI}, select filtre under \texttt{SETUP Instrument}.
     \begin{itemize}
         \item If \gls{feros} \gls{adc} is used, select Cousins $I$.
@@ -1817,7 +1856,7 @@ This is the preferred method in bad weather or for faint targets.  When the FERO
        \item Use the arrows to centre if necessary.  
     \end{enumerate}
   \item \textbf{Important:} stop guiding at the end of the \gls{feros} \gls{ob}.\\
-  In the\texttt{ TCS Control Panel}, click \texttt{Stop Monitoring} (under \texttt{AG Monitoring Parameters}) and click \texttt{Off} (in the panel \texttt{Autoguider}).  
+  In the \gls{TCS control panel}, click \texttt{Stop Monitoring} (under \texttt{AG Monitoring Parameters}) and click \texttt{Off} (in the panel \texttt{Autoguider}).  
   %Ivan: and OFF -> Not active?
   \item \textbf{Note:} when observing with the ADC, don't lose time centering on the first pop-up.  No second
      pop-up will be issued after ADC has entered the beam path, so you should
@@ -1829,29 +1868,29 @@ This is the preferred method in bad weather or for faint targets.  When the FERO
 
 \subsection{Switching to GROND}
 
-You can start an OB once point \ref{list:switch-mcclose} has been done.  This minimises overheads by parallelising \gls{preset}, mirror movements, and autoguiding configuration.  If the Moon is between the first target and the current position or you are on a bright star, you should manually preset with the main cover closed to avoid blinding the IR detector.
+You can start an \gls{ob} once point \ref{list:switch-mcclose} has been done.  This minimises overheads by parallelising \gls{preset}, mirror movements, and autoguiding configuration.  If the Moon is between the first target and the current position or you are on a bright star, you should manually preset with the \gls{mc} closed to avoid blinding the IR detector.
 
 \procedure{Switch to GROND observations}
 \begin{enumerate}
-  \item Ensure the \gls{grond} main cover is closed to avoid pointing a bright target with open shutters\\
+  \item Ensure the \gls{grond} \gls{mc} is closed to avoid \gls{pointing} at a bright target with open shutters\\
         Your FEROS targets may be very bright or you might slew over the moon in your first GROND observation.\label{list:switch-mcclose}
   \begin{enumerate}
     \item Go to screen \texttt{GROND BOB}.
-    \item In a terminal, type \texttt{grondMC CLOSE}.
+    \item In a terminal, type \texttt{\gls{grondMC} CLOSE}.
     \item Wait for cover to close (10-15 s). on panel \texttt{GROND General state}\\
                 Due to a big, it will say \texttt{Moving}, \texttt{Open}, then \texttt{Closed}
   \end{enumerate}
-  \item There is no need to switch the pointing model to \gls{grond}\\
+  \item There is no need to switch the \gls{pointing model} to \gls{grond}\\
         GROND does it automatically, but you can do it to be consistent with FEROS and WFI.
-  \item To gain time, ensure the \gls{grond} M3 mirror is on \gls{grond}
+  \item To gain time, ensure the \gls{grond} \gls{M3} mirror is on \gls{grond}
   \begin{enumerate}
-    \item Go to window \texttt{GROND General State} on screen \texttt{GROND BOB}
-    \item If \texttt{M3} says WFI\label{list:grond:checkm3}, send it to GROND.\\
-            In a terminal, type \texttt{grondM3 GROND} and wait for it to go from \texttt{MOVING} to \texttt{GROND}
+    \item Go to window \texttt{GROND \gls{General State}} on screen \texttt{GROND BOB}
+    \item If \texttt{\gls{M3}} says WFI\label{list:grond:checkm3}, send it to GROND.\\
+            In a terminal, type \texttt{\gls{grondM3} GROND} and wait for it to go from \texttt{MOVING} to \texttt{GROND}
   \end{enumerate}
-  \item Set up the autoguider on workspace 
+  \item Set up the autoguider 
   \begin{enumerate}
-    \item Go to the \texttt{GROND} workspace of screen \texttt{Autoguider GROND \& FEROS}
+    \item Go to the \texttt{GROND} \gls{desktop} of screen \texttt{Autoguider GROND \& FEROS}
     \item Set up the autoguiding properties. (See \figref{agswitch})
     \begin{enumerate}
       \item Go to window \texttt{Autoguider},\\
@@ -1882,15 +1921,15 @@ You can start an OB once point \ref{list:switch-mcclose} has been done.  This mi
   \end{enumerate}
   \item Start the observation
   \begin{enumerate}
-    \item Go the the \texttt{bob+gen state} workspace of screen \texttt{FEROS BOB}
+    \item Go the the \texttt{bob+gen state} \gls{desktop} of screen \texttt{FEROS BOB}
     \item In \texttt{bob}, fetch \gls{ob} and click \texttt{Start}
     \item Wait for \gls{preset} to near or reach target\\
-          Look on the Rose Diagram of the \texttt{TCS Setup Panel} on the \texttt{TCS} screen.
-    \item Open the main cover
+          Look on the Rose Diagram of the \gls{TCS setup panel} on the \texttt{TCS} screen.
+    \item Open the \gls{mc}
     \begin{enumerate}
       \item Go to screen \texttt{GROND BOB}.
-      \item In a terminal, type \texttt{grondMC OPEN}.
-      \item Wait for cover to close (10-15 s) by checking value on panel \texttt{GROND General State}\\
+      \item In a terminal, type \texttt{\gls{grondMC} OPEN}.
+      \item Wait for cover to close (10-15 s) by checking value on panel \texttt{GROND \gls{General State}}\\
             Due to a bug, it will say \texttt{Moving}, \texttt{Closed}, then open \texttt{Open}. 
     \end{enumerate}
     \item Acquire guide star is needed or asked
@@ -1900,12 +1939,14 @@ You can start an OB once point \ref{list:switch-mcclose} has been done.  This mi
 
 \subsection{React to an automatic trigger}
 
+When the \gls{rrm} of \gls{grond} is activated, it is possible that the detection of a transient by a satellite sends an automatic notice that will result in GROND taking command of the telescope.
+
 \procedure{React to an automatic trigger}
 \begin{enumerate}
-  \item Check that your exposure is beeing read out automatically, if not, do it manually
+  \item Check that your exposure is being read out automatically, if not, do it manually
     \begin{itemize}
         \item \textit{(\gls{feros})} click \texttt{END} on \texttt{FEROS Control}
-        \item \textit{(\gls{wfi})} click \texttt{END} on \texttt{WFI General State} panel.\\
+        \item \textit{(\gls{wfi})} click \texttt{END} on \texttt{WFI \gls{General State}} panel.\\
         If WFI wasn't read out and \gls{preset} is started, frame is lost.
     \end{itemize}
   \item Click \texttt{OK} on the trigger to start \gls{preset}.\\
@@ -1917,7 +1958,7 @@ You can start an OB once point \ref{list:switch-mcclose} has been done.  This mi
     \item Set up the autoguiding properties. (See \figref{agswitch})
     \begin{enumerate}
       \item Go to window \texttt{Autoguider}, open it if necessary.\\
-            To open: left-click the workspace, choose \texttt{Autoguider} from menu \texttt{CAM user}.
+            To open: left-click on the background, choose \texttt{Autoguider} from menu \texttt{CAM user}.
       \item Change the guiding unit to \gls{grond}\\
             Select \texttt{GROND} under \texttt{Guiding unit} in the \texttt{CCD Control} area. 
       \item Select autoguiding loop times.\\
@@ -1927,7 +1968,7 @@ You can start an OB once point \ref{list:switch-mcclose} has been done.  This mi
     \item Set up the autoguider real time image.
       \begin{enumerate}
       \item Go window \texttt{Telescope R.T.D.}, open it if necessary.\\
-            To open: left-click the workspace, choose \texttt{Autoguider RTD Grond} from menu \texttt{CAM user}.
+            To open: left-click the screen background, choose \texttt{Autoguider RTD Grond} from menu \texttt{CAM user}.
       \item Activate the guide camera image flow if necessary.\\
         Use menu \texttt{TCS} $\rightarrow$ \texttt{Attach camera}.
       \end{enumerate}
@@ -1951,38 +1992,38 @@ You can start an OB once point \ref{list:switch-mcclose} has been done.  This mi
   \item In \texttt{Autoguiding} window, click \texttt{Start guiding}.
 \end{enumerate}
 
-\section{All intruments}
+\section{All instruments}
 
 \subsection{Run an observing block}
 
-There are three ways to run an OB: use a template in \gls{bob} and modify it on the fly; call it from \gls{p2pp}; call it from the \gls{ot} execution sequence.  The last method allows to automatically fetch and run OBs in a sequence, without lost time, but popups must be attended, of course.
+There are three ways to run an \gls{ob}: use a \gls{template} in \gls{bob} and modify it on the fly; call it from \gls{p2pp}; call it from the \gls{ot} execution sequence.  The last method allows to automatically fetch and run OBs in a sequence, without lost time, but popups must be attended, of course.
 
 
 
 \subsection{Skip the preset}
 
 If the telescope is already on the right target, you can skip the \gls{preset}
-when starting an OB. For observations requiring guiding, you should make sure
+when starting an \gls{ob}. For observations requiring guiding, you should make sure
 that it is already on or acquire it right after the first exposure begins.  On
-\gls{wfi}, it should be avoided if the observing template sets \texttt{RETURN}
-to F (false) and pointing position is important.
+\gls{wfi}, it should be avoided if the observing \gls{template} sets \texttt{RETURN}
+to F (false) and \gls{pointing} position is important.
 
 \procedure{Skip the preset}
 \begin{itemize}
     \item Generic method
     \begin{enumerate}
-        \item In \gls{bob}, open the aquisition template\\
+        \item In \gls{bob}, open the acquisition \gls{template}\\
           Use left click on the triangle.
-        \item Edit the PREST field to F\\
+        \item Edit the PRESET field to F\\
           You need to set bob to ``engineering'' mode.\\
           Middle click on the value, it should be T by default.
-        \item Start the OB.
+        \item Start the \gls{ob}.
         \item Start the guiding if needed\\
               For \gls{wfi}, see quick guiding \procref{quickguide}
     \end{enumerate}
     \item Standard observation with FEROS or GROND
     \begin{enumerate}
-        \item In \gls{bob}, deactivate the \gls{preset} template\\
+        \item In \gls{bob}, deactivate the \gls{acquisition} \gls{template}\\
               Use right click on the triangle.
         \item Ensure guiding is working if needed
         \item Start the OB.
@@ -2010,25 +2051,25 @@ When closing, you may need panels that are not automatically opened at startup. 
 
 \section{Telescope}
 
-To put the telescope to a safe parking position one has to follow steps in a definite order, in particular, it is best to close the main mirror cover before anything else. (Except in an emergency closing of the dome.) 
+To put the telescope to a safe parking position one has to follow steps in a definite order, in particular, it is best to close the \gls{main mirror} cover before anything else. (Except in an emergency closing of the dome.) 
 
 \procedure{Close the dome.}
 \begin{enumerate}
-\item Close the main mirror cover.\\ 
-      In the \texttt{TCS Setup Panel} (\figref{tcssetup}), click \texttt{Close} below \texttt{Main Mirror Cover}. 
+\item Close the \gls{main mirror} cover.\\ 
+      In the \gls{TCS setup panel} (\figref{tcssetup}), click \texttt{Close} below \texttt{Main Mirror Cover}. 
 \item Wait $\approx 2\,$min until it says closed.\\
       In the same panel, it should state \texttt{Closed} below \texttt{Main Mirror Cover}.
 \item Park the telescope.\\ 
       In the same panel, click \texttt{Zenith} under \texttt{Fixed preset}.
 \item Wait for preset to complete.\\
-      In the \texttt{TCS Control Panel}, the telescope should be at the zenith in the rose diagram.
+      In the \gls{TCS control panel}, the telescope should be at the zenith in the \gls{rose diagram}.
 \item Put the dome in manual.\\  
-      In the \texttt{TCS Setup panel}, click the \texttt{Manual} checkbox under \texttt{Dome}.
-\item Close the slit.\\ 
+      In the \gls{TCS setup panel}, click the \texttt{Manual} checkbox under \texttt{Dome}.
+\item Close the \gls{slit}.\\ 
       In the same panel, click \texttt{Close} under \texttt{Slit}.
 \item Switch on the light in the dome (\figref{webcam}).\\ 
       In the \gls{auxfunc} (\figref{tcsauxfunc}), select \texttt{200V} under \texttt{Flat Field Lamp}.
-\item Check the slit is closed and telescope at zenith \\
+\item Check the \gls{slit} is closed and telescope at zenith \\
       Use the \gls{webcam} (\figref{webcam}) on the mozilla tab \texttt{TRENDNET} on the \gls{windows}.
 \item Switch off the light in the dome. \\
       In the \gls{auxfunc}, select \texttt{OFF} under \texttt{Flat Field Lamp}
@@ -2036,29 +2077,29 @@ To put the telescope to a safe parking position one has to follow steps in a def
 
 If the panel is frozen, you can execute commands from a terminal, in directory \texttt{bin}: \texttt{closemirror}, \texttt{presetzenith}, \texttt{closeslit}, \texttt{domemanual}.  Or you can try to revive the panel (See \procref{unstuckTCSpanel}).
 
-If nothing works, you must ask for support from an ESO TIO.  ESO is still responsible for the safety of the facilities.
+If nothing works, you must ask for support from an ESO \gls{tio}.  ESO is still responsible for the safety of the facilities.
 
 \section{Instruments}
-One should close the protective shutters of \gls{wfi} and \gls{grond},  cut the communication between instruments 
-and \gls{tcs}, and ensure mirrors let light directly to \gls{wfi} for dome flats.
+One should close the \gls{protective shutter} of \gls{wfi} and \gls{mc} of \gls{grond},  cut the communication between instruments 
+and \gls{tcs}, and ensure mirrors let light directly to \gls{wfi} for \gls{dome flats}.
 
 \procedure{Put the instruments offline}
 \begin{enumerate}
-\item Close the \gls{wfi} protective shutter.\\
-      Check on the General State panel in the WFI monitor (\figref{wfigen}) that \texttt{Protective Shutter State} is \texttt{CLOSED}.\\
+\item Close the \gls{wfi} \gls{protective shutter}.\\
+      Check on the \texttt{WFI \gls{General State}} panel in the WFI monitor (\figref{wfigen}) that \texttt{Protective Shutter State} is \texttt{CLOSED}.\\
       If not, go to \gls{auxfunc} (\figref{tcsauxfunc}) and \texttt{CLOSE} the \texttt{WFI Protective Shutter}.
 \item Deactivate \gls{feros} communication.\\ 
       In the FEROS control panel (\figref{feroscon}) select from menu \texttt{Telescope} $\rightarrow$ \texttt{IGNORE}.
 \item Deactivate \gls{grond} communication.\\ 
-      In the GROND Control panel (\figref{grondcon}), click \texttt{RRM STANDBY} and \texttt{TCS OFF}
-\item With \gls{grond}, close the cold and protective shutters.\\ 
-      In a terminal, type \texttt{grondCS CLOSE} and \texttt{grondMC CLOSE}.
-\item Ensure \gls{feros} mirror is not in the way.\\
-      In panel FEROS Control (\figref{feroscon}), \texttt{M3 Selection Mirror} should state \texttt{WFI}\\
-      If not, int the \gls{ics} control panel (\figref{ferosics}), check the \texttt{mirr3} box, select \texttt{WFI}, click \texttt{SETUP}.
-\item Ensure \gls{grond} mirror is not in the way.\\
-      In panel  GROND Control (\figref{grondcon}), \texttt{GROND M3} should state \texttt{WFI}.\\
-      If not, type \texttt{grondM3 WFI} in a terminal.
+      In the \texttt{GROND \gls{General State}} panel (\figref{grondcon}), click \texttt{\gls{rrm} STANDBY} and \texttt{TCS OFF}
+\item With \gls{grond}, close the \gls{cs} and \gls{mc}.\\ 
+      In a terminal, type \texttt{\gls{grondCS} CLOSE} and \texttt{\gls{grondMC} CLOSE}.
+\item Ensure \gls{feros} \gls{mirr3} mirror is not in the way.\\
+      In panel FEROS Control (\figref{feroscon}), \texttt{\gls{M3} Selection Mirror} should state \texttt{WFI}\\
+      If not, int the \gls{ics} control panel (\figref{ferosics}), check the \texttt{\gls{mirr3}} box, select \texttt{WFI}, click \texttt{SETUP}.
+\item Ensure \gls{grond} \gls{M3} mirror is not in the way.\\
+      In panel  GROND Control (\figref{grondcon}), \texttt{GROND \gls{M3}} should state \texttt{WFI}.\\
+      If not, type \texttt{\gls{grondM3} WFI} in a terminal.
 \end{enumerate}
 
 
@@ -2074,7 +2115,7 @@ Turn off ventilation and hydraulics using the \gls{domefunc} (\gls{windows}, \fi
 
 \section{Tidying folders}
 
-Scripts move the data of the previous nights are to a subdirectory directory and and remove old ones (already in the ESO archive) if disk space is needed.  It can be done any time (night, day) on a daily basis for WFI and FEROS.  The GROND team manages the data.
+Scripts move the data of the previous nights are to a sub-directory directory and and remove old ones (already in the ESO archive) if disk space is needed.  It can be done any time (night, day) on a daily basis for WFI and FEROS.  The GROND team manages the data.
 
 \procedure{Tidy folders}
 \begin{enumerate}
@@ -2085,12 +2126,12 @@ Scripts move the data of the previous nights are to a subdirectory directory and
 \section{Health checks \& internal calibrations}
 \label{sec:clocal}
 
-Lauch health checks and internal calibrations.
+Launch health checks and internal calibrations.
 
 \procedure{Launch morning health checks and internal calibrations}
 \begin{enumerate}
   \item Run \gls{feros} linearity check.\\
-        In \gls{bob}, load and run the daily linearity OB using \texttt{Fetch an OB from file}.\\
+        In \gls{bob}, load and run the daily linearity \gls{ob} using \texttt{Fetch an OB from file}.\\
         Name is \texttt{linearity-\#-weekday} where \texttt{weekday} is that at the start of the night.
   \item Run the \gls{wfi} health check, biases, and dark.\\
         In \gls{bob}, load and run the daily calibration OB using \texttt{Fetch an OB from file}.\\
@@ -2158,11 +2199,11 @@ Note: if you cannot activate ssh services on your laptop, use a USB stick and so
 \section{OT}
 %Ivan: completar
 
-On the \gls{p2pp} machine, there is a workspace to use OBs from the observing tool (\gls{ot}). In the \texttt{Repository Browser} of the \gls{ot}, find your OB using fields such as instrument, period, ID, username, position, etc.  Click on the OB and then on a tab called \texttt{Execution Sequence} that it is in the same panel.
+On the \gls{p2pp} machine, there is a \gls{desktop} to use \glspl{ob} from the observing tool (\gls{ot}). In the \texttt{Repository Browser} of the \gls{ot}, find your OB using fields such as instrument, period, ID, username, position, etc.  Click on the OB and then on a tab called \texttt{Execution Sequence} that it is in the same panel.
 
-There should be an open window which is called \texttt{Execution Sequence}. The selected OB will be listed there, maybe with a list of others. Use the buttons \texttt{move up} (or \texttt{move down})  to move the OB you want to run next to the top of the list since it has to be the first one.
+There should be an open window which is called \texttt{Execution Sequence}. The selected \gls{ob} will be listed there, maybe with a list of others. Use the buttons \texttt{move up} (or \texttt{move down})  to move the OB you want to run next to the top of the list since it has to be the first one.
 
-Then, go to \gls{bob} and use the menu \texttt{Configure} $\rightarrow$ \texttt{Environment}. In the \texttt{Process} tab change \gls{p2pp} by \gls{ot}. Now you can fetch the OB from \gls{ot}.
+Then, go to \gls{bob} and use the menu \texttt{Configure} $\rightarrow$ \texttt{Environment}. In the \texttt{Process} tab change \gls{p2pp} by \gls{ot}. Now you can fetch the \gls{ob} from \gls{ot}.
 
 
 %\section{BOB}
@@ -2174,7 +2215,7 @@ Then, go to \gls{bob} and use the menu \texttt{Configure} $\rightarrow$ \texttt{
 
 \section{Monthly}
 
-About once a month a software maintenance should be done for prophyllaxy.
+About once a month a software maintenance should be done for prophylaxis.
 
 \procedure{Monthly software maintenance}
 \label{proc:monthly}
@@ -2209,7 +2250,7 @@ About once a month a software maintenance should be done for prophyllaxy.
         \item On the pipeline workstation, exit the X environment
         \item On the FEROS DRS workstation, exit the X environment
     \end{enumerate}
-\item \label{list:soft:power}Power cycle all black Dell boxes except \gls{grond}'s (2 min) 
+\item \label{list:soft:power}\Gls{power cycle} all black Dell boxes except \gls{grond}'s (2 min) 
 \item Log into all sessions (2 min)
 \begin{enumerate}
     \item On the \gls{tcs} screen, login as \texttt{tcs}
@@ -2285,22 +2326,22 @@ Every six months a weekly software maintenance has an additional step with the r
 
 \procedure{Investigate and fix the reason for the absence of flux in an instrument}. Ensure that
 \begin{itemize}
-  \item the slit is \texttt{OPEN} (\gls{tcs} setup, \figref{tcssetup}).
+  \item the \gls{slit} is \texttt{OPEN} (\gls{tcs} setup, \figref{tcssetup}).
   \item the dome is on automatic (\gls{tcs} setup,
         \figref{tcssetup}) and the slit is aligned (\gls{tcs}, \figref{tcs}).
   \item the Main Mirror Cover is \texttt{OPEN} (\gls{tcs} setup,
         \figref{tcssetup}).
-  \item the \texttt{mirr3} mirror is on \texttt{WFI} or \texttt{FEROS} (\gls{feros} \gls{ics}, 
+  \item the \texttt{\gls{mirr3}} mirror is on \texttt{WFI} or \texttt{FEROS} (\gls{feros} \gls{ics}, 
         \figref{ferosics}) if observing with \gls{wfi} or \gls{feros}.  If necessary,
         click its checkbox and \texttt{SETUP}.
-  \item the M3 mirror is on \gls{grond} if observing with \gls{grond} and on \gls{wfi} otherwise
+  \item the \gls{M3} mirror is on \gls{grond} if observing with \gls{grond} and on \gls{wfi} otherwise
          (\gls{grond} control, \ref{fig:grondcon}).  Use 
-        \texttt{grondM3 WFI} or \texttt{grondM3 GROND} in the terminal if
+        \texttt{\gls{grondM3} WFI} or \texttt{\gls{grondM3} GROND} in the terminal if
         necessary.
-  \item \textit{(\gls{wfi})} the protective shutter is \texttt{OPEN} (\gls{auxfunc} 
+  \item \textit{(\gls{wfi})} the \gls{protective shutter} is \texttt{OPEN} (\gls{auxfunc} 
         on the \gls{tcs} machine, \ref{fig:tcsauxfunc}). 
-  \item \textit{(\gls{grond})} the protective and cold shutters are \texttt{OPEN} (\gls{grond} control,
-        \figref{grondcon}).  Use \texttt{grondMC OPEN} and \texttt{grondCS OPEN} in the terminal if necessary.
+  \item \textit{(\gls{grond})} the \gls{mc} and \gls{cs} are \texttt{OPEN} (\gls{grond} control,
+        \figref{grondcon}).  Use \texttt{\gls{grondMC} OPEN} and \texttt{\gls{grondCS} OPEN} in the terminal if necessary.
   \item \textit{(\gls{grond})} If images look like biases, restart \gls{fiera}.\\
   On the \texttt{FIERA Control Panel} do \texttt{Shutdown} / \texttt{Startup}.
 \end{itemize}
@@ -2317,7 +2358,7 @@ Every six months a weekly software maintenance has an additional step with the r
     \includegraphics[width=0.3\linewidth]{feros/l2p2cam-front.jpg}%
     \label{fig:l2p2cam-rst}%
 }\hfill
-\subfigure[\text{\gls{l2p2cam} power cycle}]{%
+\subfigure[\text{\gls{l2p2cam} \gls{power cycle}}]{%
     \includegraphics[width=0.3\linewidth]{feros/l2p2cam-back.jpg}%
     \label{fig:l2p2cam-pow}%
 }
@@ -2348,23 +2389,23 @@ Every six months a weekly software maintenance has an additional step with the r
 
 The \gls{grond} and \gls{feros} autoguider use the same system on screen \texttt{Autoguider GROND \& FEROS}, between the GROND and FEROS screens.  \gls{wfi} has its own system on screen \texttt{Telescope Control Software}.
 
-It is possible to go on observing with GROND and FEROS while restarting the autoguider, provided that the modules are deactivated on the \gls{tcs}. However, you need to reactivate them to do the last step of restarting the autoguider (\texttt{e2p2StartTCCDs}).
+It is possible to go on observing with GROND and FEROS while restarting the autoguider, provided that the modules are deactivated on the \gls{tcs}. However, you need to reactivate them to do the last step of restarting the autoguider (\texttt{e2p2Start\gls{TCCD}s}).
 
 \procedure{Observe when the autoguider fails}
 \label{proc:agmodules}
 \begin{enumerate}
-    \item On screen \texttt{Telescope Control Software} go to texttt{Status} workspace
-    \item On the \texttt{TCS Status} panel locate the modules section (\figref{tcsstatus})
+    \item On screen \texttt{Telescope Control Software} go to \texttt{Status} \gls{desktop}
+    \item On the \gls{TCS status panel} locate the modules section (\figref{tcsstatus})
     \item Check ignore for the corresponding modules
     \begin{itemize}
         \item For \gls{grond}, \texttt{ag\_ccdGRND} and \texttt{ccdGRND}
         \item For \gls{feros}, \texttt{ag\_ccdGRND} and \texttt{ccdGRND}
     \end{itemize}
-    \item Remember to uncheck them for \texttt{e2p2StartTCCDs} to work!
+    \item Remember to uncheck them for \texttt{e2p2Start\gls{TCCD}s} to work!
 \end{enumerate}
 
 \subsection{GROND}
-If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see \procref{agmodules}.  You will need to uncheck them just before starting the guider software with \texttt{e2p2StartTCCDs}.
+If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see \procref{agmodules}.  You will need to uncheck them just before starting the guider software with \texttt{e2p2Start\gls{TCCD}s}.
 
 \procedure{Restart the GROND autoguider}
 \label{proc:restartgag}
@@ -2372,8 +2413,8 @@ If you want to observe while fixing the issue you need to deactivate the modules
    \item\label{list:gag1} If in a hurry try the quick restart (1--2 min)
    \begin{enumerate}
        \item On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
-       \item Type \texttt{e2p2StopTCCDs gag} and wait for command to finish
-       \item Type \texttt{e2p2StartTCCDs gag} and wait for command to finish
+       \item Type \texttt{e2p2Stop\gls{TCCD}s gag} and wait for command to finish
+       \item Type \texttt{e2p2Start\gls{TCCD}s gag} and wait for command to finish
    \end{enumerate}
    \item If you have time or \ref{list:gag1} does not solve the issue,
    go for the full restart (3--4 min)
@@ -2387,12 +2428,12 @@ If you want to observe while fixing the issue you need to deactivate the modules
 	   \item If not, enable l2p2agr (see \figref{agscanei})
 	   \item Close the GUI
        \end{enumerate}
-       \item Type \texttt{e2p2StartTCCDs gag}
+       \item Type \texttt{e2p2Start\gls{TCCD}s gag}
    \end{enumerate}
 \end{enumerate}
 
 \subsection{FEROS}
-If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see \procref{agmodules}.  You will need to uncheck them before starting the guider software with \texttt{e2p2StartTCCDs} (step~\ref{lab:fag2}). 
+If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see \procref{agmodules}.  You will need to uncheck them before starting the guider software with \texttt{e2p2Start\gls{TCCD}s} (step~\ref{lab:fag2}). 
 
 \procedure{Restart the FEROS autoguider}
 \label{proc:restartfag}
@@ -2400,9 +2441,9 @@ If you want to observe while fixing the issue you need to deactivate the modules
     \item Restart the \gls{ag} software (1--2 min).
         \begin{enumerate}
             \item\label{lab:fag0} On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
-            \item Type \texttt{e2p2StopTCCDs fag}
-            \item\label{lab:fag1} Type \texttt{e2p2StartTCCDs fag}
-            \item\label{lab:fag2} Wait for about 1--2 min for the command to exit succesfully.
+            \item Type \texttt{e2p2Stop\gls{TCCD}s fag}
+            \item\label{lab:fag1} Type \texttt{e2p2Start\gls{TCCD}s fag}
+            \item\label{lab:fag2} Wait for about 1--2 min for the command to exit successfully.
         \end{enumerate}
     \item If the problem persists or an error pops up in step~\ref{lab:fag2}, reboot the \gls{ag} \gls{lcu} (3--4 min) 
         \begin{enumerate}
@@ -2422,7 +2463,7 @@ If you want to observe while fixing the issue you need to deactivate the modules
        \item On the lower racks, near to l2p2cam label, push a small RST button (\figref{l2p2cam-rst}).
        \item Perform steps \ref{lab:fag0}, \ref{lab:fag1}, \ref{lab:fag2}.
     \end{enumerate}
-    \item If this does not solve the issue, power cycle the \gls{lcu} (15 min)
+    \item If this does not solve the issue, \gls{power cycle} the \gls{lcu} (15 min)
     \begin{enumerate}
         \item Go to the FEROS room located in the telescope enclosure. 
         \item On the back of the rack tower, unplug and replug the lower rack (\figref{l2p2cam-pow}).
@@ -2433,7 +2474,7 @@ If you want to observe while fixing the issue you need to deactivate the modules
 \subsection{WFI}
 Failure of the \gls{wfi} autoguider will generally be silent.  It will just do nothing when asked to retrieve field or start monitoring.
 
-If the quick 30 seconds fix does not work, it is not possible to observe with WFI during the 15--35 minute-long fix, but it should be possible to go on with GROND or FEROS with no guarantee though---the \gls{tcs} has the bad habit of communicating with the WFI computers for focus. 
+If the quick 30 seconds fix does not work, it is not possible to observe with WFI during the 15--35 minute-long fix, but it should be possible to go on with GROND or FEROS with no guarantee though---the \gls{tcs} has the bad habit of communicating with the WFI computers for \gls{focus}. 
 
 \procedure{Fix WFI autoguider issues}
 \label{proc:fixwfiag}
@@ -2451,20 +2492,20 @@ Try in this order
         This should be done if \texttt{Retrieve Field} gives the error \texttt{Error opening RPC connection} or if point~\ref{wfiagrestart} does not solve the issue.
     \begin{enumerate}
        \item On the WFI screen, locate or open a terminal.
-       \item Type \texttt{wfinsStopTCCDS} and wait for it to complete
-       \item Type \texttt{wfinsStartTCCDS} and wait for it to complet (2 min)
+       \item Type \texttt{wfinsStop\gls{TCCD}S} and wait for it to complete
+       \item Type \texttt{wfinsStart\gls{TCCD}S} and wait for it to complete (2 min)
        \item Perform the AG restart of point~\ref{wfiagrestart}
     \end{enumerate}
   \item If an autoguider process is suspended, restart the \gls{tcs}
     \begin{enumerate}
        \item In a terminal, type \texttt{i}
-       \item If there is an AG-related suspended proces, proceed as follow
+       \item If there is an AG-related suspended process, proceed as follow
        \item Deactivate the connection between \gls{feros} and TCS
            \begin{itemize}
                 \item On the \gls{feros} screen (\figref{saladecontrol}), locate the \gls{feros} control panel (\figref{feroscon})
                 \item From menu select \texttt{Telescope $\rightarrow$ IGNORE}
            \end{itemize}
-       \item Perform a full restart the \gls{tcs} including VME reboot (\procref{startup})
+       \item Perform a full restart the \gls{tcs} including \gls{vme} reboot (\procref{startup})
        \item Reactivate the connection between \gls{feros} and TCS
            \begin{itemize}
                 \item On the \gls{feros} screen (\figref{saladecontrol}), locate the \gls{feros} control panel (\figref{feroscon})
@@ -2488,7 +2529,7 @@ Try in this order
 
 \subsection{OB gives an error when started}
 
-If an OB issues an error within seconds of being started.
+If an \gls{ob} issues an error within seconds of being started.
 
 \procedure{Fix OB start error}
 \begin{enumerate}
@@ -2501,26 +2542,26 @@ If an OB issues an error within seconds of being started.
     \end{itemize}
   \item If telescope preset is not needed (e.g. calibrations), deactivate it in 
     \begin{itemize}
-      \item \textit{(\gls{feros}, \gls{grond})} Right-click the triangle of the acquisition template.
+      \item \textit{(\gls{feros}, \gls{grond})} Right-click the triangle of the \gls{acquisition} \gls{template}.
                    (A thumb down should appear.  If you get a stop, go on clicking.)
-      \item \textit{(\gls{wfi})} Set \texttt{PRESET.NEW} to \texttt{F} in the acquisition template.\\
+      \item \textit{(\gls{wfi})} Set \texttt{PRESET.NEW} to \texttt{F} in the \gls{acquisition} \gls{template}.\\
          (This needs menu \texttt{Interface} $\rightarrow$ \texttt{Engineering}.) 
     \end{itemize}
 \end{enumerate}
 
 \subsection{OB stalls before starting to observe}
 
-It may happen that an OB stalls, that means, nothing is happening.  No error is reported but the telescope does not move, no integration seems to take place and the \gls{bob} windows has stopped to give information about what is going on.
+It may happen that an \gls{ob} \gls{stall}s, that means, nothing is happening.  No error is reported but the telescope does not move, no integration seems to take place and the \gls{bob} windows has stopped to give information about what is going on.
 
 \procedure{Fix stalling of an OB}
 \begin{itemize}
 \item \textit{(\gls{wfi},\gls{feros})} Try to find a hidden pop-up asking for interaction (behind a window).
-\item \textit{(\gls{wfi})} If OB stalls when focus order is sent by \gls{bob},
+\item \textit{(\gls{wfi})} If OB stalls when \gls{focus} order is sent by \gls{bob},
 set it manually.\\
-In the TCS screen, enter focus value in the main panel (\figref{tcs}).\\
+In the TCS screen, enter \gls{focus} value in the \gls{TCS control panel} (\figref{tcs}).\\
 Note: A permanent fix is to restart the \gls{tcs} (see \secref{tcsrestart}).
-\item \textit{(\gls{grond})} If IR exposure does not start after the optical one has, reset the IR flip mirror.\\
-In a terminal, type \texttt{grondFM}
+\item \textit{(\gls{grond})} If IR exposure does not start after the optical one has, reset the IR \gls{flip mirror}.\\
+In a terminal, type \texttt{\gls{grondFM}}
 \end{itemize}
 
 \subsection{Crash before an exposure}
@@ -2529,7 +2570,7 @@ In a terminal, type \texttt{grondFM}
 Here are possible fixes, from shortest to longest.  Try each one in this
 order, until problem is fixed.
 
-\procedure{Investigate and fix a crash ocurring before the start of an optical exposure}
+\procedure{Investigate and fix a crash occurring before the start of an optical exposure}
 \begin{enumerate}
   \item Close \gls{bob} and launch a new one.
   \item \gls{feros}
@@ -2549,7 +2590,7 @@ order, until problem is fixed.
        \item If error \texttt{closing w2p2cam environment}
        \begin{enumerate}
           \item If a \gls{fiera} exposure is running in \texttt{GROND Control}, click \texttt{End} or let it finish.
-          \item Type \texttt{grondSHUTTER} in a terminal.
+          \item Type \gls{grondSHUTTER} in a terminal.
        \end{enumerate} 
        \item If the error mentions \gls{irace}
        \begin{enumerate}
@@ -2605,10 +2646,10 @@ order, until problem is fixed.
             \end{enumerate} 
           \item Restart the CCD managing components
              \begin{enumerate} 
-               \item Type \texttt{wfinsStopTCCDS}
-               \item Type \texttt{wfinsStopSCCDS}
-               \item Type \texttt{wfinsStartSCCDS}
-               \item Type \texttt{wfinsStartTCCDS}
+               \item Stop \glspl{TCCD} by typing \texttt{wfinsStopTCCDS}
+               \item Stop \glspl{SCCD} by typing \texttt{wfinsStopSCCDS}
+               \item Start SCCDs by typing \texttt{wfinsStartSCCDS}
+               \item Start TCCDs by typing \texttt{wfinsStartTCCDS}
              \end{enumerate}
           \item Restart the instrument.\\
                 Type \texttt{wfinsStartUp}.
@@ -2645,8 +2686,8 @@ order, until problem is fixed.
     \end{enumerate}
   \item \gls{wfi}
     \begin{enumerate}
-       \item \gls{wfi} stalls just before the read out of an exposure.\\
-             Abort it manually, if unsuccessfull restart \gls{fiera} (follow point \ref{list:wfiexpocrash} in \secref{expocrash})
+       \item \gls{wfi} \gls{stall}s just before the read out of an exposure.\\
+             Abort it manually, if unsuccessful restart \gls{fiera} (follow point \ref{list:wfiexpocrash} in \secref{expocrash})
     \end{enumerate}
   \item \gls{grond}
     \begin{enumerate}
@@ -2656,19 +2697,19 @@ order, until problem is fixed.
             \item End the optical exposure (if it's a long one)\\
                   On the grond control panel, click \texttt{END}.
             \item Wait for exposure to read out
-            \item Restart the OB without presetting\\
+            \item Restart the \gls{ob} without \gls{preset}ting\\
                   (In \gls{bob} deactivate preset and reset status.)
           \end{enumerate}
-       \item \gls{ob} stalls or crashes during an exposure
+       \item \gls{ob} \gls{stall}s or crashes during an exposure
 	      \begin{enumerate}
-             \item In a terminal, execute \texttt{grondFM}. If issue is not fixed, proceeed.
+             \item In a terminal, execute \texttt{grondFM} to reset the \gls{flip mirror}. If issue is not fixed, proceed.
              \item Close and/or kill all {bob} instances\\
                    Find them by typing \texttt{ps gaux | grep bob} in a terminal).\\
                    Kill them with \texttt{kill -9 <pid>} where \texttt{<pid>} is the job number.
              \item Launch \gls{bob}\\  
                    Type \texttt{bob \&} in a terminal.
-             \item In the same terminal, execute \texttt{grondGRI} and \texttt{grondSHUTTER}
-             \item Wait for \texttt{grondSHUTTER} command to end (10 s to 1 min).
+             \item In the same terminal, execute \gls{grondGRI} and \gls{grondSHUTTER}
+             \item Wait for \gls{grondSHUTTER} command to end (10 s to 1 min).
              \end{enumerate}
   \end{enumerate}
 \end{enumerate}
@@ -2684,21 +2725,21 @@ order, until problem is fixed.
 
 \subsection{Crash during a telescope focus offset}
 If a timeout error occurs relating to \texttt{FOCOFF} or some message about
-focus that cannot be done:
+\gls{focus} that cannot be done:
 \begin{itemize}
   \item (\gls{grond}) Disable and enable \gls{w2p2tcs} in \texttt{scanei}.
   \item (\gls{wfi}) See \secref{wfifocseq}.
 \end{itemize}
 
 \subsection{Crash at the beginning of sky flats}
-If the OB crashes before the pop-up asking for manual preset, it means
-bob must be killed and restarted.
+If the \gls{ob} crashes before the pop-up asking for manual preset, it means
+bob must be killed and the \gls{sky flats} \gls{ob} restarted.
 
 \subsection{Crash during filtre change in WFI}
 \label{sec:crashfiltre}
 
 \procedure{Fix a WFI filtre change crash}\label{proc:filtrereset}
-If the OB crashes at the moment to change the filtre using \gls{wfi} and the \texttt{Filter Name} status is \texttt{Moving} on the WFI General State panel (\figref{wfigen})
+If the \gls{ob} crashes at the moment to change the filtre using \gls{wfi} and the \texttt{Filter Name} status is \texttt{Moving} on the \texttt{WFI \gls{General State}} panel (\figref{wfigen})
  \begin{enumerate}
       \item On the \texttt{e2p2 OS GUI} (\figref{wfios}), select the filtre on the \texttt{Filter} option below \texttt{Setup Instrument}.\label{list:filtchange1}
       \item Click on the \texttt{Apply} button.
@@ -2716,8 +2757,8 @@ If the OB crashes at the moment to change the filtre using \gls{wfi} and the \te
 
 If the \gls{grond} \gls{ag} is highly defocused:
 \begin{itemize}
-  \item When switching from \gls{wfi} or \gls{feros}, focus fixes itself after the observing template starts.
-  \item If the problem persists, FOC.OFFSET in the OB allows a manual workaround.
+  \item When switching from \gls{wfi} or \gls{feros}, \gls{focus} fixes itself after the observing \gls{template} starts.
+  \item If the problem persists, FOC.OFFSET in the \gls{ob} allows a manual workaround.
 \end{itemize}
 
 \subsection{Defocused wih FEROS ACS}
@@ -2726,10 +2767,10 @@ See \secref{focusadc}.
 
 \subsection{WFI focus sequence fails with a timeout}
 \label{sec:wfifocseq}
-The \gls{wfi} focus sequence may fail to communicate the focus offsets to the telescope.  In that case, \gls{bob} will display several lines of focus orders ending with a timeout message. Then an error pop-up will appears.
+The \gls{wfi} \gls{focus} sequence may fail to communicate the focus offsets to the telescope.  In that case, \gls{bob} will display several lines of focus orders ending with a timeout message. Then an error pop-up will appears.
 
 \begin{itemize}
-   \item Quick workaround: each time that \gls{bob} displays a focus order, enter it manually in the \gls{tcs} Control Panel, below \texttt{M2 Focus}, and click \texttt{Preset to}.  This focus bug will not impact science OBs during the night, so don't worry.
+   \item Quick workaround: each time that \gls{bob} displays a \gls{focus} order, enter it manually in the \gls{TCS control panel}, below \texttt{M2 Focus}, and click \texttt{Preset to}.  This focus bug will not impact science \glspl{ob} during the night, so don't worry.
    \item Clean fix: full restart of \gls{wfi} and \gls{tcs} (30 min).
    \item When the problem becomes recurrent, the \gls{wfi} workstation should
 be rebooted.
@@ -2737,7 +2778,7 @@ be rebooted.
 
 \subsection{No focus offset when filtres are changed}
 \label{sec:filfocoffset}
-The focus sequence is run for a specific filtre, when changing filtres during an OB, the TCS should apply a focus offset, which should be seen in the TCS Control Panel, M2 Focus. If no offset is applied, check if in the \gls{wfi} state manager, the Focusing flag should be \texttt{True}. The ESO people were not really clear on that.
+The \gls{focus} sequence is run for a specific filtre, when changing filtres during an \gls{ob}, the TCS should apply a focus offset, which should be seen in the \gls{TCS control panel}, M2 Focus. If no offset is applied, check if in the \gls{wfi} state manager, the Focusing flag should be \texttt{True}. The ESO people were not really clear on that.
 
 
 \section{FEROS ADC}
@@ -2759,7 +2800,7 @@ put off.  This happens after an observation using the \gls{adc}.  On the
       \item Click \texttt{SETUP} on the bottom of the panel.
       \item Wait for \texttt{ERROR} to be replaced by \texttt{OFF}
       \end{itemize}
-  \item If it fails with a timeout error, restart the devices on the ICS panel
+  \item If it fails with a timeout error, restart the devices on the \gls{ICS Control} panel
      \begin{itemize}
       \item Use menu \texttt{Device} $\rightarrow$ \texttt{Select all devices}, then
       \item Use menu \texttt{Device} $\rightarrow$ \texttt{OFF}
@@ -2769,7 +2810,7 @@ put off.  This happens after an observation using the \gls{adc}.  On the
   \item If in the last step there is an error that one of the devices that cannot be set
         \texttt{ONLINE}
       \begin{itemize}
-       \item Use menu \texttt{LCU} $\rightarrow$ \texttt{Reboot LCU1} 
+       \item Use menu \texttt{\gls{lcu}} $\rightarrow$ \texttt{Reboot LCU1} 
        \item Use \texttt{Device} $\rightarrow$ \texttt{Select all devices}
        \item Use menu \texttt{Device} $\rightarrow$ \texttt{ONLINE}
         \item Wait for about one minute for \texttt{STATE} to be \texttt{ONLINE}
@@ -2786,15 +2827,15 @@ Try in order the items of the following procedure.
 
 \procedure{Fix the absence of focusing after FEROS ADC enters}
 \begin{itemize}
-\item If no red messages appear below \texttt{VME messages}, manually
-preset to the theoretical focus displayed on the \gls{tcs} main panel.
+\item If no red messages appear below \texttt{\gls{vme} messages}, manually
+preset to the theoretical \gls{focus} displayed on the \gls{TCS control panel}
 \item If repeated red messages concerning M2 preset appear below 
- \texttt{VME messages} on the
-  \gls{tcs} main panel (\figref{tcs}), break the infinite set-focus loop
+ \texttt{\gls{vme} messages} on the
+  \gls{TCS control panel} (\figref{tcs}), break the infinite set-focus loop
   \begin{itemize} 
     \item Under \texttt{M2 Focus} on the same panel, click \texttt{Set >}
     \item Click \texttt{Apply}  
-    \item Maybe play around more presetting M2 manually until red messages
+    \item Maybe play around more \gls{preset}ting M2 manually until red messages
         disappear
     \item Re-execute the \gls{feros} \gls{ob} from preset. 
   \end{itemize}
@@ -2805,7 +2846,7 @@ preset to the theoretical focus displayed on the \gls{tcs} main panel.
 
 \subsection{FEROS exposure number is close to 10\,000}
 
-If it goes past 10\,000, the reduction software will fail.  It is very easy to fixe before it has reached the limit.
+If it goes past 10\,000, the reduction software will fail.  It is very easy to fix before it has reached the limit.
 \procedure{Reset the exposure number}
 \label{proc:FEROSDRSresetnum}
 \begin{enumerate}
@@ -2844,7 +2885,7 @@ Check that
 \subsection{Problems to restart the FEROS-DRS and data subscriber}
 
 
-If you cannot start the \gls{feros} \gls{drs} this might be for the following reason: when rebooting \gls{w2p2off} without bringing down the pipline before, a hidden lock file may survive. If all other attempts have failed to start the DRS, follow these steps.
+If you cannot start the \gls{feros} \gls{drs} this might be for the following reason: when rebooting \gls{w2p2off} without bringing down the pipeline before, a hidden lock file may survive. If all other attempts have failed to start the DRS, follow these steps.
 
 \procedure{Restart the FEROS data reduction software and data subscriber}
 \label{proc:FEROSDRSrestart}
@@ -2915,7 +2956,7 @@ FEROS DRS, you will need to restart processes on the data handling machine \gls{
 \procedure{Restart the data handler.}
 \label{proc:DHrestart}
 \begin{enumerate} 
-    \item Go to screen \texttt{\gls{w2p2pl} Pipline}
+    \item Go to screen \texttt{\gls{w2p2pl} Pipeline}
     \item In a terminal you will need to type some of the following
         \begin{enumerate}
             \item \texttt{dhsSubscribeControl start pipeline -backsince <date>}\\where <date> in the format YYYY-MM-DD is where you want to start again.
@@ -2937,7 +2978,7 @@ FEROS DRS, you will need to restart processes on the data handling machine \gls{
   \item There is an error about process \texttt{feoControl} stating
       ``accepted PING but did not reply properly within 10000 msec'''.\\
        Restart environment using \procref{restartenv}.
- \item There is a problem with the FEROS telemetry at TCS (window should show some graphs, \figref{tcstelemetry}).\\
+ \item There is a problem with the FEROS \gls{telemetry} at TCS (window should show some graphs, \figref{tcstelemetry}).\\
        Activate the telementry using \procref{telemetry}
 \end{itemize}
 
@@ -2950,6 +2991,7 @@ FEROS DRS, you will need to restart processes on the data handling machine \gls{
 \end{enumerate}
 
 \procedure{Activate FEROS or WFI telemetry}
+The \gls{telemetry} module is activated following these steps:
 \label{proc:telemetry}
 \begin{enumerate}
     \item Go to FEROS or WFI screen
@@ -2963,43 +3005,43 @@ FEROS DRS, you will need to restart processes on the data handling machine \gls{
 
 \begin{figure}[t!]
 \begin{minipage}{0.48\linewidth}
-\subfigure[Telemetry window at \gls{tcs}, should show some graphs normally.]{%
+\subfigure[\Gls{telemetry} window at \gls{tcs}, should show some graphs normally.]{%
 \includegraphics[width=\linewidth]{tcs/TCS-telemetry.png}
 \label{fig:tcstelemetry}
 }
 \end{minipage}
 \hspace{0.02\linewidth}
 \begin{minipage}{0.48\linewidth}
-\subfigure[\gls{feros} telemetry window.]{
+\subfigure[\gls{feros} \gls{telemetry} window.]{
 \includegraphics[width=\linewidth]{feros/FEROS-telemetry.png}
 \label{fig:ferostelemetry}
 }
 \end{minipage}
-\caption{Telemetry window.}
+\caption{\Gls{telemetry} window.}
 \end{figure}
 
 \subsection{WFI}
 
 The commonest issues are:
 \begin{itemize}
-  \item \gls{tcs} is \texttt{OFF} after startup on the Control Panel\\
+  \item \gls{tcs} is \texttt{OFF} after startup on the \gls{General State} Panel\\
    This is harmless. Use menu \texttt{Gen. Options} $\rightarrow$ \texttt{Refresh Database Events}.
   \item WFI startup stops with an error during \texttt{WFI Init/Online}\\
-       It most likely requires a power cycle of the WFI electronics, see below.
+       It most likely requires a \gls{power cycle} of the \gls{wfi} electronics, see below.
 \end{itemize}
 
 \begin{figure}[ht]
 	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-1.png}
 	\hglue 0.02\linewidth
 	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-2.png}
-	\caption[WFI electronics: power cycle button and boards]{WFI electronics.  The box on the right controls the power and can be used to power cycle.
+	\caption[WFI electronics: \gls{power cycle} button and boards]{\gls{wfi} electronics.  The box on the right controls the power and can be used to power cycle.
 The box on the left contains the electronics boards that one may need to unplug and replug.}
 	\label{fig:wfielectronics}
 \end{figure}
 
 \procedure{Fix WFI init error}
 \begin{enumerate}
-  \item Determin whether WFI passes the hardware self-test
+  \item Determine whether WFI passes the hardware self-test
     \begin{enumerate}
 	\item Locate or open a \texttt{logMonitor}
 	\item If it was not active, choose to inspect the last 500 lines
@@ -3014,7 +3056,7 @@ The box on the left contains the electronics boards that one may need to unplug 
 	        \item Wait for 1--2 minutes for it to get back online\\
 		      You may check in a terminal using \texttt{ping \gls{wwffcd}}
 	\end{enumerate}
-  \item If WFI doesn't pass the self-test, power cycle the WFI electronics 
+  \item If \gls{wfi} doesn't pass the self-test, \gls{power cycle} the WFI electronics 
 	\begin{enumerate}
 		\item Go to the telescope floor
 		\item Locate the WFI power unit close to the FIERA electronics
@@ -3055,10 +3097,10 @@ You need to go to the dome.
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{tcs/TCS-l2p2cam.jpg}
-    \caption{When TCS restart fails to reboot the FEROS AG LCU}
+    \caption{When TCS restart fails to reboot the \gls{feros} \gls{ag} \gls{lcu}}
 \end{figure}
 
-If the start-Up stalls with error \texttt{could not send command "PING" to l2p2cam/lccServer}, you probably need to hard reboot the  \gls{feros} \gls{ag} \gls{lcu} in the dome, but try a software reboot first to save time.
+If the start-Up stops with error \texttt{could not send command "PING" to l2p2cam/lccServer}, you probably need to hard reboot the  \gls{feros} \gls{ag} \gls{lcu} in the dome, but try a software reboot first to save time.
 
 \procedure{Fix FEROS AG LCU during start-up}
     \begin{enumerate}
@@ -3074,14 +3116,14 @@ If the start-Up stalls with error \texttt{could not send command "PING" to l2p2c
         \end{enumerate}
         \item\label{lab:startupfag2} Go to the dome and try, in that order (see \procref{restartfag}).
             \begin{enumerate}
-            \item A hard reset of the LCU
-            \item A power cycle of the LCU
+            \item A hard reset of the \gls{lcu}
+            \item A \gls{power cycle} of the \gls{lcu}
             \end{enumerate}
     \end{enumerate}
 
 \subsection{Start-up fails with telescope not initialised}
 
-If the start-up stalls with \texttt{telescope not initialised}, you probably forgot to switch the hydraulics and/or drives on or the telescope was not parked at zenith. 
+If the start-up stops with \texttt{telescope not initialised}, you probably forgot to switch the hydraulics and/or drives on or the telescope was not parked at zenith. 
 
 \procedure{Fix the telescope not initialized popup} 
 \begin{enumerate}
@@ -3125,7 +3167,7 @@ Many \gls{tcs} issues are solved by a fast restart, with a time loss of $\approx
 \end{itemize}
 
 \subsection{No connection with VME}
-If the TCS Control Panel indicates ``No connection'' in red, just below \texttt{VME messages}, you can try the following:
+If the \gls{TCS control panel} indicates ``No connection'' in red, just below \texttt{VME messages}, it means that the \gls{tcs} workstation has lost connection to the \gls{vme} (telescope \gls{lcu}). You can try the following:
 
 \begin{figure}
 \centering
@@ -3133,15 +3175,15 @@ If the TCS Control Panel indicates ``No connection'' in red, just below \texttt{
 \includegraphics[width=0.33\linewidth]{dome/dome-tel-local-to-remote.jpg}%
 \label{fig:tel-remote}%
 }%
-\subfigure[Reboot of the VME]{%
+\subfigure[Reboot of the \gls{vme}]{%
 \includegraphics[width=0.33\linewidth]{dome/dome-vme-reboot.jpg}%
 \label{fig:vme-reboot}%
 }
-\subfigure[VME monitor]{%
+\subfigure[\gls{vme} monitor]{%
 \includegraphics[width=0.33\linewidth]{dome/dome-vme-monitor.jpg}%
 \label{fig:vme-monitor}%
 }
-\caption[VME rack in the computer room of the telescope building]{VME rack in the computer room of the telescope building 
+\caption[VME rack in the computer room of the telescope building]{\gls{vme} rack in the \gls{computer room} of the telescope building 
 \emph{Left:} to
 manually point the telescope to zenith, you need to switch away from 
 the yellow 'd' label. \emph{Centre:} To hard reboot the VME, press the small red/pinkish reset button. \emph{Right:} the VME monitor with the ``end of boot script'' after a reboot.}
@@ -3151,32 +3193,32 @@ the yellow 'd' label. \emph{Centre:} To hard reboot the VME, press the small red
 \begin{enumerate}
     \item If you just switched hydraulics on, wait for a few minutes to see
         if connection is back.
-    \item Do a remote reboot of the VME.\\
+    \item Do a remote reboot of the \gls{vme}.\\
           Type \texttt{lccBoot \gls{lte2p2}} in a terminal.
-    \item Do a manual reboot of the VME in the dome.
+    \item Do a manual reboot of the \gls{vme} in the dome.
     \begin{enumerate}
-        \item Go to the computer room of the telescope enclosure.
-        \item Locate the VME (\figref{computer-room}) in front of the entrance, slightly to the left.
+        \item Go to the \gls{computer room} of the telescope enclosure.
+        \item Locate the \gls{vme} (\figref{computer-room}) in front of the entrance, slightly to the left.
         \item Press the small red/pinkish button (\figref{vme-reboot}).
-        \item Locate the VME monitor, behind you if you face the VME.
+        \item Locate the \gls{vme} monitor, behind you if you face the VME.
         \item Wait for boot sequence to finish with ``end of boot script'' (\figref{vme-monitor})
     \end{enumerate}
 \end{enumerate}
 
-A quick restart the \gls{tcs} (\secref{tcsrestart}) is generally needed right after a reboot of the VME.
+A quick restart the \gls{tcs} (\secref{tcsrestart}) is generally needed right after a reboot of the \gls{vme}.
 
 \subsection{TCS is OFF on an instrument}
-The Control Panel of an instrument the TCS is in the state \texttt{OFF}. You should check the corresponding modules on the TCS Status panel.  If red, try to bring them \texttt{ONLINE}.
+The \gls{General State} Panel of an instrument the TCS is in the state \texttt{OFF}. You should check the corresponding modules on the \gls{TCS status panel}.  If red, try to bring them \texttt{ONLINE}.
 
 \subsection{Telescope doesn't take focus orders}
 
 \procedure{Fix telescope focus issues}
 \begin{itemize}
-  \item \textit{(\gls{wfi})} OB stalls when focus order is sent by \gls{bob}.\\
-        Set it manually from the \gls{tcs} main panel (\figref{tcs})
+  \item \textit{(\gls{wfi})} \gls{ob} \gls{stall}s when \gls{focus} order is sent by \gls{bob}.\\
+        Set it manually from the \gls{TCS control panel} (\figref{tcs})
   \item \textit{(\gls{feros})} Focus is not corrected after insertion of the ADC.\\
         See \secref{focusadc}.
-  \item Focus cannot be set from the \gls{tcs} main panel.\\
+  \item Focus cannot be set from the \gls{TCS control panel}.\\
         Restart the \gls{tcs}, see \secref{tcsrestart}.
 \end{itemize}
 
@@ -3200,18 +3242,19 @@ If you need to close when the panel is stuck, a few command lines are available 
 \label{fig:dome-adam}
 \end{figure}
 
-If the \texttt{Main Mirror Cover} state in the \texttt{TCS Setup Panel} says
+If the \texttt{Main Mirror Cover} state in the \gls{TCS setup panel} says
 \texttt{LOCAL} you need to go to the dome, close it, and set it
 to remote control.
 
-If the \texttt{Main Mirror Cover} state in the \texttt{TCS Setup Panel} stays in
+pf the \texttt{Main Mirror Cover} state in the \gls{TCS setup panel} stays in
 \texttt{MOVING} whatever order you send, you need to go to the dome, set it for local control, close it, and set it to remote control.
  
 
 \procedure{Manually close the main mirror cover}
+The \gls{main mirror} cover is closed following these steps:
 \begin{enumerate}
-   \item Go to the dome
-   \item Locate the gray 1.5-metre-high ADAM contol box (\figref{dome}).
+   \item Go to the \gls{dome}
+   \item Locate the gray 1.5-metre-high \gls{adam} control box (\figref{dome}).
    \item Locate the \texttt{Main Mirror Cover} controls (\figref{dome-adam}, upper right) 
    \item If the mirror was \texttt{MOVING}, press the yellow \texttt{Local/Remote} button.
    \item Press the red \texttt{Mirror Close} button.
@@ -3228,9 +3271,9 @@ If the \texttt{Main Mirror Cover} state in the \texttt{TCS Setup Panel} stays in
 \label{fig:dome-control}
 \end{figure}
 
-If the \texttt{Dome Status} is \texttt{Local} on the \texttt{TCS Control Panel}, it means that the dome is for local control from the dome.
+If the \texttt{Dome Status} is \texttt{Local} on the \gls{TCS control panel}, it means that the dome is for local control from the dome.
 
-You need to go to the dome.
+You need to go to the \gls{dome}.
 
 \procedure{Set the dome for remote control}
 \begin{enumerate}
@@ -3240,7 +3283,7 @@ You need to go to the dome.
 \end{enumerate}
 
 \subsection{Dome slit and telescope are not aligned}
-For small zenithal angles, it is a normal setting since the telescope is not exactly at the centre of the dome.  If you need to avoid the wind you need to orient the dome manually but be weary of vignetting!
+For small zenithal angles there is an apparent misalignment between \gls{slit} and telescope orientation as shown on the \gls{rose diagram} on the \gls{tcs} control panel. It is a normal setting since the telescope is not exactly at the centre of the \gls{dome}.  If you need to avoid the wind you need to orient the \gls{dome} manually but be weary of vignetting.
 
 \section{GROND issues}
 \subsection{GROND M3 is stuck}
@@ -3257,27 +3300,27 @@ For small zenithal angles, it is a normal setting since the telescope is not exa
 \includegraphics[width=\linewidth]{grond/unstucking-grond-m3.png}
 }
 \end{minipage}
-\caption{Writing the M3 position in the database}
+\caption{Writing the \gls{M3} position in the database}
 \label{fig:ccs-grondM3}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=0.6\linewidth]{dome/dome-grond-m3-box.jpg}
-\caption{The GROND mirror and main cover control box.}
+\caption{The GROND \gls{M3} mirror and \gls{mc} control box.}
 \label{fig:grondM3-box}
 \end{figure}
 
-If \gls{grond} M3 mirror cannot be moved with the \texttt{grondM3} command try in order the items of the procedure below.
+If \gls{grond} \gls{M3} mirror cannot be moved with the \texttt{\gls{grondM3}} command try in order the items of the procedure below.
 
 \procedure{Unlocking the grond M3 mirror} 
 \begin{itemize}
-  \item Switch back-and-forth using \texttt{grondM3 WFI} and \texttt{grondM3 GROND}.
+  \item Switch back-and-forth using \texttt{\gls{grondM3} WFI} and \texttt{\gls{grondM3} GROND}.
   \item Write the mirror position in the database (\figref{ccs-grondM3})
     \begin{enumerate}
       \item In a terminal type \texttt{ccsei}
       \item Click on \texttt{CCS database monitor} 
       \item Look down \texttt{Appl\_data $\rightarrow$ GROND 
-        $\rightarrow$ ICS  $\rightarrow$ DEVICES  $\rightarrow$ M3}.
+        $\rightarrow$ \gls{ics}  $\rightarrow$ DEVICES  $\rightarrow$ \gls{M3}}.
       \item Select checkbox \texttt{Enable Editing}
       \item set \texttt{newPos} value to 2 for GROND position or 0 for WFI.
       \item Check on GROND control that mirror indeed moves.
@@ -3285,8 +3328,8 @@ If \gls{grond} M3 mirror cannot be moved with the \texttt{grondM3} command try i
     \end{enumerate}
   \item Reset the mirror from the dome.
     \begin{enumerate}
-       \item In the dome, locate the M3/MC box below the main mirror (\figref{dome}).
-       \item On the box (\figref{grondM3-box}), press the grondM3 WFI button.
+       \item In the \gls{dome}, locate the \gls{M3}/MC box below the \gls{main mirror} (\figref{dome}).
+       \item On the box (\figref{grondM3-box}), press the \gls{grondM3} WFI button.
     \end{enumerate}
 \end{itemize}
 
@@ -3305,30 +3348,29 @@ It is a very tricky problem, randomly solved by a string of last resort reboots 
 \subfigure[GROND IRACE switch]{%
 \includegraphics[width=.49\linewidth]{dome/dome-grond-irace-switch.jpg}%
 }%
-\caption[The GROND IRACE box]{The GROND infrared electronics (\gls{irace}) box below the main mirror of the telescope.  The power switch
-is located towards the pier.}
+\caption[The GROND IRACE box]{The GROND infrared electronics (\gls{irace}) box below the \gls{main mirror} of the telescope. In order to \gls{power cycle}, use the power switch located towards the pier.}
 \label{fig:grond-irace}
 \end{figure}
 
-An OB starts with the optical exposure but nothing happens in the infrared and
-the OB stalls. If \texttt{grondFM} doesn't solve the issue, this may need a full reset of the \gls{irace} (IR electronics).
+An \gls{ob} starts with the optical exposure but nothing happens in the infrared and
+the \gls{ob} \gls{stall}s. If \texttt{grondFM} doesn't solve the issue, this may need a full reset of the \gls{irace} (IR electronics).
  
 \procedure{Deep reset of GROND IRACE (verify this!)}
 \label{proc:iracerestart}
 \begin{enumerate}
   \item In a GROND terminal, do \texttt{grinsStop} as user  \texttt{grondmgr}.
-  \item Go to the computer room of the telescope building.
+  \item Go to the \gls{computer room} of the telescope building.
   \item Locate the \gls{irace} workstation (\figref{computer-room}) and shut it down.
-  \item Go to the dome 
-  \item Locate the power switch of the \gls{irace} box (\figref{grond-irace}) below the main mirror.
+  \item Go to the \gls{dome} 
+  \item Locate the power switch of the \gls{irace} box (\figref{grond-irace}) below the \gls{main mirror}.
   \item Switch it off for 10 seconds then on again.
-  \item Go back to the computer room and start the IRACE workstation.
-  \item Go back to the control room and reboot the GROND workstation.
+  \item Go back to the \gls{computer room} and start the IRACE workstation.
+  \item Go back to the \gls{control room} and reboot the GROND workstation.
   \item Do \texttt{\home/bin/lastResortBeforeReboot.sh} as user \texttt{grondmgr}
   \item Reboot GROND workstation.
   \item Do \texttt{\home/bin/lastResortAfterReboot.sh} as user \texttt{grondmgr}
   \item Put the instrument \texttt{ONLINE} in the GROND panel
-  \item Do \texttt{grondSHUTER \&\& grondFM}
+  \item Do \texttt{grondSHUTTER \&\& grondFM}
   \item close and open bob
 \end{enumerate} 
 
@@ -3354,7 +3396,7 @@ This is common on the \gls{wfi} screens.
 \label{sec:trouble:pointing}
 \begin{table}[!bt]
 \centering
-\caption{Pointing model parameters for each instrument, as of November 2015.}
+\caption{\Gls{pointing model} parameters for each instrument, as of November 2015.}
 \label{tab:pointingmodelcoeff}
 \small
 \begin{tabular}{lrrr}
@@ -3373,13 +3415,13 @@ HCES      & \multicolumn{3}{r}{$-22.55$}\\\hline
 \end{tabular}
 \end{table}
 
-After doing the pointing with \gls{wfi} the target is not close to the central position (4150,3950).  Also, it can happen during an observation with any instrument during the night that the object is not centred where it should.
+After doing the \gls{pointing} with \gls{wfi} the target is not close to the central position (4150,3950).  Also, it can happen during an observation with any instrument during the night that the object is not centred where it should.
 
 \procedure{Fix WFI pointing issues.}
 \begin{enumerate}   
-    \item If not done, check the right instrument is selected on the \gls{tcs} \texttt{Status Panel}
+    \item If not done, check the right instrument is selected on the \gls{TCS status panel}
         (\figref{tcsstatus}).
-    \item Check if the current Pointing Model parameters in Table.~\ref{tab:pointingmodelcoeff} for \gls{wfi} are selected on the \gls{tcs} Setup Panel (blue numbers in the bottom right-hand panel of \figref{tcssetup}). Typically
+    \item Check if the current \gls{pointing model} parameters in Table.~\ref{tab:pointingmodelcoeff} for \gls{wfi} are selected on the \gls{tcs} Setup Panel (blue numbers in the bottom right-hand panel of \figref{tcssetup}). Typically
         the first three values ID, IH, CH are 0 because of a database issue.\\
         In a hurry:
         \begin{itemize}
@@ -3389,10 +3431,10 @@ After doing the pointing with \gls{wfi} the target is not close to the central p
             \item Select the instrument again
         \end{itemize}
         Otherwise, a quick TCS restart will generally solve the issue.
-    \item Check that the Sidereal time on the \gls{tcs} Control Panel is fine.\\
+    \item Check that the Sidereal time on the \gls{TCS control panel} is fine.\\
       It should be withing seconds of the actual one.  You can get it from
-      the digital clock in the control room using a switch on its right.\\
-      If not, you need to go to the dome and reboot the VME.
+      the digital clock in the \gls{control room} using a switch on its right.\\
+      If not, you need to go to the telescope building and reboot the \gls{vme}.
     \item Otherwise, it might be a problem with the \gls{tcs}.\\ 
        Try a quick \gls{tcs} restart (\secref{tcsrestart}).
 \end{enumerate}  
@@ -3412,23 +3454,23 @@ After doing the pointing with \gls{wfi} the target is not close to the central p
 \label{fig:tel-joystick}
 \end{figure}
 
-If telescope goes out of safe zone, reaching 20 degrees elevation, a too high hour angle, it will be stuck (by software). It also occurs if a restart or a reboot of the VME is done when the telescope points lower than 45 degrees.
+If telescope goes out of safe zone, reaching 20 degrees elevation, a too high hour angle, it will be stuck (by software). It also occurs if a restart or a reboot of the \gls{vme} is done when the telescope points lower than 45 degrees.
 
 In that case, the telescope should be parked to zenith manually.
 
 \procedure{Preset manually to zenith.}
 \label{proc:park}
 \begin{enumerate}   
-    \item Go to the computer room in the telescope enclosure.
-    \item Locate the VME rack (\figref{computer-room}).
-    \item On the VME, set the switch away from d (\figref{tel-remote}).
-    \item Go to the dome and find the joystick (\figref{tel-joystick}).
+    \item Go to the \gls{computer room} in the telescope enclosure.
+    \item Locate the \gls{vme} rack (\figref{computer-room}).
+    \item On the \gls{vme}, set the switch away from d (\figref{tel-remote}).
+    \item Go to the \gls{dome} and find the joystick (\figref{tel-joystick}).
     \item Using the controls put the telescope approximately to zenith.
-    \item Go to the computer room in the telescope enclosure.
-    \item On the VME rack, set the switch to d.
-    \item Go to the control room below the dining room.
+    \item Go to the \gls{computer room} in the telescope enclosure.
+    \item On the \gls{vme} rack, set the switch to d.
+    \item Go to the \gls{control room} below the dining room.
     \item Initialise the telescope\\
-          Click \texttt{Initialize} below \texttt{Telescope}  in \texttt{the TCS Setup Panel}
+          Click \texttt{Initialize} below \texttt{Telescope}  in \gls{TCS setup panel}
 \end{enumerate}
 
 \section{Web pages}
@@ -3444,10 +3486,10 @@ If the 2.2m Environmental Monitor is stuck.
 \end{enumerate}
 
 \subsection{All sky camera}
-If the all sky camera LASCAM is stuck
+If the all sky camera \gls{lascam} is stuck
 \begin{enumerate}
   \item Use the Danish 1.54m camera at \url{http://allsky-dk154.asu.cas.cz/}
-  \item Ask an ESO TIO to restart LASCAM.
+  \item Ask an ESO \gls{tio} to restart \gls{lascam}
 \end{enumerate}
 
 \section{ESO database issues}
@@ -3461,7 +3503,7 @@ If the all sky camera LASCAM is stuck
    \item If only a particular set of observations loaded directly from bob
          are impacted, check that the PID is correct
          \begin{enumerate}
-           \item Open the OBs (usually in OBD directory on bob machine)
+           \item Open the \glspl{ob} (usually in OBD directory on bob machine)
            \item Check that the ESO PID has a valid format.
            \begin{itemize}
                \item Science OBs must start with a leading
@@ -3477,7 +3519,7 @@ If the all sky camera LASCAM is stuck
               \end{enumerate}
            \item If not assigned or invalid format, contact User Support Department at ESO to fix it.
      \end{enumerate}
-   \item Data taken as \texttt{TEST} (daily checks) do not apear in the archive.
+   \item Data taken as \texttt{TEST} (daily checks) do not appear in the archive.
 \end{enumerate}
 
 
@@ -3491,26 +3533,26 @@ If the all sky camera LASCAM is stuck
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.85\linewidth]{tcs/TCS.png}
-\caption[Main panel of the telescope control software]{The \gls{tcs} main panel allows to perform guiding with \gls{wfi} and to manually preset or offset.}
+\caption[Main panel of the telescope control software]{The \gls{TCS control panel} allows to perform guiding with \gls{wfi} and to manually preset or offset.}
 \label{fig:tcs}
 \end{figure}
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.85\linewidth]{tcs/TCS-setup.png}
-\caption[Setup panel of the telescope control software]{The \gls{tcs} setup panel allows to open and close the dome, main
-mirror cover and setup the dome rotation.  Additionally, fixed presets
+\caption[Setup panel of the telescope control software]{The \gls{tcs} setup panel allows to open and close the \gls{dome}, main
+mirror cover and setup the \gls{dome} rotation.  Additionally, fixed presets
 to zenith and flat screen can be sent.}
 \label{fig:tcssetup}
 \end{figure}
 
 \section{Telescope control software}
 
-The main panel of the \gls{tcs} (\figref{tcs}) gives a summary of focus,
-guiding, and pointing. The rose diagram gives telescope position, slit
+The main panel of the \gls{tcs} (\figref{tcs}), called \gls{TCS control panel}, gives a summary of \gls{focus},
+guiding, and \gls{pointing}. The \gls{rose diagram} gives telescope position, \gls{slit}
 orientation (symbol just outside the outermost circle), Moon position (yellow
-circle), and some other info (green arrow). Telescope status and dome status
-indicate whether telescope is presetting, slewing, guiding, or offsetting.  The
+circle), and some other info (green arrow). Telescope status and \gls{dome} status
+indicate whether telescope is \gls{preset}ting, slewing, guiding, or offsetting.  The
 panel also allows some interaction.  The \gls{tcs} setup panel
 (\figref{tcssetup}) allows more interaction, in particular concerning
 closing and opening.
@@ -3519,8 +3561,8 @@ closing and opening.
 \label{manualpreset}
 
 
-The presetting area  of the main \gls{tcs} panel (\figref{tcs}) allows manual
-preset, which is used for flat fields and \gls{wfi} focus.  Catalogues can be loaded
+The \gls{preset}ting area  of the main \gls{tcs} panel (\figref{tcs}) allows manual
+preset, which is used for flat fields and \gls{wfi} \gls{focus}.  Catalogues can be loaded
 with \texttt{CalSelect}, in particular EmptyFields for flat fielding. The item
 of the catalogues is selected with \texttt{Top}, \texttt{Up}, \texttt{Dwn},
 \texttt{Bot} before \texttt{Preset} is clicked.
@@ -3568,7 +3610,7 @@ to units (here arcsec/hour).
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.6\linewidth]{tcs/TCS-status.png}
-\caption[Status window of the telescope control software]{The TCS status window is mostly used to switch the pointing model
+\caption[Status window of the telescope control software]{The \gls{TCS status panel} is mostly used to switch the \gls{pointing model}
 between instruments.}
 \label{fig:tcsstatus}
 \end{figure}
@@ -3582,7 +3624,7 @@ between instruments.}
 \includegraphics[width=.4\linewidth]{tcs/TCS-auxfunc.png}
 \caption[Auxiliary functions of the telescope control software]{The \gls{auxfunc} panel (right) is opened using the menu
 on the TCS machine (left). It is mostly used to switch the flat field 
-lamp on and off, and to open or close the \gls{wfi} protective shutter.}
+lamp on and off, and to open or close the \gls{wfi} \gls{protective shutter}.}
 \label{fig:tcsauxfunc}
 \end{figure}
 
@@ -3600,7 +3642,7 @@ take/abort CCD exposures.}
 \centering
 \includegraphics[width=.8\linewidth]{wfi/wfi-state-manager.png}
 \caption[WFI state manager]{The \gls{wfi} state manager holds information on telescope
-focus, also used for \gls{feros}.}
+\gls{focus}, also used for \gls{feros}.}
 \label{fig:wfistate}
 \end{figure}
 
@@ -3627,7 +3669,7 @@ can be switched.}
 \centering
 \includegraphics[width=.8\linewidth]{feros/FEROS-ICS.png}
 \caption[FEROS instrument control software panel]{The \gls{feros} \gls{ics} is mainly used to change the mirror 
-\texttt{mirr3} from and back to \gls{wfi}.}
+\texttt{\gls{mirr3}} from and back to \gls{wfi}.}
 \label{fig:ferosics}
 \end{figure}
 
@@ -3727,25 +3769,25 @@ Workstation administrator & root                                                
 Remedy tickets            & 2p2                                                   & .5a$\cdots$\\
 Observing tool            & 0                                                     & OHS4good\\
 Dome auxiliary functions  &                                                       & .5a$\cdots$\\
-p2pp for MPIA             & MPGUtility, MPGDDT                                    & MPG@$\cdots$\\
+p2pp for \gls{mpia}             & MPGUtility, MPGDDT                                    & MPG@$\cdots$\\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}
-\caption[Some useful reboots]{Reboots you may (will) have to do besides those of the aforementionned computers.}
+\caption[Some useful reboots]{Reboots you may (will) have to do besides those of the aforementioned computers.}
 \label{tab:reboots}
 \centering
 \begin{tabular}{lll}
 \hline
 Component   & Reboot command                       & Alternative reboots\\
 \hline\hline
-TCS LCU/VME & \texttt{lccBoot \gls{lte2p2}}        & \texttt{rsh vxte2p2 reboot}\\ 
-            &                                      & Reset button, VME rack, computer room at telescope$^\ast$\\
+TCS \gls{lcu}/\gls{vme} & \texttt{lccBoot \gls{lte2p2}}  & \texttt{rsh vxte2p2 reboot}\\ 
+            &                                      & Reset button, \gls{vme} rack, \gls{computer room} at telescope$^\ast$\\
 \hline
 WFI FIERA   & \texttt{lccBoot \gls{wwffcd}}$^\star$& \texttt{rsh -l fcdrun wwffcd reboot}\\
 \hline
-FEROS LCU   & \texttt{lccBoot \gls{lfeics1}}       & FEROS ICS, menu \texttt{LCU} $\rightarrow$ \texttt{Reboot}\\
+FEROS LCU   & \texttt{lccBoot \gls{lfeics1}}       & FEROS \gls{ICS Control}, menu \texttt{LCU} $\rightarrow$ \texttt{Reboot}\\
             &                                      & \texttt{rsh -l fcdrun lfeics1 reboot}\\
 FEROS AG    & \texttt{lccBoot w2p2cam}             & \texttt{rsh \gls{l2p2cam} reboot}\\
             &                                      & Reset button, rack, FEROS room at telescope$^\ast$\\
@@ -3753,7 +3795,7 @@ FEROS AG    & \texttt{lccBoot w2p2cam}             & \texttt{rsh \gls{l2p2cam} r
 FEROS FIERA & \texttt{lccBoot \gls{wfefcd}}$^\star$& \texttt{rsh -l fcdrun wfefcd reboot}\\
 \hline
 GROND FIERA &                                      & \texttt{rsh root@\gls{wgrccd} reboot}\\
-            &                                      & Power switch, FIERA WS, computer room at telescope$^\ast$\\
+            &                                      & Power switch, FIERA WS, \gls{computer room} at telescope$^\ast$\\
 GROND IRACE &                                      & \texttt{rsh root@wgrdcs reboot}\\
             &                                      & Power switch, IRACE WS, computer room at telescope$^\ast$\\
 GROND AG    & \texttt{lccBoot w2p2agr}             & \texttt{rsh \gls{l2p2agr} reboot}\\
