@@ -108,40 +108,52 @@
 \newacronym{feros}{FEROS}{Fibre-fed Extended Range Optical Spectrograph}
 \newacronym{tccd}{TCCD}{Technical CCD}
 \newacronym{sccd}{SCCD}{Science CDD}
+\newglossaryentry{autoguiding}{name=\texttt{Autoguiding},sort=autoguiding,description={Window controlling the settings of the \acrlong{ag} of \gls{feros} and \gls{grond}}}
+\newglossaryentry{fiera}{name=FIERA,description={Electronics systems controlling the optical detectors}}
+\newglossaryentry{irace}{name=IRACE,description={Electronics systems controlling the infrared detectors.}}
+\newglossaryentry{wfinsStartSCCDS}{name=\texttt{wfinsStartSCCDS},sort=wfinsStartSCCDS,description={Command to start the \gls{wfi} \acrlong{sccd}s (main array) software}}
+\newglossaryentry{wfinsStopSCCDS}{name=\texttt{wfinsStopTCCDS},sort=wfinsStopTCCDS,description={Command to stop the \gls{wfi} \acrlong{sccd}s (main array) software}}
+\newglossaryentry{wfinsStartTCCDS}{name=\texttt{wfinsStartTCCDS},sort=wfinsStartTCCDS,description={Command to start the \gls{wfi} \gls{tccd}s (guide camera) software}}
+\newglossaryentry{wfinsStopTCCDS}{name=\texttt{wfinsStopTCCDS},sort=wfinsStopTCCDS,description={Command to stop the \gls{wfi} \gls{tccd}s (guide camera) software}}
 \newglossaryentry{acquisition}{name=acquisition,description={Part of an observing block that prepares the telescope (preset) and instrument (filtre change, mirror setups, etc.) for an observation.}}
 \newglossaryentry{stall}{name=stall,description={Stalling refers to stopping doing anything without an error being displayed or reaching complete state.  As it is silent, it is easy to lose time for a stalled OB...}}
-\newglossaryentry{fcdTelemetry}{name=\texttt{fcdTelemetry},sort=fcdTelemetry,description={Command to open the telemetry panel of GROND or WFI, used to activate telemetry if necessary.}}
-\newglossaryentry{pickrefstar}{name=\texttt{Pick Reference Star},sort=Pick Reference Star,description={Graphical user interface that allows the observer to pick a guide star on the WFI and GROND autoguiders, and a fibre reference pixel for FEROS. Also a menu option to open such a window.}}
+\newglossaryentry{fcdTelemetry}{name=\texttt{fcdTelemetry},sort=fcdTelemetry,description={Command to open the \gls{telemetry} panel of GROND or WFI, used to activate telemetry if necessary.}}
+\newglossaryentry{pickrefstar}{name=\texttt{Pick Reference Star},sort=Pick Reference Star,description={Graphical user interface that allows the observer to pick a guide star on the WFI and GROND \acrlong{ag}s, and a fibre reference pixel for FEROS. Also a menu option to open such a window.}}
 \newglossaryentry{mc}{name=main cover,description={Refers to the protective shutter of GROND}}
 \newglossaryentry{focus}{name=focus,description={Telescope focusing uses the secondary mirror. GROND focus is usually not touched. WFI and FEROS focus need regular (about daily) focus sequences to be performed.}}
+\newglossaryentry{service}{name=service,description={Service observing, service mode, or queue observing is when an observer does observations for different programmes, according to weather conditions and priorities.}}
+\newglossaryentry{visitor}{name=visitor,description={Visitors, i.e. astronomers observing in visitor mode, mostly observe their own programme independently of weather constraints and other programmes' priorities.  During \gls{mpia} there is no ``pure'' visitor, as some programmes should be observed in \gls{service} year round.}}
+\newglossaryentry{ferosag}{name=\texttt{E2P2 Real Time Display},sort=E2P2 REAL TIME DISPLAY,description={Window with the mage of the \gls{feros} \acrlong{ag} camera}}
+\newglossaryentry{wfiics}{name=\texttt{e2p2 OS GUI},sort=e2p2 OS GUI,description={\gls{wfi} \acrlong{ics} panel}}
+\newglossaryentry{ferosics}{name={FEROS \texttt{ICS}},sort=FEROS ICS,description={\gls{feros} \acrlong{ics} panel}}
 \newglossaryentry{main mirror}{name=main mirror,description={Primary mirror of the telescope.  It has a cover that needs to be open for observing and but should be closed when dome slit is being opened or closed.}}
-\newglossaryentry{ot}{name=\texttt{ot},sort=ot,description={observing tool, the application that can be used to manage the observing blocks for service observations}}
+\newglossaryentry{ot}{name=\texttt{ot},sort=ot,description={observing tool, the application that can be used to manage the \gls{ob}so for \gls{service} observations}}
 \newglossaryentry{lascam}{name=LASCAM,description={La Silla all-sky camera}}
 \newglossaryentry{standard field}{name=standard field,description={A field containing various standard star with well known magnitudes.  It is used to calibrate the flux response of WFI (Landolt fields) and GROND (Landolt and SDSS fields).}}
-\newglossaryentry{osf2p2StartUp}{name=\texttt{osf2p2StartUp},sort=osf2p2StartUp,description={Command used to do a start-up of the telescope control software and the instruments (WFI \& FEROS).}}
-\newglossaryentry{e2p2StopTCCDs}{name=\texttt{e2p2StopTCCDs},sort=e2p2StopTCCDs,description={Command to stop the technical CCDs (guiding cameras) of GROND and FEROS}}
-\newglossaryentry{e2p2StartTCCDs}{name=\texttt{e2p2StartTCCDs},sort=e2p2StartTCCDs,description={Command to start the technical CCDs (guiding cameras) of GROND and FEROS}}
-\newglossaryentry{grinsStop}{name=\texttt{grinsStop},sort=grinsStop,description={Command used to stop the GROND instrument}}
-\newglossaryentry{grinsStart}{name=\texttt{grinsStart},sort=grinsStart,description={Command used to start the GROND instrument}}
+\newglossaryentry{osf2p2StartUp}{name=\texttt{osf2p2StartUp},sort=osf2p2StartUp,description={Command used to do a start-up of the \acrlong{tcs} and the instruments \gls{wfi} \& \gls{feros}.}}
+\newglossaryentry{e2p2StopTCCDs}{name=\texttt{e2p2StopTCCDs},sort=e2p2StopTCCDs,description={Command to stop the \acrlong{tccd}s (guiding cameras) of GROND and FEROS}}
+\newglossaryentry{e2p2StartTCCDs}{name=\texttt{e2p2StartTCCDs},sort=e2p2StartTCCDs,description={Command to start the  \acrlong{tccd}s (guiding cameras) of GROND and FEROS}}
+\newglossaryentry{grinsStop}{name=\texttt{grinsStop},sort=grinsStop,description={Command used to stop the \gls{grond} instrument}}
+\newglossaryentry{grinsStart}{name=\texttt{grinsStart},sort=grinsStart,description={Command used to start the \gls{grond} instrument}}
 \newglossaryentry{spectrophotometric standard}{name=spectrophotometric standard,description={A star with a stable and well-known flux energy distribution used to determine the transmission of FEROS + telescope + atmosphere.}}
 \newglossaryentry{rv standard}{name=radial velocity standard,description={A star with a stable radial velocity used to calibrate or check the calibration of FEROS.}}
-\newglossaryentry{rose diagram}{name=\texttt{rose diagram},sort=rose diagram,description={Diagram of the telescope position, slit orientation, and Moon displayed on the Telescope Control Panel.}}
 \newglossaryentry{telemetry}{name=telemetry,description={Telemetry panels indicate the state of WFI and GROND detectors, in particular vacuum and temperature. A text-based telemetry module (logging) for GROND is to be manually started a reboot.}}
 \newglossaryentry{TCS control panel}{name=\texttt{TCS Control Panel},sort=TCS control panel,description={Graphical user interface showing the state of the telescope and WFI autoguider. Normally placed on the \texttt{Control} virtual desktop of the Telescope Control Software screen.}}
 \newglossaryentry{TCS status panel}{name=\texttt{TCS Status Panel},sort=TCS status panel,description={Graphical user interface showing the state of the telescope modules and pointing model. Normally placed on the \texttt{Status} virtual desktop of the Telescope Control Software screen.}}
 \newglossaryentry{TCS setup panel}{name=\texttt{TCS Setup Panel},sort=TCS setup panel,description={Graphical user interface allowing to modify the state of the telescope (opening/closing) and WFI autoguiding (parameters). Normally place on the \texttt{Setup} virtual desktop of the  Telescope Control Software screen.}}
-\newglossaryentry{p2pp}{name=\texttt{p2pp},sort=p2pp,description={phase 2 preparation tool, the application used by observers and PIs to create their observing blocks and execute them on the mountain.}}
-\newglossaryentry{bob}{name=\texttt{bob},sort=bob,description={broker for observing blocks, the application that reads observing blocks and sends commands to the telescope and instrument so that observation is performed. The \texttt{bob} panel is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
+\newglossaryentry{rose diagram}{name=\texttt{rose diagram},sort=rose diagram,description={Diagram of the telescope position, slit orientation, and Moon displayed on the \gls{TCS control panel}.}}
+\newglossaryentry{p2pp}{name=\texttt{p2pp},sort=p2pp,description={phase 2 preparation tool, the application used by \glspl{visitor} and PIs to create their observing blocks and execute them on the mountain.}}
+\newglossaryentry{bob}{name=\texttt{bob},sort=bob,description={broker for observing blocks, the application that reads \acrlong{ob}s and sends commands to the telescope and instrument so that observation is performed. The \texttt{bob} panel is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
 \newglossaryentry{General State}{name=General State,description={The \texttt{General State} panel of each instrument displays its status (integrations going on, basic telemetry, shutters, etc.).  It is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
 \newglossaryentry{ICS Control}{name=\texttt{ICS Control},sort=ICS Control,description={The \texttt{ICS Control} panel of an instrument allows to modify its state (mirrors, shutters, exposures).  It is usually placed in the virtual desktop \texttt{ICS}}}
 \newglossaryentry{ob}{name=OB,description={observing block, a file containing the information needed to instruct the telescope to perform an observation}}
 \newglossaryentry{rrm}{name=RRM,description={rapid response mode, the system that allows GROND to swiftly and automatically take command of the telescope to start observing when a satellite detects a possible transient.}}
-\newglossaryentry{template}{name=template,description={Atomic part of an observing block, with a single function, such as the acquisition or a set of integrations with a single instrument configuration (filtre, readout mode).}}
+\newglossaryentry{template}{name=template,description={Atomic part of an \acrlong{ob}, with a single function, such as the acquisition or a set of integrations with a single instrument configuration (filtre, readout mode).}}
 \newglossaryentry{irtd}{name=\texttt{irtd},sort=irtd,description={infrared real time display, an imaging application used to display the $J, H, K$ bands of GROND.}}
 \newglossaryentry{rtd}{name=\texttt{rtd},sort=rtd,description={real time display, an imaging application used to display the optical CCD images of WFI, FEROS, and GROND.}}
 \newglossaryentry{skycat}{name=\texttt{skycat},sort=skycat,description={Imaging application developed at ESO that can be seen as a simplified \texttt{ds9}.}}
-\newglossaryentry{vme}{name=VME,description={virtual machine environment, used metonymously to describe the logical control unit (see LCU) controlling the telescope. (VME describes the operating system running on logical control units, but this manual will not use this definition.)}}
-\newglossaryentry{flip mirror}{name=flip mirror,description={Flip mirror, mirror in the infrared arm of GROND that enables fast dithering while optical is exposing. See grondFM}}
+\newglossaryentry{vme}{name=VME,description={virtual machine environment, used metonymously to describe the \acrlong{lcu} controlling the telescope. (VME describes the operating system running on logical control units, but this manual will not use this definition.)}}
+\newglossaryentry{flip mirror}{name=flip mirror,description={Flip mirror, mirror in the infrared arm of \gls{grond} that enables fast dithering while optical is exposing. See grondFM}}
 \newglossaryentry{grondSHUTTER}{name=\texttt{grondSHUTTER},sort=grondSHUTTER,description={Command that resets the shutters of the optical CCDs of GROND}}
 \newglossaryentry{grondFM}{name=\texttt{grondFM},sort=grondFM,description={Command that controls the infrared flip mirror of GROND}}
 \newglossaryentry{grondGRI}{name=\texttt{grondGRI},sort=grondGRI,description={Command to reinitialise the event server of GROND}}
@@ -162,16 +174,16 @@
 \newglossaryentry{wferos}{name=\texttt{wferos},sort=wferos,description={Workstation of FEROS}}
 \newglossaryentry{wgrond}{name=\texttt{wgrond},sort=wgrond,description={Workstation of GROND}}
 \newglossaryentry{power cycle}{name=power cycle,description={Action consisting of switching off an electronic device, waiting for a few seconds, and switching it back on.}}
-\newglossaryentry{wwffcd}{name=\texttt{wwffcd},sort=wwffcd,description={Workstation controlling the WFI detector electronics (FIERA)}}
-\newglossaryentry{wfefcd}{name=\texttt{wfefcd},sort=wfefcd,description={Workstation controlling the FEROS detector electronics (FIERA)}}
-\newglossaryentry{wgrccd}{name=\texttt{wgrccd},sort=wgrccd,description={Workstation controlling the GROND optical detector electronics (FIERA)}}
+\newglossaryentry{wwffcd}{name=\texttt{wwffcd},sort=wwffcd,description={Workstation controlling the \gls{wfi} detector electronics (\gls{fiera})}}
+\newglossaryentry{wfefcd}{name=\texttt{wfefcd},sort=wfefcd,description={Workstation controlling the \gls{feros} detector electronics (\gls{fiera})}}
+\newglossaryentry{wgrccd}{name=\texttt{wgrccd},sort=wgrccd,description={Workstation controlling the \gls{grond} optical detector electronics (\gls{fiera})}}
 \newglossaryentry{desktop}{name={virtual desktop},description={A virtual desktop, or desktop, is a working environment showing on the screen of the linux/unix workstations. It is possible to switch between them on the same machine, achieving the same result as having more screens.}} 
-\newglossaryentry{M3}{name=M3,description={Tertiary mirror. There are two tertiary mirrors, one for GROND (trumps FEROS and WFI) and one for FEROS (trumps WFI). WFI is at the secondary focus and gets the light if neither of the tertiaries is inserted in the optical path.}}
+\newglossaryentry{M3}{name=M3,description={Tertiary mirror. There are two tertiary mirrors, one for \gls{grond} (trumps FEROS and WFI) and one for \gls{feros} (trumps WFI). \gls{wfi} is at the secondary focus and gets the light if, and only if, neither of the tertiaries is inserted in the optical path.}}
 \newglossaryentry{computer room}{name={computer room},description={Computer room located in the first floor of the telescope building. (There is also a site-wide computer room below the main control room, but we don't have access to it, so it will not be mentioned in this manual.)}}
 \newglossaryentry{control room}{name={control room},description={Control room, located in the New Operation Building below the main building that contains the hotel and dining room.  (There is also an old, partly functional, control room on the first floor of the telescope building, but otherwise specified, this manual refers to the main control room.)}}
-\newglossaryentry{wgrdcs}{name=\texttt{wgrdcs},sort=wgrdcs,description={Workstation controlling the GROND infrared detector electronics (FIERA)}}
-\newglossaryentry{w2p2dhs}{name=\texttt{w2p2dhs},sort=w2p2dhs,description={Workstation controlling the observing blocks}}
-\newglossaryentry{w2p2off}{name=\texttt{w2p2off},sort=w2p2off,description={Workstation controlling the reduction of FEROS data}}
+\newglossaryentry{wgrdcs}{name=\texttt{wgrdcs},sort=wgrdcs,description={Workstation controlling the \gls{grond} infrared detector electronics (\gls{irace})}}
+\newglossaryentry{w2p2dhs}{name=\texttt{w2p2dhs},sort=w2p2dhs,description={Workstation controlling the \acrlong{ob}s}}
+\newglossaryentry{w2p2off}{name=\texttt{w2p2off},sort=w2p2off,description={Workstation controlling the \gls{feros} \acrlong{drs}}}
 \newglossaryentry{w2p2pl}{name=\texttt{w2p2pl},sort=w2p2pl,description={Workstation controlling the communication with the ESO database}}
 \newglossaryentry{l2p2agr}{name=\texttt{l2p2agr},sort=l2p2agr,description={LCU controlling the GROND autoguider}}
 \newglossaryentry{w2p2cam}{name=\texttt{w2p2cam},sort=w2p2cam,description={Environment corresponding to LCU l2p2cam controlling the FEROS autoguider}}
@@ -187,8 +199,6 @@
 \newglossaryentry{dome}{name=dome,description={Part of the telescope building on the second floor containing the observing floor, telescope, and enclosure.  It can also refer to the moving part of the enclosure.}}
 \newglossaryentry{adam}{name=ADAM,description={Telescope hydraulics and mirror cover control system.}}
 \newglossaryentry{midas}{name=MIDAS,description={The well known reduction software}}
-\newglossaryentry{fiera}{name=FIERA,description={Electronics systems controlling the optical detectors}}
-\newglossaryentry{irace}{name=IRACE,description={Electronics systems controlling the infrared detectors.}}
 \newglossaryentry{auxfunc}{name=Auxiliary Functions,description={Panel with cryptic title \texttt{E2P2FAUX PANEL} (\figref{tcsauxfunc}) controlling WFI shutter and flat-field lamp.}}
 \newglossaryentry{webcam}{name=dome webcam,description={View into the dome given by the \texttt{TRENDNET} tab of mozilla on the \gls{windows}.}}
 \newglossaryentry{domefunc}{name=Dome Auxiliary Functions,description={\texttt{ADAM 6000} tab of mozilla on the \gls{windows} that contains hydraulics and ventilation control of the dome.}}
@@ -300,7 +310,7 @@ finally, the FEROS \acrlong{drs}.}
 
 \section{Overview of operations}
 
-In most nights, a support astronomer is present in the afternoon and the first part of the night, freeing the visitor of the afternoon and evening twilight calibration duties.  Sometimes visitors are ask to perform all duties alone.  In that case, an experienced observer can start operations 2.5 hours before sunset to minimise working time, while giving a small time buffer to solve the commonest technical issues.  Inexperienced ones should plan to start earlier or accept possible downtime in the very beginning of the night. \figureref{timeflow} shows a time-optimised chart of operations in the afternoon and both twilights.
+In most nights, a support astronomer is present in the afternoon and the first part of the night, freeing the \gls{visitor} of the afternoon and evening twilight calibration duties.  Sometimes visitors are ask to perform all duties alone.  In that case, an experienced observer can start operations 2.5 hours before sunset to minimise working time, while giving a small time buffer to solve the commonest technical issues.  Inexperienced ones should plan to start earlier or accept possible downtime in the very beginning of the night. \figureref{timeflow} shows a time-optimised chart of operations in the afternoon and both twilights.
 
 \begin{figure}[!ht]
 \includegraphics[width=\linewidth]{operations-time-flow.pdf}
@@ -308,9 +318,9 @@ In most nights, a support astronomer is present in the afternoon and the first p
 \label{fig:timeflow}
 \end{figure}
 
-Support astronomers perform or help to perform observations in service mode for the follow-up of gamma-ray bursts and transients (15\% of time as of 2019) and time-domain programmes (15\% of time as of 2019). They ensure that visitors correctly share their time with these other programmes.  In addition, during \gls{mpia} time, they also have they monitor the different MPIA programmes and ensure they are observed according to their priority and weather conditions. It includes real-time assessment and decisions, guided by the instructions of the different PIs, in particular during service mode.  During \gls{mpe} and Chilean time, they are mostly supporting observations and are not expecting to take real-time decisions concerning these programmes.  If service mode for MPE or Chile is offered, it is more similar to a ``delegated visitor'' mode where instructions by the PI are expected.
+Support astronomers perform or help to perform observations in \gls{service} mode for the follow-up of gamma-ray bursts and transients (15\% of time as of 2019) and time-domain programmes (15\% of time as of 2019). They ensure that \glspl{visitor} correctly share their time with these other programmes.  In addition, during \gls{mpia} time, they also have they monitor the different MPIA programmes and ensure they are observed according to their priority and weather conditions. It includes real-time assessment and decisions, guided by the instructions of the different PIs, in particular during service mode.  During \gls{mpe} and Chilean time, they are mostly supporting observations and are not expecting to take real-time decisions concerning these programmes.  If service mode for MPE or Chile is offered, it is more similar to a ``delegated visitor'' mode where instructions by the PI are expected.
 
-When no service astronomer is present (e.g. last part of the night), visiting astronomers will be asked to perform service observations for other groups, both for the follow-up of gamma-ray bursts and time-domain programmes.  The number of allocated nights for visitors takes the average time loss into account, in case more down time, compensation will be considered in service mode.  Since 2017, a long-term monitoring of quasi-stellar objects takes 1.5 to 2 hours daily, and targets of opportunity about 1 hour (15\% long-term average).  \gls{mpia} observers may be ask for additional service observations for the MPIA.
+When no \gls{service} astronomer is present (e.g. last part of the night), visiting astronomers will be asked to perform service observations for other groups, both for the follow-up of gamma-ray bursts and time-domain programmes.  The number of allocated nights for \glspl{visitor} takes the average time loss into account, in case more down time, compensation will be considered in service mode.  Since 2017, a long-term monitoring of quasi-stellar objects takes 1.5 to 2 hours daily, and targets of opportunity about 1 hour (15\% long-term average).  \gls{mpia} observers may be ask for additional \gls{service} observations for the MPIA.
 
 Chapters~\ref{chap:startup}--\ref{chap:nightops} can be seen as a step-by-step
 guide of the operations from the daily startup to the night time. Many of the
@@ -654,7 +664,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
         \begin{enumerate}
            \item Go to the \texttt{Autoguider GROND \& FEROS} screen. 
            \item Rearrange windows to their corresponding \gls{desktop}s (1 min)\\
-                 \texttt{Autoguiding} window should go to all \gls{desktop}s.
+                 \gls{autoguiding} window should go to all \gls{desktop}s.
            \item Use numbers 6, 3, 0.02 below \texttt{Autoguider control} and click \texttt{Apply}.
            \item Check the \gls{grond} autoguider (1--4 min)
                \begin{enumerate}
@@ -669,7 +679,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                \begin{enumerate}
                   \item select \text{FEROS} below \texttt{CCD change} (see \figref{agswitch})
                   \item If necessary, use \texttt{Start exposure} to change \texttt{CCD Status} to \texttt{Infinite loop}
-                  \item Find window \texttt{E2P2 Real Time Display}
+                  \item Find window \gls{ferosag}
                   \item Click checkbox \texttt{Camera on/off} so that checkbox gets green
                   \item A bias image should be seen within seconds
                   \item Check that the image is horizontally flipped. 
@@ -825,7 +835,7 @@ is enabled in the FEROS control window.]{%
   \includegraphics[width=0.31\linewidth]{feros/ferosreboot-4.png}\label{fig:feosu-start2}%
 }\hfill
 \subfigure[When finished, rearrange the windows to their corresponding
-\gls{desktop}s.  \gls{rtd}, \gls{bob} and FEROS control go to \texttt{BOB+OS}.]{
+\gls{desktop}s.  \gls{rtd}, \gls{bob} and FEROS control go to \texttt{BOB+gen state}.]{
   \includegraphics[width=0.45\linewidth]{feros/ferosreboot-5.png}\label{fig:feosu-windows}%
 }\hfill\null
 \caption{\gls{feros} restart.}
@@ -952,7 +962,7 @@ Internal calibrations and health checks are typically left running in the mornin
         \item Fetch \gls{bob} from file (\fetchob) looking in sub-folder \texttt{DomeFlats}.
         \begin{itemize}
            \item If observing in UBVRI standard filtres: \texttt{DomeFlatCalPlan\_new.obd} (25 min).
-           \item During an observing period or a visitor run, a custom \gls{ob} may be used\\
+           \item During an observing period or a \gls{visitor} run, a custom \gls{ob} may be used\\
     For instance: \texttt{DomeFlatsP103.obd} or \texttt{DomeFlatsVisitorName.obd}
            \item To choose filtres on the fly: \texttt{DomeFlatGeneric\_new.obd}.
            \item To test all filtres: \texttt{DomeFlatAllSnapshot.obd} (1 flat per filtre, 2 hrs 30 min).
@@ -1113,7 +1123,7 @@ A bit before sunset if doing \gls{sky flats} or at sunset otherwise, you can rea
      \label{list:checkmirror}
      \begin{enumerate}
         \item Check \gls{feros} mirror (\texttt{\gls{M3} Selected Mirror}) on the \gls{feros} control panel (\figref{feroscon}).\\
-              If necessary, set \texttt{\gls{mirr3}} motor on the \gls{ics} (\figref{ferosics})
+              If necessary, set \texttt{\gls{mirr3}} motor on the \gls{ferosics} (\figref{ferosics})
               \begin{itemize}
                 \item to \texttt{WFI} for observations with \gls{wfi} or \gls{grond};
                 \item to \texttt{FEROS} for observations with \gls{feros}.
@@ -1144,7 +1154,7 @@ A bit before sunset if doing \gls{sky flats} or at sunset otherwise, you can rea
 
 \section{Refining the night plan}
 
-On the GROND remote observer screen at the side of the small laptop, one of the GROND team members should have contacted you by \texttt{slack} to indicate their observing plan, if they have some monitoring to do.  It generally consists of 1--3 targets to be observed within a time range, so that you try to accommodate with your own and/or other service observations.  If it is detrimental to the other observations, there is sometimes some flexibility on which days they have their monitoring done, ask, but they have precedence.
+On the GROND remote observer screen at the side of the small laptop, one of the GROND team members should have contacted you by \texttt{slack} to indicate their observing plan, if they have some monitoring to do.  It generally consists of 1--3 targets to be observed within a time range, so that you try to accommodate with your own and/or other \gls{service} observations.  If it is detrimental to the other observations, there is sometimes some flexibility on which days they have their monitoring done, ask, but they have precedence.
 
 If slack is closed, open a browser with the following link: https://slack.com/signin. Sign in to workspace grondobs.slack.com and continue. Use the credentials given on the cover of the laptop, account \texttt{lasillaskype} with password \texttt{pwd}$\star\star\star\star\star$. Under channel \texttt{remote\_observing} you can usually find the observing plan (late afternoon). 
 
@@ -1311,8 +1321,7 @@ If things go well, the bright star used for the \gls{pointing} test should fall 
   \item Use \texttt{Pick Object} in the \texttt{view} option of the \gls{rtd} to obtain the star's pixel coordinates.  
   \item Input the pixel coordinates.\\
         Copy them with the mouse from the Pick Object popup to the small form. 
-  \item \textbf{TEMPORARY: if offset values are large, it's normal, WFI pointing was modified.}
-        After \texttt{offset and quit} a popup should have appeared.\\
+  \item After \texttt{offset and quit} a popup should have appeared.\\
         Click \texttt{OK} if satisfied with the offset values (in arcsec).
   \item If no star at all is seen, see 
     \secref{trouble:pointing} to check that:
@@ -1336,10 +1345,82 @@ If things go well, the bright star used for the \gls{pointing} test should fall 
 %  \item When the pointing OB is finished (with small offsets to the nominal position) do not forget to press \texttt{Corr.Co} in the \gls{tcs} Setup panel, under Telescope.
 \end{enumerate}
 
-\subsection{Focus (quick tips)}
+\subsection{Focus}
 
-Focus as close to your field in time and space. \\
-Preset the telescope to the field to be observed.
+\gls{focus} with \gls{wfi} should be preferrably done close in time and telescope position to the target's.  It is not necessary to use the same filtre as the observation if the observation uses a narrow band or a dimm filtre ($U$), for WFI knows the focus offsets between filtres.  Using the same filtre saves about 2\,min. 
+
+It is possible to skip the focus if an \gls{acquisition} or test image shows sharp, round stars or if the seeing is too bad ($\gtrsim 2$). It is advisable to (re)focus once conditions have stabilised, a few hours into the night, if on-chip seeing is critical.
+
+\procedure{Focusing with WFI (outline)}
+\label{proc:wfifocseq}
+\begin{enumerate}
+    \item Prepare telescope and filtre for focusing (1--3\,min)
+    \begin{enumerate}
+        \item If focusing in the same field and filtre as a target's, use the target OB's preset.
+        \begin{enumerate}
+            \item Load \gls{ob} for the target.
+            \item Thumb-down all templates except the \gls{acquisition}.
+            \item If template contains an acquisition image, decrease exposure time to 10\,s.
+            \item Start ob.
+            \item If it asks for \acrlong{ag}, acquire it (\procref{guidewfi}).
+            \item If it asks to refine acquisition after an image pops-up, skip it.
+            \item If an image pops-up and stars appear round and sharp enough for the science goal, you may skip the focusing altogether.
+        \end{enumerate}
+        \item If focusing in another field and filtre, do it manually
+        \begin{enumerate}
+            \item In the \gls{TCS control panel}, enter the coordinates and click \texttt{Preset} 
+            \item In the \gls{wfiics}, choose the filtre and click \texttt{???} 
+            \item Wait for telescope and filtre movements to complete (2--3\,min).
+            \item In the \gls{TCS control panel} and \gls{skycat}, acquire \acrlong{ag} (\procref{guidewfi}, 1\,min)
+        \end{enumerate}
+    \end{enumerate}
+    \item Start the focus \gls{ob} and perform \gls{acquisition} if required
+    \begin{enumerate}
+        \item In bob, use \wmenu{File}{Load OB,from file…}
+        \item Double-click subfolder \texttt{.../TEMPLATES/OBD/Focus}
+        \item Choose ob, e.g. \texttt{focusV.obd} or \texttt{focusCurrentFiltre.obd}
+        \item Click \texttt{OK}
+        \item Click \texttt{Start} on the OB
+        \item If a pop-ups asks for \gls{ag}, acquire it (\procref{guidewfi}, 1\,min)
+    \end{enumerate}
+    \item Monitor the progress of the focus sequence on \gls{bob} and \gls{skycat} (6\,min).
+    \begin{itemize}
+        \item Guide star will disappear and reappear between all subexposures.
+        \item If bob repeats a message about a \gls{focus} order for more than 10-15 s, you will need to enter the target values in the \gls{TCS control panel} for all subexposures starting from the one where problem appears (second one). Otherwise, the ob will crash.  See \procref{wfifocseqtimeout}.
+    \end{itemize}
+    \item Perform a dummy focus measurement (bug workaround)
+    \begin{enumerate}
+        \item Click \texttt{OK} on the pop-up asking to pick a star in MIDAS window
+        \item Go to \gls{desktop} \texttt{MIDAS}
+        \item Locate a black MIDAS window intended for graphics
+        \item Left-click, then right-click close to its centre
+        \item On the pop-up asking for confirmation, click \texttt{Redo}
+    \end{enumerate}
+    \item Perform focus measurement
+    \begin{enumerate}
+        \item Click \texttt{OK} on the pop-up asking to pick a star in MIDAS window
+        \item Find a vertical star sequence that is relatively separated from other ones
+        \item On the same black window, use arrow keys to dimension a box
+         centred on the cursor, so that it encompasses a star of the sequence,
+         but not two.
+        \item Left-click, then right click the upper star of the sequence
+        \item Look at the graphics displaying the FWHM fit as a function of
+         focus offset
+        \item Decide what to do (confirm exact labels...)
+        \begin{itemize}
+            \item If the fit and optimum focus offset value are correct, click \texttt{OK} (or Yes?)
+            \item If the fit is not correct but you can clearly see the best value, clikc{No} and enter value in the next pop-up
+            \item If you are not sure, click \texttt{Redo} and pick another star sequence
+            \item If it is clear that conditions have messed the focus, click \texttt{Abort}.
+        \end{itemize}
+        \item Wait for a pop-up to ask whether to log the value (20 s?)
+        \begin{itemize}
+            \item If you are happy with the focus, click \texttt{Log}
+            \item Otherwise, click \texttt{Do not log}
+        \end{itemize}
+        \item Wait for OB to finish (20 s?) 
+    \end{enumerate}
+\end{enumerate}
 
 Then, fetch a file from folder \texttt{.../TEMPLATES/OBD/Focus/}.  Focus in the band to be observed. Otherwise, V-band should be OK (focusV.obd).
 
@@ -1411,7 +1492,7 @@ You can choose \gls{focus} only, or \gls{focus} and \gls{spectrophotometric stan
   \item Acquire object on fibre and guide (see \secref{switchingFeros}, point~\ref{list:autoguiderFeros}, \& \secref{ferosguiding}).
   \item Perform the \gls{focus}
   \begin{enumerate}
-     \item On the \texttt{Autoguiding} window, select numbers 6, 3, 0.2.
+     \item On the \gls{autoguiding} window, select numbers 6, 3, 0.2.
      \item After about 30\,s, click \texttt{OK} to pop-up asking to ensure loop time is more than 3.
      \item A pop-up asks and suggest a \gls{focus} estimate
        \begin{enumerate}
@@ -1448,7 +1529,7 @@ You may deactivate the \gls{focus} sequence by thumbing down the second \gls{tem
      \item \gls{ob} directory is \texttt{.../TEMPLATES/OBD/Focus+Standard}
      \item \gls{ob} name is \texttt{Focus+Standard-<ra>….obd} with \texttt{<ra>} close to sidereal time. 
    \end{itemize}
-\item After \gls{focus} is done, change integration time to 0.01 on the \texttt{Autoguiding} window.
+\item After \gls{focus} is done, change integration time to 0.01 on the \gls{autoguiding} window.
 \item Two pop-ups will ask to wait for object to be centred on the fibre.  Wait for it to occur and click \texttt{OK}.
 \item Wait for \gls{spectrophotometric standard} template to integrate and read out (1 min)
 \end{enumerate}
@@ -1466,7 +1547,7 @@ You may deactivate the \gls{focus} sequence by thumbing down the second \gls{tem
   \item Proceed with guiding and answer popups, that's a normal observation (about 5 - 10 min).
   \begin{enumerate}
     \item In the \texttt{e2p2 RTD} window, click \texttt{Centering} (below \texttt{Image Control}), then click on the object.
-    \item In the \texttt{Autoguiding} window, set the integration time if necessary.
+    \item In the \gls{autoguiding} window, set the integration time if necessary.
     \item OK on popups (\texttt{FEROS \gls{ob}}) when the object is centred.
   \end{enumerate}  
     
@@ -1619,7 +1700,7 @@ overheads by parallelising \gls{preset} and mirror movements.  However, beware t
   \begin{enumerate}
       \item Ensure that the \gls{M3} mirror is on \gls{wfi}.\label{list:wfi:checkm3}
       \begin{enumerate}
-         \item Go to the \texttt{GROND Control} panel (\gls{desktop} \texttt{BOB+OS}).
+         \item Go to the GROND \gls{General State} panel (\gls{desktop} \texttt{BOB+gen state}).
          \item Check the value of \texttt{GROND \gls{M3}}.
       \end{enumerate}
       \item If it is on \gls{grond}, set it to \gls{wfi}.\\
@@ -1631,7 +1712,7 @@ overheads by parallelising \gls{preset} and mirror movements.  However, beware t
   \begin{enumerate}
       \item Ensure that the mirror is on \gls{wfi}
       \begin{enumerate}
-         \item Go to the \texttt{FEROS Control} panel (\gls{desktop} \texttt{BOB+OS}).
+         \item Go to the \texttt{FEROS \gls{General State}} panel (\gls{desktop} \texttt{BOB+gen state}).
          \item Check the value of \texttt{\gls{M3} Selected Mirror}.
       \end{enumerate}
       \item If it is on \gls{feros}, set it to \gls{wfi}.
@@ -1725,7 +1806,7 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
   \end{enumerate}
   \item Ensure the \gls{feros} \texttt{\gls{mirr3}} mirror is on FEROS.\label{list:pmferos}
   \begin{enumerate}
-    \item Go to he \texttt{FEROS Control} panel on \gls{desktop} \texttt{BOB+gen state} on screen \texttt{FEROS BOB}.
+    \item Go to he \texttt{FEROS \gls{General State}} panel on \gls{desktop} \texttt{BOB+gen state} on screen \texttt{FEROS BOB}.
     \item If the value of \texttt{M3 Selected Mirror} is WFI, set it to \gls{feros}
     \begin{enumerate}
       \item Go to the \texttt{FEROS \gls{ICS Control}} panel (\gls{desktop} \texttt{ICS}).
@@ -1766,7 +1847,7 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
     \end{enumerate}
     \item Set up the autoguider real time image.
     \begin{enumerate}
-      \item Go window \texttt{E2P2 Real Time Display}.\\
+      \item Go window \gls{ferosag}.\\
             If necessary open with \mmenu{CAM user}{E2P2...} 
       \item Activate the guide camera image flow if necessary.\\
             If checkbox \texttt{Camera On/Off} is not green, click on it.
@@ -1778,10 +1859,10 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
     \item Set the fibre reference position if GROND was used
     \begin{enumerate}
       \item Open or activate window \gls{pickrefstar} (\figref{pickref}).\\
-            Click \texttt{Set Reference} on window \texttt{E2P2 Real Time Display}.
+            Click \texttt{Set Reference} on window \gls{ferosag}.
       \item Ensure the reference is set on the cursor's clicking position.\\
             On window \gls{pickrefstar}, select checkbox \texttt{Pick Cursor}.
-      \item Back on window \texttt{E2P2 Real Time Display}, click on fibre position.\\
+      \item Back on window \gls{ferosag}, click on fibre position.\\
             Coordinates are x=822 and y=516, zooming to 3 or 4$\times$ helps to click accurately.\\
             A box centred on the pixel should appear.
     \end{enumerate}
@@ -1814,8 +1895,8 @@ with bad weather.
 \begin{enumerate}
   \item Check that \gls{wfi} \gls{ag} is off.
   \item Centre the target onto the fibre.\\
-  In window \texttt{E2P2 Real Time Display}, click \texttt{Centering} below \texttt{Image Control} and click on the target. 
-  \item In \texttt{Autoguiding} window, choose integration times (6, 3, $x$ for bright targets with $x < 3$).
+  In window \gls{ferosag}, click \texttt{Centering} below \texttt{Image Control} and click on the target. 
+  \item In \gls{autoguiding} window, choose integration times (6, 3, $x$ for bright targets with $x < 3$).
   \item Click \texttt{Start guiding}.
 \end{enumerate}
 
@@ -1840,11 +1921,11 @@ This is the preferred method in bad weather or for faint targets.  When the FERO
 \procedure{Guide FEROS observation with the WFI guide camera}
 \begin{enumerate}
   \item Centre the target on the fiber. \\
-  In window \texttt{E2P2 Real Time Display}, click \texttt{Centering} below \texttt{Image Control} and click on the target. 
+  In window \gls{ferosag}, click \texttt{Centering} below \texttt{Image Control} and click on the target. 
   \item Change filtre to limit the defocus in the \gls{wfi} \gls{ag}
   \begin{enumerate}
     \item Go to the workstation \texttt{WFI BOB}, \gls{desktop} \texttt{OS GUI}.
-    \item In panel \texttt{e2p2 OS GUI}, select filtre under \texttt{SETUP Instrument}.
+    \item In panel \gls{wfiics}, select filtre under \texttt{SETUP Instrument}.
     \begin{itemize}
         \item If \gls{feros} \gls{adc} is used, select Cousins $I$.
         \item Other wise, use standard $R$.
@@ -1868,7 +1949,7 @@ This is the preferred method in bad weather or for faint targets.  When the FERO
   \item \textbf{Important:} stop guiding at the end of the \gls{feros} \gls{ob}.\\
   In the \gls{TCS control panel}, click \texttt{Stop Monitoring} (under \texttt{AG Monitoring Parameters}) and click \texttt{Off} (in the panel \texttt{Autoguider}).  
   %Ivan: and OFF -> Not active?
-  \item \textbf{Note:} when observing with the ADC, don't lose time centering on the first pop-up.  No second
+  \item \textbf{Note:} when observing with the \gls{adc}, don't lose time centering on the first pop-up.  No second
      pop-up will be issued after ADC has entered the beam path, so you should
      \texttt{Pause} the exposure if you take time acquiring guiding and centring
      the target.
@@ -1887,8 +1968,8 @@ You can start an \gls{ob} once point \ref{list:switch-mcclose} has been done.  T
   \begin{enumerate}
     \item Go to screen \texttt{GROND BOB}.
     \item In a terminal, type \texttt{\gls{grondMC} CLOSE}.
-    \item Wait for cover to close (10-15 s). on panel \texttt{GROND General state}\\
-                Due to a big, it will say \texttt{Moving}, \texttt{Open}, then \texttt{Closed}
+    \item Wait for cover to close (10-15 s) on panel \texttt{GROND \gls{General State}}\\
+          Due to a bug, it will say \texttt{Moving}, \texttt{Open}, then \texttt{Closed}
   \end{enumerate}
   \item There is no need to switch the \gls{pointing model} to \gls{grond}\\
         GROND does it automatically, but you can do it to be consistent with FEROS and WFI.
@@ -1955,7 +2036,7 @@ When the \gls{rrm} of \gls{grond} is activated, it is possible that the detectio
 \begin{enumerate}
   \item Check that your exposure is being read out automatically, if not, do it manually
     \begin{itemize}
-        \item \textit{(\gls{feros})} click \texttt{END} on \texttt{FEROS Control}
+        \item \textit{(\gls{feros})} click \texttt{END} on \texttt{FEROS \gls{General State}}
         \item \textit{(\gls{wfi})} click \texttt{END} on \texttt{WFI \gls{General State}} panel.\\
         If WFI wasn't read out and \gls{preset} is started, frame is lost.
     \end{itemize}
@@ -1999,7 +2080,7 @@ When the \gls{rrm} of \gls{grond} is activated, it is possible that the detectio
   \item When \texttt{RTD} has loaded an image, click \texttt{Auto Set Cut Levels}.
   \item In the \texttt{TCS} option, select \gls{pickrefstar}.
   \item Click on a good star at least 100 pixels from the border.
-  \item In \texttt{Autoguiding} window, click \texttt{Start guiding}.
+  \item In \gls{autoguiding} window, click \texttt{Start guiding}.
 \end{enumerate}
 
 \section{All instruments}
@@ -2105,10 +2186,10 @@ and \gls{tcs}, and ensure mirrors let light directly to \gls{wfi} for \gls{dome 
 \item With \gls{grond}, close the \gls{cs} and \gls{mc}.\\ 
       In a terminal, type \texttt{\gls{grondCS} CLOSE} and \texttt{\gls{grondMC} CLOSE}.
 \item Ensure \gls{feros} \gls{mirr3} mirror is not in the way.\\
-      In panel FEROS Control (\figref{feroscon}), \texttt{\gls{M3} Selection Mirror} should state \texttt{WFI}\\
-      If not, int the \gls{ics} control panel (\figref{ferosics}), check the \texttt{\gls{mirr3}} box, select \texttt{WFI}, click \texttt{SETUP}.
+      In panel FEROS \gls{General State} (\figref{feroscon}), \texttt{\gls{M3} Selection Mirror} should state \texttt{WFI}\\
+      If not, int the \gls{ferosics} control panel (\figref{ferosics}), check the \texttt{\gls{mirr3}} box, select \texttt{WFI}, click \texttt{SETUP}.
 \item Ensure \gls{grond} \gls{M3} mirror is not in the way.\\
-      In panel  GROND Control (\figref{grondcon}), \texttt{GROND \gls{M3}} should state \texttt{WFI}.\\
+      In panel  GROND \gls{General State} (\figref{grondcon}), \texttt{GROND \gls{M3}} should state \texttt{WFI}.\\
       If not, type \texttt{\gls{grondM3} WFI} in a terminal.
 \end{enumerate}
 
@@ -2459,9 +2540,9 @@ If you want to observe while fixing the issue you need to deactivate the modules
                   \texttt{\gls{e2p2StartTCCDs} fag} 
             \item\label{lab:fag2} Wait for about 1--2 min for the command to exit successfully.
         \end{enumerate}
-    \item If the problem persists or an error pops up in step~\ref{lab:fag2}, reboot the \gls{ag} \gls{lcu} (3--4 min) 
+    \item\label{list:fag3} If the problem persists or an error pops up in step~\ref{lab:fag2}, reboot the \gls{ag} \gls{lcu} (3--4 min) 
         \begin{enumerate}
-            \item Type \texttt{\gls{lccBoot} \gls{l2p2cam}}
+            \item\label{list:fag4} Type \texttt{\gls{lccBoot} \gls{l2p2cam}} and wait for command to finish (2 min)
             \item Type \texttt{scanei} to open the scanei GUI
             \begin{enumerate}
                 \item Check that l2p2cam is ENABLED
@@ -2470,7 +2551,7 @@ If you want to observe while fixing the issue you need to deactivate the modules
             \end{enumerate}
             \item Perform steps \ref{lab:fag0}, \ref{lab:fag1}, \ref{lab:fag2}.
         \end{enumerate}
-    \item If the problem persists or an error pops up in step~\ref{lab:fag2}, perform a hardware reset of the \gls{lcu} (15 min)
+    \item If the problem persists, step~\ref{list:fag4} does not terminate with minutes, or an error pops up at some point in step~\ref{list:fag3}, perform a hardware reset of the FEROS AG \gls{lcu} (15 min)
     \begin{enumerate}
        \item Go to the FEROS room located in the telescope enclosure. 
        \item Locate the big blue rack tower (\figref{l2p2cam-rack}).
@@ -2495,20 +2576,20 @@ If the quick 30 seconds fix does not work, it is not possible to observe with WF
 Try in this order
 \begin{enumerate}
   \item\label{wfiagrestart}
-       On the \gls{tcs} screen, restart the autoguider (30 s)
+       On the \acrlong{tcs} screen, restart the \acrlong{ag} (30 s)
     \begin{enumerate}
        \item Use left-click menu \texttt{Stop Autoguider}
        \item Use left-click menu \texttt{Start Auoguider}\\
              If window closes quickly (less than 10 s), it is a failure and
              the next step should be done.
     \end{enumerate}
-  \item Restart the WFI technical CCD.\\
+  \item Restart the WFI \acrlong{tccd}.\\
         This should be done if \texttt{Retrieve Field} gives the error \texttt{Error opening RPC connection} or if point~\ref{wfiagrestart} does not solve the issue.
     \begin{enumerate}
        \item On the WFI screen, locate or open a terminal.
        \item Stop the WFI \acrlong{tccd} with command
-             \texttt{wfinsStopTCCDS} and wait for it to finish
-       \item Start the WFI \acrlong{tccd} with command \texttt{wfinsStartTCCDS} and wait for it to complete (2 min)
+             \gls{wfinsStopTCCDS} and wait for it to finish
+       \item Start the WFI \acrlong{tccd} with command \gls{wfinsStartTCCDS} and wait for it to complete (2 min)
        \item Perform the AG restart of point~\ref{wfiagrestart}
     \end{enumerate}
   \item If an autoguider process is suspended, restart the \gls{tcs}
@@ -2604,7 +2685,7 @@ order, until problem is fixed.
     \begin{enumerate}
        \item If error \texttt{closing \gls{w2p2cam} environment}
        \begin{enumerate}
-          \item If a \gls{fiera} exposure is running in \texttt{GROND Control}, click \texttt{End} or let it finish.
+          \item If a \gls{fiera} exposure is running in \texttt{GROND \gls{General State}}, click \texttt{End} or let it finish.
           \item Type \gls{grondSHUTTER} in a terminal.
        \end{enumerate} 
        \item If the error mentions \gls{irace}
@@ -2626,7 +2707,7 @@ order, until problem is fixed.
          \begin{enumerate}
            \item Type \gls{grinsStop}
            \item Type \gls{grinsStart}
-           \item In \texttt{GROND Control} panel, put instrument \texttt{ONLINE}.
+           \item In \texttt{GROND \gls{General State}} panel, put instrument \texttt{ONLINE}.
          \end{enumerate}
        \item \textit{(\gls{grond})} Reboot \gls{grond}.
        \item \textit{(\gls{grond})} If the GROND control has many TCS-related fields with gray background or the error says something about the FITS keyword TELESCOP, a last resort reboot of GROND may be needed. \textbf{BUT} in case of the first scenario, take a separate exposure with \gls{fiera} (in the control panel) first and check if these fields turn back to their usual color.
@@ -2637,7 +2718,7 @@ order, until problem is fixed.
              ``Cannot start exposure before the last one has read out'' or some
              equivalent message (10~sec)
         \begin{enumerate}
-           \item On the \texttt{e2p2 OS GUI} (\figref{wfios}) click \texttt{Abort Exp./Seq.}
+           \item On the \gls{wfiics} (\figref{wfios}) click \texttt{Abort Exp./Seq.}
            \item The GUI should display the text \texttt{ABORT    > INVOKED}
            \item Wait for a few seconds for the answer \texttt{ABORT    > REPLY/ L   OK}.
            \item If it works, problem is solved, if not go to next point.
@@ -2661,10 +2742,10 @@ order, until problem is fixed.
             \end{enumerate} 
           \item Restart the CCD managing components
              \begin{enumerate} 
-               \item Stop \acrlong{tccd} by typing \texttt{wfinsStopTCCDS}
-               \item Stop \acrlong{sccd} by typing \texttt{wfinsStopSCCDS}
-               \item Start SCCDs by typing \texttt{wfinsStartSCCDS}
-               \item Start TCCDs by typing \texttt{wfinsStartTCCDS}
+               \item Stop \acrlong{tccd} by typing \gls{wfinsStopTCCDS}
+               \item Stop \acrlong{sccd} by typing \gls{wfinsStopSCCDS}
+               \item Start SCCDs by typing \gls{wfinsStartSCCDS}
+               \item Start TCCDs by typing \gls{wfinsStartTCCDS}
              \end{enumerate}
           \item Restart the instrument.\\
                 Type \texttt{wfinsStartUp}.
@@ -2743,7 +2824,7 @@ If a timeout error occurs relating to \texttt{FOCOFF} or some message about
 \gls{focus} that cannot be done:
 \begin{itemize}
   \item (\gls{grond}) Disable and enable \gls{w2p2tcs} in \texttt{scanei}.
-  \item (\gls{wfi}) See \secref{wfifocseq}.
+  \item (\gls{wfi}) See \secref{wfifocseqtimeout}.
 \end{itemize}
 
 \subsection{Crash at the beginning of sky flats}
@@ -2756,7 +2837,7 @@ bob must be killed and the \gls{sky flats} \gls{ob} restarted.
 \procedure{Fix a WFI filtre change crash}\label{proc:filtrereset}
 If the \gls{ob} crashes at the moment to change the filtre using \gls{wfi} and the \texttt{Filter Name} status is \texttt{Moving} on the \texttt{WFI \gls{General State}} panel (\figref{wfigen})
  \begin{enumerate}
-      \item On the \texttt{e2p2 OS GUI} (\figref{wfios}), select the filtre on the \texttt{Filter} option below \texttt{Setup Instrument}.\label{list:filtchange1}
+      \item On the \gls{wfiics} (\figref{wfios}), select the filtre on the \texttt{Filter} option below \texttt{Setup Instrument}.\label{list:filtchange1}
       \item Click on the \texttt{Apply} button.
       \item Wait for filtre \texttt{Filter Name} to change from \texttt{Moving} to selected filtre (up to to 2\,min)\label{list:filtchange2}
       \item In case of error: ``icswsERR\_MOVE\_FILTER : Error during movement of filtre. ErrNo:7 ErrString: NO DETECTION'', reset the filtre controller
@@ -2781,15 +2862,36 @@ If the \gls{grond} \gls{ag} is highly defocused:
 See \secref{focusadc}.
 
 \subsection{WFI focus sequence fails with a timeout}
-\label{sec:wfifocseq}
+\label{sec:wfifocseqtimeout}
 The \gls{wfi} \gls{focus} sequence may fail to communicate the focus offsets to the telescope.  In that case, \gls{bob} will display several lines of focus orders ending with a timeout message. Then an error pop-up will appears.
 
-\begin{itemize}
-   \item Quick workaround: each time that \gls{bob} displays a \gls{focus} order, enter it manually in the \gls{TCS control panel}, below \texttt{M2 Focus}, and click \texttt{Preset to}.  This focus bug will not impact science \glspl{ob} during the night, so don't worry.
-   \item Clean fix: full restart of \gls{wfi} and \gls{tcs} (30 min).
+\procedure{Fix the WFI focus sequence timeout}
+\label{proc:wfifocseqtimeout}
+\begin{enumerate}
+    \item Quick workaround
+    \begin{enumerate}
+        \item Start a focus OB or restart the crashed one.
+        \item When the focus sequence starts, repeat the following
+        \begin{enumerate}
+            \item Wait for the previous subexposure to finish\\
+                  There is no readout, so messages in bob should be monitored
+            \item Identify the focus offset required for the new subexposure\\
+                  The lower part of \gls{bob} will give several lines with
+                  \texttt{current value -> target value}, one every few seconds.
+            \item Manually preset the focus to the target value\\ 
+                  In the \gls{TCS control panel}, below \texttt{M2 Focus}, enter the target value and click \texttt{Preset to}.  
+        \end{enumerate}
+        \item Once exposure is read out, proceed as usual (\procref{wfifocseq})
+        \item Science observations will not be impacted.
+    \end{enumerate}
+    \item Clean fix (30 min)
+    \begin{enumerate}
+        \item Do a full restart of \gls{wfi} (10 min)
+        \item Do a full restart of the \gls{tcs} (20 min).
+    \end{enumerate}
    \item When the problem becomes recurrent, the \gls{wfi} workstation should
 be rebooted.
-\end{itemize}
+\end{enumerate}
 
 \subsection{No focus offset when filtres are changed}
 \label{sec:filfocoffset}
@@ -2802,13 +2904,13 @@ The \gls{focus} sequence is run for a specific filtre, when changing filtres dur
 
 At the start of an observation there is a message that the \gls{adc} cannot be
 put off.  This happens after an observation using the \gls{adc}.  On the 
-\gls{feros} \gls{ics} (\figref{ferosics}) the line \texttt{adca} of the
+\gls{ferosics} panel (\figref{ferosics}) the line \texttt{adca} of the
 \texttt{adc} field contains \texttt{ERROR} in red.  
 
 
 \procedure{Remove the ADC from the optical path of FEROS}. Try in order the following items.
 \begin{itemize}
-  \item Manually put it off from the \gls{ics} panel (\figref{ferosics})
+  \item Manually put it off from the \gls{ferosics} panel (\figref{ferosics})
      \begin{itemize}
       \item Select the checkbox of \texttt{adca}
       \item Select \texttt{OFF} from the menu of \texttt{adca} 
@@ -3683,8 +3785,7 @@ can be switched.}
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.8\linewidth]{feros/FEROS-ICS.png}
-\caption[FEROS instrument control software panel]{The \gls{feros} \gls{ics} is mainly used to change the mirror 
-\texttt{\gls{mirr3}} from and back to \gls{wfi}.}
+\caption[FEROS instrument control software panel]{The \gls{ferosics} panel is mainly used to change the mirror \texttt{\gls{mirr3}} from and back to \gls{wfi}, but it gives wide access to the \acrlong{ics}.}
 \label{fig:ferosics}
 \end{figure}
 
@@ -3760,8 +3861,8 @@ Computer         & Login    & User     & Monitor(s)                 & Descriptio
               &          & wfimgr   & ---                        & manager account\\
 \gls{wferos}  & feros    & feros    & FEROS BOB                  & basic user\\
               &          & ferosmgr & ---                        & manager account\\
-\gls{w2p2dhs} & dhs      & service  & p2p2 \& ot                 & service observations (ot)\\
-              &          & visitor  & p2pp \& ot                 & visitors (p2pp)\\
+\gls{w2p2dhs} & dhs      & service  & p2p2 \& ot                 & \gls{service} observations (ot)\\
+              &          & visitor  & p2pp \& ot                 & \glspl{visitor} (p2pp)\\
 \gls{w2p2off} & astro    & astro    & FEROS pipeline             & data \& pipelines\\
 \gls{w2p2pl}  & pipeline & pipeline & w2p2pl pipeline            & WFI/FEROS data handling\\       
 \gls{wgrond}  & grond    & grond    & GROND BOB / \gls{fiera} / \gls{irace}  & basic user\\
@@ -3778,7 +3879,7 @@ Computer         & Login    & User     & Monitor(s)                 & Descriptio
 Component                 &  User name                                            & Password hint\\
 \hline\hline
 Graphical interface user  & tcs, cam, feros, wfi, grond, dhs, pipeline & .5a$\cdots$\\
-Other users               & visitor, service                           & .5a$\cdots$\\
+Other users               & \gls{visitor}, \gls{service}               & .5a$\cdots$\\
 Instrument manager        & ferosmgr, grondmgr, wfimgr                            & pin2$\cdots$\\
 Workstation administrator & root                                                  & 2be1$\cdots$\\
 Remedy tickets            & 2p2                                                   & .5a$\cdots$\\
@@ -3825,24 +3926,4 @@ User WS     & \multicolumn{2}{l}{call at Paranal 5959 to reboot \gls{uws2p2}, fi
 \setglossarystyle{altlist}
 \printglossaries
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Glossary}}
-%\chapter*{Bibliography}
-%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliography}}
-%\section*{Books}
-%\addcontentsline{toc}{section}{Books}
-%\printbibliography[heading=bibempty,type=book]
-%\section*{Articles}
-%\addcontentsline{toc}{section}{Articles}
-%\printbibliography[heading=bibempty,type=article]
-
-%----------------------------------------------------------------------------------------
-%	INDEX
-%----------------------------------------------------------------------------------------
-
-%\cleardoublepage
-%\setlength{\columnsep}{0.75cm}
-%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}}
-%\printindex
-
-%----------------------------------------------------------------------------------------
-
 \end{document}
