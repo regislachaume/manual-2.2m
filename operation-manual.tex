@@ -110,6 +110,8 @@
 \newacronym{sccd}{SCCD}{Science CDD}
 \newglossaryentry{acquisition}{name=acquisition,description={Part of an observing block that prepares the telescope (preset) and instrument (filtre change, mirror setups, etc.) for an observation.}}
 \newglossaryentry{stall}{name=stall,description={Stalling refers to stopping doing anything without an error being displayed or reaching complete state.  As it is silent, it is easy to lose time for a stalled OB...}}
+\newglossaryentry{fcdTelemetry}{name=\texttt{fcdTelemetry},sort=fcdTelemetry,description={Command to open the telemetry panel of GROND or WFI, used to activate telemetry if necessary.}}
+\newglossaryentry{pickrefstar}{name=\texttt{Pick Reference Star},sort=Pick Reference Star,description={Graphical user interface that allows the observer to pick a guide star on the WFI and GROND autoguiders, and a fibre reference pixel for FEROS. Also a menu option to open such a window.}}
 \newglossaryentry{mc}{name=main cover,description={Refers to the protective shutter of GROND}}
 \newglossaryentry{focus}{name=focus,description={Telescope focusing uses the secondary mirror. GROND focus is usually not touched. WFI and FEROS focus need regular (about daily) focus sequences to be performed.}}
 \newglossaryentry{main mirror}{name=main mirror,description={Primary mirror of the telescope.  It has a cover that needs to be open for observing and but should be closed when dome slit is being opened or closed.}}
@@ -139,7 +141,7 @@
 \newglossaryentry{rtd}{name=\texttt{rtd},sort=rtd,description={real time display, an imaging application used to display the optical CCD images of WFI, FEROS, and GROND.}}
 \newglossaryentry{skycat}{name=\texttt{skycat},sort=skycat,description={Imaging application developed at ESO that can be seen as a simplified \texttt{ds9}.}}
 \newglossaryentry{vme}{name=VME,description={virtual machine environment, used metonymously to describe the logical control unit (see LCU) controlling the telescope. (VME describes the operating system running on logical control units, but this manual will not use this definition.)}}
-\newglossaryentry{flip mirror}{name=flip mirror,description={Flip mirror, mirror in the infrared arm of GROND that allows fast dithering while optical is exposing. See grondFM}}
+\newglossaryentry{flip mirror}{name=flip mirror,description={Flip mirror, mirror in the infrared arm of GROND that enables fast dithering while optical is exposing. See grondFM}}
 \newglossaryentry{grondSHUTTER}{name=\texttt{grondSHUTTER},sort=grondSHUTTER,description={Command that resets the shutters of the optical CCDs of GROND}}
 \newglossaryentry{grondFM}{name=\texttt{grondFM},sort=grondFM,description={Command that controls the infrared flip mirror of GROND}}
 \newglossaryentry{grondGRI}{name=\texttt{grondGRI},sort=grondGRI,description={Command to reinitialise the event server of GROND}}
@@ -394,7 +396,7 @@ The \gls{tcs} and the \gls{wfi} are entangled.  In particular, the \gls{wfi} \gl
 
 To be on the safe side, the start-up sequence shall be performed in this order below. To gain a bit more time one can do \ref{list:hydr}--\ref{list:tcs1} during \ref{list:wfi1}--\ref{list:wfibooted} and
 \ref{list:tcsboot}--\ref{list:tcsbooted} during
-\ref{list:wfiwin}--\ref{list:wfitest}.  \gls{feros}, \gls{grond}, the \gls{ag} and the \gls{drs} (\ref{list:feros}, \ref{list:grond}, \ref{list:ag}, \ref{list:drs}) can be handled in parallel as soon as the \gls{tcs} is booted
+\ref{list:wfiwin}--\ref{list:wfitest}.  \gls{feros}, \gls{grond}, the \acrlong{ag} and the \acrlong{drs} (\ref{list:feros}, \ref{list:grond}, \ref{list:ag}, \ref{list:drs}) can be handled in parallel as soon as the \gls{tcs} is booted
 (\ref{list:tcsbooted}).  
 
 If under time pressure, you can also do some day-time calibrations in parallel. \figureref{timeflow-eve} gives a time-optimised flow of the day-time start-up and calibrations, showing what can be done in parallel.  It should be started latest 2.5 hours before sunset.
@@ -481,9 +483,9 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                  \item If flat-field lamp is on, turn it off unless you will do \gls{dome flats}.\\
                    On \texttt{FAUX functions} panel select \texttt{OFF} under \texttt{FLAT FIELD LAMP}          
                  \item On the \texttt{Telemetry} panel, ensure that the FEROS \gls{telemetry} module is \texttt{active}\\
-                       If not, activate it on the FEROS screen using \texttt{fcdTelemetry} (see \procref{telemetry})
+                       If not, activate it on the FEROS screen using \gls{fcdTelemetry} (see \procref{telemetry})
                  \item On the \texttt{Telemetry} panel, ensure that the WFI \gls{telemetry} module is \texttt{active}\\
-                       If not, activate it on the WFI screen using \texttt{fcdTelemetry} (see \procref{telemetry})
+                       If not, activate it on the WFI screen using \gls{fcdTelemetry} (see \procref{telemetry})
                  \item If a \gls{telemetry} was restarted, panel must be closed and reopened (see \procref{telemetry})
                  \end{enumerate}
           \end{enumerate}
@@ -507,8 +509,8 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                 \item\label{list:skycatro} Check that an image is read out on the \gls{skycat} window (30 s)
                 \item Select \wmenu{View}{Autoscale}
                 \item If steps \ref{list:ccdstat}--\ref{list:skycatro} do not work, see \procref{fixwfiag}.
-                \item On the \gls{skycat} window, use \wmenu{TCS}{Pick Reference Star...}
-                \item On emerging window (title \texttt{Pick Reference Star}), click \texttt{Cancel Operation}
+                \item On the \gls{skycat} window, use \wmenu{TCS}{\gls{pickrefstar}...}
+                \item On emerging window (title \texttt{\gls{pickrefstar}}), click \texttt{Cancel Operation}
           \end{enumerate}
           \item Ensure that the \gls{pointing model} is correct (1 min).
           \begin{enumerate}
@@ -1658,10 +1660,10 @@ overheads by parallelising \gls{preset} and mirror movements.  However, beware t
     \begin{enumerate}
         \item Wait ($\approx 30$\,s) for \gls{skycat} to read out the guide field.
         \item On the same window, click \texttt{Auto Set Cut Levels}.
-        \item Open the \texttt{Pick Reference Star} window if necessary.\\
-          In \texttt{skycat} chose \wmenu{TCS}{Pick Reference Star}.
+        \item Open the \texttt{\gls{pickrefstar}} window if necessary.\\
+          In \texttt{skycat} chose \wmenu{TCS}{\gls{pickrefstar}}.
         \item Pick the reference star\\
-          On the \texttt{Pick Reference Star} window click \texttt{Pick}\\
+          On the \gls{pickrefstar} window click \texttt{Pick}\\
           On the \gls{skycat} window, click a bright star not too close to the border. 
   \end{enumerate}
   \item On the \gls{TCS control panel} (\figref{tcs}) start the guiding
@@ -1691,7 +1693,7 @@ It is not possible to do it after a \gls{focus} sequence.
     \end{enumerate}
     \item Select the star on the autoguider windows (\figref{tcsag}) 
     \begin{enumerate}
-        \item Click \texttt{Pick object} in the \texttt{Pick reference star} window.
+        \item Click \texttt{Pick object} in the \gls{pickrefstar} window.
         \item Click on the star in the \gls{skycat} window.
     \end{enumerate}
     \item On the \gls{TCS control panel} (\figref{tcs}) start the guiding
@@ -1775,10 +1777,10 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
     \end{enumerate}
     \item Set the fibre reference position if GROND was used
     \begin{enumerate}
-      \item Open or activate window \texttt{Pick reference star} (\figref{pickref}).\\
-            Click \texttt{Set Reference} on window  \texttt{E2P2 Real Time Display}.
+      \item Open or activate window \gls{pickrefstar} (\figref{pickref}).\\
+            Click \texttt{Set Reference} on window \texttt{E2P2 Real Time Display}.
       \item Ensure the reference is set on the cursor's clicking position.\\
-            On window \texttt{Pick reference star}, select checkbox \texttt{Pick Cursor}.
+            On window \gls{pickrefstar}, select checkbox \texttt{Pick Cursor}.
       \item Back on window \texttt{E2P2 Real Time Display}, click on fibre position.\\
             Coordinates are x=822 and y=516, zooming to 3 or 4$\times$ helps to click accurately.\\
             A box centred on the pixel should appear.
@@ -1794,7 +1796,7 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.5\linewidth]{ag/PickRef.png}
-\caption[Window to set FEROS fibre reference position]{Window to set \gls{feros} fibre reference position \texttt{Pick reference star}. Select checkbox \texttt{Pick Cursor}.}
+\caption[Window to set FEROS fibre reference position]{Window to set \gls{feros} fibre reference position \gls{pickrefstar}. Select checkbox \texttt{Pick Cursor}.}
 \label{fig:pickref}
 \end{figure}
 
@@ -1924,8 +1926,8 @@ You can start an \gls{ob} once point \ref{list:switch-mcclose} has been done.  T
       \item Ensure autoguider refreshes image\\
               On the \texttt{Autoguider control} the checkbox \text{Display Enable} should be red
     \end{enumerate}
-    \item Ensure the reference picking window \texttt{Pick Reference Star} is open\\
-          If necessary open it from \gls{rtd} with \wmenu{TCS}{Pick Reference Star}
+    \item Ensure the reference picking window \gls{pickrefstar} is open\\
+          If necessary open it from \gls{rtd} with \wmenu{TCS}{\gls{pickrefstar}}
   \end{enumerate}
   \item Start the observation
   \begin{enumerate}
@@ -1978,12 +1980,12 @@ When the \gls{rrm} of \gls{grond} is activated, it is possible that the detectio
       \item Go window \texttt{Telescope R.T.D.}, open it if necessary.\\
             To open: left-click the screen background, choose \texttt{Autoguider RTD Grond} from menu \texttt{CAM user}.
       \item Activate the guide camera image flow if necessary.\\
-        Use menu \texttt{TCS} $\rightarrow$ \texttt{Attach camera}.
+        Use window menu \texttt{TCS} $\rightarrow$ \texttt{Attach camera}.
       \end{enumerate}
     \item Ensure the reference picking window is open
       \begin{enumerate}
-        \item Look for window: \texttt{Pick Reference Star}\\
-              To open: from \gls{rtd} window use menu \texttt{TCS} $\rightarrow$ \texttt{Pick Reference Star}
+        \item Look for window: \gls{pickrefstar}\\
+              To open: from \gls{rtd} window use \wmenu{TCS}{\gls{pickrefstar}}
       \end{enumerate}
   \end{enumerate}
   \item Start the guiding (\secref{grond:guide} below).
@@ -1995,7 +1997,7 @@ When the \gls{rrm} of \gls{grond} is activated, it is possible that the detectio
 \begin{enumerate}
   \item Chose typical 8, 4, $x$ values in the autoguider, with $x \le 4$.
   \item When \texttt{RTD} has loaded an image, click \texttt{Auto Set Cut Levels}.
-  \item In the \texttt{TCS} option, select \texttt{Pick Reference Star}.
+  \item In the \texttt{TCS} option, select \gls{pickrefstar}.
   \item Click on a good star at least 100 pixels from the border.
   \item In \texttt{Autoguiding} window, click \texttt{Start guiding}.
 \end{enumerate}
@@ -3008,7 +3010,7 @@ The \gls{telemetry} module is activated following these steps:
 \label{proc:telemetry}
 \begin{enumerate}
     \item Go to FEROS or WFI screen
-    \item Open or locate a terminal and type \texttt{fcdTelemetry \&}
+    \item Open or locate a terminal and type \texttt{\gls{fcdTelemetry} \&}
     \item On the emerging \texttt{FIERA - Telemetry} GUI, press \texttt{Start}
     \item Close the GUI
     \item Go to TCS screen
@@ -3120,7 +3122,7 @@ If the start-Up stops with error \texttt{could not send command "PING" to l2p2ca
         \item Try a software restart of the \gls{feros} \gls{ag} \gls{lcu} (likely to fail).
         \begin{enumerate}
             \item On the \gls{tcs} screen, find or open a terminal
-            \item Type \texttt{rsh l2p2cam reboot}\\
+            \item Type \texttt{rsh \gls{l2p2cam} reboot}\\
                   If it gives an error, proceed to step~\ref{lab:startupfag2}
             \item Wait for 1--2 min for the reboot to complete 
             \item Check that the LCU is up using \texttt{ping \gls{l2p2cam}}
@@ -3280,7 +3282,7 @@ The \gls{main mirror} cover is closed following these steps:
 \begin{figure}
 \centering
 \includegraphics[width=0.6\linewidth]{dome/dome-control.jpg}
-\caption{Local control of the dome}
+\caption{Local control of the \gls{dome}.  Local or remote control is set with the leftmost button.  Other two bottons on the same row set the direction and speed of rotation in the local control mode.  Just below, a start and stop button are used to initiate and finalise rotation.}
 \label{fig:dome-control}
 \end{figure}
 
@@ -3292,7 +3294,7 @@ You need to go to the \gls{dome}.
 \begin{enumerate}
    \item Go to the dome.
    \item Locate the dome controls (\figref{dome}), placed on the wall opposite to the entrance.
-   \item On the dome controls (\figref{dome-control}) turn the control from local to remote
+   \item On the dome controls (\figref{dome-control}) turn the leftmost button from local to remote
 \end{enumerate}
 
 \subsection{Dome slit and telescope are not aligned}
