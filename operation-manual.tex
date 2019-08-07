@@ -198,7 +198,7 @@
 \newglossaryentry{windows}{name=Windows desktop,description={Rightmost computer in the control room that controls the dome.}}
 \newglossaryentry{dome}{name=dome,description={Part of the telescope building on the second floor containing the observing floor, telescope, and enclosure.  It can also refer to the moving part of the enclosure.}}
 \newglossaryentry{adam}{name=ADAM,description={Telescope hydraulics and mirror cover control system.}}
-\newglossaryentry{midas}{name=MIDAS,description={The well known reduction software}}
+\newglossaryentry{midas}{name=MIDAS,description={The infamous reduction software, used mostly for side calculations (flux level, focus) and \acrlong{drs}}}
 \newglossaryentry{auxfunc}{name=Auxiliary Functions,description={Panel with cryptic title \texttt{E2P2FAUX PANEL} (\figref{tcsauxfunc}) controlling WFI shutter and flat-field lamp.}}
 \newglossaryentry{webcam}{name=dome webcam,description={View into the dome given by the \texttt{TRENDNET} tab of mozilla on the \gls{windows}.}}
 \newglossaryentry{domefunc}{name=Dome Auxiliary Functions,description={\texttt{ADAM 6000} tab of mozilla on the \gls{windows} that contains hydraulics and ventilation control of the dome.}}
@@ -873,7 +873,7 @@ obtain this status.  If status is \texttt{Fail}, the camera must be restarted (s
 \label{fig:drsswitch}
 \end{figure}
 The \gls{feros} \gls{drs} should be set to process the data of the 
-current night.  In the process the MIDAS session (with its characteristic
+current night.  In the process the \gls{midas} session (with its characteristic
 blue window) is closed and reopened.  
 
 \section{Additional material}
@@ -1390,7 +1390,7 @@ It is possible to skip the focus if an \gls{acquisition} or test image shows sha
     \end{itemize}
     \item Perform a dummy focus measurement (bug workaround)
     \begin{enumerate}
-        \item Click \texttt{OK} on the pop-up asking to pick a star in MIDAS window
+        \item Click \texttt{OK} on the pop-up asking to pick a star in \gls{midas} window
         \item Go to \gls{desktop} \texttt{MIDAS}
         \item Locate a black MIDAS window intended for graphics
         \item Left-click, then right-click close to its centre
@@ -1398,7 +1398,7 @@ It is possible to skip the focus if an \gls{acquisition} or test image shows sha
     \end{enumerate}
     \item Perform focus measurement
     \begin{enumerate}
-        \item Click \texttt{OK} on the pop-up asking to pick a star in MIDAS window
+        \item Click \texttt{OK} on the pop-up asking to pick a star in \gls{midas} window
         \item Find a vertical star sequence that is relatively separated from other ones
         \item On the same black window, use arrow keys to dimension a box
          centred on the cursor, so that it encompasses a star of the sequence,
@@ -1427,7 +1427,7 @@ Then, fetch a file from folder \texttt{.../TEMPLATES/OBD/Focus/}.  Focus in the 
 Try to guide. If guiding is unstable, better to have it off.
 
 When \gls{focus} sequence has been taken ($\approx 6$ min), click \texttt{OK}
-before you go to the MIDAS window (in the Midas \gls{desktop}), then left-click and right-click on the upper star in whatever vertical sequence to measure \gls{focus}.  
+before you go to the \gls{midas} window (in the \texttt{MIDAS} \gls{desktop}), then left-click and right-click on the upper star in whatever vertical sequence to measure \gls{focus}.  
 
 Many times, you cannot adjust the measuring box with the up and down keys, so the \gls{focus} is badly estimated (the fits do not have a parabolic shape).  In that case, choose to remeasure it and the box should become adjustable (e.g. choose the upper star on other sequence).
 
@@ -1501,7 +1501,7 @@ You can choose \gls{focus} only, or \gls{focus} and \gls{spectrophotometric stan
        \end{enumerate}
      \item Shortly after, a pop-up asks to select a star to \gls{focus} on
         \begin{enumerate}
-           \item A \texttt{MIDAS} image appears, left and right-click on a non-saturated source. 
+           \item A \gls{midas} image appears, left and right-click on a non-saturated source. 
            \item Click \texttt{OK} to pop-up
         \end{enumerate}
      \item After about 5--10 min a fit to \gls{focus} is done and a pop-up asks whether it is correct
@@ -3036,7 +3036,7 @@ If you cannot start the \gls{feros} \gls{drs} this might be for the following re
         \item \label{list:DRS} Left click start \texttt{FEROS DRS}, start from top to bottom
             \begin{enumerate}
                 \item Start \texttt{Queue Image Status}
-                \item Start \texttt{MIDAS Session Status}
+                \item Start \texttt{\gls{midas} Session Status}
                 \item Start \texttt{Reduced Queued Image}
             \end{enumerate}
     \end{enumerate}
@@ -3452,7 +3452,23 @@ If \gls{grond} \gls{M3} mirror cannot be moved with the \texttt{\gls{grondM3}} c
 
 \subsection{GROND OB only crashes with TCS on}
 
-It is a very tricky problem, randomly solved by a string of last resort reboots of GROND and TCS restarts. 
+It sometimes happen that \gls{grond} works well when \texttt{TCS} is \texttt{OFF} (testOB works) but fails when it is \texttt{ON} (testOB fails with a weird TELESCOP keyword error). It can be a very tricky problem, many times solved by a simple restart, but sometimes very persistent. 
+
+\procedure{Fix GROND OB crash with TCS on}
+\label{proc:TELESCOPkeyword}
+\begin{enumerate}
+\item Restart \gls{grond}\\
+      Use \gls{grinsStop}, \gls{grinsStart}, and prophyllaxy (\gls{grondSHUTTER}, etc.)
+\item If the last point doesn't fix the issue, do a full reboot of GROND and TCS
+    \begin{enumerate}
+        \item Stop the instrument (\gls{grinsStop})
+        \item Reboot the \gls{wgrond} workstation
+        \item Do a full \gls{tcs} restart
+        \item Start the instrument (\gls{grinsStart}, etc.)
+        \item Start the logging of the telemetry
+    \end{enumerate}
+\item If the last point doesn't work, replace the reboot by a last resort reboot\item You may need to repeat the steps a few times until it works or you are bussed to a mental institution.
+\end{enumerate}
 
 \subsection{GROND IR exposure won't start}
 
