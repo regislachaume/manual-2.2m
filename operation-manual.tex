@@ -106,6 +106,8 @@
 \newacronym{mpe}{MPE}{Max-Planck Institute for extraterrestrial Physics.}
 \newacronym{grond}{GROND}{Gamma-Ray Burst Optical/Near-Infrared Detector}
 \newacronym{feros}{FEROS}{Fibre-fed Extended Range Optical Spectrograph}
+\newacronym{tccd}{TCCD}{Technical CCD}
+\newacronym{sccd}{SCCD}{Science CDD}
 \newglossaryentry{acquisition}{name=acquisition,description={Part of an observing block that prepares the telescope (preset) and instrument (filtre change, mirror setups, etc.) for an observation.}}
 \newglossaryentry{stall}{name=stall,description={Stalling refers to stopping doing anything without an error being displayed or reaching complete state.  As it is silent, it is easy to lose time for a stalled OB...}}
 \newglossaryentry{mc}{name=main cover,description={Refers to the protective shutter of GROND}}
@@ -114,6 +116,11 @@
 \newglossaryentry{ot}{name=\texttt{ot},sort=ot,description={observing tool, the application that can be used to manage the observing blocks for service observations}}
 \newglossaryentry{lascam}{name=LASCAM,description={La Silla all-sky camera}}
 \newglossaryentry{standard field}{name=standard field,description={A field containing various standard star with well known magnitudes.  It is used to calibrate the flux response of WFI (Landolt fields) and GROND (Landolt and SDSS fields).}}
+\newglossaryentry{osf2p2StartUp}{name=\texttt{osf2p2StartUp},sort=osf2p2StartUp,description={Command used to do a start-up of the telescope control software and the instruments (WFI \& FEROS).}}
+\newglossaryentry{e2p2StopTCCDs}{name=\texttt{e2p2StopTCCDs},sort=e2p2StopTCCDs,description={Command to stop the technical CCDs (guiding cameras) of GROND and FEROS}}
+\newglossaryentry{e2p2StartTCCDs}{name=\texttt{e2p2StartTCCDs},sort=e2p2StartTCCDs,description={Command to start the technical CCDs (guiding cameras) of GROND and FEROS}}
+\newglossaryentry{grinsStop}{name=\texttt{grinsStop},sort=grinsStop,description={Command used to stop the GROND instrument}}
+\newglossaryentry{grinsStart}{name=\texttt{grinsStart},sort=grinsStart,description={Command used to start the GROND instrument}}
 \newglossaryentry{spectrophotometric standard}{name=spectrophotometric standard,description={A star with a stable and well-known flux energy distribution used to determine the transmission of FEROS + telescope + atmosphere.}}
 \newglossaryentry{rv standard}{name=radial velocity standard,description={A star with a stable radial velocity used to calibrate or check the calibration of FEROS.}}
 \newglossaryentry{rose diagram}{name=\texttt{rose diagram},sort=rose diagram,description={Diagram of the telescope position, slit orientation, and Moon displayed on the Telescope Control Panel.}}
@@ -127,8 +134,6 @@
 \newglossaryentry{ICS Control}{name=\texttt{ICS Control},sort=ICS Control,description={The \texttt{ICS Control} panel of an instrument allows to modify its state (mirrors, shutters, exposures).  It is usually placed in the virtual desktop \texttt{ICS}}}
 \newglossaryentry{ob}{name=OB,description={observing block, a file containing the information needed to instruct the telescope to perform an observation}}
 \newglossaryentry{rrm}{name=RRM,description={rapid response mode, the system that allows GROND to swiftly and automatically take command of the telescope to start observing when a satellite detects a possible transient.}}
-\newglossaryentry{TCCD}{name=TCCD,description={A technical CCD a used for guiding and, in the case of FEROS, acquisition. The name pops up in the command line when restarting autoguiding cameras, e.g. \texttt{e2p2StartTCCDs}}}
-\newglossaryentry{SCCD}{name=SCCD,description={Science CCD.  The name pops up in the command line when restarting an instrument step by step, e.g. \texttt{wfinsStartTCCDS}}}
 \newglossaryentry{template}{name=template,description={Atomic part of an observing block, with a single function, such as the acquisition or a set of integrations with a single instrument configuration (filtre, readout mode).}}
 \newglossaryentry{irtd}{name=\texttt{irtd},sort=irtd,description={infrared real time display, an imaging application used to display the $J, H, K$ bands of GROND.}}
 \newglossaryentry{rtd}{name=\texttt{rtd},sort=rtd,description={real time display, an imaging application used to display the optical CCD images of WFI, FEROS, and GROND.}}
@@ -137,7 +142,7 @@
 \newglossaryentry{flip mirror}{name=flip mirror,description={Flip mirror, mirror in the infrared arm of GROND that allows fast dithering while optical is exposing. See grondFM}}
 \newglossaryentry{grondSHUTTER}{name=\texttt{grondSHUTTER},sort=grondSHUTTER,description={Command that resets the shutters of the optical CCDs of GROND}}
 \newglossaryentry{grondFM}{name=\texttt{grondFM},sort=grondFM,description={Command that controls the infrared flip mirror of GROND}}
-\newglossaryentry{grondGRI}{name=\texttt{grondGRI},sort=grondGRI,description={Command to reinitialise the events server of GROND}}
+\newglossaryentry{grondGRI}{name=\texttt{grondGRI},sort=grondGRI,description={Command to reinitialise the event server of GROND}}
 \newglossaryentry{cs}{name=cold shutter,description={Shutter of the infrared arm of GROND. It stays continuously open during and between observations. It will be closed during calibrations. Not to be confused with the main cover (protective shutter) or the shutters of the optical CCDs.}}
 \newglossaryentry{protective shutter}{name=protective shutter,description={Protective shutter of WFI, that remains open during the night. Not to be confused with the shutter of the optical CCDs that open for integration only. (For GROND it is generally called main cover, see grondMC)}}
 \newglossaryentry{grondCS}{name=grondCS,description={Command controlling the shutter of the infrared arm of GROND}}
@@ -167,6 +172,9 @@
 \newglossaryentry{w2p2off}{name=\texttt{w2p2off},sort=w2p2off,description={Workstation controlling the reduction of FEROS data}}
 \newglossaryentry{w2p2pl}{name=\texttt{w2p2pl},sort=w2p2pl,description={Workstation controlling the communication with the ESO database}}
 \newglossaryentry{l2p2agr}{name=\texttt{l2p2agr},sort=l2p2agr,description={LCU controlling the GROND autoguider}}
+\newglossaryentry{w2p2cam}{name=\texttt{w2p2cam},sort=w2p2cam,description={Environment corresponding to LCU l2p2cam controlling the FEROS autoguider}}
+\newglossaryentry{w2p2agr}{name=\texttt{w2p2cam},sort=w2p2cam,description={Environment corresponding to LCU l2p2agr controlling the GROND autoguider}}
+\newglossaryentry{lccBoot}{name=\texttt{lccBoot},sort=lccBoot,description={Command to reboot a workstation or a logical control unit (LCU/VME)}}
 \newglossaryentry{l2p2cam}{name=\texttt{l2p2cam},sort=l2p2cam,description={LCU controlling the FEROS autoguider}}
 \newglossaryentry{lfeics1}{name=\texttt{lfeics1},sort=lfeics1,description={LCU of the FEROS instrument control software}}
 \newglossaryentry{lte2p2}{name=\texttt{lte2p2},sort=lte2p2,description={LCU of the telescope control software}}
@@ -405,7 +413,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
   \item \label{list:wfistartup}\textbf{\gls{wfi} restart (8 min, in case of problems, see \figref{wfi-restart})}
         \begin{enumerate}
           \item On the screen \texttt{BOB Wide Field Imager}, go to the \texttt{StartUp} \gls{desktop}.\label{list:wfi1}
-          \item In a terminal, \texttt{osf2p2StartUp ini WFI F8}, where ini is your initials (\figref{wfisu-launch}).
+          \item In a terminal, \texttt{\gls{osf2p2StartUp} ini WFI F8}, where ini is your initials (\figref{wfisu-launch}).
           \item On the dialog, choose \texttt{DAILY} startup (\figref{wfisu-full}).
           \item Click \texttt{START} on the appearing window (\texttt{ESO220 WEEKLY FULL STARTUP}, see \figref{wfisu-start}). 
           \item Wait until the start-up window says \texttt{SCRIPT finished} (about 11 minutes).\\
@@ -449,12 +457,12 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
              \label{list:hydr}
           \item On the screen \texttt{Telescope Control Software}, go the the \texttt{StartUp} \gls{desktop}.\label{list:tcs1}
           \item If \texttt{Cannot read "@w2p2wfi…"} pop-up can be seen on the \gls{tcs} screen (\figref{tcssu-error}), click \texttt{OK}.
-          \item In a terminal type \texttt{lccBoot \gls{lte2p2}} and wait for command to end (2 min, \figref{tcssu-boot})\\
+          \item In a terminal type \texttt{\gls{lccBoot} \gls{lte2p2}} and wait for command to end (2 min, \figref{tcssu-boot})\\
                 If none is there, you can open one with \mmenu{TCS User}{tcs xterm}.\\
                 If an error message appears on the \gls{wfi} screen, click \texttt{OK}. 
           \item Launch the start-up script
           \begin{enumerate}
-             \item In the terminal type \texttt{osf2p2StartUp ini ALL F8}, with \texttt{ini} = your initials.\label{list:tcsboot} (\figref{tcssu-launch})\\
+             \item In the terminal type \texttt{\gls{osf2p2StartUp} ini ALL F8}, with \texttt{ini} = your initials.\label{list:tcsboot} (\figref{tcssu-launch})\\
                    Make sure \gls{wfi} is fully booted (\ref{list:wfibooted}) before going on with the \gls{tcs} start-up.
               \item Click \texttt{START} on the appearing startup window titled \texttt{ESO220 DAILY STARTUP} (\figref{tcssu-start})
           \end{enumerate}
@@ -535,7 +543,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
          \item \label{lab:ferosstartup} On the screen \texttt{FEROS BOB},  go the the \texttt{StartUp} \gls{desktop}.
          \item Launch the weekly full start-up script (2 min)
          \begin{enumerate}
-            \item In a terminal type \texttt{osf2p2StartUp ini FEROS F8}, where ini is your initials. (\figref{feosu-launch})\\
+            \item In a terminal type \texttt{\gls{osf2p2StartUp} ini FEROS F8}, where ini is your initials. (\figref{feosu-launch})\\
                If none is available, use \mmenu{FEROS User}{feros xterm}.
             \item Click \texttt{FULL} on popup \texttt{Select StartUp Type} (\figref{feosu-full})
             \item Click \texttt{START} on the start-up window \texttt{ESO220 WEEKLY FULL STARTUP} (\figref{feosu-start}).\\
@@ -572,7 +580,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                \item \label{list:ferostestob} Click \texttt{Start} 
                \item Wait for the exposure to finish (takes about 1 min).
                \item If points \ref{lab:ferosstartup}--\ref{lab:ferosbooted} were skipped, it will fail on the first attempt and proceed.
-              \item Click \texttt{OK} on the error popups, one should say \texttt{error closing w2p2cam}
+              \item Click \texttt{OK} on the error popups, one should say \texttt{error closing \gls{w2p2cam}}
               \item In \gls{bob}, click on \texttt{Reset status}
               \item Re-run it (point \ref{list:ferostestob}).
             \end{enumerate}
@@ -590,8 +598,8 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
                You can use \mmenu{GROND user}{grondmgr on \gls{wgrond}}
          \item In the case of a power cut or issues with GROND, restart the instrument (5 min)
          \begin{enumerate}
-           \item Type \texttt{grinsStop}, wait for shutdown window to finish and disappear.\label{list:grinsstop}
-            \item Type \texttt{grinsStart} and click \texttt{Continue} on the pop-up.
+           \item Type \gls{grinsStop}, wait for shutdown window to finish and disappear.\label{list:grinsstop}
+            \item Type \gls{grinsStart} and click \texttt{Continue} on the pop-up.
             \item Wait for startup window to finish and disappear (a few minutes).\\If an error about ``reply timed out'' appears, then close the startup window and repeat from \ref{list:grinsstop}.\label{list:grinsstart}
             \item Rearrange windows.
             \item Use \wmenu{Instrument}{ONLINE} in the GROND control panel (\figref{grondcon}).\label{list:grondonline}
@@ -600,7 +608,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
            \begin{enumerate}
              \item Close \gls{bob}.
              \item Launch \gls{bob} from the terminal as user \texttt{grondmgr} (type \texttt{bob \&}).
-             \item In the same terminal, execute \texttt{\gls{grondGRI}}.
+             \item In the same terminal, execute \gls{grondGRI}.
              \item In the same terminal, execute \texttt{\gls{grondSHUTTER} \&\& \gls{grondFM}} (might take 1 min).
            \end{enumerate}
          \item From \gls{bob}, execute the test \gls{ob} \texttt{testOB.obd}, see \figref{grondbob} (1 min)
@@ -616,7 +624,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
              \item Click \texttt{Start}.
              \item If you haven't done the full start-up, the first attempt should fail, you need to
              \begin{enumerate}
-                \item Click \texttt{OK} on the error popups, one should say \texttt{error closing w2p2cam}
+                \item Click \texttt{OK} on the error popups, one should say \texttt{error closing \gls{w2p2cam}}
                 \item Wait for the exposure to finish
                 \item In \gls{bob}, click on \texttt{Reset status}
                 \item Click on start again.
@@ -2389,7 +2397,7 @@ Every six months a weekly software maintenance has an additional step with the r
 
 The \gls{grond} and \gls{feros} autoguider use the same system on screen \texttt{Autoguider GROND \& FEROS}, between the GROND and FEROS screens.  \gls{wfi} has its own system on screen \texttt{Telescope Control Software}.
 
-It is possible to go on observing with GROND and FEROS while restarting the autoguider, provided that the modules are deactivated on the \gls{tcs}. However, you need to reactivate them to do the last step of restarting the autoguider (\texttt{e2p2Start\gls{TCCD}s}).
+It is possible to go on observing with GROND and FEROS while restarting the autoguider (\acrlong{tccd}), provided that the modules are deactivated on the \gls{tcs}. However, you need to reactivate them to do the last step of restarting the autoguider (gls{e2p2StartTCCDs}).
 
 \procedure{Observe when the autoguider fails}
 \label{proc:agmodules}
@@ -2401,11 +2409,11 @@ It is possible to go on observing with GROND and FEROS while restarting the auto
         \item For \gls{grond}, \texttt{ag\_ccdGRND} and \texttt{ccdGRND}
         \item For \gls{feros}, \texttt{ag\_ccdGRND} and \texttt{ccdGRND}
     \end{itemize}
-    \item Remember to uncheck them for \texttt{e2p2Start\gls{TCCD}s} to work!
+    \item Remember to uncheck them for \gls{e2p2StartTCCDs} to work!
 \end{enumerate}
 
 \subsection{GROND}
-If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see \procref{agmodules}.  You will need to uncheck them just before starting the guider software with \texttt{e2p2Start\gls{TCCD}s}.
+If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see \procref{agmodules}.  You will need to uncheck them just before starting the guider software with \gls{e2p2StartTCCDs}.
 
 \procedure{Restart the GROND autoguider}
 \label{proc:restartgag}
@@ -2413,14 +2421,16 @@ If you want to observe while fixing the issue you need to deactivate the modules
    \item\label{list:gag1} If in a hurry try the quick restart (1--2 min)
    \begin{enumerate}
        \item On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
-       \item Type \texttt{e2p2Stop\gls{TCCD}s gag} and wait for command to finish
-       \item Type \texttt{e2p2Start\gls{TCCD}s gag} and wait for command to finish
+       \item Stop the GROND \acrlong{tccd}\\
+             Type \texttt{\gls{e2p2StopTCCDs} gag} and wait for command to finish
+       \item Start the GROND \acrlong{tccd}\\
+             Type \texttt{\gls{e2p2StartTCCDs} gag} and wait for command to finish
    \end{enumerate}
    \item If you have time or \ref{list:gag1} does not solve the issue,
    go for the full restart (3--4 min)
    \begin{enumerate}
        \item On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
-       \item Type \texttt{lccBoot \gls{l2p2agr}}
+       \item Type \texttt{\gls{lccBoot} \gls{l2p2agr}}
        \item Wait for the command to finish (1--2 min)
        \item Type \texttt{scanei} to open the scanei GUI
        \begin{enumerate}
@@ -2428,12 +2438,12 @@ If you want to observe while fixing the issue you need to deactivate the modules
 	   \item If not, enable l2p2agr (see \figref{agscanei})
 	   \item Close the GUI
        \end{enumerate}
-       \item Type \texttt{e2p2Start\gls{TCCD}s gag}
+       \item Start the \acrlong{tccd} with command \texttt{\gls{e2p2StartTCCDs} gag}
    \end{enumerate}
 \end{enumerate}
 
 \subsection{FEROS}
-If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see \procref{agmodules}.  You will need to uncheck them before starting the guider software with \texttt{e2p2Start\gls{TCCD}s} (step~\ref{lab:fag2}). 
+If you want to observe while fixing the issue you need to deactivate the modules in the \gls{tcs}, see \procref{agmodules}.  You will need to uncheck them before starting the guider (Technical CCD) with \gls{e2p2StartTCCDs} (step~\ref{lab:fag2}). 
 
 \procedure{Restart the FEROS autoguider}
 \label{proc:restartfag}
@@ -2441,13 +2451,15 @@ If you want to observe while fixing the issue you need to deactivate the modules
     \item Restart the \gls{ag} software (1--2 min).
         \begin{enumerate}
             \item\label{lab:fag0} On screen \texttt{Autoguider GROND \& FEROS}, find or open a terminal.
-            \item Type \texttt{e2p2Stop\gls{TCCD}s fag}
-            \item\label{lab:fag1} Type \texttt{e2p2Start\gls{TCCD}s fag}
+            \item Stop the FEROS \acrlong{tccd} with command
+                  \texttt{\gls{e2p2StopTCCDs} fag} and wait for command to finish
+            \item\label{lab:fag1} Start the FEROS \acrlong{tccd} with command
+                  \texttt{\gls{e2p2StartTCCDs} fag} 
             \item\label{lab:fag2} Wait for about 1--2 min for the command to exit successfully.
         \end{enumerate}
     \item If the problem persists or an error pops up in step~\ref{lab:fag2}, reboot the \gls{ag} \gls{lcu} (3--4 min) 
         \begin{enumerate}
-            \item Type \texttt{lccBoot \gls{l2p2cam}}
+            \item Type \texttt{\gls{lccBoot} \gls{l2p2cam}}
             \item Type \texttt{scanei} to open the scanei GUI
             \begin{enumerate}
                 \item Check that l2p2cam is ENABLED
@@ -2492,8 +2504,9 @@ Try in this order
         This should be done if \texttt{Retrieve Field} gives the error \texttt{Error opening RPC connection} or if point~\ref{wfiagrestart} does not solve the issue.
     \begin{enumerate}
        \item On the WFI screen, locate or open a terminal.
-       \item Type \texttt{wfinsStop\gls{TCCD}S} and wait for it to complete
-       \item Type \texttt{wfinsStart\gls{TCCD}S} and wait for it to complete (2 min)
+       \item Stop the WFI \acrlong{tccd} with command
+             \texttt{wfinsStopTCCDS} and wait for it to finish
+       \item Start the WFI \acrlong{tccd} with command \texttt{wfinsStartTCCDS} and wait for it to complete (2 min)
        \item Perform the AG restart of point~\ref{wfiagrestart}
     \end{enumerate}
   \item If an autoguider process is suspended, restart the \gls{tcs}
@@ -2587,7 +2600,7 @@ order, until problem is fixed.
     \end{enumerate}
   \item \gls{grond}
     \begin{enumerate}
-       \item If error \texttt{closing w2p2cam environment}
+       \item If error \texttt{closing \gls{w2p2cam} environment}
        \begin{enumerate}
           \item If a \gls{fiera} exposure is running in \texttt{GROND Control}, click \texttt{End} or let it finish.
           \item Type \gls{grondSHUTTER} in a terminal.
@@ -2609,8 +2622,8 @@ order, until problem is fixed.
        \item \textit{(\gls{grond})} Restart \gls{fiera} (see ~\ref{restartfiera}).
        \item \textit{(\gls{grond})} Restart \gls{grond}.
          \begin{enumerate}
-           \item Type \texttt{grinsStop}
-           \item Type \texttt{grinsStart}
+           \item Type \gls{grinsStop}
+           \item Type \gls{grinsStart}
            \item In \texttt{GROND Control} panel, put instrument \texttt{ONLINE}.
          \end{enumerate}
        \item \textit{(\gls{grond})} Reboot \gls{grond}.
@@ -2646,8 +2659,8 @@ order, until problem is fixed.
             \end{enumerate} 
           \item Restart the CCD managing components
              \begin{enumerate} 
-               \item Stop \glspl{TCCD} by typing \texttt{wfinsStopTCCDS}
-               \item Stop \glspl{SCCD} by typing \texttt{wfinsStopSCCDS}
+               \item Stop \acrlong{tccd} by typing \texttt{wfinsStopTCCDS}
+               \item Stop \acrlong{sccd} by typing \texttt{wfinsStopSCCDS}
                \item Start SCCDs by typing \texttt{wfinsStartSCCDS}
                \item Start TCCDs by typing \texttt{wfinsStartTCCDS}
              \end{enumerate}
@@ -3194,7 +3207,7 @@ the yellow 'd' label. \emph{Centre:} To hard reboot the VME, press the small red
     \item If you just switched hydraulics on, wait for a few minutes to see
         if connection is back.
     \item Do a remote reboot of the \gls{vme}.\\
-          Type \texttt{lccBoot \gls{lte2p2}} in a terminal.
+          Type \texttt{\gls{lccBoot} \gls{lte2p2}} in a terminal.
     \item Do a manual reboot of the \gls{vme} in the dome.
     \begin{enumerate}
         \item Go to the \gls{computer room} of the telescope enclosure.
@@ -3358,7 +3371,7 @@ the \gls{ob} \gls{stall}s. If \texttt{grondFM} doesn't solve the issue, this may
 \procedure{Deep reset of GROND IRACE (verify this!)}
 \label{proc:iracerestart}
 \begin{enumerate}
-  \item In a GROND terminal, do \texttt{grinsStop} as user  \texttt{grondmgr}.
+  \item In a GROND terminal, do \gls{grinsStop} as user \texttt{grondmgr}.
   \item Go to the \gls{computer room} of the telescope building.
   \item Locate the \gls{irace} workstation (\figref{computer-room}) and shut it down.
   \item Go to the \gls{dome} 
@@ -3782,23 +3795,23 @@ p2pp for \gls{mpia}             & MPGUtility, MPGDDT                            
 \hline
 Component   & Reboot command                       & Alternative reboots\\
 \hline\hline
-TCS \gls{lcu}/\gls{vme} & \texttt{lccBoot \gls{lte2p2}}  & \texttt{rsh vxte2p2 reboot}\\ 
+TCS \gls{lcu}/\gls{vme} & \texttt{\gls{lccBoot} \gls{lte2p2}}  & \texttt{rsh vxte2p2 reboot}\\ 
             &                                      & Reset button, \gls{vme} rack, \gls{computer room} at telescope$^\ast$\\
 \hline
-WFI FIERA   & \texttt{lccBoot \gls{wwffcd}}$^\star$& \texttt{rsh -l fcdrun wwffcd reboot}\\
+WFI FIERA   & \texttt{\gls{lccBoot} \gls{wwffcd}}$^\star$& \texttt{rsh -l fcdrun wwffcd reboot}\\
 \hline
-FEROS LCU   & \texttt{lccBoot \gls{lfeics1}}       & FEROS \gls{ICS Control}, menu \texttt{LCU} $\rightarrow$ \texttt{Reboot}\\
+FEROS LCU   & \texttt{\gls{lccBoot} \gls{lfeics1}}       & FEROS \gls{ICS Control}, menu \texttt{LCU} $\rightarrow$ \texttt{Reboot}\\
             &                                      & \texttt{rsh -l fcdrun lfeics1 reboot}\\
-FEROS AG    & \texttt{lccBoot w2p2cam}             & \texttt{rsh \gls{l2p2cam} reboot}\\
+FEROS AG    & \texttt{\gls{lccBoot} \gls{w2p2cam}}             & \texttt{rsh \gls{l2p2cam} reboot}\\
             &                                      & Reset button, rack, FEROS room at telescope$^\ast$\\
             &                                      & Unplug rack, FEROS room at telescope$^\ast$\\
-FEROS FIERA & \texttt{lccBoot \gls{wfefcd}}$^\star$& \texttt{rsh -l fcdrun wfefcd reboot}\\
+FEROS FIERA & \texttt{\gls{lccBoot} \gls{wfefcd}}$^\star$& \texttt{rsh -l fcdrun wfefcd reboot}\\
 \hline
 GROND FIERA &                                      & \texttt{rsh root@\gls{wgrccd} reboot}\\
             &                                      & Power switch, FIERA WS, \gls{computer room} at telescope$^\ast$\\
 GROND IRACE &                                      & \texttt{rsh root@wgrdcs reboot}\\
             &                                      & Power switch, IRACE WS, computer room at telescope$^\ast$\\
-GROND AG    & \texttt{lccBoot w2p2agr}             & \texttt{rsh \gls{l2p2agr} reboot}\\
+GROND AG    & \texttt{\gls{lccBoot} \gls{w2p2agr}}             & \texttt{rsh \gls{l2p2agr} reboot}\\
 \hline
 User WS     & \multicolumn{2}{l}{call at Paranal 5959 to reboot \gls{uws2p2}, first close all terminals}\\
 \hline
