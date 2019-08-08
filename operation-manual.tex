@@ -116,6 +116,7 @@
 \newglossaryentry{wfinsStartTCCDS}{name=\texttt{wfinsStartTCCDS},sort=wfinsStartTCCDS,description={Command to start the \gls{wfi} \gls{tccd}s (guide camera) software}}
 \newglossaryentry{wfinsStopTCCDS}{name=\texttt{wfinsStopTCCDS},sort=wfinsStopTCCDS,description={Command to stop the \gls{wfi} \gls{tccd}s (guide camera) software}}
 \newglossaryentry{acquisition}{name=acquisition,description={Part of an observing block that prepares the telescope (preset) and instrument (filtre change, mirror setups, etc.) for an observation.}}
+\newglossaryentry{grondag}{name=\texttt{Telescope R.T.D},sort=Telescope R.T.D.,description={Window displaying the image of the \gls{grond} \acrlong{ag}}}
 \newglossaryentry{stall}{name=stall,description={Stalling refers to stopping doing anything without an error being displayed or reaching complete state.  As it is silent, it is easy to lose time for a stalled OB...}}
 \newglossaryentry{fcdTelemetry}{name=\texttt{fcdTelemetry},sort=fcdTelemetry,description={Command to open the \gls{telemetry} panel of GROND or WFI, used to activate telemetry if necessary.}}
 \newglossaryentry{pickrefstar}{name=\texttt{Pick Reference Star},sort=Pick Reference Star,description={Graphical user interface that allows the observer to pick a guide star on the WFI and GROND \acrlong{ag}s, and a fibre reference pixel for FEROS. Also a menu option to open such a window.}}
@@ -123,7 +124,7 @@
 \newglossaryentry{focus}{name=focus,description={Telescope focusing uses the secondary mirror. GROND focus is usually not touched. WFI and FEROS focus need regular (about daily) focus sequences to be performed.}}
 \newglossaryentry{service}{name=service,description={Service observing, service mode, or queue observing is when an observer does observations for different programmes, according to weather conditions and priorities.}}
 \newglossaryentry{visitor}{name=visitor,description={Visitors, i.e. astronomers observing in visitor mode, mostly observe their own programme independently of weather constraints and other programmes' priorities.  During \gls{mpia} there is no ``pure'' visitor, as some programmes should be observed in \gls{service} year round.}}
-\newglossaryentry{ferosag}{name=\texttt{E2P2 Real Time Display},sort=E2P2 REAL TIME DISPLAY,description={Window with the mage of the \gls{feros} \acrlong{ag} camera}}
+\newglossaryentry{ferosag}{name=\texttt{FEROS AG Real Time Display},sort=E2P2 REAL TIME DISPLAY,description={Window with the mage of the \gls{feros} \acrlong{ag} camera}}
 \newglossaryentry{wfiics}{name=\texttt{e2p2 OS GUI},sort=e2p2 OS GUI,description={\gls{wfi} \acrlong{ics} panel}}
 \newglossaryentry{ferosics}{name={FEROS \texttt{ICS}},sort=FEROS ICS,description={\gls{feros} \acrlong{ics} panel}}
 \newglossaryentry{main mirror}{name=main mirror,description={Primary mirror of the telescope.  It has a cover that needs to be open for observing and but should be closed when dome slit is being opened or closed.}}
@@ -301,8 +302,7 @@ First of all, the \gls{control room}, is located below the main ESO building, th
 \begin{figure}[!ht] \includegraphics[width=\linewidth]{saladecontrol.pdf}
 \caption[Layout of the telescope controls]{Layout of the telescope controls.  From right to left: \gls{windows} 
 controlling and monitoring the \gls{dome}, \acrlong{tcs}, \acrshort{wfi} controls,
-\acrshort{feros} controls (bottom) and skype laptop connected to the \acrshort{grond}
-remote observers (top), GROND controls, \acrshort{p2pp} machine where
+\acrshort{feros} controls (bottom) and skype laptop connected to the \acrshort{grond} remote observers (top), GROND controls, \acrshort{p2pp} machine where
 \acrshort{ob}s are crafted and loaded by the visiting astronomer, and,
 finally, the FEROS \acrlong{drs}.}
 \label{fig:saladecontrol} 
@@ -668,22 +668,28 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
            \item Use numbers 6, 3, 0.02 below \texttt{Autoguider control} and click \texttt{Apply}.
            \item Check the \gls{grond} autoguider (1--4 min)
                \begin{enumerate}
-                  \item select \text{GROND} below \texttt{CCD change} (see \figref{agswitch})
+                  \item Go to \gls{desktop} \texttt{GROND AG}
+                  \item Select \text{GROND} below \texttt{CCD change} (see \figref{agswitch})
                   \item If necessary, use \texttt{Start exposure} to change \texttt{CCD Status} to \texttt{Infinite loop}
-                  \item Find window \texttt{Telescope R.T.D.}
+                  \item Find window \gls{grondag}
                   \item Use \wmenu{TCS}{Attach camera}
                   \item A bias image should be seen within seconds
                   \item If it fails in the previous steps, go to \procref{restartgag} (3 min)
+                  \item Use \wmenu{TCS}{Pick Reference Star}
+                  \item On emerging window \gls{pickrefstar}, click \texttt{Cancel operation}
                \end{enumerate}
            \item Check the \gls{feros} autoguider (1--4 min)
                \begin{enumerate}
-                  \item select \text{FEROS} below \texttt{CCD change} (see \figref{agswitch})
+                  \item Go to \gls{desktop} \texttt{FEROS AG}
+                  \item Select \text{FEROS} below \texttt{CCD change} (see \figref{agswitch})
                   \item If necessary, use \texttt{Start exposure} to change \texttt{CCD Status} to \texttt{Infinite loop}
                   \item Find window \gls{ferosag}
                   \item Click checkbox \texttt{Camera on/off} so that checkbox gets green
                   \item A bias image should be seen within seconds
                   \item Check that the image is horizontally flipped. 
                   \item If it fails in the previous steps, go to \procref{restartfag} (3 min)
+                  \item Click \texttt{Set Reference}
+                  \item On emerging window \gls{pickrefstar}, click \texttt{Cancel}
                \end{enumerate}
         \end{enumerate}           
   \item\textbf{FEROS data reduction software setup} (2--5 min)
@@ -1347,7 +1353,7 @@ If things go well, the bright star used for the \gls{pointing} test should fall 
 
 \subsection{Focus}
 
-\gls{focus} with \gls{wfi} should be preferrably done close in time and telescope position to the target's.  It is not necessary to use the same filtre as the observation if the observation uses a narrow band or a dimm filtre ($U$), for WFI knows the focus offsets between filtres.  Using the same filtre saves about 2\,min. 
+\gls{focus} with \gls{wfi} should be preferrably done close in time and telescope position to the target's.  It is not necessary to use the same filtre as the observation, but using the same one saves about 2\,min. in particular if the observation uses a narrow band or a dimm filtre ($U$), for WFI knows the focus offsets between filtres.  Using the same filtre saves about 2\,min. 
 
 It is possible to skip the focus if an \gls{acquisition} or test image shows sharp, round stars or if the seeing is too bad ($\gtrsim 2$). It is advisable to (re)focus once conditions have stabilised, a few hours into the night, if on-chip seeing is critical.
 
@@ -1408,30 +1414,19 @@ It is possible to skip the focus if an \gls{acquisition} or test image shows sha
          focus offset
         \item Decide what to do (confirm exact labels...)
         \begin{itemize}
-            \item If the fit and optimum focus offset value are correct, click \texttt{OK} (or Yes?)
-            \item If the fit is not correct but you can clearly see the best value, clikc{No} and enter value in the next pop-up
-            \item If you are not sure, click \texttt{Redo} and pick another star sequence
-            \item If it is clear that conditions have messed the focus, click \texttt{Abort}.
+            \item If the fit and optimum focus offset value are correct, click \texttt{OK}
+            \item If the fit is not correct but you can spot the best focus value, \texttt{Enter best focus} in the popup and click \texttt{OK} 
+            \item If you are not sure, click \texttt{Re-mesure} and pick another star sequence
+            \item If it is clear that conditions have messed the focus, click \texttt{Do Nothing}.
         \end{itemize}
         \item Wait for a pop-up to ask whether to log the value (20 s?)
         \begin{itemize}
-            \item If you are happy with the focus, click \texttt{Log}
+            \item If you are happy with the focus, click \texttt{OK}
             \item Otherwise, click \texttt{Do not log}
         \end{itemize}
         \item Wait for OB to finish (20 s?) 
     \end{enumerate}
 \end{enumerate}
-
-Then, fetch a file from folder \texttt{.../TEMPLATES/OBD/Focus/}.  Focus in the band to be observed. Otherwise, V-band should be OK (focusV.obd).
-
-Try to guide. If guiding is unstable, better to have it off.
-
-When \gls{focus} sequence has been taken ($\approx 6$ min), click \texttt{OK}
-before you go to the \gls{midas} window (in the \texttt{MIDAS} \gls{desktop}), then left-click and right-click on the upper star in whatever vertical sequence to measure \gls{focus}.  
-
-Many times, you cannot adjust the measuring box with the up and down keys, so the \gls{focus} is badly estimated (the fits do not have a parabolic shape).  In that case, choose to remeasure it and the box should become adjustable (e.g. choose the upper star on other sequence).
-
-
 
 \subsection{Standard fields (quick tips)}
 
@@ -1797,6 +1792,7 @@ You can start an \gls{ob} once point \ref{list:pmferos} has been done.  This min
 overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
 
 \procedure{Switch to FEROS observation}
+\label{proc:switchferos}
 \begin{enumerate}
   \item Switch the \gls{pointing model} to \gls{feros}.
   \begin{enumerate}
@@ -1856,7 +1852,7 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
       \item Ensure the image is horizontally flipped.\\
             Right of scale the button $\leftrightarrow$ should be pressed.
     \end{enumerate}
-    \item Set the fibre reference position if GROND was used
+    \item\label{list:setfibre} Set the fibre reference position if GROND was used 
     \begin{enumerate}
       \item Open or activate window \gls{pickrefstar} (\figref{pickref}).\\
             Click \texttt{Set Reference} on window \gls{ferosag}.
@@ -1888,71 +1884,191 @@ overheads by parallelising \gls{preset}, mirror movements, and \gls{ag} settings
 
 \paragraph{On fibre}
 
-The fastest way to guide with FEROS is using the reflection on the fibre head.  It is not adequate for faint stars (try to get $\approx 4\text{--}5000$ counts) or
-with bad weather.
+The fastest way to guide with FEROS is using the reflection on the fibre head.  It is not adequate for faint stars (try to get $\approx 4\text{--}5000$ counts) or with bad weather.
 
 \procedure{Guide a FEROS observation using reflection on the fibre head}
+\label{proc:guideferos}
 \begin{enumerate}
-  \item Check that \gls{wfi} \gls{ag} is off.
-  \item Centre the target onto the fibre.\\
-  In window \gls{ferosag}, click \texttt{Centering} below \texttt{Image Control} and click on the target. 
-  \item In \gls{autoguiding} window, choose integration times (6, 3, $x$ for bright targets with $x < 3$).
-  \item Click \texttt{Start guiding}.
+    \item Check that \gls{wfi} \gls{ag} is off.
+    \begin{enumerate}
+        \item Go to the \texttt{Control} \gls{desktop} of screen \texttt{Telescope Control Software}
+        \item On the \gls{TCS control panel}, below \texttt{Autoguider}, check that \texttt{Ag Stat} is \texttt{Not\_active}
+        \item If active, click \texttt{OFF} 
+    \end{enumerate}
+    \item Centre the target onto the fibre.
+    \begin{enumerate}
+        \item Go to screen \texttt{Autoguider GROND \& FEROS}, \gls{desktop} \texttt{FEROS}
+        \item In window \gls{ferosag}, change scale back to full field ($1/2$) 
+        \item Change cuts (\texttt{Autoset Cut Levels})
+        \item Click \texttt{Centering} below \texttt{Image Control}
+        \item Click on the target.
+        \item Wait for target to be centred (5--10 s).
+    \end{enumerate}
+    \item\label{list:agcontrol}Adapt guiding integration time to the stellar brightness
+    \begin{enumerate}
+        \item In \gls{autoguiding} window, fill values
+            \begin{enumerate}
+                \item \texttt{Correction Time} (usually 6)
+                \item \texttt{Loop Time} (usually 3, must be $\le $\texttt{Correction Time})
+                \item \texttt{Integration time} (depends on star, must be $< $\texttt{Loop Time})
+            \end{enumerate}
+        \item Click \texttt{Apply}
+    \end{enumerate}
+    \item Click \texttt{Start guiding}.
+    \item Ensure that brightness is sufficient for guiding
+    \begin{enumerate}
+        \item In window \gls{ferosag}, check that the counts on the doughnut around the fibre are above 4\,000 to 5\,000
+        \item In \gls{autoguiding} window, adapt \texttt{Integration time}
+        \item Click \texttt{Set Int. time}. 
+        \item If you need an integration time larger than \texttt{Loop time},
+            \begin{enumerate}
+                \item Click \texttt{Stop guiding}
+                \item Perform point~\ref{list:agcontrol} again with larger values (e.g. 8, 8, 7.99)
+                \item Click \texttt{Start guiding}
+            \end{enumerate}
+    \end{enumerate}
+    \item If running the \gls{acquisition} of an \gls{ob}
+    \begin{enumerate}
+        \item Wait for star to be well-centred on the fibre (5--30 s).
+        \item Go to screen \texttt{FEROS BOB}, \gls{desktop} \texttt{bob+gen. state}
+        \item Click \texttt{OK} to the pop-up asking for guiding.
+    \end{enumerate}
 \end{enumerate}
 
-It is possible to guide blind using another star of the field in the fibre head viewer.  It is not recommended and should be used as a last resort.
+It is possible to guide blindly using another star of the field in the fibre head viewer.  It is not recommended and should be used as a last resort.
 
 \paragraph{Off fibre}
 
 \procedure{Guide a FEROS observation blindly using off-fibre reference}
+\label{proc:guideferosoff}
 \begin{enumerate}
-  \item Check that \gls{wfi} \gls{ag} is off.
-  \item Centre the target onto the fibre.
-  \item Choose integration times (6, 3, $x$ for bright targets with $x < 3$).
-  \item Set reference to a star of the field.
-  \item Start guiding.
-  \item \textbf{Important:}  at the end of the \gls{ob}, set the reference back to fibre position.
+    \item Check that \gls{wfi} \gls{ag} is off.
+    \begin{enumerate}
+        \item Go to the \texttt{Control} \gls{desktop} of screen \texttt{Telescope Control Software}
+        \item On the \gls{TCS control panel}, below \texttt{Autoguider}, check that \texttt{Ag Stat} is \texttt{Not\_active}
+        \item If active, click \texttt{OFF} 
+    \end{enumerate}
+    \item Centre the target precisely onto the fibre.
+    \begin{enumerate}
+        \item Go to screen \texttt{Autoguider GROND \& FEROS}, \gls{desktop} \texttt{FEROS}
+        \item In window \gls{ferosag}, change scale back to full field ($1/2$) 
+        \item Change cuts (\texttt{Autoset Cut Levels})
+        \item Click \texttt{Centering} below \texttt{Image Control}
+        \item Click on the target.
+        \item Wait for target to be centred (5--10 s).
+        \item Repeat if necessary to achieve close to perfect centering.
+    \end{enumerate}
+    \item Adapt guiding integration time to the off-fibre guide star brightness
+    \begin{enumerate}
+        \item In \gls{autoguiding} window, fill values
+            \begin{enumerate}
+                \item \texttt{Correction Time} to 6
+                \item \texttt{Loop Time} to 3
+                \item \texttt{Integration time} to a value $< $\texttt{Loop Time})
+            \end{enumerate}
+        \item Click \texttt{Apply}
+    \end{enumerate}
+    \item Select the guide star
+    \begin{enumerate}
+        \item Click \texttt{Set reference}
+        \item In window \gls{pickrefstar}, under \texttt{Select 'pick' mode} select \texttt{Pick Object}
+        \item In window \gls{ferosag}, click on star
+    \end{enumerate} 
+    \item Click \texttt{Start guiding}.
+    \item Ensure that brightness is sufficient for guiding
+    \begin{enumerate}
+        \item In window \gls{ferosag}, check that the counts on the star are above 4\,000 to 5\,000
+        \item In \gls{autoguiding} window, adapt \texttt{Integration time}
+        \item Click \texttt{Set Int. time}. 
+    \end{enumerate}
+    \item If running the \gls{acquisition} of an \gls{ob}
+    \begin{enumerate}
+        \item Wait for star to be well-centred on the fibre (5--30 s).
+        \item Go to screen \texttt{FEROS BOB}, \gls{desktop} \texttt{bob+gen. state}
+        \item Click \texttt{OK} to the pop-up asking for guiding.
+    \end{enumerate}
+    \item When the \gls{ob} is finished, set the reference back to fibre
+          (see point~\ref{list:setfibre} of \procref{switchferos}).
 \end{enumerate}
 
-\paragraph{Using WFI}
+\paragraph{Using the WFI autoguider}
 
-This is the preferred method in bad weather or for faint targets.  When the FEROS \gls{adc} is used the WFI guide field is extremely defocused and this guiding method may be unstable.
+This is the preferred method for faint targets.  When the FEROS \gls{adc} is used the WFI guide field is extremely defocused and this guiding method may be unstable.  In case of clouds, guiding will do a random walk...
 
-\procedure{Guide FEROS observation with the WFI guide camera}
+\procedure{Guide a FEROS observation with the WFI guide camera}
+\label{proc:guideferoswfi}
 \begin{enumerate}
-  \item Centre the target on the fiber. \\
-  In window \gls{ferosag}, click \texttt{Centering} below \texttt{Image Control} and click on the target. 
-  \item Change filtre to limit the defocus in the \gls{wfi} \gls{ag}
-  \begin{enumerate}
-    \item Go to the workstation \texttt{WFI BOB}, \gls{desktop} \texttt{OS GUI}.
-    \item In panel \gls{wfiics}, select filtre under \texttt{SETUP Instrument}.
-    \begin{itemize}
-        \item If \gls{feros} \gls{adc} is used, select Cousins $I$.
-        \item Other wise, use standard $R$.
-    \end{itemize}
-    \item In the same panel, click apply.
-    \item Wait for filtre change ($\approx 1$ min)
-      \begin{itemize}
-         \item On the panel, field \texttt{Filtre Name} will first display \texttt{Moving}.
-         \item When the right filtre name appears, proceed with guiding.
-      \end{itemize}
-  \end{enumerate}
-  \item Proceed with guiding as for a \gls{wfi} \gls{ob} (\secref{guidewfi}).
-  \item Recentre the target on the fibre
+    \item Check that \gls{wfi} \gls{ag} is off.
     \begin{enumerate}
-       \item Go to the workstation \texttt{Telescope Control Software}.
-       \item On the \texttt{TCS Main Panel} find the virtual racket.
-       \item Select \texttt{Offset} and tick checkbox \texttt{Combined Offsets}.
-       \item Enter offset values for both axes (0.3) and click \texttt{Store}.
-       \item Use the arrows to centre if necessary.  
+        \item Go to the \texttt{Control} \gls{desktop} of screen \texttt{Telescope Control Software}
+        \item On the \gls{TCS control panel}, below \texttt{Autoguider}, check that \texttt{Ag Stat} is \texttt{Not\_active}
+        \item If active, click \texttt{OFF} 
     \end{enumerate}
-  \item \textbf{Important:} stop guiding at the end of the \gls{feros} \gls{ob}.\\
-  In the \gls{TCS control panel}, click \texttt{Stop Monitoring} (under \texttt{AG Monitoring Parameters}) and click \texttt{Off} (in the panel \texttt{Autoguider}).  
-  %Ivan: and OFF -> Not active?
-  \item \textbf{Note:} when observing with the \gls{adc}, don't lose time centering on the first pop-up.  No second
-     pop-up will be issued after ADC has entered the beam path, so you should
-     \texttt{Pause} the exposure if you take time acquiring guiding and centring
-     the target.
+    \item Adapt guiding integration time to quick visual monitoring
+    \begin{enumerate}
+        \item In \gls{autoguiding} window, fill values to allow a quick visual monitoring, yet bright enough to see target:
+            \begin{enumerate}
+                \item \texttt{Correction Time} to 1--3
+                \item \texttt{Loop Time} to 1--3
+                \item \texttt{Integration time} to 0.99--2.99
+            \end{enumerate}
+        \item Click \texttt{Apply}
+    \end{enumerate}
+    \item Change \gls{wfi} filtre to limit the defocus in the WFI \gls{ag}
+    \begin{enumerate}
+        \item Go to the workstation \texttt{WFI BOB}, \gls{desktop} \texttt{OS GUI}.
+        \item In panel \gls{wfiics}, select filtre under \texttt{SETUP Instrument}.
+        \begin{itemize}
+            \item If \gls{feros} \gls{adc} is used, select Cousins $I$.
+            \item Other wise, use standard $R$.
+        \end{itemize}
+        \item In the same panel, click apply.
+        \item Wait for filtre change ($\approx 1$--2 min), to start step~\ref{list:wfiguideforferos}
+        \begin{itemize}
+             \item On the panel, field \texttt{Filtre Name} will first display \texttt{Moving}.
+            \item When the right filtre name appears, proceed 
+        \end{itemize}
+    \end{enumerate}
+    \item Centre the target onto the fibre.
+    \begin{enumerate}
+        \item Go to screen \texttt{Autoguider GROND \& FEROS}, \gls{desktop} \texttt{FEROS}
+        \item In window \gls{ferosag}, change scale back to full field ($1/2$) 
+        \item Change cuts (\texttt{Autoset Cut Levels})
+        \item Click \texttt{Centering} below \texttt{Image Control}
+        \item Click on the target.
+        \item Wait for target to be centred (5--10 s).
+        \item Zoom in to check centring (scale $\sim$~5)
+        \item If not using the \gls{adc}, repeat centring until you achieve close to perfect centering.
+    \end{enumerate}
+    \item If executing an \gls{ob} with the \gls{adc}
+    \begin{enumerate}
+        \item Go to screen \texttt{FEROS BOB}, \gls{desktop} \texttt{bob+gen. state}
+        \item Click \texttt{OK} on the first pop-up asking for guiding
+        \item Wait for the first exposure to start
+        \item In \texttt{FEROS \gls{General State}}, click \texttt{PAUSE}
+    \end{enumerate}
+    \item\label{list:wfiguideforferos} Proceed with guiding as for a \gls{wfi} \gls{ob} (\procref{guidewfi}).
+    \item Recentre the target on the fibre 
+    \begin{enumerate}
+         \item Go to the workstation \texttt{Telescope Control Software}.
+         \item On the \texttt{TCS Main Panel} find the virtual racket.
+         \item Select \texttt{Offset} and tick checkbox \texttt{Combined Offsets}.
+         \item Enter offset values for both axes (0.3) and click \texttt{Store}.
+         \item While monitoring the \gls{ferosag} on screen \texttt{Autoguider GROND \& FEROS}, use arrows to centre the target\\
+              A full fibre width is 5 arrow clicks.\\
+              Keep in mind the centring will have a delay of 10--15\,s. 
+    \end{enumerate}
+    \item Attend the \gls{ob} on  screen \texttt{FEROS BOB}, \gls{desktop} \texttt{bob+gen. state}
+    \begin{enumerate}
+        \item If using the \gls{adc}, click \texttt{CONT} in the \texttt{FEROS \gls{General State}}
+        \item Click \texttt{OK} on any pop-up asking for centring on the fibre
+    \end{enumerate}
+    \item When the OB is finished, turn off the WFI autoguider
+        \begin{enumerate}
+            \item Go to the \texttt{Control} \gls{desktop} of screen \texttt{Telescope Control Software}
+            \item On the \gls{TCS control panel}, below \texttt{Autoguider}, click \texttt{OFF} 
+            \item Check that \texttt{Ag Stat} turns to \texttt{Not\_active}
+        \end{enumerate}
 \end{enumerate}
 
 \section{GROND}
@@ -1978,7 +2094,13 @@ You can start an \gls{ob} once point \ref{list:switch-mcclose} has been done.  T
     \item Go to window \texttt{GROND \gls{General State}} on screen \texttt{GROND BOB}
     \item If \texttt{\gls{M3}} says WFI\label{list:grond:checkm3}, send it to GROND.\\
             In a terminal, type \texttt{\gls{grondM3} GROND} and wait for it to go from \texttt{MOVING} to \texttt{GROND}
-  \end{enumerate}
+    \end{enumerate}
+    \item Check that \gls{wfi} \gls{ag} is off 
+    \begin{enumerate}
+        \item Go to the \texttt{Control} \gls{desktop} of screen \texttt{Telescope Control Software}
+        \item On the \gls{TCS control panel}, below \texttt{Autoguider}, check that \texttt{Ag Stat} is \texttt{Not\_active}
+        \item If active, click \texttt{OFF} 
+    \end{enumerate}
   \item Set up the autoguider 
   \begin{enumerate}
     \item Go to the \texttt{GROND} \gls{desktop} of screen \texttt{Autoguider GROND \& FEROS}
@@ -2075,12 +2197,48 @@ When the \gls{rrm} of \gls{grond} is activated, it is possible that the detectio
 \subsection{Guiding}
 \label{sec:grond:guide}
 \procedure{Guide with GROND}
+\label{proc:guidegrond}
 \begin{enumerate}
-  \item Chose typical 8, 4, $x$ values in the autoguider, with $x \le 4$.
-  \item When \texttt{RTD} has loaded an image, click \texttt{Auto Set Cut Levels}.
-  \item In the \texttt{TCS} option, select \gls{pickrefstar}.
-  \item Click on a good star at least 100 pixels from the border.
-  \item In \gls{autoguiding} window, click \texttt{Start guiding}.
+    \item Prepare the guiding field
+    \begin{enumerate} 
+        \item Go to \gls{grondag} on screen \texttt{Autoguider GROND \& FEROS}, \gls{desktop} \texttt{GROND AG}
+        \item Set the scale to $1/2$
+        \item Set cuts (\texttt{Autoset Cut Levels})
+    \end{enumerate}
+    \item\label{list:agcontrolgrond} Adapt guiding integration time to the guide star brightness
+    \begin{enumerate}
+        \item In \gls{autoguiding} window, fill values
+            \begin{enumerate}
+                \item \texttt{Correction Time} (usually 8)
+                \item \texttt{Loop Time} (usually 4, must be $\le $\texttt{Correction Time})
+                \item \texttt{Integration time} (depends on star, must be $< $\texttt{Loop Time})
+            \end{enumerate}
+        \item Click \texttt{Apply}
+    \end{enumerate}
+    \item Acquire a guide star
+    \begin{enumerate}
+        \item On the \gls{pickrefstar} window, click \texttt{Pick Object}\\
+        (It can be open from the \gls{grondag}, using \wmenu{TCS}{Pick Reference Star}) 
+        \item Click on a star at least 100 pixels off any border
+        \item On the \gls{autoguiding} window, click \texttt{Start guiding}.
+    \end{enumerate}
+    \item Ensure that brightness is sufficient for guiding
+    \begin{enumerate}
+        \item In window \gls{grondag} check that counts are $\gtrsim 4000$.
+        \item In \gls{autoguiding} window, adapt \texttt{Integration time}
+        \item Click \texttt{Set Int. time}. 
+        \item If you need an integration time larger than \texttt{Loop time},
+            \begin{enumerate}
+                \item Click \texttt{Stop guiding}
+                \item Perform point~\ref{list:agcontrolgrond} again with larger values (e.g. 8, 8, 7.99)
+                \item Click \texttt{Start guiding}
+            \end{enumerate}
+    \end{enumerate}
+    \item If running the \gls{acquisition} of an \gls{ob}
+    \begin{enumerate}
+        \item Go to screen \texttt{GROND}, first \gls{desktop}
+        \item Click \texttt{OK} if there is a pop-up asking for guiding.
+    \end{enumerate}
 \end{enumerate}
 
 \section{All instruments}
@@ -2100,17 +2258,17 @@ that it is already on or acquire it right after the first exposure begins.  On
 to F (false) and \gls{pointing} position is important.
 
 \procedure{Skip the preset}
-\begin{itemize}
+\begin{enumerate}
     \item Generic method
     \begin{enumerate}
         \item In \gls{bob}, open the acquisition \gls{template}\\
           Use left click on the triangle.
-        \item Edit the PRESET field to F\\
+        \item Edit the \texttt{PRESET} field to \texttt{F}\\
           You need to set bob to ``engineering'' mode.\\
-          Middle click on the value, it should be T by default.
-        \item Start the \gls{ob}.
+          Middle click on the value, it should be \texttt{T} by default.
         \item Start the guiding if needed\\
               For \gls{wfi}, see quick guiding \procref{quickguide}
+        \item Start the \gls{ob}.
     \end{enumerate}
     \item Standard observation with FEROS or GROND
     \begin{enumerate}
@@ -2119,7 +2277,7 @@ to F (false) and \gls{pointing} position is important.
         \item Ensure guiding is working if needed
         \item Start the OB.
     \end{enumerate}
-\end{itemize}
+\end{enumerate}
     
  
 %Ivan: open Protective Shutter to observe?
@@ -3782,7 +3940,7 @@ take/abort CCD exposures.}
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.8\linewidth]{wfi/wfi-general-state.png}
-\caption[WFI general state panel]{The \gls{wfi} general state panel gives information
+\caption[WFI \gls{General State} panel]{The \gls{wfi} general state panel gives information
 about exposure, filtres, and connection to \gls{tcs}.}
 \label{fig:wfigen}
 \end{figure}
