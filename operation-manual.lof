@@ -12,7 +12,7 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Choose full startup.}}}{29}{figure.2.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Click start.}}}{29}{figure.2.2}
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {A log terminal opens. Process takes $\approx $ 10 min.}}}{29}{figure.2.2}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {When finished select \texttt {File} $\rightarrow $ \texttt {Quit} from window of Fig.~\ref {fig:wfi-full-restart}, p.~\pageref {fig:wfi-full-restart}. This PDF log opens. You can close it.}}}{29}{figure.2.2}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {When finished select menu \texttt {File} $\rightarrow $ \texttt {Quit} from start-up window of Fig.~\ref {fig:wfi-full-restart}, p.~\pageref {fig:wfi-full-restart}. This PDF log opens. You can close it.}}}{29}{figure.2.2}
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces { Don't forget to rearrange all these windows. }}}{29}{figure.2.2}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Telescope control software restart}}{30}{figure.2.3}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Turn hydraulics and drives on, \gls {windows}.}}}{30}{figure.2.3}
@@ -52,60 +52,60 @@
 \contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Choose to log if it went fine}}}{47}{figure.5.1}
 \contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Choose to log if it went fine}}}{47}{figure.5.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Window to set FEROS fibre reference position}}{56}{figure.6.1}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Window to set FEROS fibre reference position}}{57}{figure.6.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Rack with FEROS AG LCU}}{72}{figure.10.1}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\text {Rack tower}}}}{72}{figure.10.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\text {\gls {l2p2cam} reset}}}}{72}{figure.10.1}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\text {\gls {l2p2cam} \gls {power cycle}}}}}{72}{figure.10.1}
-\contentsline {figure}{\numberline {10.2}{\ignorespaces Command scanei to control environments}}{73}{figure.10.2}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\texttt {scanei}}}}{73}{figure.10.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Click on \gls {l2p2cam} or \gls {l2p2agr} (top right)}}}{73}{figure.10.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Click enable or disable (top left)}}}{73}{figure.10.2}
-\contentsline {figure}{\numberline {10.3}{\ignorespaces \gls {feros} \gls {ds}.}}{83}{figure.10.3}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\texttt {\gls {feros} \gls {ds}.}}}}{83}{figure.10.3}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {feros} \texttt {data subscriber configuration window.}}}}{83}{figure.10.3}
-\contentsline {figure}{\numberline {10.4}{\ignorespaces \Gls {telemetry} window.}}{84}{figure.10.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\Gls {telemetry} window at \gls {tcs}, should show some graphs normally.}}}{84}{figure.10.4}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {feros} \gls {telemetry} window.}}}{84}{figure.10.4}
-\contentsline {figure}{\numberline {10.5}{\ignorespaces WFI electronics: \gls {power cycle} button and boards}}{84}{figure.10.5}
-\contentsline {figure}{\numberline {10.6}{\ignorespaces When TCS restart fails to reboot the \gls {feros} \gls {ag} \gls {lcu}}}{86}{figure.10.6}
-\contentsline {figure}{\numberline {10.7}{\ignorespaces VME rack in the computer room of the telescope building}}{87}{figure.10.7}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Remote/local pointing control}}}{87}{figure.10.7}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reboot of the \gls {vme}}}}{87}{figure.10.7}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\gls {vme} monitor}}}{87}{figure.10.7}
-\contentsline {figure}{\numberline {10.8}{\ignorespaces Controlling the hydraulics and mirror cover.}}{89}{figure.10.8}
-\contentsline {figure}{\numberline {10.9}{\ignorespaces Local control of the \gls {dome}. Local or remote control is set with the leftmost button. Other two bottons on the same row set the direction and speed of rotation in the local control mode. Just below, a start and stop button are used to initiate and finalise rotation.}}{89}{figure.10.9}
-\contentsline {figure}{\numberline {10.10}{\ignorespaces Writing the \gls {M3} position in the database}}{90}{figure.10.10}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ccsei window.}}}{90}{figure.10.10}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {M3 in the database}}}{90}{figure.10.10}
-\contentsline {figure}{\numberline {10.11}{\ignorespaces The GROND \gls {M3} mirror and \gls {mc} control box.}}{91}{figure.10.11}
-\contentsline {figure}{\numberline {10.12}{\ignorespaces The GROND IRACE box}}{92}{figure.10.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {GROND \gls {irace} box}}}{92}{figure.10.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {GROND IRACE switch}}}{92}{figure.10.12}
-\contentsline {figure}{\numberline {10.13}{\ignorespaces The ``joystick'' can be used to manually point the telescope.}}{94}{figure.10.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Location of the joystick}}}{94}{figure.10.13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Joystick}}}{94}{figure.10.13}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Rack with FEROS AG LCU}}{74}{figure.10.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\text {Rack tower}}}}{74}{figure.10.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\text {\gls {l2p2cam} reset}}}}{74}{figure.10.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\text {\gls {l2p2cam} \gls {power cycle}}}}}{74}{figure.10.1}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces Command scanei to control environments}}{75}{figure.10.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\texttt {scanei}}}}{75}{figure.10.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Click on \gls {l2p2cam} or \gls {l2p2agr} (top right)}}}{75}{figure.10.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Click enable or disable (top left)}}}{75}{figure.10.2}
+\contentsline {figure}{\numberline {10.3}{\ignorespaces \gls {feros} \gls {ds}.}}{85}{figure.10.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\texttt {\gls {feros} \gls {ds}.}}}}{85}{figure.10.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {feros} \texttt {data subscriber configuration window.}}}}{85}{figure.10.3}
+\contentsline {figure}{\numberline {10.4}{\ignorespaces \Gls {telemetry} window.}}{86}{figure.10.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\Gls {telemetry} window at \gls {tcs}, should show some graphs normally.}}}{86}{figure.10.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {feros} \gls {telemetry} window.}}}{86}{figure.10.4}
+\contentsline {figure}{\numberline {10.5}{\ignorespaces WFI electronics: \gls {power cycle} button and boards}}{86}{figure.10.5}
+\contentsline {figure}{\numberline {10.6}{\ignorespaces When TCS restart fails to reboot the \gls {feros} \gls {ag} \gls {lcu}}}{88}{figure.10.6}
+\contentsline {figure}{\numberline {10.7}{\ignorespaces VME rack in the computer room of the telescope building}}{89}{figure.10.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Remote/local pointing control}}}{89}{figure.10.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Reboot of the \gls {vme}}}}{89}{figure.10.7}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\gls {vme} monitor}}}{89}{figure.10.7}
+\contentsline {figure}{\numberline {10.8}{\ignorespaces Controlling the hydraulics and mirror cover.}}{91}{figure.10.8}
+\contentsline {figure}{\numberline {10.9}{\ignorespaces Local control of the \gls {dome}. Local or remote control is set with the leftmost button. Other two bottons on the same row set the direction and speed of rotation in the local control mode. Just below, a start and stop button are used to initiate and finalise rotation.}}{91}{figure.10.9}
+\contentsline {figure}{\numberline {10.10}{\ignorespaces Writing the \gls {M3} position in the database}}{92}{figure.10.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {ccsei window.}}}{92}{figure.10.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {M3 in the database}}}{92}{figure.10.10}
+\contentsline {figure}{\numberline {10.11}{\ignorespaces The GROND \gls {M3} mirror and \gls {mc} control box.}}{93}{figure.10.11}
+\contentsline {figure}{\numberline {10.12}{\ignorespaces The GROND IRACE box}}{94}{figure.10.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {GROND \gls {irace} box}}}{94}{figure.10.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {GROND IRACE switch}}}{94}{figure.10.12}
+\contentsline {figure}{\numberline {10.13}{\ignorespaces The ``joystick'' can be used to manually point the telescope.}}{96}{figure.10.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Location of the joystick}}}{96}{figure.10.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Joystick}}}{96}{figure.10.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Main panel of the telescope control software}}{97}{figure.11.1}
-\contentsline {figure}{\numberline {11.2}{\ignorespaces Setup panel of the telescope control software}}{98}{figure.11.2}
-\contentsline {figure}{\numberline {11.3}{\ignorespaces WFI autoguider}}{99}{figure.11.3}
-\contentsline {figure}{\numberline {11.4}{\ignorespaces Status window of the telescope control software}}{100}{figure.11.4}
-\contentsline {figure}{\numberline {11.5}{\ignorespaces Auxiliary functions of the telescope control software}}{102}{figure.11.5}
-\contentsline {figure}{\numberline {11.6}{\ignorespaces WFI OS GUI}}{103}{figure.11.6}
-\contentsline {figure}{\numberline {11.7}{\ignorespaces WFI state manager}}{103}{figure.11.7}
-\contentsline {figure}{\numberline {11.8}{\ignorespaces WFI \gls {General State} panel}}{104}{figure.11.8}
-\contentsline {figure}{\numberline {11.9}{\ignorespaces FEROS control panel}}{105}{figure.11.9}
-\contentsline {figure}{\numberline {11.10}{\ignorespaces FEROS instrument control software panel}}{106}{figure.11.10}
-\contentsline {figure}{\numberline {11.11}{\ignorespaces The main displays of \gls {grond}.}}{107}{figure.11.11}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\gls {grond} ``normal \gls {bob}'' with a test \gls {ob}.}}}{107}{figure.11.11}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {grond} control}}}{107}{figure.11.11}
-\contentsline {figure}{\numberline {11.12}{\ignorespaces Control panels for the detectors.}}{108}{figure.11.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\gls {grond} \gls {fiera} control panel (CCDs)}}}{108}{figure.11.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {grond} \gls {irace} control panel (IR detectors)}}}{108}{figure.11.12}
-\contentsline {figure}{\numberline {11.13}{\ignorespaces \gls {domefunc}.}}{108}{figure.11.13}
-\contentsline {figure}{\numberline {11.14}{\ignorespaces \gls {webcam}}}{109}{figure.11.14}
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Main panel of the telescope control software}}{99}{figure.11.1}
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Setup panel of the telescope control software}}{100}{figure.11.2}
+\contentsline {figure}{\numberline {11.3}{\ignorespaces WFI autoguider}}{101}{figure.11.3}
+\contentsline {figure}{\numberline {11.4}{\ignorespaces Status window of the telescope control software}}{102}{figure.11.4}
+\contentsline {figure}{\numberline {11.5}{\ignorespaces Auxiliary functions of the telescope control software}}{104}{figure.11.5}
+\contentsline {figure}{\numberline {11.6}{\ignorespaces WFI ICS Control}}{105}{figure.11.6}
+\contentsline {figure}{\numberline {11.7}{\ignorespaces WFI state manager}}{105}{figure.11.7}
+\contentsline {figure}{\numberline {11.8}{\ignorespaces WFI \gls {General State} panel}}{106}{figure.11.8}
+\contentsline {figure}{\numberline {11.9}{\ignorespaces FEROS control panel}}{107}{figure.11.9}
+\contentsline {figure}{\numberline {11.10}{\ignorespaces FEROS instrument control software panel}}{108}{figure.11.10}
+\contentsline {figure}{\numberline {11.11}{\ignorespaces The main displays of \gls {grond}.}}{109}{figure.11.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\gls {grond} ``normal \gls {bob}'' with a test \gls {ob}.}}}{109}{figure.11.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {grond} control}}}{109}{figure.11.11}
+\contentsline {figure}{\numberline {11.12}{\ignorespaces Control panels for the detectors.}}{110}{figure.11.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\gls {grond} \gls {fiera} control panel (CCDs)}}}{110}{figure.11.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {grond} \gls {irace} control panel (IR detectors)}}}{110}{figure.11.12}
+\contentsline {figure}{\numberline {11.13}{\ignorespaces \gls {domefunc}.}}{110}{figure.11.13}
+\contentsline {figure}{\numberline {11.14}{\ignorespaces \gls {webcam}}}{111}{figure.11.14}
 \contentsfinish 

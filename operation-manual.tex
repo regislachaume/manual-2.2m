@@ -36,7 +36,6 @@
 \def\mmenu#1#2{left-click mouse menu \menu{#1}{#2}} 
 \def\fetchob{\wmenu{File}{Load OBs,From file...}} 
 
-
 \makeatother
 \def\procref#1{Procedure~\ref{proc:#1}, p.~\pageref{proc:#1}}
 \def\figref#1{Fig.~\ref{fig:#1}, p.~\pageref{fig:#1}}
@@ -119,14 +118,15 @@
 \newglossaryentry{grondag}{name=\texttt{Telescope R.T.D},sort=Telescope R.T.D.,description={Window displaying the image of the \gls{grond} \acrlong{ag}}}
 \newglossaryentry{stall}{name=stall,description={Stalling refers to stopping doing anything without an error being displayed or reaching complete state.  As it is silent, it is easy to lose time for a stalled OB...}}
 \newglossaryentry{fcdTelemetry}{name=\texttt{fcdTelemetry},sort=fcdTelemetry,description={Command to open the \gls{telemetry} panel of GROND or WFI, used to activate telemetry if necessary.}}
+\newglossaryentry{pickobj}{name=\texttt{Pick Object},sort=Pick Object,description={Graphical user interface that allows the observer to pick a star in an image to measure its size (e.g. seeing determination) and pixel position (e.g. refining acquisition). Also a menu option to open such a window.}}
 \newglossaryentry{pickrefstar}{name=\texttt{Pick Reference Star},sort=Pick Reference Star,description={Graphical user interface that allows the observer to pick a guide star on the WFI and GROND \acrlong{ag}s, and a fibre reference pixel for FEROS. Also a menu option to open such a window.}}
 \newglossaryentry{mc}{name=main cover,description={Refers to the protective shutter of GROND}}
 \newglossaryentry{focus}{name=focus,description={Telescope focusing uses the secondary mirror. GROND focus is usually not touched. WFI and FEROS focus need regular (about daily) focus sequences to be performed.}}
 \newglossaryentry{service}{name=service,description={Service observing, service mode, or queue observing is when an observer does observations for different programmes, according to weather conditions and priorities.}}
 \newglossaryentry{visitor}{name=visitor,description={Visitors, i.e. astronomers observing in visitor mode, mostly observe their own programme independently of weather constraints and other programmes' priorities.  During \gls{mpia} there is no ``pure'' visitor, as some programmes should be observed in \gls{service} year round.}}
 \newglossaryentry{ferosag}{name=\texttt{FEROS AG Real Time Display},sort=E2P2 REAL TIME DISPLAY,description={Window with the mage of the \gls{feros} \acrlong{ag} camera}}
-\newglossaryentry{wfiics}{name=\texttt{e2p2 OS GUI},sort=e2p2 OS GUI,description={\gls{wfi} \acrlong{ics} panel}}
-\newglossaryentry{ferosics}{name={FEROS \texttt{ICS}},sort=FEROS ICS,description={\gls{feros} \acrlong{ics} panel}}
+\newglossaryentry{wfiics}{name=\texttt{WFI ICS Control},sort=WFI ICS Control,description={\gls{wfi} \acrlong{ics} panel}}
+\newglossaryentry{ferosics}{name={\texttt{FEROS ICS Control}},sort=FEROS ICS Control,description={\gls{feros} \acrlong{ics} panel}}
 \newglossaryentry{main mirror}{name=main mirror,description={Primary mirror of the telescope.  It has a cover that needs to be open for observing and but should be closed when dome slit is being opened or closed.}}
 \newglossaryentry{ot}{name=\texttt{ot},sort=ot,description={observing tool, the application that can be used to manage the \gls{ob}so for \gls{service} observations}}
 \newglossaryentry{lascam}{name=LASCAM,description={La Silla all-sky camera}}
@@ -746,8 +746,7 @@ If under time pressure, you can also do some day-time calibrations in parallel. 
   \includegraphics[width=0.42\linewidth]{wfi/wfireboot-3.png}\label{fig:wfisu-log}%
 }
 
-\subfigure[When finished select \texttt{File} $\rightarrow$ \texttt{Quit} from
-window of \figref{wfi-full-restart}. This PDF log opens. You can close 
+\subfigure[When finished select menu \texttt{File} $\rightarrow$ \texttt{Quit} from start-up window of \figref{wfi-full-restart}. This PDF log opens. You can close 
 it.]{
   \includegraphics[width=0.41\linewidth]{wfi/wfireboot-4.png}\label{fig:wfisu-pdf}%
 }
@@ -1257,7 +1256,7 @@ The procedure has been somehow modified (January 2014).
                  \item Open the instrument section, left-click on the triangle of section \texttt{INS}
                  \item Use \wmenu{Interface}{Engineering}.
                  \item Middle-click the filtre name, fill in value, and type enter.\\
-                      (In \gls{desktop} \texttt{OS GUI}, a filtre list is found below \texttt{SETUP Instrument})
+                      (In \gls{desktop} \texttt{ICS}, a filtre list is found below \texttt{SETUP Instrument})
               \end{enumerate}
        \item Deactivate unneeded \gls{template}s.\\
              Right-click the triangles to get a thumb down.
@@ -1324,9 +1323,9 @@ If things go well, the bright star used for the \gls{pointing} test should fall 
         \end{itemize} 
   \item After the exposure is taken, accept ``refine \gls{acquisition}''.\\
         A small form asking for the star's coordinates will appear.
-  \item Use \texttt{Pick Object} in the \texttt{view} option of the \gls{rtd} to obtain the star's pixel coordinates.  
+  \item Use \wmenu{View}{Pick Object} in the \gls{rtd} to obtain the star's pixel coordinates.  
   \item Input the pixel coordinates.\\
-        Copy them with the mouse from the Pick Object popup to the small form. 
+        Copy them with the mouse from the \gls{pickobj} popup to the small form. 
   \item After \texttt{offset and quit} a popup should have appeared.\\
         Click \texttt{OK} if satisfied with the offset values (in arcsec).
   \item If no star at all is seen, see 
@@ -1679,21 +1678,19 @@ In the \texttt{GROND \gls{General State}} panel (\figref{grondcon}), click \text
 
 \subsection{Popup handling}
 
-\gls{bob} will generally throw a few pop-ups during a typical observation. Failing 
-to answer them, nothing will happen and time will be irremediably lost.  These pop-ups may appear behind windows, so be proactive.
+\gls{bob} will generally throw a few pop-ups during a typical observation. Failing  to answer them, nothing will happen and time will be irremediably lost.  These pop-ups may appear behind windows, so be proactive.
 
 At the beginning of an observation, you may have have popups asking
 \begin{itemize}
-    \item to recentre the object of interest if the observer has specifically
-    asked for a precise position of his target.  Three successive popups will
-    ask whether to recenter, the pixel coordinates of the object, and whether
-    to \texttt{Offset and quit}.
-    \item to acquire the guiding, which you will click once you have done it. 
-    Almost all science observations will ask  for it.
+    \item to refine acquisition (\secref{refinewfi}), i.e. recentre the object of interest if the observer has specifically asked for a precise position of his target.  Three successive popups will ask whether to recenter, enter the pixel coordinates of the object, and whether to offset and/or refine again.
+    \item to acquire the guiding (\secref{guidewfi}), which you will click once you have done it.  Almost all science observations will ask  for it.
 \end{itemize}
 
-For an observation with large dithers (\texttt{COMBINED.OFFSET} is \texttt{F}) the
-guiding will be asked at the beginning of each exposure.  It will also be asked for if at the beginning of a new \gls{template} if the filtre is changed.
+During an observation, it can happen that guiding acquisition is asked for several time
+\begin{itemize}
+    \item For an observation with large dithers (\texttt{COMBINED.OFFSET} is \texttt{F}) the guiding will be asked at the beginning of each exposure. 
+    \item For an observation with different filtres, it will be asked for if at each filtre change.
+\end{itemize}
 
 Error popups may also appear, see \chapref{trouble}.
 
@@ -1741,6 +1738,70 @@ overheads by parallelising \gls{preset} and mirror movements.  However, beware t
       \end{enumerate}  
   \end{enumerate}
 \end{enumerate}
+
+\subsection{Refining acquisition}
+\label{sec:refinewfi}
+
+It is possible to refine the \gls{acquisition} with WFI if the \gls{ob} has explicitly planned for it. Technically speaking, if the \gls{template} is \texttt{WFI\_img\_acq\_MoveToPixel} or \texttt{WFI\_img\_acq\_MoveToGap}, the observer will be asked whether to offset the telescope so that a given target falls on a specific pixel of the CCD matrix or a gap of between the CCDS.
+
+Refining takes place after telescope \gls{preset} and before acquisition of the \gls{ag}.
+
+\procedure{Refine the acquisition of WFI}
+\begin{enumerate}
+    \item\label{list:refine:img} Wait for acquisition image 
+    \begin{enumerate}
+        \item Wait for the acquisition image to read out ($\approx 1$\,min)\\
+              On screen \texttt{WFI BOB}, window \gls{rtd} you can change
+              the cuts of the image and the scale.
+        \item Wait for a pop-up asking to refine acquisition (a few seconds)\\
+              It may appear on any of the two screens. 
+    \end{enumerate}
+    \item Accept or decline refining by answering the pop-up
+    \begin{enumerate}
+        \item With \texttt{Yes}, this procedure continues and a second
+        pop-up appears.
+        \item With \texttt{No}, this procedure ends and observation goes on without recentring.
+    \end{enumerate}
+    \item\label{list:refine:pick} Pick target.
+    \begin{enumerate}
+        \item Locate the target by means of a finding chart.\\
+              Inspect the \gls{rtd}  window of screen \texttt{WFI BOB}
+        \item Open the \gls{pickobj} window.\\
+              On the \gls{rtd}, use \wmenu{View}{Pick OBject}
+        \item Select the target.
+        \begin{enumerate}
+            \item Click on the target
+            \item Check the cross is centred on target in the \gls{pickobj} window 
+            \item If it isn't zoom out \texttt{z} and \texttt{Z} to achieve centring of the cross
+        \end{enumerate}
+    \end{enumerate}
+    \item\label{list:refine:coord} Enter coordinates 
+    \begin{enumerate}
+        \item On \gls{pickobj}, copy the value of \texttt{Image X}
+        \item On popup \texttt{Enter coordinates}, paste the value in \texttt{X coordinate}
+        \item Do the same for \texttt{Image X}
+        \item Click \texttt{OK} on the popup \texttt{Enter coordinates}
+    \end{enumerate}
+    \item If a pop-up asks for the coordinates of the gap, attend it.\\
+          It occurs for template \texttt{WFI\_img\_acq\_MoveToGap}.
+          Its handling is similar to steps~\ref{list:refine:pick}--\ref{list:refine:coord}. 
+    \item Examine the offset proposition on pop-up \texttt{Do offset}\\
+          Read the offset values (in arcseconds) and decide whether they make sens.
+    \item Answer pop-up \texttt{Do offset} 
+    \begin{enumerate}
+        \item \texttt{Offset and quit}: the recentring will be performed.\\
+        This is the most common action.
+        \item \texttt{Offset and reaquire}: the recentring will be performed, and procedure starts again from step~\ref{list:refine:img} for an additional centring to increase precision.\\
+        This is used when an accuracy of the order of a pixel is needed or it is important to ensure the target is in the gap.
+        \item \texttt{Quit}: no offset will be performed and this procedure ends.\\
+        Mostly used when the OB will be aborted.
+        \item \texttt{Reclick}: no offset is performed and this procedure starts again from step~\ref{list:refine:pick}.\\
+        Mostly used if an obvious clicking or copying error has been done in steps~\ref{list:refine:pick}--\ref{list:refine:coord}.
+    \end{enumerate}
+    \item Wait for telescope offset (recentring) to complete ($\approx 30$\,s)\\
+          After that, either \gls{ag} acquisition will be asked or science observations will start.
+\end{enumerate}
+
 \subsection{Guiding}
 \label{sec:guidewfi}
 
@@ -2037,7 +2098,7 @@ This is the preferred method for faint targets.  When the FEROS \gls{adc} is use
     \end{enumerate}
     \item Change \gls{wfi} filtre to limit the defocus in the WFI \gls{ag}
     \begin{enumerate}
-        \item Go to the workstation \texttt{WFI BOB}, \gls{desktop} \texttt{OS GUI}.
+        \item Go to the workstation \texttt{WFI BOB}, \gls{desktop} \texttt{ICS}.
         \item In panel \gls{wfiics}, select filtre under \texttt{SETUP Instrument}.
         \begin{itemize}
             \item If \gls{feros} \gls{adc} is used, select Cousins $I$.
@@ -2204,7 +2265,7 @@ When the \gls{rrm} of \gls{grond} is activated, it is possible that the detectio
       \item Go window \texttt{Telescope R.T.D.}, open it if necessary.\\
             To open: left-click the screen background, choose \texttt{Autoguider RTD Grond} from menu \texttt{CAM user}.
       \item Activate the guide camera image flow if necessary.\\
-        Use window menu \texttt{TCS} $\rightarrow$ \texttt{Attach camera}.
+        Use window \wmenu{TCS}{Attach camera}.
       \end{enumerate}
     \item Ensure the reference picking window is open
       \begin{enumerate}
@@ -2312,7 +2373,7 @@ to F (false) and \gls{pointing} position is important.
 When closing, you may need panels that are not automatically opened at startup. Here is how to find and open them.
 \begin{enumerate}
 \item On the \gls{tcs} screen, ensure that the \gls{auxfunc} (\figref{tcsauxfunc}) is open.\\
-      If not, left-click on an empty region and select \texttt{TCS panels} $\rightarrow$ \texttt{Aux Functions}.
+      If not, left-click on an empty region and select \wmenu{TCS User}{Panels,ux Functions}.
 \item On the \gls{windows}, ensure mozilla shows the \gls{webcam} (\figref{webcam}).\\
       The tab named \texttt{TRENDNET…} can be opened with bookmark \texttt{Dome Webcam}.
 \item On the \gls{windows}, ensure mozilla has a tab with \gls{domefunc}.\\
@@ -2359,7 +2420,7 @@ and \gls{tcs}, and ensure mirrors let light directly to \gls{wfi} for \gls{dome 
       Check on the \texttt{WFI \gls{General State}} panel in the WFI monitor (\figref{wfigen}) that \texttt{Protective Shutter State} is \texttt{CLOSED}.\\
       If not, go to \gls{auxfunc} (\figref{tcsauxfunc}) and \texttt{CLOSE} the \texttt{WFI Protective Shutter}.
 \item Deactivate \gls{feros} communication.\\ 
-      In the FEROS control panel (\figref{feroscon}) select from menu \texttt{Telescope} $\rightarrow$ \texttt{IGNORE}.
+      In the FEROS control panel (\figref{feroscon}) select from \wmenu{Telescope}{IGNORE}.
 \item Deactivate \gls{grond} communication.\\ 
       In the \texttt{GROND \gls{General State}} panel (\figref{grondcon}), click \texttt{\gls{rrm} STANDBY} and \texttt{TCS OFF}
 \item With \gls{grond}, close the \gls{cs} and \gls{mc}.\\ 
@@ -2426,11 +2487,11 @@ Launch health checks and internal calibrations.
 \procedure{Transfer OBs from one's computer to the telescope, using p2pp check-in}
 \begin{itemize}
 \item On your laptop's \gls{p2pp} select all your \glspl{ob}.
-\item Use menu \texttt{File} $\rightarrow$ \texttt{Check-in}
-\item Use menu \texttt{Readme} $\rightarrow$ \texttt{CheckIn Readme} if necessary
+\item Use \wmenu{File}{Check-in}
+\item Use \wmenu{Readme}{CheckIn Readme} if necessary
 \item If using \gls{ot} (advised)
   \begin{itemize}
-    \item From main \gls{ot} window, use menu \texttt{Queues} $\rightarrow$ \texttt{Repository Browser}
+    \item From main \gls{ot} window, use \wmenu{Queues}{Repository Browser}
     \item Select \texttt{OB name} checkbox in the Repository Browser window
     \item Empty all fields and enter your \gls{p2pp} username  
     \item Click \texttt{Query}
@@ -2438,7 +2499,7 @@ Launch health checks and internal calibrations.
     \item Select \texttt{Mark Status} and chose \texttt{(V)erified}
     \item Select the same \glspl{ob} again
     \item Append to queue, typically \texttt{MPIA-YYYY-MM} (named by year and month)
-    \item Find the window corresponding to this queue and use \texttt{Menu} $\rightarrow$ \texttt{Save}
+    \item Find the window corresponding to this queue and use \wmenu{Queue}{Save}
   \end{itemize}
 \item If using \gls{p2pp}
   \begin{itemize}
@@ -2461,7 +2522,7 @@ ssh them from your laptop and load them manually into the dhs computer.
         and type your password.
   \item Open \gls{p2pp} with your credentials
   \item Select your program ID on the left column
-  \item Use menu \texttt{File} $\rightarrow$ \texttt{Import}
+  \item Use \wmenu{File}{Import}
 \end{itemize}
 
 Note: if you cannot activate ssh services on your laptop, use a USB stick and someone else's computer.   Alternatively, send an e-mail you will open on the p2pp machine (not advised). 
@@ -2473,7 +2534,7 @@ On the \gls{p2pp} machine, there is a \gls{desktop} to use \glspl{ob} from the o
 
 There should be an open window which is called \texttt{Execution Sequence}. The selected \gls{ob} will be listed there, maybe with a list of others. Use the buttons \texttt{move up} (or \texttt{move down})  to move the OB you want to run next to the top of the list since it has to be the first one.
 
-Then, go to \gls{bob} and use the menu \texttt{Configure} $\rightarrow$ \texttt{Environment}. In the \texttt{Process} tab change \gls{p2pp} by \gls{ot}. Now you can fetch the \gls{ob} from \gls{ot}.
+Then, go to \gls{bob} and use the \wmenu{Configure}{Environment}. In the \texttt{Process} tab change \gls{p2pp} by \gls{ot}. Now you can fetch the \gls{ob} from \gls{ot}.
 
 
 %\section{BOB}
@@ -2778,13 +2839,13 @@ Try in this order
        \item Deactivate the connection between \gls{feros} and TCS
            \begin{itemize}
                 \item On the \gls{feros} screen (\figref{saladecontrol}), locate the \gls{feros} control panel (\figref{feroscon})
-                \item From menu select \texttt{Telescope $\rightarrow$ IGNORE}
+                \item Select \wmenu{Telescope}{IGNORE}
            \end{itemize}
        \item Perform a full restart the \gls{tcs} including \gls{vme} reboot (\procref{startup})
        \item Reactivate the connection between \gls{feros} and TCS
            \begin{itemize}
                 \item On the \gls{feros} screen (\figref{saladecontrol}), locate the \gls{feros} control panel (\figref{feroscon})
-                \item From menu select \texttt{Telescope $\rightarrow$ ENABLE}
+                \item Select \wmenu{Telescope}{ENABLE}
            \end{itemize}
     \end{enumerate}
     \item Reboot the \gls{wfi} SPARC station and dependencies (15--35 min).
@@ -2812,7 +2873,7 @@ If an \gls{ob} issues an error within seconds of being started.
   \item Check that the object is observable (above 20 degrees).
   \item If telescope preset is needed, check that the communication with the \gls{tcs} is on
     \begin{itemize}
-       \item \textit{(\gls{feros})} Use menu \texttt{Telescope} $\rightarrow$ \texttt{Enable}.
+       \item \textit{(\gls{feros})} Use \wmenu{Telescope}{Enable}.
        \item \textit{(\gls{grond})} Click \texttt{TCS ON}.
     \end{itemize}
   \item If telescope preset is not needed (e.g. calibrations), deactivate it in 
@@ -2820,7 +2881,7 @@ If an \gls{ob} issues an error within seconds of being started.
       \item \textit{(\gls{feros}, \gls{grond})} Right-click the triangle of the \gls{acquisition} \gls{template}.
                    (A thumb down should appear.  If you get a stop, go on clicking.)
       \item \textit{(\gls{wfi})} Set \texttt{PRESET.NEW} to \texttt{F} in the \gls{acquisition} \gls{template}.\\
-         (This needs menu \texttt{Interface} $\rightarrow$ \texttt{Engineering}.) 
+         (This needs \wmenu{Interface}{Engineering}.) 
     \end{itemize}
 \end{enumerate}
 
@@ -2856,7 +2917,7 @@ order, until problem is fixed.
       \item Restart the instrument with telescope enabled\\
             (In particular if the second exposure of the night fails.)
          \begin{enumerate}
-            \item On the \texttt{FEROS Control} panel, use menu \texttt{Telescope} $\rightarrow$ \texttt{enabled}.
+            \item On the \texttt{FEROS \gls{General State}} panel, use \wmenu{Telescope}{enabled}.
             \item Do the full start-up procedure.
          \end{enumerate}
     \end{enumerate}
@@ -2872,7 +2933,7 @@ order, until problem is fixed.
             \item Go to monitor \texttt{GROND IRACE}.
             \item Locate the \texttt{Infrared Acquisition Module} (\figref{grondirace})
             \item Click \texttt{Reset} on the lower left part of the panel
-            \item Select from menu \texttt{Online} $\rightarrow$ \texttt{Online}
+            \item Select from \wmenu{Online}{Online}
             \item If it fails, you may need $\approx 40$\,min to deep restart (\procref{iracerestart}) \gls{irace}.
        \end{enumerate}
        \item Ensure only one \gls{bob} is running
@@ -2916,8 +2977,8 @@ order, until problem is fixed.
                \item If either environment is \texttt{DISABLED}, proceed with these points
                \item Click on \texttt{DISABLED}
                \item In emerging GUI, click \texttt{Enable} just below \texttt{Environment}.
-               \item Close it with \texttt{File} $\rightarrow$ \texttt{Quit}.
-               \item Close \texttt{CSS Scan System} with menu \texttt{File} $\rightarrow$ \texttt{Quit}.
+               \item Close it with \wmenu{File}{Quit}.
+               \item Close \texttt{CSS Scan System} with \wmenu{File}{Quit}.
             \end{enumerate} 
           \item Restart the CCD managing components
              \begin{enumerate} 
@@ -2932,13 +2993,13 @@ order, until problem is fixed.
              \begin{enumerate}
                 \item Go to screen \texttt{Telescope Control Software}. 
                 \item Left-click on an empty space to open the menu \texttt{TCS User}.
-                \item Use menu \texttt{TCS User} $\rightarrow$ \texttt{Stop autoguider}.
-                \item Use menu \texttt{TCS User} $\rightarrow$ \texttt{Start autoguider}.
+                \item Use \wmenu{TCS User}{Stop autoguider}.
+                \item Use \wmenu{TCS User}{Start autoguider}.
              \end{enumerate}
           \item Open missing windows on screens \texttt{Wide Field Imager}.
              \begin{enumerate}
-                \item \gls{bob} with menu \texttt{WFI User} $\rightarrow$ \texttt{WFI} $\rightarrow$ \texttt{BOB (WFI)}.
-                \item \gls{rtd} with menu \texttt{WFI User} $\rightarrow$ \texttt{WFI} $\rightarrow$ \texttt{WFI RTD}.
+                \item \gls{bob} with \mmenu{WFI User}{WFI,BOB (WFI)}.
+                \item \gls{rtd} with \mmenu{WFI User}{WFI,WFI RTD}.
              \end{enumerate}
           \item Take a test bias.
         \end{enumerate}
@@ -3098,17 +3159,17 @@ put off.  This happens after an observation using the \gls{adc}.  On the
       \end{itemize}
   \item If it fails with a timeout error, restart the devices on the \gls{ICS Control} panel
      \begin{itemize}
-      \item Use menu \texttt{Device} $\rightarrow$ \texttt{Select all devices}, then
-      \item Use menu \texttt{Device} $\rightarrow$ \texttt{OFF}
-      \item Use menu \texttt{Device} $\rightarrow$ \texttt{ONLINE}
+      \item Use \wmenu{Device}{Select all devices}, then
+      \item Use \wmenu{Device}{OFF}
+      \item Use \wmenu{Device}{ONLINE}
       \item Wait for about one minute for \texttt{STATE} to be \texttt{ONLINE}
      \end{itemize}
   \item If in the last step there is an error that one of the devices that cannot be set
         \texttt{ONLINE}
       \begin{itemize}
-       \item Use menu \texttt{\gls{lcu}} $\rightarrow$ \texttt{Reboot LCU1} 
-       \item Use \texttt{Device} $\rightarrow$ \texttt{Select all devices}
-       \item Use menu \texttt{Device} $\rightarrow$ \texttt{ONLINE}
+       \item Use menu \wmenu{\gls{lcu}}{Reboot LCU1} 
+       \item Use \wmenu{Device}{Select all devices}
+       \item Use \wmenu{Device}{ONLINE}
         \item Wait for about one minute for \texttt{STATE} to be \texttt{ONLINE}
       \end{itemize}
   \item If problem occurs repeatedly, FEROS needs a restart, and problem
@@ -3321,7 +3382,7 @@ The \gls{telemetry} module is activated following these steps:
 The commonest issues are:
 \begin{itemize}
   \item \gls{tcs} is \texttt{OFF} after startup on the \gls{General State} Panel\\
-   This is harmless. Use menu \texttt{Gen. Options} $\rightarrow$ \texttt{Refresh Database Events}.
+   This is harmless. Use \wmenu{Gen. Options}{Refresh Database Events}.
   \item WFI startup stops with an error during \texttt{WFI Init/Online}\\
        It most likely requires a \gls{power cycle} of the \gls{wfi} electronics, see below.
 \end{itemize}
@@ -3615,8 +3676,7 @@ If \gls{grond} \gls{M3} mirror cannot be moved with the \texttt{\gls{grondM3}} c
     \begin{enumerate}
       \item In a terminal type \texttt{ccsei}
       \item Click on \texttt{CCS database monitor} 
-      \item Look down \texttt{Appl\_data $\rightarrow$ GROND 
-        $\rightarrow$ \gls{ics}  $\rightarrow$ DEVICES  $\rightarrow$ \gls{M3}}.
+      \item Look down \menu{Appl\_data,GROND,\gls{ics},DEVICES,\gls{M3}}.
       \item Select checkbox \texttt{Enable Editing}
       \item set \texttt{newPos} value to 2 for GROND position or 0 for WFI.
       \item Check on GROND control that mirror indeed moves.
@@ -3945,7 +4005,7 @@ lamp on and off, and to open or close the \gls{wfi} \gls{protective shutter}.}
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.8\linewidth]{wfi/wfi-e2p2-os-gui.png}
-\caption[WFI OS GUI]{The \gls{wfi} OS GUI can be used to change filtres manually or
+\caption[WFI ICS Control]{The \gls{wfiics} can be used to change filtres manually or
 take/abort CCD exposures.}
 \label{fig:wfios}
 \end{figure}
@@ -4098,7 +4158,7 @@ TCS \gls{lcu}/\gls{vme} & \texttt{\gls{lccBoot} \gls{lte2p2}}  & \texttt{rsh vxt
 \hline
 WFI FIERA   & \texttt{\gls{lccBoot} \gls{wwffcd}}$^\star$& \texttt{rsh -l fcdrun wwffcd reboot}\\
 \hline
-FEROS LCU   & \texttt{\gls{lccBoot} \gls{lfeics1}}       & FEROS \gls{ICS Control}, menu \texttt{LCU} $\rightarrow$ \texttt{Reboot}\\
+FEROS LCU   & \texttt{\gls{lccBoot} \gls{lfeics1}}       & FEROS \gls{ICS Control}, \wmenu{LCU}{Reboot}\\
             &                                      & \texttt{rsh -l fcdrun lfeics1 reboot}\\
 FEROS AG    & \texttt{\gls{lccBoot} \gls{w2p2cam}}             & \texttt{rsh \gls{l2p2cam} reboot}\\
             &                                      & Reset button, rack, FEROS room at telescope$^\ast$\\
