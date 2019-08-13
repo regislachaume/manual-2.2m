@@ -17,16 +17,16 @@
 \contentsline {procedure}{\numberline {5.11}{\ignorespaces GROND morning flat fields}}{51}{procedure.5.11}
 \contentsline {procedure}{\numberline {6.1}{\ignorespaces Switch to WFI observations}}{53}{procedure.6.1}
 \contentsline {procedure}{\numberline {6.2}{\ignorespaces Refine the acquisition of WFI}}{55}{procedure.6.2}
-\contentsline {procedure}{\numberline {6.3}{\ignorespaces Guide with WFI}}{56}{procedure.6.3}
-\contentsline {procedure}{\numberline {6.4}{\ignorespaces Restart guiding with WFI}}{57}{procedure.6.4}
-\contentsline {procedure}{\numberline {6.5}{\ignorespaces Switch to FEROS observation}}{57}{procedure.6.5}
-\contentsline {procedure}{\numberline {6.6}{\ignorespaces Guide a FEROS observation using reflection on the fibre head}}{59}{procedure.6.6}
-\contentsline {procedure}{\numberline {6.7}{\ignorespaces Guide a FEROS observation blindly using off-fibre reference}}{60}{procedure.6.7}
-\contentsline {procedure}{\numberline {6.8}{\ignorespaces Guide a FEROS observation with the WFI guide camera}}{61}{procedure.6.8}
-\contentsline {procedure}{\numberline {6.9}{\ignorespaces Switch to GROND observations}}{62}{procedure.6.9}
-\contentsline {procedure}{\numberline {6.10}{\ignorespaces React to an automatic trigger}}{63}{procedure.6.10}
-\contentsline {procedure}{\numberline {6.11}{\ignorespaces Guide with GROND}}{64}{procedure.6.11}
-\contentsline {procedure}{\numberline {6.12}{\ignorespaces Skip the preset}}{65}{procedure.6.12}
+\contentsline {procedure}{\numberline {6.3}{\ignorespaces Guide with WFI}}{57}{procedure.6.3}
+\contentsline {procedure}{\numberline {6.4}{\ignorespaces Restart guiding with WFI}}{58}{procedure.6.4}
+\contentsline {procedure}{\numberline {6.5}{\ignorespaces Switch to FEROS observation}}{58}{procedure.6.5}
+\contentsline {procedure}{\numberline {6.6}{\ignorespaces Guide a FEROS observation using reflection on the fibre head}}{60}{procedure.6.6}
+\contentsline {procedure}{\numberline {6.7}{\ignorespaces Guide a FEROS observation blindly using off-fibre reference}}{61}{procedure.6.7}
+\contentsline {procedure}{\numberline {6.8}{\ignorespaces Guide a FEROS observation with the WFI guide camera}}{62}{procedure.6.8}
+\contentsline {procedure}{\numberline {6.9}{\ignorespaces Switch to GROND observations}}{63}{procedure.6.9}
+\contentsline {procedure}{\numberline {6.10}{\ignorespaces React to an automatic trigger}}{64}{procedure.6.10}
+\contentsline {procedure}{\numberline {6.11}{\ignorespaces Guide with GROND}}{65}{procedure.6.11}
+\contentsline {procedure}{\numberline {6.12}{\ignorespaces Skip the preset}}{66}{procedure.6.12}
 \contentsline {procedure}{\numberline {7.1}{\ignorespaces Close the dome.}}{67}{procedure.7.1}
 \contentsline {procedure}{\numberline {7.2}{\ignorespaces Put the instruments offline}}{68}{procedure.7.2}
 \contentsline {procedure}{\numberline {7.3}{\ignorespaces Tidy folders}}{69}{procedure.7.3}

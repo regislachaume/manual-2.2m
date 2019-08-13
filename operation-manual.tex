@@ -113,6 +113,7 @@
 \newglossaryentry{wfinsStopSCCDS}{name=\texttt{wfinsStopTCCDS},sort=wfinsStopTCCDS,description={Command to stop the \gls{wfi} \acrlong{sccd}s (main array) software}}
 \newglossaryentry{wfinsStartTCCDS}{name=\texttt{wfinsStartTCCDS},sort=wfinsStartTCCDS,description={Command to start the \gls{wfi} \gls{tccd}s (guide camera) software}}
 \newglossaryentry{wfinsStopTCCDS}{name=\texttt{wfinsStopTCCDS},sort=wfinsStopTCCDS,description={Command to stop the \gls{wfi} \gls{tccd}s (guide camera) software}}
+\newglossaryentry{state manager}{name=\texttt{State Manager},sort=State Manager,description={WFI GUI giving the status of the telescope \gls{focus} used by \gls{wfi} and \gls{feros}.}}
 \newglossaryentry{acquisition}{name=acquisition,description={Part of an observing block that prepares the telescope (preset) and instrument (filtre change, mirror setups, etc.) for an observation.}}
 \newglossaryentry{grondag}{name=\texttt{Telescope R.T.D},sort=Telescope R.T.D.,description={Window displaying the image of the \gls{grond} \acrlong{ag}}}
 \newglossaryentry{stall}{name=stall,description={Stalling refers to stopping doing anything without an error being displayed or reaching complete state.  As it is silent, it is easy to lose time for a stalled OB...}}
@@ -1373,13 +1374,13 @@ It is possible to skip the focus if an \gls{acquisition} or test image shows sha
 \\
 \subfigure[Choose to log if it went fine]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-07-log-focus-value.jpg}\label{fig:wfifocus-7}}
 \hfill
-\subfigure[Choose to log if it went fine]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-08-ob-finished.jpg}\label{fig:wfifocus-8}}
+\subfigure[OB fully executed]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-08-ob-finished.jpg}\label{fig:wfifocus-8}}
 \caption[Main steps in the focus sequence of WFI]{Main steps in the \gls{focus} sequence of \gls{wfi}.}
 \label{fig:wfifocus}
 \end{figure*}
 
-\procedure{Focusing with WFI}
-\label{proc:wfifocseq}
+\procedure{Focusing with WFI}\label{proc:wfifocseq}
+This procedure lasts a bit less than 10 minutes.
 \begin{enumerate}
     \item Prepare telescope and filtre for focusing (1--3\,min)
     \begin{enumerate}
@@ -1821,9 +1822,22 @@ Refining takes place after telescope \gls{preset} and before acquisition of the 
 \centering
 \subfigure[Whether to guide, answer once \gls{ag} is active]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-01-turnAG.jpg}\label{fig:guidewfi-1}}
 \hfill
-\subfigure[Retrieve the \gls{ag} field]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-02-retrieve-field.jpg}\label{fig:guidewfi-2}}\\
-\subfigure[Pick the guide star]{\includegraphics[width=0.8\linewidth]{wfi/ag/wfi-ag-03-pick.jpg}\label{fig:guidewfi-3}}
+\subfigure[Retrieve the \gls{ag} field on \gls{TCS setup panel}]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-02-retrieve-field.jpg}\label{fig:guidewfi-2}}\\
+\subfigure[Pick the guide star on \gls{skycat}]{\includegraphics[width=0.8\linewidth]{wfi/ag/wfi-ag-03-pick.jpg}\label{fig:guidewfi-3}}\\
+\subfigure[Start guiding with box to star]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-04-box-to-star.jpg}\label{fig:guidewfi-4}}
+\hfill
+\subfigure[Wait for guiding to get ACTIVE]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-05-active.jpg}\label{fig:guidewfi-5}}
 \caption[Guide with WFI]{WFI guiding for targets outside the solar system}
+\label{fig:guidewfi}
+\end{figure*}
+
+\begin{figure*}
+\subfigure[Start monitoring]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-01-start-monitoring.jpg}\label{fig:fastguidewfi-1}}\\
+\subfigure[Stop monitoring]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-03-stop-monitoring.jpg}\label{fig:fastguidewfi-3}}
+\hfill
+\subfigure[Start guiding with box to star]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-04-box-to-star.jpg}\label{fig:fastguidewfi-4}}
+\caption{Fast guiding acquistion with WFI}
+\label{fig:fastguidewfi}
 \end{figure*}
 
 \procedure{Guide with WFI}
@@ -1854,9 +1868,9 @@ n
     \end{enumerate}
     \item On the \gls{TCS control panel} (\figref{tcs}) start the guiding
     \begin{enumerate}
-        \item Activate the guiding\\
+        \item Activate the guiding (\figref{guidewfi-4})\\
               Click \texttt{Box to Star} below \texttt{Autoguider}.
-        \item Wait for guiding to start\\
+        \item Wait for guiding to start (\figref{guidewfi-5})\\
               In a few seconds \texttt{\-\-\-ACTIVE\-\-\-} should appear in \texttt{AG Stat}.
     \end{enumerate}
     \item Proceed with the observation, typically by clicking on pop-up asking for guiding (\figref{guidewfi-1})
@@ -3163,7 +3177,7 @@ be rebooted.
 
 \subsection{No focus offset when filtres are changed}
 \label{sec:filfocoffset}
-The \gls{focus} sequence is run for a specific filtre, when changing filtres during an \gls{ob}, the TCS should apply a focus offset, which should be seen in the \gls{TCS control panel}, M2 Focus. If no offset is applied, check if in the \gls{wfi} state manager, the Focusing flag should be \texttt{True}. The ESO people were not really clear on that.
+The \gls{focus} sequence is run for a specific filtre, when changing filtres during an \gls{ob}, the TCS should apply a focus offset, which should be seen in the \gls{TCS control panel}, M2 Focus. If no offset is applied, check if in the \gls{wfi} \gls{state manager}, the Focusing flag should be \texttt{True}. The ESO people were not really clear on that.
 
 
 \section{FEROS ADC}
@@ -4041,8 +4055,7 @@ take/abort CCD exposures.}
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.8\linewidth]{wfi/wfi-state-manager.png}
-\caption[WFI state manager]{The \gls{wfi} state manager holds information on telescope
-\gls{focus}, also used for \gls{feros}.}
+\caption[WFI state manager]{The \gls{wfi} \gls{state manager} holds information on telescope \gls{focus}, also used for \gls{feros}. It can be used for quick-and-dirty focusing.}
 \label{fig:wfistate}
 \end{figure}
 

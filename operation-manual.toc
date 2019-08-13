@@ -52,20 +52,20 @@
 \contentsline {subsection}{\numberline {6.1.1}Popup handling}{53}{subsection.6.1.1}
 \contentsline {subsection}{\numberline {6.1.2}Switching to WFI}{53}{subsection.6.1.2}
 \contentsline {subsection}{\numberline {6.1.3}Refining acquisition}{55}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Guiding}{56}{subsection.6.1.4}
-\contentsline {section}{\numberline {6.2}FEROS}{57}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Switching to FEROS}{57}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Guiding}{59}{subsection.6.2.2}
-\contentsline {paragraph}{On fibre}{59}{section*.10}
-\contentsline {paragraph}{Off fibre}{60}{section*.11}
-\contentsline {paragraph}{Using the WFI autoguider}{61}{section*.12}
-\contentsline {section}{\numberline {6.3}GROND}{62}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Switching to GROND}{62}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}React to an automatic trigger}{63}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Guiding}{64}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}All instruments}{64}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Run an observing block}{64}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Skip the preset}{64}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.1.4}Guiding}{57}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}FEROS}{58}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Switching to FEROS}{58}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Guiding}{60}{subsection.6.2.2}
+\contentsline {paragraph}{On fibre}{60}{section*.10}
+\contentsline {paragraph}{Off fibre}{61}{section*.11}
+\contentsline {paragraph}{Using the WFI autoguider}{62}{section*.12}
+\contentsline {section}{\numberline {6.3}GROND}{63}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Switching to GROND}{63}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}React to an automatic trigger}{64}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Guiding}{65}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}All instruments}{65}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Run an observing block}{65}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Skip the preset}{65}{subsection.6.4.2}
 \contentsline {chapter}{\numberline {7}Morning: Closing \& Calibrations}{67}{chapter.7}
 \contentsline {section}{\numberline {7.1}Panels referred to}{67}{section.7.1}
 \contentsline {section}{\numberline {7.2}Telescope}{67}{section.7.2}

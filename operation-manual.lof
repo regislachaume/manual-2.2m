@@ -50,7 +50,7 @@
 \contentsline {subfigure}{\numberline {(e)}{\ignorespaces {If 1st measurement is useless, \texttt {Re-measure}}}}{47}{figure.5.1}
 \contentsline {subfigure}{\numberline {(f)}{\ignorespaces {If 2nd measurement if fine, \texttt {OK}}}}{47}{figure.5.1}
 \contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Choose to log if it went fine}}}{47}{figure.5.1}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Choose to log if it went fine}}}{47}{figure.5.1}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {OB fully executed}}}{47}{figure.5.1}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Refining the WFI acquisition}}{54}{figure.6.1}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Whether to refine acquisition}}}{54}{figure.6.1}
@@ -59,9 +59,15 @@
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {By default, choose to \texttt {Offset and quit}}}}{54}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Guide with WFI}}{56}{figure.6.2}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Whether to guide, answer once \gls {ag} is active}}}{56}{figure.6.2}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Retrieve the \gls {ag} field}}}{56}{figure.6.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Pick the guide star}}}{56}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Window to set FEROS fibre reference position}}{59}{figure.6.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Retrieve the \gls {ag} field on \gls {TCS setup panel}}}}{56}{figure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Pick the guide star on \gls {skycat}}}}{56}{figure.6.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Start guiding with box to star}}}{56}{figure.6.2}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Wait for guiding to get ACTIVE}}}{56}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Fast guiding acquistion with WFI}}{57}{figure.6.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Start monitoring}}}{57}{figure.6.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Stop monitoring}}}{57}{figure.6.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Start guiding with box to star}}}{57}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Window to set FEROS fibre reference position}}{60}{figure.6.4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

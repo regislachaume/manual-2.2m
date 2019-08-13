@@ -429,10 +429,10 @@
 \glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{46}
 \glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{46}
 \glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{46}
-\glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{46}
 \glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{47}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{48}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{48}
@@ -574,70 +574,60 @@
 \glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{55}
 \glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{56}
 \glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{56}
-\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{57}
 \glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{ICS Control?\glossentry{ICS Control}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{57}
-\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{58}
 \glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{58}
 \glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{58}
 \glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{58}
-\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{ICS Control?\glossentry{ICS Control}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{59}
 \glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{59}
-\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{60}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{60}
 \glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{60}
 \glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
@@ -645,115 +635,127 @@
 \glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
 \glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{60}
 \glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{60}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{61}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{61}
 \glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{62}
 \glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{62}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{RRM?\glossentry{rrm}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{63}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{63}
 \glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{64}
 \glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{64}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{65}
-\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{65}
-\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{65}
-\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{65}
-\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{65}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{65}
-\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{65}
-\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{RRM?\glossentry{rrm}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{65}
 \glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{65}
 \glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{66}
 \glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{67}
 \glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{67}
 \glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{67}
@@ -1090,6 +1092,7 @@
 \glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{84}
 \glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{84}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{State Manager?\glossentry{state manager}|setentrycounter[]{page}\glsnumberformat}{84}
 \glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{84}
 \glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{84}
 \glossaryentry{FEROS ICS Control?\glossentry{ferosics}|setentrycounter[]{page}\glsnumberformat}{84}
@@ -1369,6 +1372,7 @@
 \glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{106}
 \glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{107}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{State Manager?\glossentry{state manager}|setentrycounter[]{page}\glsnumberformat}{107}
 \glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{107}
 \glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{107}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{108}
@@ -1418,8 +1422,11 @@
 \glossaryentry{visitor?\glossentry{visitor}|setentrycounter[]{page}\glsnumberformat}{118}
 \glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{118}
 \glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{119}
-\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{119}
-\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{120}
 \glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{120}
 \glossaryentry{MPIA?\glossentry{mpia}|setentrycounter[]{page}\glsnumberformat}{120}
 \glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{120}
@@ -1431,12 +1438,12 @@
 \glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{120}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{120}
 \glossaryentry{ICS?\glossentry{ics}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{SCCD?\glossentry{sccd}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{120}
-\glossaryentry{SCCD?\glossentry{sccd}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{121}
+\glossaryentry{SCCD?\glossentry{sccd}|setentrycounter[]{page}\glsnumberformat}{121}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{121}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{121}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{121}
+\glossaryentry{SCCD?\glossentry{sccd}|setentrycounter[]{page}\glsnumberformat}{121}
 \glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{121}
 \glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{121}
 \glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{121}
