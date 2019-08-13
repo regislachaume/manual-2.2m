@@ -1,7 +1,7 @@
 This is makeindex, version 2.15 [TeX Live 2019/dev] (kpathsea + Thai support).
 Scanning style file ./operation-manual.ist.............................done (29 attributes redefined, 0 ignored).
-Scanning input file operation-manual.glo.....done (1417 entries accepted, 0 rejected).
-Sorting entries..............done (16434 comparisons).
-Generating output file operation-manual.gls....done (697 lines written, 0 warnings).
+Scanning input file operation-manual.glo.....done (1375 entries accepted, 0 rejected).
+Sorting entries..............done (15738 comparisons).
+Generating output file operation-manual.gls....done (679 lines written, 0 warnings).
 Output written in operation-manual.gls.
 Transcript written in operation-manual.glg.

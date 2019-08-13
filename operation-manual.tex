@@ -1357,7 +1357,28 @@ If things go well, the bright star used for the \gls{pointing} test should fall 
 
 It is possible to skip the focus if an \gls{acquisition} or test image shows sharp, round stars or if the seeing is too bad ($\gtrsim 2$). It is advisable to (re)focus once conditions have stabilised, a few hours into the night, if on-chip seeing is critical.
 
-\procedure{Focusing with WFI (outline)}
+\begin{figure*}
+\centering
+\subfigure[Selecting focus OB]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-01-ob-selection.jpg}\label{fig:wfifocus-1}}
+\hfill
+\subfigure[Start the WFI autoguider]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-02-start-guiding.jpg}\label{fig:wfifocus-2}}
+\\
+\subfigure[Monitor focus offsets]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-03-subexposures.jpg}\label{fig:wfifocus-3}}
+\hfill
+\subfigure[Click on the upper star (\gls{midas})]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-04-click-upper-star.jpg}\label{fig:wfifocus-4}}
+\\
+\subfigure[If 1st measurement is useless, \texttt{Re-measure}]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-05-measurement-1.jpg}\label{fig:wfifocus-5}}
+\hfill
+\subfigure[If 2nd measurement if fine, \texttt{OK}]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-06-measurement-2.jpg}\label{fig:wfifocus-6}}
+\\
+\subfigure[Choose to log if it went fine]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-07-log-focus-value.jpg}\label{fig:wfifocus-7}}
+\hfill
+\subfigure[Choose to log if it went fine]{\includegraphics[width=0.45\linewidth]{wfi/focus/wfi-focus-08-ob-finished.jpg}\label{fig:wfifocus-8}}
+\caption[Main steps in the focus sequence of WFI]{Main steps in the \gls{focus} sequence of \gls{wfi}.}
+\label{fig:wfifocus}
+\end{figure*}
+
+\procedure{Focusing with WFI}
 \label{proc:wfifocseq}
 \begin{enumerate}
     \item Prepare telescope and filtre for focusing (1--3\,min)
@@ -1380,7 +1401,7 @@ It is possible to skip the focus if an \gls{acquisition} or test image shows sha
             \item In the \gls{TCS control panel} and \gls{skycat}, acquire \acrlong{ag} (\procref{guidewfi}, 1\,min)
         \end{enumerate}
     \end{enumerate}
-    \item Start the focus \gls{ob} and perform \gls{acquisition} if required
+    \item Start the focus \gls{ob} (\figref{wfifocus-1} and perform \gls{ag} \gls{acquisition} if required (\figref{wfifocus-2})
     \begin{enumerate}
         \item In bob, use \wmenu{File}{Load OB,from file…}
         \item Double-click subfolder \texttt{.../TEMPLATES/OBD/Focus}
@@ -1389,20 +1410,20 @@ It is possible to skip the focus if an \gls{acquisition} or test image shows sha
         \item Click \texttt{Start} on the OB
         \item If a pop-ups asks for \gls{ag}, acquire it (\procref{guidewfi}, 1\,min)
     \end{enumerate}
-    \item Monitor the progress of the focus sequence on \gls{bob} and \gls{skycat} (6\,min).
+    \item Monitor the progress of the focus sequence on \gls{bob} and \gls{skycat} (\figref{wfifocus-3}, 6\,min).
     \begin{itemize}
         \item Guide star will disappear and reappear between all subexposures.
         \item If bob repeats a message about a \gls{focus} order for more than 10-15 s, you will need to enter the target values in the \gls{TCS control panel} for all subexposures starting from the one where problem appears (second one). Otherwise, the ob will crash.  See \procref{wfifocseqtimeout}.
     \end{itemize}
     \item Perform a dummy focus measurement (bug workaround)
     \begin{enumerate}
-        \item Click \texttt{OK} on the pop-up asking to pick a star in \gls{midas} window
-        \item Go to \gls{desktop} \texttt{MIDAS}
+        \item Click \texttt{OK} on the pop-up asking to pick a star in \gls{midas} window (\figref{wfifocus-4})
+        \item Go to \gls{desktop} \texttt{MIDAS} (\figref{wfifocus-5})
         \item Locate a black MIDAS window intended for graphics
         \item Left-click, then right-click close to its centre
         \item On the pop-up asking for confirmation, click \texttt{Redo}
     \end{enumerate}
-    \item Perform focus measurement
+    \item Perform focus measurement (\figref{wfifocus-6})
     \begin{enumerate}
         \item Click \texttt{OK} on the pop-up asking to pick a star in \gls{midas} window
         \item Find a vertical star sequence that is relatively separated from other ones
@@ -1419,12 +1440,12 @@ It is possible to skip the focus if an \gls{acquisition} or test image shows sha
             \item If you are not sure, click \texttt{Re-mesure} and pick another star sequence
             \item If it is clear that conditions have messed the focus, click \texttt{Do Nothing}.
         \end{itemize}
-        \item Wait for a pop-up to ask whether to log the value (20 s?)
+        \item Wait for a pop-up to ask whether to log the value (\figref{wfifocus-7}, 20\,s)
         \begin{itemize}
             \item If you are happy with the focus, click \texttt{OK}
             \item Otherwise, click \texttt{Do not log}
         \end{itemize}
-        \item Wait for OB to finish (20 s?) 
+        \item Wait for OB to finish (\figref{wfifocus-8}, 10\,s) 
     \end{enumerate}
 \end{enumerate}
 
@@ -4101,3 +4122,4 @@ User WS     & \multicolumn{2}{l}{call at Paranal 5959 to reboot \gls{uws2p2}, fi
 \printglossaries
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Glossary}}
 \end{document}
+
