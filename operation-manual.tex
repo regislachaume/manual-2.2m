@@ -65,7 +65,6 @@
 \usepackage[utf8]{inputenc} % Required for including letters with accents
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 
-
 % Bibliography
 %\usepackage[style=alphabetic,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
 %\addbibresource{bibliography.bib} % BibTeX bibliography file
@@ -239,6 +238,8 @@ contents={\begin{tikzpicture}[remember picture,overlay]
     \texttt{lachaume@astro.puc.cl}\vspace{6pt} \\
     Markus~Rabus\\
     }
+
+\def\numberline#1{\parbox[t]{3em}{#1}}
 
 \begin{document}
 \begin{titlepage}
@@ -1742,6 +1743,17 @@ overheads by parallelising \gls{preset} and mirror movements.  However, beware t
 \subsection{Refining acquisition}
 \label{sec:refinewfi}
 
+\begin{figure*}
+\subfigure[Whether to refine acquisition]{\includegraphics[width=0.45\linewidth]{wfi/qso/wfi-qso-01-confirm-continue.jpg}\label{fig:refinewfi-1}}
+\hfill
+\subfigure[Pick the target on the rtd]{\includegraphics[width=0.45\linewidth]{wfi/qso/wfi-qso-02-pick.jpg}\label{fig:refinewfi-2}}\\
+\subfigure[Enter its pixel coordinates]{\includegraphics[width=0.45\linewidth]{wfi/qso/wfi-qso-03-coordinates.jpg}\label{fig:refinewfi-3}}
+\hfill
+\subfigure[By default, choose to \texttt{Offset and quit}]{\includegraphics[width=0.45\linewidth]{wfi/qso/wfi-qso-04-do-offset.jpg}\label{fig:refinewfi-4}}
+\caption[Refining the WFI acquisition]{Refining the WFI \gls{acquisition} for the \texttt{WFI\_img\_acq\_MoveToPixel} \gls{template}.}
+\label{fig:refinewfi}
+\end{figure*}
+
 It is possible to refine the \gls{acquisition} with WFI if the \gls{ob} has explicitly planned for it. Technically speaking, if the \gls{template} is \texttt{WFI\_img\_acq\_MoveToPixel} or \texttt{WFI\_img\_acq\_MoveToGap}, the observer will be asked whether to offset the telescope so that a given target falls on a specific pixel of the CCD matrix or a gap of between the CCDS.
 
 Refining takes place after telescope \gls{preset} and before acquisition of the \gls{ag}.
@@ -1756,13 +1768,13 @@ Refining takes place after telescope \gls{preset} and before acquisition of the 
         \item Wait for a pop-up asking to refine acquisition (a few seconds)\\
               It may appear on any of the two screens. 
     \end{enumerate}
-    \item Accept or decline refining by answering the pop-up
+    \item Accept or decline refining by answering the pop-up \text{Confirm continue} (\figref{refinewfi-1}
     \begin{enumerate}
         \item With \texttt{Yes}, this procedure continues and a second
         pop-up appears.
         \item With \texttt{No}, this procedure ends and observation goes on without recentring.
     \end{enumerate}
-    \item\label{list:refine:pick} Pick target.
+    \item\label{list:refine:pick} Pick target (\figref{refinewfi-2})
     \begin{enumerate}
         \item Locate the target by means of a finding chart.\\
               Inspect the \gls{rtd}  window of screen \texttt{WFI BOB}
@@ -1775,19 +1787,19 @@ Refining takes place after telescope \gls{preset} and before acquisition of the 
             \item If it isn't zoom out \texttt{z} and \texttt{Z} to achieve centring of the cross
         \end{enumerate}
     \end{enumerate}
-    \item\label{list:refine:coord} Enter coordinates 
+    \item\label{list:refine:coord} Enter coordinates on pop-up \texttt{Coordinates} (\figref{refinewfi-3})
     \begin{enumerate}
         \item On \gls{pickobj}, copy the value of \texttt{Image X}
-        \item On popup \texttt{Enter coordinates}, paste the value in \texttt{X coordinate}
+        \item On popup \texttt{Coordinates}, paste the value in \texttt{X coordinate}
         \item Do the same for \texttt{Image X}
-        \item Click \texttt{OK} on the popup \texttt{Enter coordinates}
+        \item Click \texttt{OK} on the popup \texttt{Coordinates}
     \end{enumerate}
     \item If a pop-up asks for the coordinates of the gap, attend it.\\
           It occurs for template \texttt{WFI\_img\_acq\_MoveToGap}.
           Its handling is similar to steps~\ref{list:refine:pick}--\ref{list:refine:coord}. 
-    \item Examine the offset proposition on pop-up \texttt{Do offset}\\
+    \item Examine the offset proposition on pop-up \texttt{Do offset} (\figref{refinewfi-4})\\
           Read the offset values (in arcseconds) and decide whether they make sens.
-    \item Answer pop-up \texttt{Do offset} 
+    \item Answer pop-up \texttt{Do offset} (\figref{refinewfi-4})
     \begin{enumerate}
         \item \texttt{Offset and quit}: the recentring will be performed.\\
         This is the most common action.
@@ -1805,16 +1817,32 @@ Refining takes place after telescope \gls{preset} and before acquisition of the 
 \subsection{Guiding}
 \label{sec:guidewfi}
 
-\procedure{Guiding with WFI}
+\begin{figure*}
+\centering
+\subfigure[Whether to guide, answer once \gls{ag} is active]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-01-turnAG.jpg}\label{fig:guidewfi-1}}
+\hfill
+\subfigure[Retrieve the \gls{ag} field]{\includegraphics[width=0.45\linewidth]{wfi/ag/wfi-ag-02-retrieve-field.jpg}\label{fig:guidewfi-2}}\\
+\subfigure[Pick the guide star]{\includegraphics[width=0.8\linewidth]{wfi/ag/wfi-ag-03-pick.jpg}\label{fig:guidewfi-3}}
+\caption[Guide with WFI]{WFI guiding for targets outside the solar system}
+\end{figure*}
+
+\procedure{Guide with WFI}
 \label{proc:guidewfi}
 \begin{enumerate}
-    \item On the \gls{tcs} workstation, acquire the guide field
+    \item On the \gls{tcs} workstation, acquire the guide field (\figref{guidewfi-2})
     \begin{enumerate}
         \item Go to screen \texttt{Telescope Control Software}.
         \item Locate the \gls{TCS control panel} (\figref{tcs}).
         \item Click \texttt{Retrieve Field} below \texttt{AG Field Acquisition}.
     \end{enumerate}
-    \item On the autoguider windows (\figref{tcsag}), chose the guide star
+    \item For solar system objects, set-up the differential guiding
+n  
+    \begin{enumerate}
+        \item Locate the \texttt{Differential guiding} section on the \gls{TCS control panel} (\figref{tcs})
+        \item Enter the target's proper motion in arcseconds per hour
+        \item Click \texttt{ON}
+    \end{enumerate}
+    \item On the autoguider windows (\figref{tcsag}), choose the guide star (\figref{guidewfi-3})
     \begin{enumerate}
         \item Wait ($\approx 30$\,s) for \gls{skycat} to read out the guide field.
         \item On the same window, click \texttt{Auto Set Cut Levels}.
@@ -1823,15 +1851,15 @@ Refining takes place after telescope \gls{preset} and before acquisition of the 
         \item Pick the reference star\\
           On the \gls{pickrefstar} window click \texttt{Pick}\\
           On the \gls{skycat} window, click a bright star not too close to the border. 
-  \end{enumerate}
-  \item On the \gls{TCS control panel} (\figref{tcs}) start the guiding
-  \begin{enumerate}
+    \end{enumerate}
+    \item On the \gls{TCS control panel} (\figref{tcs}) start the guiding
+    \begin{enumerate}
         \item Activate the guiding\\
               Click \texttt{Box to Star} below \texttt{Autoguider}.
         \item Wait for guiding to start\\
               In a few seconds \texttt{\-\-\-ACTIVE\-\-\-} should appear in \texttt{AG Stat}.
-  \end{enumerate}
-  \item Proceed with the observation, typically by clicking on pop-up asking for guiding.
+    \end{enumerate}
+    \item Proceed with the observation, typically by clicking on pop-up asking for guiding (\figref{guidewfi-1})
 \end{enumerate}
 
 After a filtre change or when running several observing blocks on the same
@@ -3624,7 +3652,7 @@ The \gls{main mirror} cover is closed following these steps:
 \begin{figure}
 \centering
 \includegraphics[width=0.6\linewidth]{dome/dome-control.jpg}
-\caption{Local control of the \gls{dome}.  Local or remote control is set with the leftmost button.  Other two bottons on the same row set the direction and speed of rotation in the local control mode.  Just below, a start and stop button are used to initiate and finalise rotation.}
+\caption[Local control of the dome]{Local control of the \gls{dome}.  Local or remote control is set with the leftmost button.  Other two bottons on the same row set the direction and speed of rotation in the local control mode.  Just below, a start and stop button are used to initiate and finalise rotation.}
 \label{fig:dome-control}
 \end{figure}
 

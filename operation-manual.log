@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.12.18)  13 AUG 2019 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2018.12.18)  13 AUG 2019 01:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1249,7 +1249,7 @@ Package: glossary-tree 2018/07/23 v4.41 (NLCT)
 \openout6 = `operation-manual.glo'.
 
 Package glossaries Info: Writing glossary file operation-manual.glo on input li
-ne 96.
+ne 95.
 
 (/usr/share/texlive/texmf-dist/tex/latex/background/background.sty
 Package: background 2014/03/04 v2.1 background material
@@ -1263,7 +1263,7 @@ Package: afterpage 2014/10/28 v1.08 After-Page Package (DPC)
 \AP@partial=\box66
 \AP@footins=\box67
 ))
-LaTeX Font Info:    Try loading font information for T1+phv on input line 215.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 214.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
@@ -1271,21 +1271,21 @@ File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 (./operation-manual.aux)
 \openout1 = `operation-manual.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 243.
-LaTeX Font Info:    ... okay on input line 243.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 243.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 244.
+LaTeX Font Info:    ... okay on input line 244.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 244.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1354,7 +1354,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 243.
+LaTeX Info: Redefining \microtypecontext on input line 244.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1370,7 +1370,7 @@ File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box69
-Package hyperref Info: Link coloring ON on input line 243.
+Package hyperref Info: Link coloring ON on input line 244.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1380,9 +1380,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count356
 )
-LaTeX Info: Redefining \ref on input line 243.
-LaTeX Info: Redefining \pageref on input line 243.
-LaTeX Info: Redefining \nameref on input line 243.
+LaTeX Info: Redefining \ref on input line 244.
+LaTeX Info: Redefining \pageref on input line 244.
+LaTeX Info: Redefining \nameref on input line 244.
 
 (./operation-manual.out) (./operation-manual.out)
 \@outlinefile=\write7
@@ -1420,7 +1420,7 @@ LaTeX Info: Redefining \nameref on input line 243.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for T1+pag on input line 249.
+LaTeX Font Info:    Try loading font information for T1+pag on input line 250.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
@@ -1429,7 +1429,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `pag' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 254.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 255.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -1440,12 +1440,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--256
+Underfull \hbox (badness 10000) in paragraph at lines 255--257
 
  []
 
 LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 25
-6.
+7.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
@@ -1454,35 +1454,35 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 25
-6.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 25
-6.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 25
-6.
+7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 256.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 257.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 256.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 257.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 256.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 257.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 256.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 257.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
@@ -1503,12 +1503,12 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <Pictures/lasilla.pdf, id=308, 385.44pt x 192.72pt>
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 276.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 277.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 276.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 277.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <20.74> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 276.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 277.
  (./operation-manual.toc
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <12> not available
 (Font)              Font shape `T1/pag/b/n' tried instead on input line 2.
@@ -1545,7 +1545,7 @@ Underfull \vbox (badness 6775) has occurred while \output is active []
 [8]
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 280.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 281.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
  (./operation-manual.lof
 Overfull \hbox (10.94998pt too wide) detected at line 3
@@ -1629,27 +1629,27 @@ Overfull \hbox (10.94998pt too wide) detected at line 45
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 55
- []\T1/ptm/m/n/10.95 57
+ []\T1/ptm/m/n/10.95 54
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 60
- []\T1/ptm/m/n/10.95 74
+ []\T1/ptm/m/n/10.95 56
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 64
- []\T1/ptm/m/n/10.95 75
+ []\T1/ptm/m/n/10.95 59
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 68
- []\T1/ptm/m/n/10.95 85
+Overfull \hbox (10.94998pt too wide) detected at line 69
+ []\T1/ptm/m/n/10.95 76
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 71
- []\T1/ptm/m/n/10.95 86
+Overfull \hbox (10.94998pt too wide) detected at line 73
+ []\T1/ptm/m/n/10.95 77
  []
 
 
@@ -1659,118 +1659,128 @@ Underfull \vbox (badness 7740) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (10.94998pt too wide) detected at line 74
- []\T1/ptm/m/n/10.95 86
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 75
- []\T1/ptm/m/n/10.95 88
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 76
- []\T1/ptm/m/n/10.95 89
+Overfull \hbox (10.94998pt too wide) detected at line 77
+ []\T1/ptm/m/n/10.95 87
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 80
- []\T1/ptm/m/n/10.95 91
+ []\T1/ptm/m/n/10.95 88
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 81
- []\T1/ptm/m/n/10.95 91
+Overfull \hbox (10.94998pt too wide) detected at line 83
+ []\T1/ptm/m/n/10.95 88
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 82
- []\T1/ptm/m/n/10.95 92
+Overfull \hbox (10.94998pt too wide) detected at line 84
+ []\T1/ptm/m/n/10.95 90
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 85
- []\T1/ptm/m/n/10.95 93
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 86
- []\T1/ptm/m/n/10.95 94
+ []\T1/ptm/m/n/10.95 91
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 89
+ []\T1/ptm/m/n/10.95 93
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 90
+ []\T1/ptm/m/n/10.95 93
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 91
+ []\T1/ptm/m/n/10.95 94
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 94
+ []\T1/ptm/m/n/10.95 95
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 95
  []\T1/ptm/m/n/10.95 96
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 93
- []\T1/ptm/m/n/10.95 99
- []
-
-
-Overfull \hbox (16.42497pt too wide) detected at line 94
- []\T1/ptm/m/n/10.95 100
- []
-
-
-Overfull \hbox (16.42497pt too wide) detected at line 95
- []\T1/ptm/m/n/10.95 101
- []
-
-
-Overfull \hbox (16.42497pt too wide) detected at line 96
- []\T1/ptm/m/n/10.95 102
- []
-
-
-Overfull \hbox (16.42497pt too wide) detected at line 97
- []\T1/ptm/m/n/10.95 104
- []
-
-
-Overfull \hbox (16.42497pt too wide) detected at line 98
- []\T1/ptm/m/n/10.95 105
- []
-
-
-Overfull \hbox (16.42497pt too wide) detected at line 99
- []\T1/ptm/m/n/10.95 105
- []
-
-
-Overfull \hbox (16.42497pt too wide) detected at line 100
- []\T1/ptm/m/n/10.95 106
- []
-
-
-Overfull \hbox (16.42497pt too wide) detected at line 101
- []\T1/ptm/m/n/10.95 107
+Overfull \hbox (10.94998pt too wide) detected at line 98
+ []\T1/ptm/m/n/10.95 98
  []
 
 
 Overfull \hbox (16.42497pt too wide) detected at line 102
- []\T1/ptm/m/n/10.95 108
+ []\T1/ptm/m/n/10.95 101
  []
 
 
 Overfull \hbox (16.42497pt too wide) detected at line 103
- []\T1/ptm/m/n/10.95 109
+ []\T1/ptm/m/n/10.95 102
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 104
+ []\T1/ptm/m/n/10.95 103
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 105
+ []\T1/ptm/m/n/10.95 104
  []
 
 
 Overfull \hbox (16.42497pt too wide) detected at line 106
- []\T1/ptm/m/n/10.95 110
+ []\T1/ptm/m/n/10.95 106
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 107
+ []\T1/ptm/m/n/10.95 107
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 108
+ []\T1/ptm/m/n/10.95 107
  []
 
 
 Overfull \hbox (16.42497pt too wide) detected at line 109
- []\T1/ptm/m/n/10.95 110
+ []\T1/ptm/m/n/10.95 108
  []
 
 
 Overfull \hbox (16.42497pt too wide) detected at line 110
+ []\T1/ptm/m/n/10.95 109
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 111
+ []\T1/ptm/m/n/10.95 110
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 112
  []\T1/ptm/m/n/10.95 111
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 115
+ []\T1/ptm/m/n/10.95 112
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 118
+ []\T1/ptm/m/n/10.95 112
+ []
+
+
+Overfull \hbox (16.42497pt too wide) detected at line 119
+ []\T1/ptm/m/n/10.95 113
  []
 
 )
@@ -1780,26 +1790,26 @@ Overfull \hbox (16.42497pt too wide) detected at line 110
  [10]
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 284.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 285.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
  (./operation-manual.lot
 Overfull \hbox (10.94998pt too wide) detected at line 12
- []\T1/ptm/m/n/10.95 95
+ []\T1/ptm/m/n/10.95 97
  []
 
 
 Overfull \hbox (16.42497pt too wide) detected at line 14
- []\T1/ptm/m/n/10.95 103
+ []\T1/ptm/m/n/10.95 105
  []
 
 
 Overfull \hbox (16.42497pt too wide) detected at line 15
- []\T1/ptm/m/n/10.95 103
+ []\T1/ptm/m/n/10.95 105
  []
 
 
 Overfull \hbox (16.42497pt too wide) detected at line 16
- []\T1/ptm/m/n/10.95 103
+ []\T1/ptm/m/n/10.95 105
  []
 
 )
@@ -1814,7 +1824,7 @@ Overfull \hbox (16.42497pt too wide) detected at line 16
 ]
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 288.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 289.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
  (./operation-manual.lop
 Overfull \hbox (10.94998pt too wide) detected at line 1
@@ -1908,32 +1918,32 @@ Overfull \hbox (10.94998pt too wide) detected at line 18
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 19
- []\T1/ptm/m/n/10.95 54
+ []\T1/ptm/m/n/10.95 55
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 20
- []\T1/ptm/m/n/10.95 55
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 21
- []\T1/ptm/m/n/10.95 55
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 22
  []\T1/ptm/m/n/10.95 56
  []
 
 
+Overfull \hbox (10.94998pt too wide) detected at line 21
+ []\T1/ptm/m/n/10.95 57
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 22
+ []\T1/ptm/m/n/10.95 57
+ []
+
+
 Overfull \hbox (10.94998pt too wide) detected at line 23
- []\T1/ptm/m/n/10.95 58
+ []\T1/ptm/m/n/10.95 59
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 24
- []\T1/ptm/m/n/10.95 58
+ []\T1/ptm/m/n/10.95 60
  []
 
 
@@ -1943,252 +1953,252 @@ Underfull \vbox (badness 1824) has occurred while \output is active []
 
 ]
 Overfull \hbox (10.94998pt too wide) detected at line 25
- []\T1/ptm/m/n/10.95 59
+ []\T1/ptm/m/n/10.95 61
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 26
- []\T1/ptm/m/n/10.95 60
+ []\T1/ptm/m/n/10.95 62
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 27
- []\T1/ptm/m/n/10.95 62
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 28
- []\T1/ptm/m/n/10.95 62
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 29
  []\T1/ptm/m/n/10.95 63
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 30
+Overfull \hbox (10.94998pt too wide) detected at line 28
+ []\T1/ptm/m/n/10.95 64
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 29
  []\T1/ptm/m/n/10.95 65
  []
 
 
+Overfull \hbox (10.94998pt too wide) detected at line 30
+ []\T1/ptm/m/n/10.95 67
+ []
+
+
 Overfull \hbox (10.94998pt too wide) detected at line 31
- []\T1/ptm/m/n/10.95 66
+ []\T1/ptm/m/n/10.95 68
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 32
- []\T1/ptm/m/n/10.95 67
+ []\T1/ptm/m/n/10.95 69
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 33
- []\T1/ptm/m/n/10.95 67
+ []\T1/ptm/m/n/10.95 69
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 34
- []\T1/ptm/m/n/10.95 69
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 35
- []\T1/ptm/m/n/10.95 69
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 36
  []\T1/ptm/m/n/10.95 71
  []
 
 
+Overfull \hbox (10.94998pt too wide) detected at line 35
+ []\T1/ptm/m/n/10.95 71
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 36
+ []\T1/ptm/m/n/10.95 73
+ []
+
+
 Overfull \hbox (10.94998pt too wide) detected at line 37
- []\T1/ptm/m/n/10.95 72
+ []\T1/ptm/m/n/10.95 74
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 38
- []\T1/ptm/m/n/10.95 73
+ []\T1/ptm/m/n/10.95 75
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 39
- []\T1/ptm/m/n/10.95 73
+ []\T1/ptm/m/n/10.95 75
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 40
- []\T1/ptm/m/n/10.95 76
+ []\T1/ptm/m/n/10.95 78
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 41
- []\T1/ptm/m/n/10.95 76
+ []\T1/ptm/m/n/10.95 78
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 42
- []\T1/ptm/m/n/10.95 77
+ []\T1/ptm/m/n/10.95 79
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 43
- []\T1/ptm/m/n/10.95 78
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 44
- []\T1/ptm/m/n/10.95 78
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 45
- []\T1/ptm/m/n/10.95 78
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 46
  []\T1/ptm/m/n/10.95 80
  []
 
 
+Overfull \hbox (10.94998pt too wide) detected at line 44
+ []\T1/ptm/m/n/10.95 80
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 45
+ []\T1/ptm/m/n/10.95 80
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 46
+ []\T1/ptm/m/n/10.95 82
+ []
+
+
 Overfull \hbox (10.94998pt too wide) detected at line 47
- []\T1/ptm/m/n/10.95 81
+ []\T1/ptm/m/n/10.95 83
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 48
- []\T1/ptm/m/n/10.95 81
+ []\T1/ptm/m/n/10.95 83
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 49
- []\T1/ptm/m/n/10.95 82
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 50
- []\T1/ptm/m/n/10.95 82
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 51
- []\T1/ptm/m/n/10.95 83
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 52
- []\T1/ptm/m/n/10.95 83
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 53
- []\T1/ptm/m/n/10.95 83
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 54
  []\T1/ptm/m/n/10.95 84
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 55
+Overfull \hbox (10.94998pt too wide) detected at line 50
+ []\T1/ptm/m/n/10.95 84
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 51
  []\T1/ptm/m/n/10.95 85
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 56
+Overfull \hbox (10.94998pt too wide) detected at line 52
  []\T1/ptm/m/n/10.95 85
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 57
+Overfull \hbox (10.94998pt too wide) detected at line 53
+ []\T1/ptm/m/n/10.95 85
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 54
  []\T1/ptm/m/n/10.95 86
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 58
+Overfull \hbox (10.94998pt too wide) detected at line 55
  []\T1/ptm/m/n/10.95 87
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 59
+Overfull \hbox (10.94998pt too wide) detected at line 56
  []\T1/ptm/m/n/10.95 87
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 60
+Overfull \hbox (10.94998pt too wide) detected at line 57
  []\T1/ptm/m/n/10.95 88
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 61
+Overfull \hbox (10.94998pt too wide) detected at line 58
  []\T1/ptm/m/n/10.95 89
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 59
+ []\T1/ptm/m/n/10.95 89
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 60
+ []\T1/ptm/m/n/10.95 90
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 61
+ []\T1/ptm/m/n/10.95 91
  []
 
 [14]
 Overfull \hbox (10.94998pt too wide) detected at line 62
- []\T1/ptm/m/n/10.95 89
+ []\T1/ptm/m/n/10.95 91
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 63
- []\T1/ptm/m/n/10.95 90
+ []\T1/ptm/m/n/10.95 92
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 64
- []\T1/ptm/m/n/10.95 90
+ []\T1/ptm/m/n/10.95 92
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 65
- []\T1/ptm/m/n/10.95 90
+ []\T1/ptm/m/n/10.95 92
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 66
- []\T1/ptm/m/n/10.95 92
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 67
- []\T1/ptm/m/n/10.95 92
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 68
- []\T1/ptm/m/n/10.95 93
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 69
- []\T1/ptm/m/n/10.95 93
- []
-
-
-Overfull \hbox (10.94998pt too wide) detected at line 70
  []\T1/ptm/m/n/10.95 94
  []
 
 
-Overfull \hbox (10.94998pt too wide) detected at line 71
+Overfull \hbox (10.94998pt too wide) detected at line 67
+ []\T1/ptm/m/n/10.95 94
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 68
  []\T1/ptm/m/n/10.95 95
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 69
+ []\T1/ptm/m/n/10.95 95
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 70
+ []\T1/ptm/m/n/10.95 96
+ []
+
+
+Overfull \hbox (10.94998pt too wide) detected at line 71
+ []\T1/ptm/m/n/10.95 97
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 72
- []\T1/ptm/m/n/10.95 95
+ []\T1/ptm/m/n/10.95 97
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 73
- []\T1/ptm/m/n/10.95 96
+ []\T1/ptm/m/n/10.95 98
  []
 
 
 Overfull \hbox (10.94998pt too wide) detected at line 74
- []\T1/ptm/m/n/10.95 96
+ []\T1/ptm/m/n/10.95 98
  []
 
 )
@@ -2201,7 +2211,7 @@ Overfull \hbox (10.94998pt too wide) detected at line 74
 Chapter 1.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 293.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 294.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 (./operation-manual.ptc
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <9> not available
@@ -2212,42 +2222,42 @@ LaTeX Font Info:    Font shape `T1/pag/b/n' in size <9> not available
 <Pictures/saladecontrol.pdf, id=1030, 598.57918pt x 136.96886pt>
 File: Pictures/saladecontrol.pdf Graphic file (type pdf)
 <use Pictures/saladecontrol.pdf>
-Package pdftex.def Info: Pictures/saladecontrol.pdf  used on input line 302.
+Package pdftex.def Info: Pictures/saladecontrol.pdf  used on input line 303.
 (pdftex.def)             Requested size: 495.07779pt x 113.287pt.
  [17
 
  <./Pictures/saladecontrol.pdf>]
-<Pictures/operations-time-flow.pdf, id=1080, 903.375pt x 401.5pt>
+<Pictures/operations-time-flow.pdf, id=1081, 903.375pt x 401.5pt>
 File: Pictures/operations-time-flow.pdf Graphic file (type pdf)
 <use Pictures/operations-time-flow.pdf>
 Package pdftex.def Info: Pictures/operations-time-flow.pdf  used on input line 
-316.
+317.
 (pdftex.def)             Requested size: 495.07779pt x 220.04149pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 337.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 338.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 337.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 338.
  [18 <./Pictures/operations-time-flow.pdf>]
-<Pictures/dome/dome-old-control-room.jpg, id=1143, 1204.5pt x 903.375pt>
+<Pictures/dome/dome-old-control-room.jpg, id=1144, 1204.5pt x 903.375pt>
 File: Pictures/dome/dome-old-control-room.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-old-control-room.jpg>
 Package pdftex.def Info: Pictures/dome/dome-old-control-room.jpg  used on input
- line 362.
+ line 363.
 (pdftex.def)             Requested size: 346.55293pt x 259.91817pt.
-<Pictures/dome/dome-computer-room.jpg, id=1144, 1204.5pt x 903.375pt>
+<Pictures/dome/dome-computer-room.jpg, id=1145, 1204.5pt x 903.375pt>
 File: Pictures/dome/dome-computer-room.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-computer-room.jpg>
 Package pdftex.def Info: Pictures/dome/dome-computer-room.jpg  used on input li
-ne 369.
+ne 370.
 (pdftex.def)             Requested size: 346.55293pt x 259.91817pt.
-<Pictures/dome/dome.jpg, id=1147, 1204.5pt x 903.375pt>
+<Pictures/dome/dome.jpg, id=1148, 1204.5pt x 903.375pt>
 File: Pictures/dome/dome.jpg Graphic file (type jpg)
 <use Pictures/dome/dome.jpg>
-Package pdftex.def Info: Pictures/dome/dome.jpg  used on input line 376.
+Package pdftex.def Info: Pictures/dome/dome.jpg  used on input line 377.
 (pdftex.def)             Requested size: 346.55293pt x 259.91817pt.
  [19] [20 <./Pictures/dome/dome-old-control-room.jpg> <./Pictures/dome/dome-com
 puter-room.jpg>] [21 <./Pictures/dome/dome.jpg>] [22
@@ -2256,19 +2266,19 @@ puter-room.jpg>] [21 <./Pictures/dome/dome.jpg>] [22
 Chapter 2.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 395.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 396.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 (./operation-manual.ptc)
-<Pictures/operations-time-flow-evening.pdf, id=1232, 903.375pt x 351.3125pt>
+<Pictures/operations-time-flow-evening.pdf, id=1233, 903.375pt x 351.3125pt>
 File: Pictures/operations-time-flow-evening.pdf Graphic file (type pdf)
 <use Pictures/operations-time-flow-evening.pdf>
 Package pdftex.def Info: Pictures/operations-time-flow-evening.pdf  used on inp
-ut line 414.
+ut line 415.
 (pdftex.def)             Requested size: 495.07779pt x 192.5363pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 419.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 420.
 Package hyperref Info: bookmark level for unknown procedure defaults to 0 on in
-put line 419.
+put line 420.
  [23
 
 ] [24 <./Pictures/operations-time-flow-evening.pdf>]
@@ -2282,110 +2292,110 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27]
 [28]
-<Pictures/wfi/wfireboot-0.png, id=1701, 529.98pt x 129.48375pt>
+<Pictures/wfi/wfireboot-0.png, id=1702, 529.98pt x 129.48375pt>
 File: Pictures/wfi/wfireboot-0.png Graphic file (type png)
 <use Pictures/wfi/wfireboot-0.png>
-Package pdftex.def Info: Pictures/wfi/wfireboot-0.png  used on input line 734.
+Package pdftex.def Info: Pictures/wfi/wfireboot-0.png  used on input line 735.
 (pdftex.def)             Requested size: 222.7835pt x 54.4302pt.
-<Pictures/wfi/wfireboot-1.png, id=1703, 236.885pt x 132.495pt>
+<Pictures/wfi/wfireboot-1.png, id=1704, 236.885pt x 132.495pt>
 File: Pictures/wfi/wfireboot-1.png Graphic file (type png)
 <use Pictures/wfi/wfireboot-1.png>
-Package pdftex.def Info: Pictures/wfi/wfireboot-1.png  used on input line 738.
+Package pdftex.def Info: Pictures/wfi/wfireboot-1.png  used on input line 739.
 (pdftex.def)             Requested size: 99.01404pt x 55.38065pt.
-<Pictures/wfi/wfireboot-2.png, id=1704, 623.32875pt x 920.43875pt>
+<Pictures/wfi/wfireboot-2.png, id=1705, 623.32875pt x 920.43875pt>
 File: Pictures/wfi/wfireboot-2.png Graphic file (type png)
 <use Pictures/wfi/wfireboot-2.png>
-Package pdftex.def Info: Pictures/wfi/wfireboot-2.png  used on input line 743.
+Package pdftex.def Info: Pictures/wfi/wfireboot-2.png  used on input line 744.
 (pdftex.def)             Requested size: 180.7061pt x 266.83614pt.
-<Pictures/wfi/wfireboot-3.png, id=1705, 595.22375pt x 756.8275pt>
+<Pictures/wfi/wfireboot-3.png, id=1706, 595.22375pt x 756.8275pt>
 File: Pictures/wfi/wfireboot-3.png Graphic file (type png)
 <use Pictures/wfi/wfireboot-3.png>
-Package pdftex.def Info: Pictures/wfi/wfireboot-3.png  used on input line 747.
+Package pdftex.def Info: Pictures/wfi/wfireboot-3.png  used on input line 748.
 (pdftex.def)             Requested size: 207.93176pt x 264.38547pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 747.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 748.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 747.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 748.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 747.
-<Pictures/wfi/wfireboot-4.png, id=1706, 1029.8475pt x 935.495pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 748.
+<Pictures/wfi/wfireboot-4.png, id=1707, 1029.8475pt x 935.495pt>
 File: Pictures/wfi/wfireboot-4.png Graphic file (type png)
 <use Pictures/wfi/wfireboot-4.png>
-Package pdftex.def Info: Pictures/wfi/wfireboot-4.png  used on input line 752.
+Package pdftex.def Info: Pictures/wfi/wfireboot-4.png  used on input line 753.
 (pdftex.def)             Requested size: 202.9837pt x 184.38353pt.
-<Pictures/wfi/wfireboot-5.png, id=1711, 1281.78876pt x 1015.795pt>
+<Pictures/wfi/wfireboot-5.png, id=1712, 1281.78876pt x 1015.795pt>
 File: Pictures/wfi/wfireboot-5.png Graphic file (type png)
 <use Pictures/wfi/wfireboot-5.png>
-Package pdftex.def Info: Pictures/wfi/wfireboot-5.png  used on input line 758.
+Package pdftex.def Info: Pictures/wfi/wfireboot-5.png  used on input line 759.
 (pdftex.def)             Requested size: 232.68716pt x 184.40068pt.
  [29 <./Pictures/wfi/wfireboot-0.png> <./Pictures/wfi/wfireboot-1.png> <./Pictu
 res/wfi/wfireboot-2.png> <./Pictures/wfi/wfireboot-3.png> <./Pictures/wfi/wfire
 boot-4.png> <./Pictures/wfi/wfireboot-5.png (PNG copy)>]
-<Pictures/dome/dome-auxfunc.png, id=1723, 435.12563pt x 463.7325pt>
+<Pictures/dome/dome-auxfunc.png, id=1724, 435.12563pt x 463.7325pt>
 File: Pictures/dome/dome-auxfunc.png Graphic file (type png)
 <use Pictures/dome/dome-auxfunc.png>
-Package pdftex.def Info: Pictures/dome/dome-auxfunc.png  used on input line 772
+Package pdftex.def Info: Pictures/dome/dome-auxfunc.png  used on input line 773
 .
 (pdftex.def)             Requested size: 158.42307pt x 168.83992pt.
-<Pictures/tcs/tcsreboot-initerror.png, id=1725, 404.51125pt x 124.465pt>
+<Pictures/tcs/tcsreboot-initerror.png, id=1726, 404.51125pt x 124.465pt>
 File: Pictures/tcs/tcsreboot-initerror.png Graphic file (type png)
 <use Pictures/tcs/tcsreboot-initerror.png>
 Package pdftex.def Info: Pictures/tcs/tcsreboot-initerror.png  used on input li
-ne 780.
+ne 781.
 (pdftex.def)             Requested size: 124.76031pt x 38.38623pt.
-<Pictures/tcs/tcsreboot-lccboot.png, id=1726, 441.65pt x 115.43124pt>
+<Pictures/tcs/tcsreboot-lccboot.png, id=1727, 441.65pt x 115.43124pt>
 File: Pictures/tcs/tcsreboot-lccboot.png Graphic file (type png)
 <use Pictures/tcs/tcsreboot-lccboot.png>
 Package pdftex.def Info: Pictures/tcs/tcsreboot-lccboot.png  used on input line
- 783.
+ 784.
 (pdftex.def)             Requested size: 166.34604pt x 43.47682pt.
-<Pictures/tcs/tcsreboot-0.png, id=1728, 607.26875pt x 153.57375pt>
+<Pictures/tcs/tcsreboot-0.png, id=1729, 607.26875pt x 153.57375pt>
 File: Pictures/tcs/tcsreboot-0.png Graphic file (type png)
 <use Pictures/tcs/tcsreboot-0.png>
-Package pdftex.def Info: Pictures/tcs/tcsreboot-0.png  used on input line 786.
+Package pdftex.def Info: Pictures/tcs/tcsreboot-0.png  used on input line 787.
 (pdftex.def)             Requested size: 166.34604pt x 42.0677pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 780--787
+Underfull \hbox (badness 10000) in paragraph at lines 781--788
 [][]
  []
 
-<Pictures/tcs/tcsreboot-1.png, id=1729, 623.32875pt x 920.43875pt>
+<Pictures/tcs/tcsreboot-1.png, id=1730, 623.32875pt x 920.43875pt>
 File: Pictures/tcs/tcsreboot-1.png Graphic file (type png)
 <use Pictures/tcs/tcsreboot-1.png>
-Package pdftex.def Info: Pictures/tcs/tcsreboot-1.png  used on input line 791.
+Package pdftex.def Info: Pictures/tcs/tcsreboot-1.png  used on input line 792.
 (pdftex.def)             Requested size: 178.2283pt x 263.1845pt.
-<Pictures/tcs/tcsreboot-2.jpg, id=1730, 1174.3875pt x 360.34625pt>
+<Pictures/tcs/tcsreboot-2.jpg, id=1731, 1174.3875pt x 360.34625pt>
 File: Pictures/tcs/tcsreboot-2.jpg Graphic file (type jpg)
 <use Pictures/tcs/tcsreboot-2.jpg>
-Package pdftex.def Info: Pictures/tcs/tcsreboot-2.jpg  used on input line 798.
+Package pdftex.def Info: Pictures/tcs/tcsreboot-2.jpg  used on input line 799.
 (pdftex.def)             Requested size: 222.7835pt x 68.35652pt.
-<Pictures/tcs/tcsreboot-5.png, id=1731, 692.5875pt x 182.6825pt>
+<Pictures/tcs/tcsreboot-5.png, id=1732, 692.5875pt x 182.6825pt>
 File: Pictures/tcs/tcsreboot-5.png Graphic file (type png)
 <use Pictures/tcs/tcsreboot-5.png>
-Package pdftex.def Info: Pictures/tcs/tcsreboot-5.png  used on input line 802.
+Package pdftex.def Info: Pictures/tcs/tcsreboot-5.png  used on input line 803.
 (pdftex.def)             Requested size: 222.7835pt x 58.76343pt.
-<Pictures/tcs/tcsreboot-6.png, id=1732, 476.78125pt x 214.8025pt>
+<Pictures/tcs/tcsreboot-6.png, id=1733, 476.78125pt x 214.8025pt>
 File: Pictures/tcs/tcsreboot-6.png Graphic file (type png)
 <use Pictures/tcs/tcsreboot-6.png>
-Package pdftex.def Info: Pictures/tcs/tcsreboot-6.png  used on input line 805.
+Package pdftex.def Info: Pictures/tcs/tcsreboot-6.png  used on input line 806.
 (pdftex.def)             Requested size: 155.94775pt x 70.25902pt.
 
-Overfull \hbox (2.73749pt too wide) in paragraph at lines 798--806
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 799--807
 [][]
  []
 
-<Pictures/tcs/tcsreboot-7.jpg, id=1733, 402.50375pt x 200.75pt>
+<Pictures/tcs/tcsreboot-7.jpg, id=1734, 402.50375pt x 200.75pt>
 File: Pictures/tcs/tcsreboot-7.jpg Graphic file (type jpg)
 <use Pictures/tcs/tcsreboot-7.jpg>
-Package pdftex.def Info: Pictures/tcs/tcsreboot-7.jpg  used on input line 811.
+Package pdftex.def Info: Pictures/tcs/tcsreboot-7.jpg  used on input line 812.
 (pdftex.def)             Requested size: 118.81805pt x 59.26054pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--813
+Underfull \hbox (badness 10000) in paragraph at lines 769--814
 []$[]$  $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 768--813
+Underfull \hbox (badness 10000) in paragraph at lines 769--814
 []$  $[]$
  []
 
@@ -2394,85 +2404,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 768--813
 tures/tcs/tcsreboot-1.png> <./Pictures/tcs/tcsreboot-2.jpg> <./Pictures/tcs/tcs
 reboot-5.png> <./Pictures/tcs/tcsreboot-6.png> <./Pictures/tcs/tcsreboot-7.jpg>
 ]
-<Pictures/feros/ferosreboot-0.png, id=1754, 695.59875pt x 96.36pt>
+<Pictures/feros/ferosreboot-0.png, id=1755, 695.59875pt x 96.36pt>
 File: Pictures/feros/ferosreboot-0.png Graphic file (type png)
 <use Pictures/feros/ferosreboot-0.png>
 Package pdftex.def Info: Pictures/feros/ferosreboot-0.png  used on input line 8
-27.
+28.
 (pdftex.def)             Requested size: 306.9458pt x 42.52055pt.
-<Pictures/feros/ferosreboot-1.png, id=1757, 236.885pt x 132.495pt>
+<Pictures/feros/ferosreboot-1.png, id=1758, 236.885pt x 132.495pt>
 File: Pictures/feros/ferosreboot-1.png Graphic file (type png)
 <use Pictures/feros/ferosreboot-1.png>
 Package pdftex.def Info: Pictures/feros/ferosreboot-1.png  used on input line 8
-30.
+31.
 (pdftex.def)             Requested size: 89.11037pt x 49.84116pt.
-<Pictures/feros/ferosreboot-2.png, id=1758, 623.32875pt x 920.43875pt>
+<Pictures/feros/ferosreboot-2.png, id=1759, 623.32875pt x 920.43875pt>
 File: Pictures/feros/ferosreboot-2.png Graphic file (type png)
 <use Pictures/feros/ferosreboot-2.png>
 Package pdftex.def Info: Pictures/feros/ferosreboot-2.png  used on input line 8
-34.
+35.
 (pdftex.def)             Requested size: 173.28024pt x 255.86719pt.
-<Pictures/feros/ferosreboot-3.png, id=1759, 595.22375pt x 756.8275pt>
+<Pictures/feros/ferosreboot-3.png, id=1760, 595.22375pt x 756.8275pt>
 File: Pictures/feros/ferosreboot-3.png Graphic file (type png)
 <use Pictures/feros/ferosreboot-3.png>
 Package pdftex.def Info: Pictures/feros/ferosreboot-3.png  used on input line 8
-37.
+38.
 (pdftex.def)             Requested size: 198.02809pt x 251.78633pt.
-<Pictures/feros/ferosreboot-4.png, id=1760, 484.81125pt x 555.07375pt>
+<Pictures/feros/ferosreboot-4.png, id=1761, 484.81125pt x 555.07375pt>
 File: Pictures/feros/ferosreboot-4.png Graphic file (type png)
 <use Pictures/feros/ferosreboot-4.png>
 Package pdftex.def Info: Pictures/feros/ferosreboot-4.png  used on input line 8
-41.
+42.
 (pdftex.def)             Requested size: 153.4729pt x 175.71306pt.
-<Pictures/feros/ferosreboot-5.png, id=1761, 1283.79625pt x 1022.82124pt>
+<Pictures/feros/ferosreboot-5.png, id=1762, 1283.79625pt x 1022.82124pt>
 File: Pictures/feros/ferosreboot-5.png Graphic file (type png)
 <use Pictures/feros/ferosreboot-5.png>
 Package pdftex.def Info: Pictures/feros/ferosreboot-5.png  used on input line 8
-45.
+46.
 (pdftex.def)             Requested size: 222.7835pt x 177.48251pt.
  [31 <./Pictures/feros/ferosreboot-0.png> <./Pictures/feros/ferosreboot-1.png> 
 <./Pictures/feros/ferosreboot-2.png> <./Pictures/feros/ferosreboot-3.png> <./Pi
 ctures/feros/ferosreboot-4.png> <./Pictures/feros/ferosreboot-5.png (PNG copy)>
 ]
-<Pictures/ag/ag-changecam.png, id=1780, 899.36pt x 641.39626pt>
+<Pictures/ag/ag-changecam.png, id=1781, 899.36pt x 641.39626pt>
 File: Pictures/ag/ag-changecam.png Graphic file (type png)
 <use Pictures/ag/ag-changecam.png>
-Package pdftex.def Info: Pictures/ag/ag-changecam.png  used on input line 854.
+Package pdftex.def Info: Pictures/ag/ag-changecam.png  used on input line 855.
 (pdftex.def)             Requested size: 346.55293pt x 247.14873pt.
-<Pictures/drs/DiskMonit.png, id=1790, 618.31pt x 277.035pt>
+<Pictures/drs/DiskMonit.png, id=1791, 618.31pt x 277.035pt>
 File: Pictures/drs/DiskMonit.png Graphic file (type png)
 <use Pictures/drs/DiskMonit.png>
-Package pdftex.def Info: Pictures/drs/DiskMonit.png  used on input line 868.
+Package pdftex.def Info: Pictures/drs/DiskMonit.png  used on input line 869.
 (pdftex.def)             Requested size: 148.52484pt x 66.54471pt.
-<Pictures/drs/drs-changedate.png, id=1793, 1281.78876pt x 951.555pt>
+<Pictures/drs/drs-changedate.png, id=1794, 1281.78876pt x 951.555pt>
 File: Pictures/drs/drs-changedate.png Graphic file (type png)
 <use Pictures/drs/drs-changedate.png>
 Package pdftex.def Info: Pictures/drs/drs-changedate.png  used on input line 87
-6.
+7.
 (pdftex.def)             Requested size: 222.7835pt x 165.37756pt.
-<Pictures/tcs/tcs-wfi-connection-error.png, id=1799, 2569.6pt x 1027.84pt>
+<Pictures/tcs/tcs-wfi-connection-error.png, id=1800, 2569.6pt x 1027.84pt>
 File: Pictures/tcs/tcs-wfi-connection-error.png Graphic file (type png)
 <use Pictures/tcs/tcs-wfi-connection-error.png>
 Package pdftex.def Info: Pictures/tcs/tcs-wfi-connection-error.png  used on inp
-ut line 888.
+ut line 889.
 (pdftex.def)             Requested size: 495.07779pt x 198.02057pt.
-<Pictures/wfi/wfi-ccs-alarm.png, id=1802, 995.72pt x 302.12875pt>
+<Pictures/wfi/wfi-ccs-alarm.png, id=1803, 995.72pt x 302.12875pt>
 File: Pictures/wfi/wfi-ccs-alarm.png Graphic file (type png)
 <use Pictures/wfi/wfi-ccs-alarm.png>
-Package pdftex.def Info: Pictures/wfi/wfi-ccs-alarm.png  used on input line 896
+Package pdftex.def Info: Pictures/wfi/wfi-ccs-alarm.png  used on input line 897
 .
 (pdftex.def)             Requested size: 297.04968pt x 90.1322pt.
-<Pictures/grond/grond-rtd-flips.png, id=1807, 551.05875pt x 341.275pt>
+<Pictures/grond/grond-rtd-flips.png, id=1808, 551.05875pt x 341.275pt>
 File: Pictures/grond/grond-rtd-flips.png Graphic file (type png)
 <use Pictures/grond/grond-rtd-flips.png>
 Package pdftex.def Info: Pictures/grond/grond-rtd-flips.png  used on input line
- 906.
+ 907.
 (pdftex.def)             Requested size: 297.04968pt x 183.9733pt.
-<Pictures/grond/grond-irtd-flips.png, id=1808, 201.75375pt x 352.31625pt>
+<Pictures/grond/grond-irtd-flips.png, id=1809, 201.75375pt x 352.31625pt>
 File: Pictures/grond/grond-irtd-flips.png Graphic file (type png)
 <use Pictures/grond/grond-irtd-flips.png>
 Package pdftex.def Info: Pictures/grond/grond-irtd-flips.png  used on input lin
-e 908.
+e 909.
 (pdftex.def)             Requested size: 99.01404pt x 172.90526pt.
  [32 <./Pictures/ag/ag-changecam.png> <./Pictures/drs/DiskMonit.png>]
 [33 <./Pictures/drs/drs-changedate.png> <./Pictures/tcs/tcs-wfi-connection-erro
@@ -2481,12 +2491,12 @@ s.png> <./Pictures/grond/grond-irtd-flips.png>]
 Chapter 3.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 918.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 919.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 (./operation-manual.ptc) [35
 
 ]
-Overfull \hbox (13.61234pt too wide) in paragraph at lines 967--969
+Overfull \hbox (13.61234pt too wide) in paragraph at lines 968--970
 []\T1/ptm/m/n/10.95 (-20) Fetch [][][]\T1/cmtt/m/n/10.95 bob[][] \T1/ptm/m/n/10
 .95 (-20) from file (win-dow menu \T1/cmtt/m/n/10.95 File$\OMS/ztmcm/m/n/10.95 
 !$\T1/cmtt/m/n/10.95 Load OBs$\OMS/ztmcm/m/n/10.95 !$\T1/cmtt/m/n/10.95 From fi
@@ -2504,7 +2514,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 4.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 1032.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 1033.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 (./operation-manual.ptc) [39] [40] [41] [42
 
@@ -2512,85 +2522,85 @@ Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 1032.
 Chapter 5.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 1169.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 1170.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 (./operation-manual.ptc)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [43]
 LaTeX Font Info:    Font shape `T1/pag/bx/n' in size <10> not available
-(Font)              Font shape `T1/pag/b/n' tried instead on input line 1280.
+(Font)              Font shape `T1/pag/b/n' tried instead on input line 1281.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <10> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 1280.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 1281.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
 [45]
-<Pictures/wfi/focus/wfi-focus-01-ob-selection.jpg, id=2359, 627.34375pt x 431.6
+<Pictures/wfi/focus/wfi-focus-01-ob-selection.jpg, id=2360, 627.34375pt x 431.6
 125pt>
 File: Pictures/wfi/focus/wfi-focus-01-ob-selection.jpg Graphic file (type jpg)
 <use Pictures/wfi/focus/wfi-focus-01-ob-selection.jpg>
 Package pdftex.def Info: Pictures/wfi/focus/wfi-focus-01-ob-selection.jpg  used
- on input line 1361.
+ on input line 1362.
 (pdftex.def)             Requested size: 222.7835pt x 153.27289pt.
-<Pictures/wfi/focus/wfi-focus-02-start-guiding.jpg, id=2360, 629.35126pt x 431.
+<Pictures/wfi/focus/wfi-focus-02-start-guiding.jpg, id=2361, 629.35126pt x 431.
 6125pt>
 File: Pictures/wfi/focus/wfi-focus-02-start-guiding.jpg Graphic file (type jpg)
 
 <use Pictures/wfi/focus/wfi-focus-02-start-guiding.jpg>
 Package pdftex.def Info: Pictures/wfi/focus/wfi-focus-02-start-guiding.jpg  use
-d on input line 1363.
+d on input line 1364.
 (pdftex.def)             Requested size: 222.7835pt x 152.78554pt.
-<Pictures/wfi/focus/wfi-focus-03-subexposures.jpg, id=2361, 629.35126pt x 421.5
+<Pictures/wfi/focus/wfi-focus-03-subexposures.jpg, id=2362, 629.35126pt x 421.5
 75pt>
 File: Pictures/wfi/focus/wfi-focus-03-subexposures.jpg Graphic file (type jpg)
 <use Pictures/wfi/focus/wfi-focus-03-subexposures.jpg>
 Package pdftex.def Info: Pictures/wfi/focus/wfi-focus-03-subexposures.jpg  used
- on input line 1365.
+ on input line 1366.
 (pdftex.def)             Requested size: 222.7835pt x 149.23239pt.
-<Pictures/wfi/focus/wfi-focus-04-click-upper-star.jpg, id=2362, 629.35126pt x 4
+<Pictures/wfi/focus/wfi-focus-04-click-upper-star.jpg, id=2363, 629.35126pt x 4
 21.575pt>
 File: Pictures/wfi/focus/wfi-focus-04-click-upper-star.jpg Graphic file (type j
 pg)
 <use Pictures/wfi/focus/wfi-focus-04-click-upper-star.jpg>
 Package pdftex.def Info: Pictures/wfi/focus/wfi-focus-04-click-upper-star.jpg  
-used on input line 1367.
+used on input line 1368.
 (pdftex.def)             Requested size: 222.7835pt x 149.23239pt.
-<Pictures/wfi/focus/wfi-focus-05-measurement-1.jpg, id=2364, 1139.25626pt x 602
+<Pictures/wfi/focus/wfi-focus-05-measurement-1.jpg, id=2365, 1139.25626pt x 602
 .25pt>
 File: Pictures/wfi/focus/wfi-focus-05-measurement-1.jpg Graphic file (type jpg)
 
 <use Pictures/wfi/focus/wfi-focus-05-measurement-1.jpg>
 Package pdftex.def Info: Pictures/wfi/focus/wfi-focus-05-measurement-1.jpg  use
-d on input line 1369.
+d on input line 1370.
 (pdftex.def)             Requested size: 222.7835pt x 117.7645pt.
-<Pictures/wfi/focus/wfi-focus-06-measurement-2.jpg, id=2365, 1139.25626pt x 667
+<Pictures/wfi/focus/wfi-focus-06-measurement-2.jpg, id=2366, 1139.25626pt x 667
 .49374pt>
 File: Pictures/wfi/focus/wfi-focus-06-measurement-2.jpg Graphic file (type jpg)
 
 <use Pictures/wfi/focus/wfi-focus-06-measurement-2.jpg>
 Package pdftex.def Info: Pictures/wfi/focus/wfi-focus-06-measurement-2.jpg  use
-d on input line 1371.
+d on input line 1372.
 (pdftex.def)             Requested size: 222.7835pt x 130.52232pt.
-<Pictures/wfi/focus/wfi-focus-07-log-focus-value.jpg, id=2366, 629.35126pt x 42
+<Pictures/wfi/focus/wfi-focus-07-log-focus-value.jpg, id=2367, 629.35126pt x 42
 1.575pt>
 File: Pictures/wfi/focus/wfi-focus-07-log-focus-value.jpg Graphic file (type jp
 g)
 <use Pictures/wfi/focus/wfi-focus-07-log-focus-value.jpg>
 Package pdftex.def Info: Pictures/wfi/focus/wfi-focus-07-log-focus-value.jpg  u
-sed on input line 1373.
+sed on input line 1374.
 (pdftex.def)             Requested size: 222.7835pt x 149.23239pt.
-<Pictures/wfi/focus/wfi-focus-08-ob-finished.jpg, id=2367, 629.35126pt x 421.57
+<Pictures/wfi/focus/wfi-focus-08-ob-finished.jpg, id=2368, 629.35126pt x 421.57
 5pt>
 File: Pictures/wfi/focus/wfi-focus-08-ob-finished.jpg Graphic file (type jpg)
 <use Pictures/wfi/focus/wfi-focus-08-ob-finished.jpg>
 Package pdftex.def Info: Pictures/wfi/focus/wfi-focus-08-ob-finished.jpg  used 
-on input line 1375.
+on input line 1376.
 (pdftex.def)             Requested size: 222.7835pt x 149.23239pt.
 
 
-LaTeX Warning: Float too large for page by 33.09311pt on input line 1378.
+LaTeX Warning: Float too large for page by 33.09311pt on input line 1379.
 
 
 Underfull \vbox (badness 5417) has occurred while \output is active []
@@ -2607,458 +2617,509 @@ s/wfi/focus/wfi-focus-08-ob-finished.jpg>] [48] [49] [50] [51] [52
 Chapter 6.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 1674.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 1675.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 (./operation-manual.ptc) [53]
-Underfull \vbox (badness 1082) has occurred while \output is active []
+<Pictures/wfi/qso/wfi-qso-01-confirm-continue.jpg, id=2772, 629.35126pt x 401.5
+pt>
+File: Pictures/wfi/qso/wfi-qso-01-confirm-continue.jpg Graphic file (type jpg)
+<use Pictures/wfi/qso/wfi-qso-01-confirm-continue.jpg>
+Package pdftex.def Info: Pictures/wfi/qso/wfi-qso-01-confirm-continue.jpg  used
+ on input line 1747.
+(pdftex.def)             Requested size: 222.7835pt x 142.12608pt.
+<Pictures/wfi/qso/wfi-qso-02-pick.jpg, id=2773, 629.35126pt x 401.5pt>
+File: Pictures/wfi/qso/wfi-qso-02-pick.jpg Graphic file (type jpg)
+<use Pictures/wfi/qso/wfi-qso-02-pick.jpg>
+Package pdftex.def Info: Pictures/wfi/qso/wfi-qso-02-pick.jpg  used on input li
+ne 1749.
+(pdftex.def)             Requested size: 222.7835pt x 142.12608pt.
+<Pictures/wfi/qso/wfi-qso-03-coordinates.jpg, id=2774, 629.35126pt x 401.5pt>
+File: Pictures/wfi/qso/wfi-qso-03-coordinates.jpg Graphic file (type jpg)
+<use Pictures/wfi/qso/wfi-qso-03-coordinates.jpg>
+Package pdftex.def Info: Pictures/wfi/qso/wfi-qso-03-coordinates.jpg  used on i
+nput line 1750.
+(pdftex.def)             Requested size: 222.7835pt x 142.12608pt.
+<Pictures/wfi/qso/wfi-qso-04-do-offset.jpg, id=2775, 629.35126pt x 401.5pt>
+File: Pictures/wfi/qso/wfi-qso-04-do-offset.jpg Graphic file (type jpg)
+<use Pictures/wfi/qso/wfi-qso-04-do-offset.jpg>
+Package pdftex.def Info: Pictures/wfi/qso/wfi-qso-04-do-offset.jpg  used on inp
+ut line 1752.
+(pdftex.def)             Requested size: 222.7835pt x 142.12608pt.
 
- [54]
-[55] [56]
-<Pictures/ag/PickRef.png, id=2960, 464.73625pt x 528.97626pt>
-File: Pictures/ag/PickRef.png Graphic file (type png)
-<use Pictures/ag/PickRef.png>
-Package pdftex.def Info: Pictures/ag/PickRef.png  used on input line 1957.
-(pdftex.def)             Requested size: 247.5389pt x 281.75244pt.
- [57 <./Pictures/ag/PickRef.png>] [58]
-Underfull \vbox (badness 3209) has occurred while \output is active []
-
- [59]
-[60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+ [54 <./Pictures/wfi/qso/wfi-qso-01-confirm-continue.jpg> <./Pictures/wfi/qso/w
+fi-qso-02-pick.jpg> <./Pictures/wfi/qso/wfi-qso-03-coordinates.jpg> <./Pictures
+/wfi/qso/wfi-qso-04-do-offset.jpg>]
+<Pictures/wfi/ag/wfi-ag-01-turnAG.jpg, id=2829, 629.35126pt x 301.125pt>
+File: Pictures/wfi/ag/wfi-ag-01-turnAG.jpg Graphic file (type jpg)
+<use Pictures/wfi/ag/wfi-ag-01-turnAG.jpg>
+Package pdftex.def Info: Pictures/wfi/ag/wfi-ag-01-turnAG.jpg  used on input li
+ne 1822.
+(pdftex.def)             Requested size: 222.7835pt x 106.59456pt.
+<Pictures/wfi/ag/wfi-ag-02-retrieve-field.jpg, id=2831, 629.35126pt x 301.125pt
+>
+File: Pictures/wfi/ag/wfi-ag-02-retrieve-field.jpg Graphic file (type jpg)
+<use Pictures/wfi/ag/wfi-ag-02-retrieve-field.jpg>
+Package pdftex.def Info: Pictures/wfi/ag/wfi-ag-02-retrieve-field.jpg  used on 
+input line 1824.
+(pdftex.def)             Requested size: 222.7835pt x 106.59456pt.
+<Pictures/wfi/ag/wfi-ag-03-pick.jpg, id=2833, 1254.6875pt x 451.6875pt>
+File: Pictures/wfi/ag/wfi-ag-03-pick.jpg Graphic file (type jpg)
+<use Pictures/wfi/ag/wfi-ag-03-pick.jpg>
+Package pdftex.def Info: Pictures/wfi/ag/wfi-ag-03-pick.jpg  used on input line
+ 1825.
+(pdftex.def)             Requested size: 396.06374pt x 142.58556pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+[56 <./Pictures/wfi/ag/wfi-ag-01-turnAG.jpg> <./Pictures/wfi/ag/wfi-ag-02-retri
+eve-field.jpg> <./Pictures/wfi/ag/wfi-ag-03-pick.jpg>] [57]
+<Pictures/ag/PickRef.png, id=3002, 464.73625pt x 528.97626pt>
+File: Pictures/ag/PickRef.png Graphic file (type png)
+<use Pictures/ag/PickRef.png>
+Package pdftex.def Info: Pictures/ag/PickRef.png  used on input line 1985.
+(pdftex.def)             Requested size: 247.5389pt x 281.75244pt.
+ [58] [59 <./Pictures/ag/PickRef.png>]
+Underfull \vbox (badness 3525) has occurred while \output is active []
+
+ [60]
+Underfull \vbox (badness 3895) has occurred while \output is active []
+
  [61]
-[62] [63] [64
+[62] [63] [64] [65] [66
 
 ]
 Chapter 7.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 2369.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 2397.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
-(./operation-manual.ptc) [65] [66] [67] [68
+(./operation-manual.ptc) [67] [68] [69] [70
 
 ]
 Chapter 8.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 2480.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 2508.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
-(./operation-manual.ptc) [69] [70]
+(./operation-manual.ptc) [71] [72]
 Chapter 9.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 2544.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 2572.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
-(./operation-manual.ptc) [71
+(./operation-manual.ptc) [73
 
-] [72]
+] [74]
 Chapter 10.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 2652.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 2680.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 (./operation-manual.ptc)
-<Pictures/feros/l2p2cam-rack.jpg, id=3730, 1204.5pt x 2478.25874pt>
+<Pictures/feros/l2p2cam-rack.jpg, id=3781, 1204.5pt x 2478.25874pt>
 File: Pictures/feros/l2p2cam-rack.jpg Graphic file (type jpg)
 <use Pictures/feros/l2p2cam-rack.jpg>
-Package pdftex.def Info: Pictures/feros/l2p2cam-rack.jpg  used on input line 26
-87.
+Package pdftex.def Info: Pictures/feros/l2p2cam-rack.jpg  used on input line 27
+15.
 (pdftex.def)             Requested size: 148.52484pt x 305.5841pt.
-<Pictures/feros/l2p2cam-front.jpg, id=3731, 585.18625pt x 1204.5pt>
+<Pictures/feros/l2p2cam-front.jpg, id=3782, 585.18625pt x 1204.5pt>
 File: Pictures/feros/l2p2cam-front.jpg Graphic file (type jpg)
 <use Pictures/feros/l2p2cam-front.jpg>
 Package pdftex.def Info: Pictures/feros/l2p2cam-front.jpg  used on input line 2
-691.
+719.
 (pdftex.def)             Requested size: 148.52484pt x 305.70067pt.
-<Pictures/feros/l2p2cam-back.jpg, id=3733, 585.18625pt x 1204.5pt>
+<Pictures/feros/l2p2cam-back.jpg, id=3784, 585.18625pt x 1204.5pt>
 File: Pictures/feros/l2p2cam-back.jpg Graphic file (type jpg)
 <use Pictures/feros/l2p2cam-back.jpg>
-Package pdftex.def Info: Pictures/feros/l2p2cam-back.jpg  used on input line 26
-95.
+Package pdftex.def Info: Pictures/feros/l2p2cam-back.jpg  used on input line 27
+23.
 (pdftex.def)             Requested size: 148.52484pt x 305.70067pt.
-<Pictures/ag/ag-scanei-0.png, id=3739, 474.77374pt x 191.71625pt>
+<Pictures/ag/ag-scanei-0.png, id=3790, 474.77374pt x 191.71625pt>
 File: Pictures/ag/ag-scanei-0.png Graphic file (type png)
 <use Pictures/ag/ag-scanei-0.png>
-Package pdftex.def Info: Pictures/ag/ag-scanei-0.png  used on input line 2704.
+Package pdftex.def Info: Pictures/ag/ag-scanei-0.png  used on input line 2732.
 (pdftex.def)             Requested size: 237.63522pt x 95.95734pt.
-<Pictures/ag/ag-scanei-1.png, id=3740, 499.8675pt x 519.9425pt>
+<Pictures/ag/ag-scanei-1.png, id=3791, 499.8675pt x 519.9425pt>
 File: Pictures/ag/ag-scanei-1.png Graphic file (type png)
 <use Pictures/ag/ag-scanei-1.png>
-Package pdftex.def Info: Pictures/ag/ag-scanei-1.png  used on input line 2707.
+Package pdftex.def Info: Pictures/ag/ag-scanei-1.png  used on input line 2735.
 (pdftex.def)             Requested size: 237.63522pt x 247.18153pt.
 
-Overfull \hbox (2.73749pt too wide) in paragraph at lines 2704--2708
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 2732--2736
 [][] 
  []
 
 
-Overfull \hbox (2.73749pt too wide) in paragraph at lines 2704--2708
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 2732--2736
 [][] 
  []
 
-<Pictures/ag/ag-scanei-2.png, id=3743, 546.04pt x 831.105pt>
+<Pictures/ag/ag-scanei-2.png, id=3794, 546.04pt x 831.105pt>
 File: Pictures/ag/ag-scanei-2.png Graphic file (type png)
 <use Pictures/ag/ag-scanei-2.png>
-Package pdftex.def Info: Pictures/ag/ag-scanei-2.png  used on input line 2713.
+Package pdftex.def Info: Pictures/ag/ag-scanei-2.png  used on input line 2741.
 (pdftex.def)             Requested size: 237.63522pt x 361.69261pt.
 
-Overfull \hbox (2.73749pt too wide) in paragraph at lines 2713--2714
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 2741--2742
 [][] 
  []
 
-[73
+[75
 
-] [74 <./Pictures/feros/l2p2cam-rack.jpg> <./Pictures/feros/l2p2cam-front.jpg> 
-<./Pictures/feros/l2p2cam-back.jpg>] [75 <./Pictures/ag/ag-scanei-0.png> <./Pic
-tures/ag/ag-scanei-1.png> <./Pictures/ag/ag-scanei-2.png>] [76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [77]
-[78]
+] [76 <./Pictures/feros/l2p2cam-rack.jpg> <./Pictures/feros/l2p2cam-front.jpg> 
+<./Pictures/feros/l2p2cam-back.jpg>] [77 <./Pictures/ag/ag-scanei-0.png> <./Pic
+tures/ag/ag-scanei-1.png> <./Pictures/ag/ag-scanei-2.png>] [78]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [79]
+[80]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
 Underfull \vbox (badness 3701) has occurred while \output is active []
 
- [80]
-Overfull \hbox (7.59644pt too wide) in paragraph at lines 3080--3081
+ [82]
+Overfull \hbox (7.59644pt too wide) in paragraph at lines 3108--3109
 []\T1/ptm/m/n/10.95 (-20) On the [][][]\T1/cmtt/m/n/10.95 WFI ICS Control[][] \
-T1/ptm/m/n/10.95 (-20) (Fig. [][]11.6[][], p. [][]105[][]), se-lect the fil-tre
+T1/ptm/m/n/10.95 (-20) (Fig. [][]11.6[][], p. [][]107[][]), se-lect the fil-tre
  on the \T1/cmtt/m/n/10.95 Filter \T1/ptm/m/n/10.95 (-20) op-tion be-low \T1/cm
 tt/m/n/10.95 Setup Instrument\T1/ptm/m/n/10.95 (-20) .[] 
  []
 
-[81] [82] [83]
-<Pictures/drs/datasubscriber.png, id=4305, 427.5975pt x 380.42125pt>
+[83] [84] [85]
+<Pictures/drs/datasubscriber.png, id=4357, 427.5975pt x 380.42125pt>
 File: Pictures/drs/datasubscriber.png Graphic file (type png)
 <use Pictures/drs/datasubscriber.png>
-Package pdftex.def Info: Pictures/drs/datasubscriber.png  used on input line 32
-96.
+Package pdftex.def Info: Pictures/drs/datasubscriber.png  used on input line 33
+24.
 (pdftex.def)             Requested size: 237.63522pt x 211.4149pt.
 
-Overfull \hbox (2.73749pt too wide) in paragraph at lines 3296--3297
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 3324--3325
 [][] 
  []
 
-<Pictures/drs/datasubscriberconfig.png, id=4308, 425.59pt x 648.4225pt>
+<Pictures/drs/datasubscriberconfig.png, id=4360, 425.59pt x 648.4225pt>
 File: Pictures/drs/datasubscriberconfig.png Graphic file (type png)
 <use Pictures/drs/datasubscriberconfig.png>
 Package pdftex.def Info: Pictures/drs/datasubscriberconfig.png  used on input l
-ine 3303.
+ine 3331.
 (pdftex.def)             Requested size: 237.63522pt x 362.06534pt.
 
-Overfull \hbox (5.47498pt too wide) in paragraph at lines 3303--3304
+Overfull \hbox (5.47498pt too wide) in paragraph at lines 3331--3332
 [][] 
  []
 
-[84] [85 <./Pictures/drs/datasubscriber.png> <./Pictures/drs/datasubscriberconf
+[86] [87 <./Pictures/drs/datasubscriber.png> <./Pictures/drs/datasubscriberconf
 ig.png>]
-<Pictures/tcs/TCS-telemetry.png, id=4360, 1266.7325pt x 936.49875pt>
+<Pictures/tcs/TCS-telemetry.png, id=4410, 1266.7325pt x 936.49875pt>
 File: Pictures/tcs/TCS-telemetry.png Graphic file (type png)
 <use Pictures/tcs/TCS-telemetry.png>
-Package pdftex.def Info: Pictures/tcs/TCS-telemetry.png  used on input line 336
-8.
+Package pdftex.def Info: Pictures/tcs/TCS-telemetry.png  used on input line 339
+6.
 (pdftex.def)             Requested size: 237.63522pt x 175.67882pt.
 
-Overfull \hbox (2.73749pt too wide) in paragraph at lines 3368--3369
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 3396--3397
 [][] 
  []
 
-<Pictures/feros/FEROS-telemetry.png, id=4365, 904.37875pt x 843.15pt>
+<Pictures/feros/FEROS-telemetry.png, id=4415, 904.37875pt x 843.15pt>
 File: Pictures/feros/FEROS-telemetry.png Graphic file (type png)
 <use Pictures/feros/FEROS-telemetry.png>
 Package pdftex.def Info: Pictures/feros/FEROS-telemetry.png  used on input line
- 3375.
+ 3403.
 (pdftex.def)             Requested size: 237.63522pt x 221.54247pt.
 
-Overfull \hbox (5.47498pt too wide) in paragraph at lines 3375--3376
+Overfull \hbox (5.47498pt too wide) in paragraph at lines 3403--3404
 [][] 
  []
 
-<Pictures/wfi/wfielectronics-1.png, id=4373, 1284.8pt x 724.7075pt>
+<Pictures/wfi/wfielectronics-1.png, id=4423, 1284.8pt x 724.7075pt>
 File: Pictures/wfi/wfielectronics-1.png Graphic file (type png)
 <use Pictures/wfi/wfielectronics-1.png>
 Package pdftex.def Info: Pictures/wfi/wfielectronics-1.png  used on input line 
-3391.
+3419.
 (pdftex.def)             Requested size: 222.7835pt x 125.65355pt.
-<Pictures/wfi/wfielectronics-2.png, id=4374, 1284.8pt x 724.7075pt>
+<Pictures/wfi/wfielectronics-2.png, id=4424, 1284.8pt x 724.7075pt>
 File: Pictures/wfi/wfielectronics-2.png Graphic file (type png)
 <use Pictures/wfi/wfielectronics-2.png>
 Package pdftex.def Info: Pictures/wfi/wfielectronics-2.png  used on input line 
-3393.
+3421.
 (pdftex.def)             Requested size: 222.7835pt x 125.65355pt.
-[86 <./Pictures/tcs/TCS-telemetry.png> <./Pictures/feros/FEROS-telemetry.png> <
+[88 <./Pictures/tcs/TCS-telemetry.png> <./Pictures/feros/FEROS-telemetry.png> <
 ./Pictures/wfi/wfielectronics-1.png> <./Pictures/wfi/wfielectronics-2.png>]
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3453.
-<Pictures/tcs/TCS-l2p2cam.jpg, id=4413, 803.0pt x 390.45876pt>
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 3481.
+<Pictures/tcs/TCS-l2p2cam.jpg, id=4463, 803.0pt x 390.45876pt>
 File: Pictures/tcs/TCS-l2p2cam.jpg Graphic file (type jpg)
 <use Pictures/tcs/TCS-l2p2cam.jpg>
-Package pdftex.def Info: Pictures/tcs/TCS-l2p2cam.jpg  used on input line 3456.
+Package pdftex.def Info: Pictures/tcs/TCS-l2p2cam.jpg  used on input line 3484.
 
 (pdftex.def)             Requested size: 495.07779pt x 240.73543pt.
 
-[87]
+[89]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88 <./Pictures/tcs/TCS-l2p2cam.jpg>]
-<Pictures/dome/dome-tel-local-to-remote.jpg, id=4507, 803.0pt x 1071.00125pt>
+ [90 <./Pictures/tcs/TCS-l2p2cam.jpg>]
+<Pictures/dome/dome-tel-local-to-remote.jpg, id=4558, 803.0pt x 1071.00125pt>
 File: Pictures/dome/dome-tel-local-to-remote.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-tel-local-to-remote.jpg>
 Package pdftex.def Info: Pictures/dome/dome-tel-local-to-remote.jpg  used on in
-put line 3534.
+put line 3562.
 (pdftex.def)             Requested size: 163.37657pt x 217.90611pt.
-<Pictures/dome/dome-vme-reboot.jpg, id=4508, 803.0pt x 718.685pt>
+<Pictures/dome/dome-vme-reboot.jpg, id=4559, 803.0pt x 718.685pt>
 File: Pictures/dome/dome-vme-reboot.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-vme-reboot.jpg>
 Package pdftex.def Info: Pictures/dome/dome-vme-reboot.jpg  used on input line 
-3538.
+3566.
 (pdftex.def)             Requested size: 163.37657pt x 146.22379pt.
-<Pictures/dome/dome-vme-monitor.jpg, id=4510, 1057.9525pt x 595.22375pt>
+<Pictures/dome/dome-vme-monitor.jpg, id=4561, 1057.9525pt x 595.22375pt>
 File: Pictures/dome/dome-vme-monitor.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-vme-monitor.jpg>
 Package pdftex.def Info: Pictures/dome/dome-vme-monitor.jpg  used on input line
- 3542.
+ 3570.
 (pdftex.def)             Requested size: 163.37657pt x 91.91359pt.
- [89 <./Pictures/dome/dome-tel-local-to-remote.jpg> <./Pictures/dome/dome-vme-r
+ [91 <./Pictures/dome/dome-tel-local-to-remote.jpg> <./Pictures/dome/dome-vme-r
 eboot.jpg> <./Pictures/dome/dome-vme-monitor.jpg>]
-<Pictures/dome/dome-adam.jpg, id=4565, 803.0pt x 602.25pt>
+<Pictures/dome/dome-adam.jpg, id=4616, 803.0pt x 602.25pt>
 File: Pictures/dome/dome-adam.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-adam.jpg>
-Package pdftex.def Info: Pictures/dome/dome-adam.jpg  used on input line 3597.
+Package pdftex.def Info: Pictures/dome/dome-adam.jpg  used on input line 3625.
 (pdftex.def)             Requested size: 346.55293pt x 259.91817pt.
-<Pictures/dome/dome-control.jpg, id=4575, 1204.5pt x 903.375pt>
+<Pictures/dome/dome-control.jpg, id=4626, 1204.5pt x 903.375pt>
 File: Pictures/dome/dome-control.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-control.jpg>
-Package pdftex.def Info: Pictures/dome/dome-control.jpg  used on input line 362
-6.
+Package pdftex.def Info: Pictures/dome/dome-control.jpg  used on input line 365
+4.
 (pdftex.def)             Requested size: 297.04968pt x 222.78307pt.
 
-[90] [91 <./Pictures/dome/dome-adam.jpg> <./Pictures/dome/dome-control.jpg>]
-<Pictures/grond/unstucking-grond-m3-0.png, id=4608, 277.035pt x 365.365pt>
+[92] [93 <./Pictures/dome/dome-adam.jpg> <./Pictures/dome/dome-control.jpg>]
+<Pictures/grond/unstucking-grond-m3-0.png, id=4659, 277.035pt x 365.365pt>
 File: Pictures/grond/unstucking-grond-m3-0.png Graphic file (type png)
 <use Pictures/grond/unstucking-grond-m3-0.png>
 Package pdftex.def Info: Pictures/grond/unstucking-grond-m3-0.png  used on inpu
-t line 3652.
+t line 3680.
 (pdftex.def)             Requested size: 138.62117pt x 182.81584pt.
 
-Overfull \hbox (2.73749pt too wide) in paragraph at lines 3652--3653
+Overfull \hbox (2.73749pt too wide) in paragraph at lines 3680--3681
 [][] 
  []
 
-<Pictures/grond/unstucking-grond-m3.png, id=4609, 969.6225pt x 545.03625pt>
+<Pictures/grond/unstucking-grond-m3.png, id=4660, 969.6225pt x 545.03625pt>
 File: Pictures/grond/unstucking-grond-m3.png Graphic file (type png)
 <use Pictures/grond/unstucking-grond-m3.png>
 Package pdftex.def Info: Pictures/grond/unstucking-grond-m3.png  used on input 
-line 3658.
+line 3686.
 (pdftex.def)             Requested size: 346.55293pt x 194.79909pt.
 
-Overfull \hbox (5.47498pt too wide) in paragraph at lines 3658--3659
+Overfull \hbox (5.47498pt too wide) in paragraph at lines 3686--3687
 [][] 
  []
 
 
-Overfull \hbox (4.16098pt too wide) in paragraph at lines 3648--3660
+Overfull \hbox (4.16098pt too wide) in paragraph at lines 3676--3688
 []$[]$   $[]$ 
  []
 
-<Pictures/dome/dome-grond-m3-box.jpg, id=4611, 1204.5pt x 903.375pt>
+<Pictures/dome/dome-grond-m3-box.jpg, id=4662, 1204.5pt x 903.375pt>
 File: Pictures/dome/dome-grond-m3-box.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-grond-m3-box.jpg>
 Package pdftex.def Info: Pictures/dome/dome-grond-m3-box.jpg  used on input lin
-e 3665.
+e 3693.
 (pdftex.def)             Requested size: 297.04968pt x 222.78307pt.
-[92 <./Pictures/grond/unstucking-grond-m3-0.png> <./Pictures/grond/unstucking-g
+[94 <./Pictures/grond/unstucking-grond-m3-0.png> <./Pictures/grond/unstucking-g
 rond-m3.png>]
-<Pictures/dome/dome-grond-irace.jpg, id=4660, 1204.5pt x 903.375pt>
+<Pictures/dome/dome-grond-irace.jpg, id=4710, 1204.5pt x 903.375pt>
 File: Pictures/dome/dome-grond-irace.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-grond-irace.jpg>
 Package pdftex.def Info: Pictures/dome/dome-grond-irace.jpg  used on input line
- 3718.
+ 3746.
 (pdftex.def)             Requested size: 242.59084pt x 181.93996pt.
-<Pictures/dome/dome-grond-irace-switch.jpg, id=4662, 1204.5pt x 903.375pt>
+<Pictures/dome/dome-grond-irace-switch.jpg, id=4712, 1204.5pt x 903.375pt>
 File: Pictures/dome/dome-grond-irace-switch.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-grond-irace-switch.jpg>
 Package pdftex.def Info: Pictures/dome/dome-grond-irace-switch.jpg  used on inp
-ut line 3722.
+ut line 3750.
 (pdftex.def)             Requested size: 242.59084pt x 181.93996pt.
- [93 <./Pictures/dome/dome-grond-m3-box.jpg>]
+ [95 <./Pictures/dome/dome-grond-m3-box.jpg>]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3774.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3802.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3774.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3802.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [94 <./Pictures/dome/dome-grond-irace.jpg> <./Pictures/dome/dome-grond-irace-s
+ [96 <./Pictures/dome/dome-grond-irace.jpg> <./Pictures/dome/dome-grond-irace-s
 witch.jpg>]
-<Pictures/dome/dome-tel-joystick-location.jpg, id=4743, 803.0pt x 602.25pt>
+<Pictures/dome/dome-tel-joystick-location.jpg, id=4794, 803.0pt x 602.25pt>
 File: Pictures/dome/dome-tel-joystick-location.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-tel-joystick-location.jpg>
 Package pdftex.def Info: Pictures/dome/dome-tel-joystick-location.jpg  used on 
-input line 3820.
+input line 3848.
 (pdftex.def)             Requested size: 297.04968pt x 222.79225pt.
-<Pictures/dome/dome-tel-joystick.jpg, id=4744, 803.0pt x 1071.00125pt>
+<Pictures/dome/dome-tel-joystick.jpg, id=4795, 803.0pt x 1071.00125pt>
 File: Pictures/dome/dome-tel-joystick.jpg Graphic file (type jpg)
 <use Pictures/dome/dome-tel-joystick.jpg>
 Package pdftex.def Info: Pictures/dome/dome-tel-joystick.jpg  used on input lin
-e 3824.
+e 3852.
 (pdftex.def)             Requested size: 148.52484pt x 198.0831pt.
-[95] [96 <./Pictures/dome/dome-tel-joystick-location.jpg> <./Pictures/dome/dome
--tel-joystick.jpg>] [97] [98
+[97] [98 <./Pictures/dome/dome-tel-joystick-location.jpg> <./Pictures/dome/dome
+-tel-joystick.jpg>] [99] [100
 
 ]
 Chapter 11.
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
-Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 3901.
+Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 3929.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
 (./operation-manual.ptc)
-<Pictures/tcs/TCS.png, id=4835, 1280.785pt x 923.45pt>
+<Pictures/tcs/TCS.png, id=4886, 1280.785pt x 923.45pt>
 File: Pictures/tcs/TCS.png Graphic file (type png)
 <use Pictures/tcs/TCS.png>
-Package pdftex.def Info: Pictures/tcs/TCS.png  used on input line 3907.
+Package pdftex.def Info: Pictures/tcs/TCS.png  used on input line 3935.
 (pdftex.def)             Requested size: 420.81914pt x 303.40082pt.
-<Pictures/tcs/TCS-setup.png, id=4838, 1127.21124pt x 926.46124pt>
+<Pictures/tcs/TCS-setup.png, id=4889, 1127.21124pt x 926.46124pt>
 File: Pictures/tcs/TCS-setup.png Graphic file (type png)
 <use Pictures/tcs/TCS-setup.png>
-Package pdftex.def Info: Pictures/tcs/TCS-setup.png  used on input line 3914.
+Package pdftex.def Info: Pictures/tcs/TCS-setup.png  used on input line 3942.
 (pdftex.def)             Requested size: 420.81914pt x 345.86708pt.
- [99 <./Pictures/tcs/TCS.png>]
-<Pictures/tcs/TCS-AG.png, id=4877, 1283.79625pt x 1025.8325pt>
+ [101 <./Pictures/tcs/TCS.png>]
+<Pictures/tcs/TCS-AG.png, id=4927, 1283.79625pt x 1025.8325pt>
 File: Pictures/tcs/TCS-AG.png Graphic file (type png)
 <use Pictures/tcs/TCS-AG.png>
-Package pdftex.def Info: Pictures/tcs/TCS-AG.png  used on input line 3958.
+Package pdftex.def Info: Pictures/tcs/TCS-AG.png  used on input line 3986.
 (pdftex.def)             Requested size: 420.81914pt x 336.2561pt.
- [100 <./Pictures/tcs/TCS-setup.png>]
-<Pictures/tcs/TCS-status.png, id=4911, 770.88pt x 981.6675pt>
+ [102 <./Pictures/tcs/TCS-setup.png>]
+<Pictures/tcs/TCS-status.png, id=4961, 770.88pt x 981.6675pt>
 File: Pictures/tcs/TCS-status.png Graphic file (type png)
 <use Pictures/tcs/TCS-status.png>
-Package pdftex.def Info: Pictures/tcs/TCS-status.png  used on input line 3984.
+Package pdftex.def Info: Pictures/tcs/TCS-status.png  used on input line 4012.
 (pdftex.def)             Requested size: 297.04968pt x 378.2652pt.
-<Pictures/tcs/TCS-auxfunc-menu-1.png, id=4914, 145.54375pt x 352.31625pt>
+<Pictures/tcs/TCS-auxfunc-menu-1.png, id=4964, 145.54375pt x 352.31625pt>
 File: Pictures/tcs/TCS-auxfunc-menu-1.png Graphic file (type png)
 <use Pictures/tcs/TCS-auxfunc-menu-1.png>
 Package pdftex.def Info: Pictures/tcs/TCS-auxfunc-menu-1.png  used on input lin
-e 3993.
+e 4021.
 (pdftex.def)             Requested size: 89.11037pt x 215.71361pt.
-<Pictures/tcs/TCS-auxfunc-menu-2.png, id=4915, 153.57375pt x 163.61125pt>
+<Pictures/tcs/TCS-auxfunc-menu-2.png, id=4965, 153.57375pt x 163.61125pt>
 File: Pictures/tcs/TCS-auxfunc-menu-2.png Graphic file (type png)
 <use Pictures/tcs/TCS-auxfunc-menu-2.png>
 Package pdftex.def Info: Pictures/tcs/TCS-auxfunc-menu-2.png  used on input lin
-e 3994.
+e 4022.
 (pdftex.def)             Requested size: 89.11037pt x 94.93452pt.
-<Pictures/tcs/TCS-auxfunc.png, id=4916, 399.4925pt x 540.0175pt>
+<Pictures/tcs/TCS-auxfunc.png, id=4966, 399.4925pt x 540.0175pt>
 File: Pictures/tcs/TCS-auxfunc.png Graphic file (type png)
 <use Pictures/tcs/TCS-auxfunc.png>
-Package pdftex.def Info: Pictures/tcs/TCS-auxfunc.png  used on input line 3996.
+Package pdftex.def Info: Pictures/tcs/TCS-auxfunc.png  used on input line 4024.
 
 (pdftex.def)             Requested size: 198.02809pt x 267.6844pt.
-<Pictures/wfi/wfi-e2p2-os-gui.png, id=4923, 1147.28625pt x 976.64874pt>
+<Pictures/wfi/wfi-e2p2-os-gui.png, id=4973, 1147.28625pt x 976.64874pt>
 File: Pictures/wfi/wfi-e2p2-os-gui.png Graphic file (type png)
 <use Pictures/wfi/wfi-e2p2-os-gui.png>
 Package pdftex.def Info: Pictures/wfi/wfi-e2p2-os-gui.png  used on input line 4
-007.
+035.
 (pdftex.def)             Requested size: 396.06374pt x 337.15282pt.
-<Pictures/wfi/wfi-state-manager.png, id=4925, 1145.27875pt x 452.69125pt>
+<Pictures/wfi/wfi-state-manager.png, id=4975, 1145.27875pt x 452.69125pt>
 File: Pictures/wfi/wfi-state-manager.png Graphic file (type png)
 <use Pictures/wfi/wfi-state-manager.png>
 Package pdftex.def Info: Pictures/wfi/wfi-state-manager.png  used on input line
- 4015.
+ 4043.
 (pdftex.def)             Requested size: 396.06374pt x 156.55165pt.
-<Pictures/wfi/wfi-general-state.png, id=4929, 652.4375pt x 925.4575pt>
+<Pictures/wfi/wfi-general-state.png, id=4979, 652.4375pt x 925.4575pt>
 File: Pictures/wfi/wfi-general-state.png Graphic file (type png)
 <use Pictures/wfi/wfi-general-state.png>
 Package pdftex.def Info: Pictures/wfi/wfi-general-state.png  used on input line
- 4023.
+ 4051.
 (pdftex.def)             Requested size: 396.06374pt x 561.81696pt.
-<Pictures/feros/FEROS-Control.png, id=4932, 652.4375pt x 925.4575pt>
+<Pictures/feros/FEROS-Control.png, id=4982, 652.4375pt x 925.4575pt>
 File: Pictures/feros/FEROS-Control.png Graphic file (type png)
 <use Pictures/feros/FEROS-Control.png>
 Package pdftex.def Info: Pictures/feros/FEROS-Control.png  used on input line 4
-033.
+061.
 (pdftex.def)             Requested size: 396.06374pt x 561.81696pt.
-<Pictures/feros/FEROS-ICS.png, id=4937, 917.4275pt x 813.0375pt>
+<Pictures/feros/FEROS-ICS.png, id=4987, 917.4275pt x 813.0375pt>
 File: Pictures/feros/FEROS-ICS.png Graphic file (type png)
 <use Pictures/feros/FEROS-ICS.png>
-Package pdftex.def Info: Pictures/feros/FEROS-ICS.png  used on input line 4042.
+Package pdftex.def Info: Pictures/feros/FEROS-ICS.png  used on input line 4070.
 
 (pdftex.def)             Requested size: 396.06374pt x 351.00119pt.
-<Pictures/grond/grond-bob.png, id=4946, 629.35126pt x 925.4575pt>
+<Pictures/grond/grond-bob.png, id=4996, 629.35126pt x 925.4575pt>
 File: Pictures/grond/grond-bob.png Graphic file (type png)
 <use Pictures/grond/grond-bob.png>
-Package pdftex.def Info: Pictures/grond/grond-bob.png  used on input line 4055.
+Package pdftex.def Info: Pictures/grond/grond-bob.png  used on input line 4083.
 
 (pdftex.def)             Requested size: 242.59084pt x 356.71881pt.
-<Pictures/grond/grond-control.png, id=4950, 631.35875pt x 982.67125pt>
+<Pictures/grond/grond-control.png, id=5000, 631.35875pt x 982.67125pt>
 File: Pictures/grond/grond-control.png Graphic file (type png)
 <use Pictures/grond/grond-control.png>
 Package pdftex.def Info: Pictures/grond/grond-control.png  used on input line 4
-059.
+087.
 (pdftex.def)             Requested size: 242.59084pt x 377.57239pt.
-<Pictures/grond/grond-fiera.png, id=4953, 1040.88875pt x 1016.79875pt>
+<Pictures/grond/grond-fiera.png, id=5003, 1040.88875pt x 1016.79875pt>
 File: Pictures/grond/grond-fiera.png Graphic file (type png)
 <use Pictures/grond/grond-fiera.png>
-Package pdftex.def Info: Pictures/grond/grond-fiera.png  used on input line 406
-9.
+Package pdftex.def Info: Pictures/grond/grond-fiera.png  used on input line 409
+7.
 (pdftex.def)             Requested size: 212.87982pt x 207.94861pt.
-<Pictures/grond/grond-irace.png, id=4956, 1230.5975pt x 930.47626pt>
+<Pictures/grond/grond-irace.png, id=5006, 1230.5975pt x 930.47626pt>
 File: Pictures/grond/grond-irace.png Graphic file (type png)
 <use Pictures/grond/grond-irace.png>
-Package pdftex.def Info: Pictures/grond/grond-irace.png  used on input line 407
-3.
+Package pdftex.def Info: Pictures/grond/grond-irace.png  used on input line 410
+1.
 (pdftex.def)             Requested size: 272.29428pt x 205.88383pt.
 File: Pictures/dome/dome-auxfunc.png Graphic file (type png)
 <use Pictures/dome/dome-auxfunc.png>
-Package pdftex.def Info: Pictures/dome/dome-auxfunc.png  used on input line 408
-7.
+Package pdftex.def Info: Pictures/dome/dome-auxfunc.png  used on input line 411
+5.
 (pdftex.def)             Requested size: 346.55293pt x 369.35901pt.
-<Pictures/dome/dome-webcam.png, id=4960, 712.91344pt x 627.09282pt>
+<Pictures/dome/dome-webcam.png, id=5010, 712.91344pt x 627.09282pt>
 File: Pictures/dome/dome-webcam.png Graphic file (type png)
 <use Pictures/dome/dome-webcam.png>
-Package pdftex.def Info: Pictures/dome/dome-webcam.png  used on input line 4094
+Package pdftex.def Info: Pictures/dome/dome-webcam.png  used on input line 4122
 .
 (pdftex.def)             Requested size: 346.55293pt x 304.8286pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [101 <./Pictures/tcs/TCS-AG.png (PNG copy)>] (./operation-manual.gls [102 <./P
-ictures/tcs/TCS-status.png>] [103] [104 <./Pictures/tcs/TCS-auxfunc-menu-1.png>
- <./Pictures/tcs/TCS-auxfunc-menu-2.png> <./Pictures/tcs/TCS-auxfunc.png>] [105
+ [103 <./Pictures/tcs/TCS-AG.png (PNG copy)>] (./operation-manual.gls [104 <./P
+ictures/tcs/TCS-status.png>] [105] [106 <./Pictures/tcs/TCS-auxfunc-menu-1.png>
+ <./Pictures/tcs/TCS-auxfunc-menu-2.png> <./Pictures/tcs/TCS-auxfunc.png>] [107
  <./Pictures/wfi/wfi-e2p2-os-gui.png> <./Pictures/wfi/wfi-state-manager.png>] [
-106 <./Pictures/wfi/wfi-general-state.png>] [107 <./Pictures/feros/FEROS-Contro
+108 <./Pictures/wfi/wfi-general-state.png>] [109 <./Pictures/feros/FEROS-Contro
 l.png>]
-[108 <./Pictures/feros/FEROS-ICS.png>] [109 <./Pictures/grond/grond-bob.png> <.
-/Pictures/grond/grond-control.png>] [110 <./Pictures/grond/grond-fiera.png> <./
-Pictures/grond/grond-irace.png>] [111 <./Pictures/dome/dome-webcam.png>]
-[112
+[110 <./Pictures/feros/FEROS-ICS.png>] [111 <./Pictures/grond/grond-bob.png> <.
+/Pictures/grond/grond-control.png>] [112 <./Pictures/grond/grond-fiera.png> <./
+Pictures/grond/grond-irace.png>] [113 <./Pictures/dome/dome-webcam.png>]
+[114
 
 ]
 File: Pictures/lasilla.pdf Graphic file (type pdf)
 <use Pictures/lasilla.pdf>
 Package pdftex.def Info: Pictures/lasilla.pdf  used on input line 1.
 (pdftex.def)             Requested size: 597.50787pt x 298.75406pt.
- [113
+ [115
 
-] [114] [115] [116] [117] [118])
+] [116] [117] [118] [119] [120])
 \tf@ptc=\write12
 \openout12 = `operation-manual.ptc'.
 
- [119]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4184.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4184.
+ [121]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4212.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4212.
  (./operation-manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4184.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4184.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4212.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4212.
 
 Package rerunfilecheck Info: File `operation-manual.out' has not changed.
 (rerunfilecheck)             Checksum: E912A75A6E317124038CDDDD6B19CF8F;4300.
  ) 
 Here is how much of TeX's memory you used:
- 42268 strings out of 494510
- 775922 string characters out of 6176139
- 993583 words of memory out of 5000000
- 43238 multiletter control sequences out of 15000+600000
+ 42337 strings out of 494510
+ 777849 string characters out of 6176139
+ 994182 words of memory out of 5000000
+ 43281 multiletter control sequences out of 15000+600000
  629263 words of font info for 274 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
  57i,12n,67p,2018b,1274s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3077,10 +3138,10 @@ ts/type1/urw/avantgar/uagk8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 vr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on operation-manual.pdf (119 pages, 11693366 bytes).
+Output written on operation-manual.pdf (121 pages, 12204425 bytes).
 PDF statistics:
- 6460 PDF objects out of 7423 (max. 8388607)
- 5728 compressed objects within 58 object streams
- 1707 named destinations out of 1728 (max. 500000)
- 56315 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 6514 PDF objects out of 7423 (max. 8388607)
+ 5772 compressed objects within 58 object streams
+ 1722 named destinations out of 1728 (max. 500000)
+ 56350 words of extra memory for PDF output out of 61914 (max. 10000000)
 
