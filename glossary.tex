@@ -1,0 +1,110 @@
+\newacronym{drs}{DRS}{data reduction software}
+\newacronym{tcs}{TCS}{telescope control software}
+\newacronym{ics}{ICS}{instrument control software}
+\newacronym{tio}{TIO}{telescope and instrument operator}
+\newacronym{adc}{ADC}{atmospheric diffraction corrector}
+\newacronym{ag}{AG}{autoguider}
+\newacronym{wfi}{WFI}{wide-field imager}
+\newacronym{mpia}{MPIA}{Max-Planck Institut für Astronomie.}
+\newacronym{mpe}{MPE}{Max-Planck Institute for extraterrestrial Physics.}
+\newacronym{grond}{GROND}{Gamma-Ray Burst Optical/Near-Infrared Detector}
+\newacronym{feros}{FEROS}{Fibre-fed Extended Range Optical Spectrograph}
+\newacronym{tccd}{TCCD}{Technical CCD}
+\newacronym{sccd}{SCCD}{Science CDD}
+\newglossaryentry{autoguiding}{name=\texttt{Autoguiding},sort=autoguiding,description={Window controlling the settings of the \acrlong{ag} of \gls{feros} and \gls{grond}}}
+\newglossaryentry{fiera}{name=FIERA,description={Electronics systems controlling the optical detectors}}
+\newglossaryentry{irace}{name=IRACE,description={Electronics systems controlling the infrared detectors.}}
+\newglossaryentry{wfinsStartSCCDS}{name=\texttt{wfinsStartSCCDS},sort=wfinsStartSCCDS,description={Command to start the \gls{wfi} \acrlong{sccd}s (main array) software}}
+\newglossaryentry{wfinsStopSCCDS}{name=\texttt{wfinsStopTCCDS},sort=wfinsStopTCCDS,description={Command to stop the \gls{wfi} \acrlong{sccd}s (main array) software}}
+\newglossaryentry{wfinsStartTCCDS}{name=\texttt{wfinsStartTCCDS},sort=wfinsStartTCCDS,description={Command to start the \gls{wfi} \gls{tccd}s (guide camera) software}}
+\newglossaryentry{wfinsStopTCCDS}{name=\texttt{wfinsStopTCCDS},sort=wfinsStopTCCDS,description={Command to stop the \gls{wfi} \gls{tccd}s (guide camera) software}}
+\newglossaryentry{state manager}{name=\texttt{State Manager},sort=State Manager,description={WFI GUI giving the status of the telescope \gls{focus} used by \gls{wfi} and \gls{feros}.}}
+\newglossaryentry{acquisition}{name=acquisition,description={Part of an observing block that prepares the telescope (preset) and instrument (filtre change, mirror setups, etc.) for an observation.}}
+\newglossaryentry{grondag}{name=\texttt{Telescope R.T.D},sort=Telescope R.T.D.,description={Window displaying the image of the \gls{grond} \acrlong{ag}}}
+\newglossaryentry{stall}{name=stall,description={Stalling refers to stopping doing anything without an error being displayed or reaching complete state.  As it is silent, it is easy to lose time for a stalled OB...}}
+\newglossaryentry{fcdTelemetry}{name=\texttt{fcdTelemetry},sort=fcdTelemetry,description={Command to open the \gls{telemetry} panel of GROND or WFI, used to activate telemetry if necessary.}}
+\newglossaryentry{pickobj}{name=\texttt{Pick Object},sort=Pick Object,description={Graphical user interface that allows the observer to pick a star in an image to measure its size (e.g. seeing determination) and pixel position (e.g. refining acquisition). Also a menu option to open such a window.}}
+\newglossaryentry{pickrefstar}{name=\texttt{Pick Reference Star},sort=Pick Reference Star,description={Graphical user interface that allows the observer to pick a guide star on the WFI and GROND \acrlong{ag}s, and a fibre reference pixel for FEROS. Also a menu option to open such a window.}}
+\newglossaryentry{mc}{name=main cover,description={Refers to the protective shutter of GROND}}
+\newglossaryentry{focus}{name=focus,description={Telescope focusing uses the secondary mirror. GROND focus is usually not touched. WFI and FEROS focus need regular (about daily) focus sequences to be performed.}}
+\newglossaryentry{service}{name=service,description={Service observing, service mode, or queue observing is when an observer does observations for different programmes, according to weather conditions and priorities.}}
+\newglossaryentry{visitor}{name=visitor,description={Visitors, i.e. astronomers observing in visitor mode, mostly observe their own programme independently of weather constraints and other programmes' priorities.  During \gls{mpia} there is no ``pure'' visitor, as some programmes should be observed in \gls{service} year round.}}
+\newglossaryentry{ferosag}{name=\texttt{FEROS AG Real Time Display},sort=E2P2 REAL TIME DISPLAY,description={Window with the mage of the \gls{feros} \acrlong{ag} camera}}
+\newglossaryentry{wfiics}{name=\texttt{WFI ICS Control},sort=WFI ICS Control,description={\gls{wfi} \acrlong{ics} panel}}
+\newglossaryentry{ferosics}{name={\texttt{FEROS ICS Control}},sort=FEROS ICS Control,description={\gls{feros} \acrlong{ics} panel}}
+\newglossaryentry{main mirror}{name=main mirror,description={Primary mirror of the telescope.  It has a cover that needs to be open for observing and but should be closed when dome slit is being opened or closed.}}
+\newglossaryentry{ot}{name=\texttt{ot},sort=ot,description={observing tool, the application that can be used to manage the \gls{ob}so for \gls{service} observations}}
+\newglossaryentry{lascam}{name=LASCAM,description={La Silla all-sky camera}}
+\newglossaryentry{standard field}{name=standard field,description={A field containing various standard star with well known magnitudes.  It is used to calibrate the flux response of WFI (Landolt fields) and GROND (Landolt and SDSS fields).}}
+\newglossaryentry{osf2p2StartUp}{name=\texttt{osf2p2StartUp},sort=osf2p2StartUp,description={Command used to do a start-up of the \acrlong{tcs} and the instruments \gls{wfi} \& \gls{feros}.}}
+\newglossaryentry{e2p2StopTCCDs}{name=\texttt{e2p2StopTCCDs},sort=e2p2StopTCCDs,description={Command to stop the \acrlong{tccd}s (guiding cameras) of GROND and FEROS}}
+\newglossaryentry{e2p2StartTCCDs}{name=\texttt{e2p2StartTCCDs},sort=e2p2StartTCCDs,description={Command to start the  \acrlong{tccd}s (guiding cameras) of GROND and FEROS}}
+\newglossaryentry{grinsStop}{name=\texttt{grinsStop},sort=grinsStop,description={Command used to stop the \gls{grond} instrument}}
+\newglossaryentry{grinsStart}{name=\texttt{grinsStart},sort=grinsStart,description={Command used to start the \gls{grond} instrument}}
+\newglossaryentry{spectrophotometric standard}{name=spectrophotometric standard,description={A star with a stable and well-known flux energy distribution used to determine the transmission of FEROS + telescope + atmosphere.}}
+\newglossaryentry{rv standard}{name=radial velocity standard,description={A star with a stable radial velocity used to calibrate or check the calibration of FEROS.}}
+\newglossaryentry{telemetry}{name=telemetry,description={Telemetry panels indicate the state of WFI and GROND detectors, in particular vacuum and temperature. A text-based telemetry module (logging) for GROND is to be manually started a reboot.}}
+\newglossaryentry{TCS control panel}{name=\texttt{TCS Control Panel},sort=TCS control panel,description={Graphical user interface showing the state of the telescope and WFI autoguider. Normally placed on the \texttt{Control} virtual desktop of the Telescope Control Software screen.}}
+\newglossaryentry{TCS status panel}{name=\texttt{TCS Status Panel},sort=TCS status panel,description={Graphical user interface showing the state of the telescope modules and pointing model. Normally placed on the \texttt{Status} virtual desktop of the Telescope Control Software screen.}}
+\newglossaryentry{TCS setup panel}{name=\texttt{TCS Setup Panel},sort=TCS setup panel,description={Graphical user interface allowing to modify the state of the telescope (opening/closing) and WFI autoguiding (parameters). Normally place on the \texttt{Setup} virtual desktop of the  Telescope Control Software screen.}}
+\newglossaryentry{rose diagram}{name=\texttt{rose diagram},sort=rose diagram,description={Diagram of the telescope position, slit orientation, and Moon displayed on the \gls{TCS control panel}.}}
+\newglossaryentry{p2pp}{name=\texttt{p2pp},sort=p2pp,description={phase 2 preparation tool, the application used by \glspl{visitor} and PIs to create their observing blocks and execute them on the mountain.}}
+\newglossaryentry{bob}{name=\texttt{bob},sort=bob,description={broker for observing blocks, the application that reads \acrlong{ob}s and sends commands to the telescope and instrument so that observation is performed. The \texttt{bob} panel is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
+\newglossaryentry{General State}{name=General State,description={The \texttt{General State} panel of each instrument displays its status (integrations going on, basic telemetry, shutters, etc.).  It is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
+\newglossaryentry{ICS Control}{name=\texttt{ICS Control},sort=ICS Control,description={The \texttt{ICS Control} panel of an instrument allows to modify its state (mirrors, shutters, exposures).  It is usually placed in the virtual desktop \texttt{ICS}}}
+\newglossaryentry{ob}{name=OB,description={observing block, a file containing the information needed to instruct the telescope to perform an observation}}
+\newglossaryentry{rrm}{name=RRM,description={rapid response mode, the system that allows GROND to swiftly and automatically take command of the telescope to start observing when a satellite detects a possible transient.}}
+\newglossaryentry{template}{name=template,description={Atomic part of an \acrlong{ob}, with a single function, such as the acquisition or a set of integrations with a single instrument configuration (filtre, readout mode).}}
+\newglossaryentry{irtd}{name=\texttt{irtd},sort=irtd,description={infrared real time display, an imaging application used to display the $J, H, K$ bands of GROND.}}
+\newglossaryentry{rtd}{name=\texttt{rtd},sort=rtd,description={real time display, an imaging application used to display the optical CCD images of WFI, FEROS, and GROND.}}
+\newglossaryentry{skycat}{name=\texttt{skycat},sort=skycat,description={Imaging application developed at ESO that can be seen as a simplified \texttt{ds9}.}}
+\newglossaryentry{vme}{name=VME,description={virtual machine environment, used metonymously to describe the \acrlong{lcu} controlling the telescope. (VME describes the operating system running on logical control units, but this manual will not use this definition.)}}
+\newglossaryentry{flip mirror}{name=flip mirror,description={Flip mirror, mirror in the infrared arm of \gls{grond} that enables fast dithering while optical is exposing. See grondFM}}
+\newglossaryentry{grondSHUTTER}{name=\texttt{grondSHUTTER},sort=grondSHUTTER,description={Command that resets the shutters of the optical CCDs of GROND}}
+\newglossaryentry{grondFM}{name=\texttt{grondFM},sort=grondFM,description={Command that controls the infrared flip mirror of GROND}}
+\newglossaryentry{grondGRI}{name=\texttt{grondGRI},sort=grondGRI,description={Command to reinitialise the event server of GROND}}
+\newglossaryentry{cs}{name=cold shutter,description={Shutter of the infrared arm of GROND. It stays continuously open during and between observations. It will be closed during calibrations. Not to be confused with the main cover (protective shutter) or the shutters of the optical CCDs.}}
+\newglossaryentry{protective shutter}{name=protective shutter,description={Protective shutter of WFI, that remains open during the night. Not to be confused with the shutter of the optical CCDs that open for integration only. (For GROND it is generally called main cover, see grondMC)}}
+\newglossaryentry{grondCS}{name=grondCS,description={Command controlling the shutter of the infrared arm of GROND}}
+\newglossaryentry{grondMC}{name=grondMC,description={Command controlling the main cover (a.k.a. protective cover or main shutter) of GROND}}
+\newglossaryentry{uws2p2}{name=\texttt{uws2p2},sort=uws2p2,description={User workstation of the 2.2m metre telescope. All workstation are virtually run on it.}}
+\newglossaryentry{w2p2tcs}{name=\texttt{w2p2tcs},sort=w2p2tcs,description={Workstation of the Telescope Control software}}
+\newglossaryentry{slit}{name=dome slit,description={Dome slit, through which it is observed when open}}
+\newglossaryentry{w2p2ins}{name=\texttt{w2p2ing},sort=w2p2ins,description={Workstation of WFI}}
+\newglossaryentry{mirr3}{name=mirr3,description={FEROS M3 mirror}}
+\newglossaryentry{grondM3}{name=grondM3,description={GROND M3 mirror and command controlling it}}
+\newglossaryentry{dome flats}{name=dome flat fields,description={Flat fields acquired on the flat field screen on the dome, using a lamp for illumination.}}
+\newglossaryentry{sky flats}{name=sky flat fields,description={Flat fields acquired on the twilight sky.}}
+\newglossaryentry{pointing}{name=pointing,description={Pointing refers to the part of preset consisting of moving the telescope to the target. It may also refer to a check of the pointing accuracy.}}
+\newglossaryentry{pointing model}{name=pointing model,description={Set of parameters controlling the pointing of the telescope.}}
+\newglossaryentry{wferos}{name=\texttt{wferos},sort=wferos,description={Workstation of FEROS}}
+\newglossaryentry{wgrond}{name=\texttt{wgrond},sort=wgrond,description={Workstation of GROND}}
+\newglossaryentry{power cycle}{name=power cycle,description={Action consisting of switching off an electronic device, waiting for a few seconds, and switching it back on.}}
+\newglossaryentry{wwffcd}{name=\texttt{wwffcd},sort=wwffcd,description={Workstation controlling the \gls{wfi} detector electronics (\gls{fiera})}}
+\newglossaryentry{wfefcd}{name=\texttt{wfefcd},sort=wfefcd,description={Workstation controlling the \gls{feros} detector electronics (\gls{fiera})}}
+\newglossaryentry{wgrccd}{name=\texttt{wgrccd},sort=wgrccd,description={Workstation controlling the \gls{grond} optical detector electronics (\gls{fiera})}}
+\newglossaryentry{desktop}{name={virtual desktop},description={A virtual desktop, or desktop, is a working environment showing on the screen of the linux/unix workstations. It is possible to switch between them on the same machine, achieving the same result as having more screens.}} 
+\newglossaryentry{M3}{name=M3,description={Tertiary mirror. There are two tertiary mirrors, one for \gls{grond} (trumps FEROS and WFI) and one for \gls{feros} (trumps WFI). \gls{wfi} is at the secondary focus and gets the light if, and only if, neither of the tertiaries is inserted in the optical path.}}
+\newglossaryentry{computer room}{name={computer room},description={Computer room located in the first floor of the telescope building. (There is also a site-wide computer room below the main control room, but we don't have access to it, so it will not be mentioned in this manual.)}}
+\newglossaryentry{control room}{name={control room},description={Control room, located in the New Operation Building below the main building that contains the hotel and dining room.  (There is also an old, partly functional, control room on the first floor of the telescope building, but otherwise specified, this manual refers to the main control room.)}}
+\newglossaryentry{wgrdcs}{name=\texttt{wgrdcs},sort=wgrdcs,description={Workstation controlling the \gls{grond} infrared detector electronics (\gls{irace})}}
+\newglossaryentry{w2p2dhs}{name=\texttt{w2p2dhs},sort=w2p2dhs,description={Workstation controlling the \acrlong{ob}s}}
+\newglossaryentry{w2p2off}{name=\texttt{w2p2off},sort=w2p2off,description={Workstation controlling the \gls{feros} \acrlong{drs}}}
+\newglossaryentry{w2p2pl}{name=\texttt{w2p2pl},sort=w2p2pl,description={Workstation controlling the communication with the ESO database}}
+\newglossaryentry{l2p2agr}{name=\texttt{l2p2agr},sort=l2p2agr,description={LCU controlling the GROND autoguider}}
+\newglossaryentry{w2p2cam}{name=\texttt{w2p2cam},sort=w2p2cam,description={Environment corresponding to LCU l2p2cam controlling the FEROS autoguider}}
+\newglossaryentry{w2p2agr}{name=\texttt{w2p2cam},sort=w2p2cam,description={Environment corresponding to LCU l2p2agr controlling the GROND autoguider}}
+\newglossaryentry{lccBoot}{name=\texttt{lccBoot},sort=lccBoot,description={Command to reboot a workstation or a logical control unit (LCU/VME)}}
+\newglossaryentry{l2p2cam}{name=\texttt{l2p2cam},sort=l2p2cam,description={LCU controlling the FEROS autoguider}}
+\newglossaryentry{lfeics1}{name=\texttt{lfeics1},sort=lfeics1,description={LCU of the FEROS instrument control software}}
+\newglossaryentry{lte2p2}{name=\texttt{lte2p2},sort=lte2p2,description={LCU of the telescope control software}}
+\newglossaryentry{preset}{name=preset,description={Telescope movements (right ascension, declination, and secondary mirror focusing) needed to point at a new source. It is also used as a verb to refer to the action of ordering the telescope to move.}}
+\newglossaryentry{ds}{name=data subscriber,description={Software that fetches the FEROS data for reduction.}}
+\newglossaryentry{lcu}{name=LCU,description={Logical control unit, machine in a rack that controls an instrument or telescope subsystem.}}
+\newglossaryentry{windows}{name=Windows desktop,description={Rightmost computer in the control room that controls the dome.}}
+\newglossaryentry{dome}{name=dome,description={Part of the telescope building on the second floor containing the observing floor, telescope, and enclosure.  It can also refer to the moving part of the enclosure.}}
+\newglossaryentry{adam}{name=ADAM,description={Telescope hydraulics and mirror cover control system.}}
+\newglossaryentry{midas}{name=MIDAS,description={The infamous reduction software, used mostly for side calculations (flux level, focus) and \acrlong{drs}}}
+\newglossaryentry{auxfunc}{name=Auxiliary Functions,description={Panel with cryptic title \texttt{E2P2FAUX PANEL} (\figref{tcsauxfunc}) controlling WFI shutter and flat-field lamp.}}
+\newglossaryentry{webcam}{name=dome webcam,description={View into the dome given by the \texttt{TRENDNET} tab of mozilla on the \gls{windows}.}}
+\newglossaryentry{domefunc}{name=Dome Auxiliary Functions,description={\texttt{ADAM 6000} tab of mozilla on the \gls{windows} that contains hydraulics and ventilation control of the dome.}}
