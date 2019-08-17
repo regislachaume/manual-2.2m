@@ -852,6 +852,15 @@ Opening should take place about one or two hours before sunset if conditions all
 
 \section{Telescope readying}
 
+\begin{figure*}
+\centering
+\subfigure[Sky flat field selection]{\includegraphics[width=0.35\linewidth]{tcs/ff/tcs-ff-cat-select-01.jpg}\label{fig:emptyfield-1}}%
+\hspace{0.1\linewidth}%
+\subfigure[Catalogue selection]{\includegraphics[width=0.35\linewidth]{tcs/ff/tcs-ff-cat-select-02.jpg}\label{fig:emptyfield-2}}%
+\caption[Presetting to an empty field for flat-fielding]{Presetting to an empty field for flat-fielding.  The \texttt{Presetting} section allows the user to select a catalogue (\texttt{Cat.Select}), select a field within the selected catalogue (arrows \texttt{Up}/\texttt{Dn}), and presetting there (\texttt{Preset}).}
+\label{fig:emptyfield}
+\end{figure*}
+
 A bit before sunset if doing \gls{sky flats} or at sunset otherwise, you can ready the telescope and point to an empty field.
 
 \procedure{Telescope readying}\label{proc:ready}
@@ -875,16 +884,16 @@ A bit before sunset if doing \gls{sky flats} or at sunset otherwise, you can rea
                \item Wait for opening to complete (2 min) before starting the flat-field \gls{ob}
             \end{enumerate}
         \end{enumerate}
-        \item \Gls{preset} to an empty field if doing \gls{sky flats}, a test with GROND, or readying before sunset
+        \item \Gls{preset} to an empty field if doing \gls{sky flats}, a test with GROND, or readying before sunset (\figref{emptyfield})
                \label{list:presetempty}         
             \begin{enumerate}
             \item Go to the \gls{TCS control panel} (\figref{tcs}) 
-            \item Below \texttt{Catalogue Handling} click \texttt{Cat. Select}.
-            \item Choose \texttt{Empty Fields 2011}
-            \item Select field with \texttt{Up} and \texttt{Dwn}.\\
+            \item Below \texttt{Catalogue Handling} click \texttt{Cat. Select} (\figref{emptyfield-1}).
+            \item Choose \texttt{Empty Fields 2011} (\figref{emptyfield-2})
+            \item Select field with \texttt{Up} and \texttt{Dwn}. (\figref{emptyfield-1})\\
                   Right ascension should be about 1 hour more than sidereal time at sunset.\\
                   Consider field quality: excellent, good, OK, poor.
-            \item Click \texttt{Preset}.
+            \item Click \texttt{Preset}. (\figref{emptyfield-1})
             \end{enumerate}      
          \item Set the \gls{dome} motion in automatic.\label{list:domeauto}\\
                On the \gls{tcs} setup panel (\figref{tcssetup}), below \texttt{Dome}, select the checkbox \texttt{Automatic}.
@@ -1025,12 +1034,12 @@ The procedure has been somehow modified (January 2014).
   \item If not done, point the telescope to an empty field (\procref{ready}, point~\ref{list:presetempty}).
       \begin{enumerate}
          \item Go to \texttt{TCS control panel} the on screen \texttt{Telescope Control Software}.
-         \item Below \texttt{Catalogue handling} click \texttt{Cat. Select}.
-         \item Choose \texttt{Empty Fields 2011}
-         \item Select field with \texttt{Up} and \texttt{Dwn}.\\
+         \item Below \texttt{Catalogue handling} click \texttt{Cat. Select} (\figref{emptyfield-1}).
+         \item Choose \texttt{Empty Fields 2011} (\figref{emptyfield-2})
+         \item Select field with \texttt{Up} and \texttt{Dwn}. (\figref{emptyfield-1})\\
                Right ascension should be about 1 hour from sidereal time, opposite to the Sun.\\
                Consider field quality: excellent, good, OK, poor.
-         \item Click \texttt{Preset}.
+         \item Click \texttt{Preset}. (\figref{emptyfield-1})
       \end{enumerate}
   \item Go to \gls{bob} on screen \texttt{BOB Wide Field Imager}.
   \item Fetch \gls{sky flats} \gls{ob} from file (\fetchob).\\
