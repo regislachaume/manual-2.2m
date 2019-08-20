@@ -2984,7 +2984,6 @@ The \gls{focus} sequence is run for a specific filtre, when changing filtres dur
 
 
 \section{FEROS ADC}
-
 \subsection{ADC cannot be put off}
 
 At the start of an observation there is a message that the \gls{adc} cannot be
@@ -3018,14 +3017,15 @@ put off.  This happens after an observation using the \gls{adc}.  On the
         \item Wait for about one minute for \texttt{STATE} to be \texttt{ONLINE}
       \end{itemize}
   \item If problem occurs repeatedly, FEROS needs a restart, and problem
-        should be reported.  Risk of the ADC getting physically stuck, needing
+        should be reported.  Risk of the \gls{adc} 
+        getting physically stuck, needing
         intervention on the instrument.
 \end{itemize}
 
 \subsection{Telescope focus is not corrected when ADC enters}
 \label{sec:focusadc}
 
-Try in order the items of the following procedure.
+If the focus is not corrected at \gls{adc} insertion, try the items of the following procedure.
 
 \procedure{Fix the absence of focusing after FEROS ADC enters}
 \begin{itemize}
@@ -3176,13 +3176,12 @@ FEROS DRS, you will need to restart processes on the data handling machine \gls{
 
 \subsection{FEROS}
 \label{sec:ferosstartuptimeout}
-\begin{itemize}
-  \item There is an error about process \texttt{feoControl} stating
-      ``accepted PING but did not reply properly within 10000 msec'''.\\
-       Restart environment using \procref{restartenv}.
- \item There is a problem with the FEROS \gls{telemetry} at TCS (window should show some graphs, \figref{tcstelemetry}).\\
-       Activate the telementry using \procref{telemetry}
-\end{itemize}
+
+There are a few issues that may pop-up at startup.
+
+\paragraph{Timeout}
+
+If there is an error about process \texttt{feoControl} stating ``accepted PING but did not reply properly within 10000 msec''', you need to restart environment using \procref{restartenv} and go on with startup.
 
 \procedure{Restart environment}
 \label{proc:restartenv}
@@ -3191,6 +3190,10 @@ FEROS DRS, you will need to restart processes on the data handling machine \gls{
 \item Type \texttt{vccEnvStart -e \$RTAPENV}
 \item Redo the full startup procedure
 \end{enumerate}
+ 
+\paragraph{Telemetry is not active}
+
+There is a problem with the FEROS \gls{telemetry} at TCS (window should show some graphs, \figref{tcstelemetry}), activate the telementry using \procref{telemetry}
 
 \procedure{Activate FEROS or WFI telemetry}
 The \gls{telemetry} module is activated following these steps:
@@ -3203,6 +3206,40 @@ The \gls{telemetry} module is activated following these steps:
     \item Go to TCS screen
     \item Close the \texttt{ESO 220 General Telemetry Panel}
     \item Open or locate a terminal and type \texttt{sciops2p2Telemetry \&}
+\end{enumerate}
+
+\paragraph{Instrument stays in STANDBY}
+
+If the instrument does not go \texttt{ONLINE}, it is possible that the \gls{adc} is in the way. Check if \texttt{ADC} is \texttt{IN} in the \gls{General State} 
+panel. If it is the case, you have to remove it manually using \procref{ferosadcatstartup}.
+
+\procedure{Remove the ADC at startup}
+\label{proc:ferosadcatstartup}
+\begin{enumerate}
+    \item Go the the \gls{ICS Control} panel on \gls{desktop} \texttt{ICS}
+    \item Simulate motors that are not online
+    \begin{enumerate}
+         \item Select motors (e.g. \texttt{scsm})
+         \item Use \wmenu{Devices}{Simulate HW}
+         \item Wait for the motors to indicate \texttt{SIM} (a few seconds)
+         \item De-select motors (e.g. \texttt{scsm})
+    \end{enumerate}
+    \item Remove \gls{adc}
+    \begin{enumerate}
+        \item Select \texttt{adca}
+        \item Choose \texttt{OUT}
+        \item At the bottom of the ICS Control, click \texttt{SETUP}
+        \item De-select \texttt{adca}
+    \end{enumerate}
+    \item Use motors that are simulated and put them online
+    \begin{enumerate}
+         \item Select motors (e.g. \texttt{scsm})
+         \item Use \wmenu{Devices}{Use HW}
+         \item Wait for \texttt{SIM} to disappear (a few seconds)
+         \item Use \wmenu{Decives}{ONLINE}
+         \item De-select motors (e.g. \texttt{scsm})
+    \end{enumerate}
+    \item Wait for the instrument to be \texttt{ONLINE} (a few seconds to a minute).
 \end{enumerate}
 
 \begin{figure}[t!]
@@ -3418,7 +3455,7 @@ The \gls{General State} Panel of an instrument the TCS is in the state \texttt{O
 \begin{itemize}
   \item \textit{(\gls{wfi})} \gls{ob} \gls{stall}s when \gls{focus} order is sent by \gls{bob}.\\
         Set it manually from the \gls{TCS control panel} (\figref{tcs})
-  \item \textit{(\gls{feros})} Focus is not corrected after insertion of the ADC.\\
+  \item \textit{(\gls{feros})} Focus is not corrected after insertion of the \gls{adc}.\\
         See \secref{focusadc}.
   \item Focus cannot be set from the \gls{TCS control panel}.\\
         Restart the \gls{tcs}, see \secref{tcsrestart}.
