@@ -975,6 +975,7 @@ If slack is closed, open a browser with the following link: https://slack.com/si
 
 \section{Outline}
 
+\procedure{Summary of evening twilight operations}
 \begin{enumerate}
     \item Flat-fielding
     \begin{enumerate}
@@ -1293,44 +1294,83 @@ You can choose \gls{focus} only, or \gls{focus} and \gls{spectrophotometric stan
 
 \subsection{Focus}
 \label{sec:ferosfocus}
+\begin{figure*}
+\subfigure[Started focus OB]{\includegraphics[width=0.45\linewidth]{feros/focus/feros-focus-1-bob.jpg}\label{fig:ferosfocus-1}}
+\hfill
+\subfigure[Acquire the bright star onto fibre]{\includegraphics[width=0.45\linewidth]{feros/focus/feros-focus-2-acquire.jpg}\label{fig:ferosfocus-2}}
+\\
+\subfigure[Check loop time in the autoguider]{\includegraphics[width=0.45\linewidth]{feros/focus/feros-focus-3-loop-time.jpg}\label{fig:ferosfocus-3}}
+\hfill
+\subfigure[Select a focus star in MIDAS window]{\includegraphics[width=0.45\linewidth]{feros/focus/feros-focus-4-select-star.jpg}\label{fig:ferosfocus-4}}
+\\
+\subfigure[MIDAS window]{\includegraphics[width=0.45\linewidth]{feros/focus/feros-focus-5-midas.jpg}\label{fig:ferosfocus-5}}
+\hfill
+\subfigure[Focus fit]{\includegraphics[width=0.45\linewidth]{feros/focus/feros-focus-6-fit.jpg}\label{fig:ferosfocus-6}}
+\\
+\subfigure[Confirm the focus value (or not)]{\includegraphics[width=0.45\linewidth]{feros/focus/feros-focus-7-focus-value.jpg}\label{fig:ferosfocus-7}}
+\hfill
+\subfigure[Check correct centring of the bright star]{\includegraphics[width=0.45\linewidth]{feros/focus/feros-focus-8-centering.jpg}\label{fig:ferosfocus-8}}
+\\
+\caption[Focus with FEROS]{\Gls{focus} with \gls{feros}.}
+\label{fig:ferosfocus}
+\end{figure*}
 
-\procedure{FEROS focusing}
+Focusing with \gls{feros} takes about 5 minutes.  It is summed up in \figref{ferosfocus} and detailed in \procref{ferosfocus}.
+
+\procedure{FEROS focusing}\label{proc:ferosfocus}
 \begin{enumerate}
-  \item Check that dome and \gls{main mirror} are open (\procref{open}).\label{list:ferosfocus1}
-  \item Check \gls{grond} \gls{M3} and \gls{feros} \gls{mirr3} mirrors (on \gls{wfi} and \gls{feros}, respectively. \secref{insprep}, point~\ref{list:checkmirror}).
-  \item Check that the WFI \gls{protective shutter} is open (\secref{insprep}, point~\ref{list:opencov}).
-  \item Select instrument \texttt{feros} on the \gls{TCS status panel} (screen \texttt{Telescope Control Software}).
-  \item Got to \gls{bob} on screen \texttt{FEROS \gls{ob}} and fetch \gls{focus} \gls{ob}:
+  \item Perform the necessary checks and preparations for FEROS
   \begin{enumerate}
+    \item Check that dome and \gls{main mirror} are open (\procref{open}).\label{list:ferosfocus1}
+    \item Check \gls{grond} \gls{M3} and \gls{feros} \gls{mirr3} mirrors (see \secref{insprep}, point~\ref{list:checkmirror}).
+    \item Check that the WFI \gls{protective shutter} is open (\secref{insprep}, point~\ref{list:opencov}).
+    \item Select instrument \texttt{feros} on the \gls{TCS status panel} (screen \texttt{Telescope Control Software}).
+  \end{enumerate}
+  \item Start the focus \gls{ob}
+  \begin{enumerate}
+     \item Go to \gls{bob} on screen \texttt{FEROS \gls{ob}} and fetch \gls{focus} \gls{ob}:
      \item Use \fetchob.
      \item Select directory \texttt{.../TEMPLATES/OBD/Focus/}.
      \item Select \texttt{Focus-<ra>….obd} with \texttt{<ra>} close to sidereal time.
+     \item Click \texttt{Start} (Fig.~\ref{fig:ferosfocus-1}).
   \end{enumerate}
-  \item Click \texttt{Start}.
-  \item Acquire object on fibre and guide (see \secref{switchingFeros}, point~\ref{list:autoguiderFeros}, \& \secref{ferosguiding}).
+  \item Acquire object on fibre and guide (see \secref{switchingFeros}, point~\ref{list:autoguiderFeros}, \& \secref{ferosguiding})
+  \begin{enumerate}
+     \item Click centering on the \gls{ferosag}\\
+           It is located on \gls{desktop} \texttt{FEROS AG}, screen \texttt{Autoguider GROND \& FEROS}
+     \item Click on the bright star
+     \item Once on fibre, click start guiding on the \gls{autoguiding} panel.
+     \item Once guiding, click on popup asking for acquisition (Fig.~\ref{fig:ferosfocus-2}).
+  \end{enumerate}
   \item Perform the \gls{focus}
   \begin{enumerate}
      \item On the \gls{autoguiding} window, select numbers 6, 3, 0.2.
-     \item After about 30\,s, click \texttt{OK} to pop-up asking to ensure loop time is more than 3.
+     \item After about 30\,s, click \texttt{OK} to pop-up asking to ensure loop time is more than 3 (Fig.~\ref{fig:ferosfocus-3})
      \item A pop-up asks and suggest a \gls{focus} estimate
        \begin{enumerate}
          \item If number is in range 300--500, it should be fine, click \texttt{OK}.
          \item If not, fill in last remembered value or, if you don't have any, 400, then click \texttt{OK}.
        \end{enumerate}
-     \item Shortly after, a pop-up asks to select a star to \gls{focus} on
+     \item\label{list:ferosfocus-select} Shortly after, a pop-up asks to select a star to \gls{focus} on (Fig.~\ref{fig:ferosfocus-4})
         \begin{enumerate}
-           \item A \gls{midas} image appears, left and right-click on a non-saturated source. 
+           \item A \gls{midas} image appears, left and right-click on a non-saturated source (Fig.~\ref{fig:ferosfocus-5}). 
            \item Click \texttt{OK} to pop-up
         \end{enumerate}
-     \item After about 5--10 min a fit to \gls{focus} is done and a pop-up asks whether it is correct
+     \item Wait for the focus to finish (5~min)
+     \begin{enumerate}  
+        \item The white graph window should have points a two curves fitting them (Fig.~\ref{fig:ferosfocus-6})
+        \item A pop-up appears asking action to take about focus fit (Fig.~\ref{fig:ferosfocus-7})
+     \end{enumerate}
+     \item Take time to examine the focus fit quality and answer the popup: 
         \begin{enumerate}
            \item If it seems correct, click \texttt{OK}.
            \item If it seems incorrect, but you can spot a good \gls{focus} value by eye
              \begin{itemize}
                 \item Click \texttt{No} 
-                \item Give guesstimate to new pop-up
+                \item Give your guesstimate to new pop-up and click \texttt{OK}
              \end{itemize}
-           \item If you have no clue, just abort.
+           \item If you think you can try on another star, click \texttt{Retry} and go to step~\ref{list:ferosfocus-select} ($\le 1$\,min).
+           \item If you have no clue, just abort. No focus is performed.
         \end{enumerate} 
   \end{enumerate}
 \end{enumerate}
