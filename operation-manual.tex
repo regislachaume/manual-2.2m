@@ -637,7 +637,7 @@ is enabled in the FEROS control window.]{%
 \gls{desktop}s.  \gls{rtd}, \gls{bob} and FEROS control go to \texttt{BOB+gen state}.]{
   \includegraphics[width=0.45\linewidth]{feros/ferosreboot-5.png}\label{fig:feosu-windows}%
 }\hfill\null
-\caption{\gls{feros} restart.}
+\caption[FEROS restart]{\gls{feros} restart.}
 \label{fig:feros-restart}
 \end{figure}
 
@@ -660,7 +660,7 @@ obtain this status.  If status is \texttt{Fail}, the camera must be restarted (s
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.3\linewidth]{drs/DiskMonit.png}
-\caption{\gls{feros} \gls{drs} Disk Monitor to check free disk space.}
+\caption[FEROS DRS Disk Monitor]{\gls{feros} \gls{drs} Disk Monitor to check free disk space.}
 \label{fig:diskmonit}
 \end{figure}
 %Check \gls{feros} \gls{drs} free disk space.  
@@ -668,7 +668,7 @@ obtain this status.  If status is \texttt{Fail}, the camera must be restarted (s
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=0.45\linewidth]{drs/drs-changedate.png}
-\caption{Changing the date of the \gls{feros} \gls{drs}.}
+\caption[Changing the date of FEROS DRS]{Changing the date of the \gls{feros} \gls{drs}.}
 \label{fig:drsswitch}
 \end{figure}
 The \gls{feros} \gls{drs} should be set to process the data of the 
@@ -2289,7 +2289,7 @@ When closing, you may need panels that are not automatically opened at startup. 
 
 To put the telescope to a safe parking position one has to follow steps in a definite order, in particular, it is best to close the \gls{main mirror} cover before anything else. (Except in an emergency closing of the dome.) 
 
-\procedure{Close the dome.}
+\procedure{Close the dome}
 \begin{enumerate}
 \item Close the \gls{main mirror} cover.\\ 
       In the \gls{TCS setup panel} (\figref{tcssetup}), click \texttt{Close} below \texttt{Main Mirror Cover}. 
@@ -2541,7 +2541,7 @@ About once a month a software maintenance should be done for prophylaxis.
 
 Every six months a weekly software maintenance has an additional step with the reboot of the user workstation.
 
-\procedure{Monthly software maintenance}
+\procedure{Biannual software maintenance}
 \begin{enumerate}
 \item Stop processes and exit sessions (steps~\ref{list:soft:stop}--\ref{list:soft:exit} of \procref{monthly})
 \item Have a reboot of the user workstation done (15 min?)
@@ -2972,9 +2972,22 @@ If a timeout error occurs relating to \texttt{FOCOFF} or some message about
   \item (\gls{wfi}) See \secref{wfifocseqtimeout}.
 \end{itemize}
 
-\subsection{Crash at the beginning of sky flats}
-If the \gls{ob} crashes before the pop-up asking for manual preset, it means
-bob must be killed and the \gls{sky flats} \gls{ob} restarted.
+\subsection{Crash at the beginning of WFI sky flats}
+
+The typical crash is before the first exposure with a timeout error on the first telescope movement.
+
+\procedure{Fix a WFI sky flats crash}
+\begin{enumerate}
+\item Abort the current exposure in the \gls{wfiics}.\\
+      In the \texttt{ICS} \gls{desktop}, use \texttt{Abort Exp./Seq.} on the panel. 
+\item Do one of the following
+   \begin{enumerate}
+        \item If the dome is in manual, set it to automatic. (Likely fix).
+        \item If the dome is in automatic, try a daily restart of \gls{wfi}.
+        \item If a restart of WFI did not help, try a quick \gls{tcs} restart.
+   \end{enumerate} 
+\item Run the flat field \gls{ob} again.
+\end{enumerate}
 
 \subsection{Crash during filtre change in WFI}
 \label{sec:crashfiltre}
@@ -3207,7 +3220,7 @@ Similarly, when rebooting the \gls{w2p2off} with active \gls{ds}, the watch-dog 
 \label{fig:datasubconfig}
 }
 \end{minipage}
-\caption{\gls{feros} \gls{ds}.}
+\caption[FEROS DRS]{\gls{feros} \gls{ds}.}
 \end{figure}
 
 \subsection{Data won't show up}
@@ -3316,7 +3329,7 @@ panel. If it is the case, you have to remove it manually using \procref{ferosadc
 \label{fig:ferostelemetry}
 }
 \end{minipage}
-\caption{\Gls{telemetry} window.}
+\caption[Telemetry window]{\Gls{telemetry} window.}
 \end{figure}
 
 \subsection{WFI}
@@ -3396,7 +3409,7 @@ You need to go to the dome.
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{tcs/TCS-l2p2cam.jpg}
-    \caption{When TCS restart fails to reboot the \gls{feros} \gls{ag} \gls{lcu}}
+    \caption[TCS restart failing to reboot the FEROS AG LCU]{When TCS restart fails to reboot the \gls{feros} \gls{ag} \gls{lcu}}
 \end{figure}
 
 If the start-Up stops with error \texttt{could not send command "PING" to l2p2cam/lccServer}, you probably need to hard reboot the  \gls{feros} \gls{ag} \gls{lcu} in the dome, but try a software reboot first to save time.
@@ -3537,7 +3550,7 @@ If you need to close when the panel is stuck, a few command lines are available 
 \begin{figure}
 \centering
 \includegraphics[width=0.7\linewidth]{dome/dome-adam.jpg}
-\caption{Controlling the hydraulics and mirror cover.}
+\caption{Controlling the hydraulics and mirror cover}
 \label{fig:dome-adam}
 \end{figure}
 
@@ -3599,13 +3612,13 @@ For small zenithal angles there is an apparent misalignment between \gls{slit} a
 \includegraphics[width=\linewidth]{grond/unstucking-grond-m3.png}
 }
 \end{minipage}
-\caption{Writing the \gls{M3} position in the database}
+\caption[Writing the GROND M3 position to the database]{Writing the \gls{M3} position in the database}
 \label{fig:ccs-grondM3}
 \end{figure}
 
 \begin{figure}
 \includegraphics[width=0.6\linewidth]{dome/dome-grond-m3-box.jpg}
-\caption{The GROND \gls{M3} mirror and \gls{mc} control box.}
+\caption[GROND M3 mirror and MC control box]{The GROND \gls{M3} mirror and \gls{mc} control box}
 \label{fig:grondM3-box}
 \end{figure}
 
@@ -3710,7 +3723,7 @@ This is common on the \gls{wfi} screens.
 \label{sec:trouble:pointing}
 \begin{table}[!bt]
 \centering
-\caption{\Gls{pointing model} parameters for each instrument, as of November 2015.}
+\caption[Pointing model parameters for each instrument]{\Gls{pointing model} parameters for each instrument, as of November 2015.}
 \label{tab:pointingmodelcoeff}
 \small
 \begin{tabular}{lrrr}
@@ -3990,25 +4003,25 @@ can be switched.}
 
 \begin{figure}[!ht]
 \centering
-\subfigure[\gls{grond} ``normal \gls{bob}'' with a test \gls{ob}.]{%
+\subfigure[GROND ``normal bob'' with a test OB.]{%
   \includegraphics[width=.49\linewidth]{grond/grond-bob.png}
   \label{fig:grondbob}
 }\hfill
-\subfigure[\gls{grond} control]{%
+\subfigure[GROND control]{%
   \includegraphics[width=.49\linewidth]{grond/grond-control.png}%
   \label{fig:grondcon}
 }
-\caption{The main displays of \gls{grond}.}
+\caption[The main displays of GROND]{The main displays of \gls{grond}.}
 \label{fig:grondmain}
 \end{figure}
 
 \begin{figure}[!ht]
 \centering
-\subfigure[\gls{grond} \gls{fiera} control panel (CCDs)]{%
+\subfigure[GROND FIERA control panel (optical CCDs)]{%
   \includegraphics[width=.43\linewidth]{grond/grond-fiera.png}
   \label{fig:grondfiera}
 }\hfill
-\subfigure[\gls{grond} \gls{irace} control panel (IR detectors)]{%
+\subfigure[GROND IRACE control panel (IR detectors)]{%
   \includegraphics[width=.55\linewidth]{grond/grond-irace.png}%
   \label{fig:grondirace}
 }
@@ -4026,14 +4039,14 @@ can be switched.}
 \begin{figure}[!ht]
 \centering
 \includegraphics[width=.7\linewidth]{dome/dome-auxfunc.png}
-\caption{\gls{domefunc}.}
+\caption[Dome auxiliary functions]{\gls{domefunc}.}
 \label{fig:domefunc}
 \end{figure}
 
 \begin{figure}[!ht]
 \centering
   \includegraphics[width=.7\linewidth]{dome/dome-webcam.png}%
-\caption{\gls{webcam}}
+\caption[Dome webcam]{\gls{webcam}}
 \label{fig:webcam}
 \end{figure}
 
@@ -4068,7 +4081,7 @@ Computer         & Login    & User     & Monitor(s)                 & Descriptio
 \end{table}
 
 \begin{table}
-\caption{Common passwords.}
+\caption{Common passwords}
 \centering
 \begin{tabular}{lll}
 \hline
