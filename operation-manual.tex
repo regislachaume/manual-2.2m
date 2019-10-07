@@ -3404,8 +3404,8 @@ You need to go to the dome.
    \item Put it towards \texttt{ADAM Remote}.
 \end{enumerate}
 
-\section{TCS issues}
-\subsection{Start-up fails with \gls{l2p2cam} error}
+\subsection{TCS}
+\paragraph{Start-up fails with \gls{l2p2cam} error}
 \begin{figure}
     \centering
     \includegraphics[width=\linewidth]{tcs/TCS-l2p2cam.jpg}
@@ -3433,7 +3433,7 @@ If the start-Up stops with error \texttt{could not send command "PING" to l2p2ca
             \end{enumerate}
     \end{enumerate}
 
-\subsection{Start-up fails with telescope not initialised}
+\paragraph{Start-up fails with telescope not initialised}
 
 If the start-up stops with \texttt{telescope not initialised}, you probably forgot to switch the hydraulics and/or drives on or the telescope was not parked at zenith. 
 
@@ -3460,6 +3460,7 @@ If the start-up stops with \texttt{telescope not initialised}, you probably forg
     \item On the error popup, press \texttt{SKIPIT}
 \end{enumerate}
 
+\section{TCS issues}
 \subsection{Quick TCS restart}
 \label{sec:tcsrestart}
 
@@ -3592,6 +3593,35 @@ You need to go to the \gls{dome}.
    \item Go to the dome.
    \item Locate the dome controls (\figref{dome}), placed on the wall opposite to the entrance.
    \item On the dome controls (\figref{dome-control}) turn the leftmost button from local to remote
+\end{enumerate}
+
+\subsection{Slit does not open or close}
+If the slit does not open or close, check if urgent mechanical intervention is needed.
+
+\procedure{Slit does not open or close}
+\begin{enumerate}
+    \item Ensure that the main mirror cover is closed.
+    \item Go to the observing floor in the \gls{dome}.
+    \item Access the \gls{TCS setup panel}
+        \begin{enumerate}
+            \item Locate and turn on the monitors.
+            \item If necessary, log in to the \texttt{tcs} account.
+            \item If necessary, open the \gls{TCS setup panel}.
+        \end{enumerate}
+    \item Try to move the slit doors
+        \begin{enumerate}
+            \item If slit status is \texttt{MOVING}, click \texttt{STOP}.
+            \item Wait for status to say \texttt{STOP} (a few seconds).
+            \item If the slit seems closed, click \texttt{OPEN}
+            \item If the slit is ajar or open, click \texttt{CLOSE}
+        \end{enumerate}
+    \item If the motor turns on and stays on but slit doors do not move
+        \begin{enumerate}
+            \item Click \texttt{STOP}
+            \item Turn off the monitors
+            \item Seek assistance from the someone in the Mechanical group
+            \item File a remedy ticket with a high urgency (4 hours)
+        \end{enumerate}
 \end{enumerate}
 
 \subsection{Dome slit and telescope are not aligned}
@@ -3817,6 +3847,16 @@ If the all sky camera \gls{lascam} is stuck
 \begin{enumerate}
   \item Use the Danish 1.54m camera at \url{http://allsky-dk154.asu.cas.cz/}
   \item Ask an ESO \gls{tio} to restart \gls{lascam}
+\end{enumerate}
+
+\subsection{Dome webcam doesn't show image}
+It may happen that the dome \gls{webcam} doesn't show a live image of the dome---it may still carry sound though. In that case
+\procedure{Power cycle the dome webcam}
+\begin{enumerate}
+   \item Go to the observing floor in the telescope enclosure
+   \item Locate the webcam, close to the big ADAM rack and monitors.
+   \item Unplug the AC cable.
+   \item Plug the AC cable again.
 \end{enumerate}
 
 \section{ESO database issues}
