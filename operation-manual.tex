@@ -3889,9 +3889,21 @@ It may happen that the dome \gls{webcam} doesn't show a live image of the dome--
    \item Data taken as \texttt{TEST} (daily checks) do not appear in the archive.
 \end{enumerate}
 
+\section{Miscellaneous}
+
+\subsection{No sound from bob}
+
+If \gls{bob} does not play sounds to indicate pop-ups or observation finishing, the sound server should be restarted.
+
+\procedure{Restart the sound server}
+\begin{enumerate}
+    \item On any of the workstation, locate or open a terminal
+    \item Type \texttt{ssh grondmpe@wgrondoff "pulseaudio \-\-kill; pulseaudio \-\-start"}
+    \item Enter password (see Table~\ref{tab:pwd})
+\end{enumerate}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-
 
 \chapter{Main systems}
 \label{chap:compo}
@@ -4103,7 +4115,7 @@ Other components may need reboots, they are given in Table~\ref{tab:reboots}.
 \centering
 \begin{tabular}{lllll}
 \hline
-Computer         & Login    & User     & Monitor(s)                 & Description\\\hline\hline
+Computer      & Login    & User     & Monitor(s)                 & Description\\\hline\hline
 \gls{w2p2tcs} & tcs      & tcs      & Telescope Control Software & \gls{tcs}\\
               & cam      & cam      & Autoguider GROND \& FEROS  & Autoguiders\\
 \gls{w2p2ins} & wfi      & wfi      & Wide Field Imager BOB      & WFI user\\
@@ -4116,25 +4128,29 @@ Computer         & Login    & User     & Monitor(s)                 & Descriptio
 \gls{w2p2pl}  & pipeline & pipeline & w2p2pl pipeline            & WFI/FEROS data handling\\       
 \gls{wgrond}  & grond    & grond    & GROND BOB / \gls{fiera} / \gls{irace}  & basic user\\
               &          & grondmgr & ---                        & startup, \gls{bob}, commands\\
+\gls{wgrondoff}& grondmpe & grondmpe & Left to FEROS DRS          & sound server\\
 \hline
 \end{tabular}
 \end{table}
 
 \begin{table}
 \caption{Common passwords}
+\label{tab:pwd}
 \centering
 \begin{tabular}{lll}
 \hline
-Component                 &  User name                                            & Password hint\\
+Component                    &  User name                                            & Password hint\\
 \hline\hline
-Graphical interface user  & tcs, cam, feros, wfi, grond, dhs, pipeline & .5a$\cdots$\\
-Other users               & \gls{visitor}, \gls{service}               & .5a$\cdots$\\
-Instrument manager        & ferosmgr, grondmgr, wfimgr                            & pin2$\cdots$\\
-Workstation administrator & root                                                  & 2be1$\cdots$\\
-Remedy tickets            & 2p2                                                   & .5a$\cdots$\\
-Observing tool            & 0                                                     & OHS4good\\
-Dome auxiliary functions  &                                                       & .5a$\cdots$\\
-p2pp for \gls{mpia}             & MPGUtility, MPGDDT                                    & MPG@$\cdots$\\
+Graphical interface user     & tcs, cam, feros, wfi, grond, dhs, pipeline & .5a$\cdots$\\
+Other users                  & \gls{visitor}, \gls{service}               & .5a$\cdots$\\
+Instrument manager           & ferosmgr, grondmgr, wfimgr                 & pin2$\cdots$\\
+GROND off (grondoff)         & grondmpe                                   & fixed$\cdots$\\
+Workstation administrator    & root                                       & 2be1$\cdots$\\
+Remedy tickets               & 2p2                                        & .5a$\cdots$\\
+Visitor observing tool (vot) & sciops2p2                                  & alwaysB$\cdots$\\
+Dome auxiliary functions     &                                            & .5a$\cdots$\\
+p2 for La Silla (p2ls)       & MPGUtility, MPGDDT                         & MPG@$\cdots$\\
+                             & sciops2p2                                  & alwaysB$\cdots$\\
 \hline
 \end{tabular}
 \end{table}
