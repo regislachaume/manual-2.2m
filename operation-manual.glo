@@ -1,0 +1,1449 @@
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{10}
+\glossaryentry{control room?\glossentry{control room}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{visitor?\glossentry{visitor}|setentrycounter[]{page}\glsnumberformat}{17}
+\glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{visitor?\glossentry{visitor}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{MPIA?\glossentry{mpia}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{MPE?\glossentry{mpe}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{visitor?\glossentry{visitor}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{MPIA?\glossentry{mpia}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{18}
+\glossaryentry{control room?\glossentry{control room}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{dome webcam?\glossentry{webcam}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{control room?\glossentry{control room}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{19}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{20}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{ADAM?\glossentry{adam}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{21}
+\glossaryentry{dome flat fields?\glossentry{dome flats}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{dome flat fields?\glossentry{dome flats}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{ICS?\glossentry{ics}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{osf2p2StartUp?\glossentry{osf2p2StartUp}|setentrycounter[]{page}\glsnumberformat}{23}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{Dome Auxiliary Functions?\glossentry{domefunc}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{lte2p2?\glossentry{lte2p2}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{24}
+\glossaryentry{osf2p2StartUp?\glossentry{osf2p2StartUp}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{dome flat fields?\glossentry{dome flats}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{fcdTelemetry?\glossentry{fcdTelemetry}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{fcdTelemetry?\glossentry{fcdTelemetry}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{25}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{osf2p2StartUp?\glossentry{osf2p2StartUp}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{w2p2cam?\glossentry{w2p2cam}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{26}
+\glossaryentry{wgrond?\glossentry{wgrond}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{grinsStop?\glossentry{grinsStop}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{grinsStart?\glossentry{grinsStart}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{grondGRI?\glossentry{grondGRI}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{grondSHUTTER?\glossentry{grondSHUTTER}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{grondFM?\glossentry{grondFM}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{w2p2cam?\glossentry{w2p2cam}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{grondCS?\glossentry{grondCS}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{irtd?\glossentry{irtd}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{27}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{dome flat fields?\glossentry{dome flats}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{28}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{29}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{lte2p2?\glossentry{lte2p2}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{30}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{31}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{32}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{33}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{34}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{dome slit?\glossentry{slit}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{dome flat fields?\glossentry{dome flats}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{Dome Auxiliary Functions?\glossentry{domefunc}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{35}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{visitor?\glossentry{visitor}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{dome flat fields?\glossentry{dome flats}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{36}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{37}
+\glossaryentry{dome flat fields?\glossentry{dome flats}|setentrycounter[]{page}\glsnumberformat}{37}
+\glossaryentry{dome slit?\glossentry{slit}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{rose diagram?\glossentry{rose diagram}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{dome slit?\glossentry{slit}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{Dome Auxiliary Functions?\glossentry{domefunc}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{Dome Auxiliary Functions?\glossentry{domefunc}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{39}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{cold shutter?\glossentry{cs}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{grondCS?\glossentry{grondCS}|setentrycounter[]{page}\glsnumberformat}{40}
+\glossaryentry{grondSHUTTER?\glossentry{grondSHUTTER}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{FEROS ICS Control?\glossentry{ferosics}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{grondSHUTTER?\glossentry{grondSHUTTER}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{41}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{spectrophotometric standard?\glossentry{spectrophotometric standard}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{spectrophotometric standard?\glossentry{spectrophotometric standard}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{radial velocity standard?\glossentry{rv standard}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{standard field?\glossentry{standard field}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{standard field?\glossentry{standard field}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{43}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{44}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{spectrophotometric standard?\glossentry{spectrophotometric standard}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{control room?\glossentry{control room}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{spectrophotometric standard?\glossentry{spectrophotometric standard}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{Pick Object?\glossentry{pickobj}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{45}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{46}
+\glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{47}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{standard field?\glossentry{standard field}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{48}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{spectrophotometric standard?\glossentry{spectrophotometric standard}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{radial velocity standard?\glossentry{rv standard}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{49}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{50}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{50}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{spectrophotometric standard?\glossentry{spectrophotometric standard}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{radial velocity standard?\glossentry{rv standard}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{grondGRI?\glossentry{grondGRI}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{grondSHUTTER?\glossentry{grondSHUTTER}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{grondFM?\glossentry{grondFM}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{51}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{52}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{52}
+\glossaryentry{grondCS?\glossentry{grondCS}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{irtd?\glossentry{irtd}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{standard field?\glossentry{standard field}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{grondCS?\glossentry{grondCS}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{sky flat fields?\glossentry{sky flats}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{MPE?\glossentry{mpe}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{53}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{standard field?\glossentry{standard field}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{RRM?\glossentry{rrm}|setentrycounter[]{page}\glsnumberformat}{54}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{55}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{ICS Control?\glossentry{ICS Control}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{56}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{Pick Object?\glossentry{pickobj}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{Pick Object?\glossentry{pickobj}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{Pick Object?\glossentry{pickobj}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{57}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{58}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{59}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{skycat?\glossentry{skycat}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{ICS Control?\glossentry{ICS Control}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{60}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{61}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{62}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{63}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{E2P2 REAL TIME DISPLAY?\glossentry{ferosag}|setentrycounter[]{page}\glsnumberformat}{64}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{65}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{RRM?\glossentry{rrm}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{66}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Pick Reference Star?\glossentry{pickrefstar}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{Telescope R.T.D.?\glossentry{grondag}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{autoguiding?\glossentry{autoguiding}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{67}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{68}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{dome webcam?\glossentry{webcam}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Dome Auxiliary Functions?\glossentry{domefunc}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{rose diagram?\glossentry{rose diagram}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{dome slit?\glossentry{slit}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{69}
+\glossaryentry{dome slit?\glossentry{slit}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{dome webcam?\glossentry{webcam}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{TIO?\glossentry{tio}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{dome flat fields?\glossentry{dome flats}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{RRM?\glossentry{rrm}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{cold shutter?\glossentry{cs}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{grondCS?\glossentry{grondCS}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{FEROS ICS Control?\glossentry{ferosics}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{Dome Auxiliary Functions?\glossentry{domefunc}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{70}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{71}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{73}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{74}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{75}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{w2p2tcs?\glossentry{w2p2tcs}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{w2p2ins?\glossentry{w2p2ins}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{wferos?\glossentry{wferos}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{w2p2dhs?\glossentry{w2p2dhs}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{w2p2pl?\glossentry{w2p2pl}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{w2p2off?\glossentry{w2p2off}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{p2pp?\glossentry{p2pp}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{ot?\glossentry{ot}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{uws2p2?\glossentry{uws2p2}|setentrycounter[]{page}\glsnumberformat}{76}
+\glossaryentry{dome slit?\glossentry{slit}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{ICS?\glossentry{ics}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{cold shutter?\glossentry{cs}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{grondMC?\glossentry{grondMC}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{grondCS?\glossentry{grondCS}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{77}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{e2p2StartTCCDs?\glossentry{e2p2StartTCCDs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{e2p2StartTCCDs?\glossentry{e2p2StartTCCDs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{e2p2StopTCCDs?\glossentry{e2p2StopTCCDs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{e2p2StartTCCDs?\glossentry{e2p2StartTCCDs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{l2p2agr?\glossentry{l2p2agr}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{e2p2StartTCCDs?\glossentry{e2p2StartTCCDs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{e2p2StartTCCDs?\glossentry{e2p2StartTCCDs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{e2p2StopTCCDs?\glossentry{e2p2StopTCCDs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{e2p2StartTCCDs?\glossentry{e2p2StartTCCDs}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{l2p2cam?\glossentry{l2p2cam}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{78}
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{wfinsStopTCCDS?\glossentry{wfinsStopTCCDS}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{wfinsStartTCCDS?\glossentry{wfinsStartTCCDS}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{wwffcd?\glossentry{wwffcd}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{79}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{acquisition?\glossentry{acquisition}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{stall?\glossentry{stall}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{flip mirror?\glossentry{flip mirror}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{grondFM?\glossentry{grondFM}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{w2p2cam?\glossentry{w2p2cam}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{grondSHUTTER?\glossentry{grondSHUTTER}|setentrycounter[]{page}\glsnumberformat}{80}
+\glossaryentry{IRACE?\glossentry{irace}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{IRACE?\glossentry{irace}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{grinsStop?\glossentry{grinsStop}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{grinsStart?\glossentry{grinsStart}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{wwffcd?\glossentry{wwffcd}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{w2p2tcs?\glossentry{w2p2tcs}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{wfinsStopTCCDS?\glossentry{wfinsStopTCCDS}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{SCCD?\glossentry{sccd}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{wfinsStopTCCDS?\glossentry{wfinsStopSCCDS}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{wfinsStartSCCDS?\glossentry{wfinsStartSCCDS}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{wfinsStartTCCDS?\glossentry{wfinsStartTCCDS}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{81}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{stall?\glossentry{stall}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{stall?\glossentry{stall}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{flip mirror?\glossentry{flip mirror}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{grondGRI?\glossentry{grondGRI}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{grondSHUTTER?\glossentry{grondSHUTTER}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{grondSHUTTER?\glossentry{grondSHUTTER}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{w2p2tcs?\glossentry{w2p2tcs}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{82}
+\glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{template?\glossentry{template}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{83}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{State Manager?\glossentry{state manager}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{FEROS ICS Control?\glossentry{ferosics}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{FEROS ICS Control?\glossentry{ferosics}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{ICS Control?\glossentry{ICS Control}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{84}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{w2p2off?\glossentry{w2p2off}|setentrycounter[]{page}\glsnumberformat}{85}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{MIDAS?\glossentry{midas}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{w2p2off?\glossentry{w2p2off}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{w2p2pl?\glossentry{w2p2pl}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{w2p2pl?\glossentry{w2p2pl}|setentrycounter[]{page}\glsnumberformat}{86}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{fcdTelemetry?\glossentry{fcdTelemetry}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{ICS Control?\glossentry{ICS Control}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{virtual desktop?\glossentry{desktop}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{87}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{wwffcd?\glossentry{wwffcd}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{wwffcd?\glossentry{wwffcd}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{wwffcd?\glossentry{wwffcd}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{ADAM?\glossentry{adam}|setentrycounter[]{page}\glsnumberformat}{88}
+\glossaryentry{l2p2cam?\glossentry{l2p2cam}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{l2p2cam?\glossentry{l2p2cam}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{l2p2cam?\glossentry{l2p2cam}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{Dome Auxiliary Functions?\glossentry{domefunc}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{89}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{lte2p2?\glossentry{lte2p2}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{General State?\glossentry{General State}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{stall?\glossentry{stall}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{ADC?\glossentry{adc}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{90}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{ADAM?\glossentry{adam}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{dome slit?\glossentry{slit}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{rose diagram?\glossentry{rose diagram}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{91}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{ICS?\glossentry{ics}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grondM3?\glossentry{grondM3}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grinsStop?\glossentry{grinsStop}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grinsStart?\glossentry{grinsStart}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grondSHUTTER?\glossentry{grondSHUTTER}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grinsStop?\glossentry{grinsStop}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{wgrond?\glossentry{wgrond}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grinsStart?\glossentry{grinsStart}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{stall?\glossentry{stall}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{IRACE?\glossentry{irace}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{grinsStop?\glossentry{grinsStop}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{IRACE?\glossentry{irace}|setentrycounter[]{page}\glsnumberformat}{92}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{IRACE?\glossentry{irace}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{control room?\glossentry{control room}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{93}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{control room?\glossentry{control room}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{control room?\glossentry{control room}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{TCS setup panel?\glossentry{TCS setup panel}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{LASCAM?\glossentry{lascam}|setentrycounter[]{page}\glsnumberformat}{94}
+\glossaryentry{TIO?\glossentry{tio}|setentrycounter[]{page}\glsnumberformat}{95}
+\glossaryentry{LASCAM?\glossentry{lascam}|setentrycounter[]{page}\glsnumberformat}{95}
+\glossaryentry{dome webcam?\glossentry{webcam}|setentrycounter[]{page}\glsnumberformat}{95}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{95}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{95}
+\glossaryentry{l2p2cam?\glossentry{l2p2cam}|setentrycounter[]{page}\glsnumberformat}{96}
+\glossaryentry{l2p2cam?\glossentry{l2p2cam}|setentrycounter[]{page}\glsnumberformat}{96}
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{96}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{96}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{96}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{96}
+\glossaryentry{l2p2cam?\glossentry{l2p2cam}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{l2p2agr?\glossentry{l2p2agr}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{97}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{data subscriber?\glossentry{ds}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{98}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{99}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{99}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{99}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{99}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{100}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{101}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{101}
+\glossaryentry{M3?\glossentry{M3}|setentrycounter[]{page}\glsnumberformat}{102}
+\glossaryentry{main cover?\glossentry{mc}|setentrycounter[]{page}\glsnumberformat}{102}
+\glossaryentry{IRACE?\glossentry{irace}|setentrycounter[]{page}\glsnumberformat}{102}
+\glossaryentry{IRACE?\glossentry{irace}|setentrycounter[]{page}\glsnumberformat}{102}
+\glossaryentry{main mirror?\glossentry{main mirror}|setentrycounter[]{page}\glsnumberformat}{102}
+\glossaryentry{power cycle?\glossentry{power cycle}|setentrycounter[]{page}\glsnumberformat}{102}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{pointing?\glossentry{pointing}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{rose diagram?\glossentry{rose diagram}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{dome slit?\glossentry{slit}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{105}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{dome?\glossentry{dome}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{preset?\glossentry{preset}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{106}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{rtd?\glossentry{rtd}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{107}
+\glossaryentry{TCS status panel?\glossentry{TCS status panel}|setentrycounter[]{page}\glsnumberformat}{108}
+\glossaryentry{pointing model?\glossentry{pointing model}|setentrycounter[]{page}\glsnumberformat}{108}
+\glossaryentry{w2p2tcs?\glossentry{w2p2tcs}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{w2p2ins?\glossentry{w2p2ins}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{wferos?\glossentry{wferos}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{w2p2dhs?\glossentry{w2p2dhs}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{visitor?\glossentry{visitor}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{w2p2off?\glossentry{w2p2off}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{w2p2pl?\glossentry{w2p2pl}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{wgrond?\glossentry{wgrond}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{IRACE?\glossentry{irace}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{bob?\glossentry{bob}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{wgrondoff?\glossentry{wgrondoff}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{visitor?\glossentry{visitor}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{109}
+\glossaryentry{Auxiliary Functions?\glossentry{auxfunc}|setentrycounter[]{page}\glsnumberformat}{110}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{110}
+\glossaryentry{protective shutter?\glossentry{protective shutter}|setentrycounter[]{page}\glsnumberformat}{110}
+\glossaryentry{WFI ICS Control?\glossentry{wfiics}|setentrycounter[]{page}\glsnumberformat}{110}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{State Manager?\glossentry{state manager}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{lte2p2?\glossentry{lte2p2}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{VME?\glossentry{vme}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{wwffcd?\glossentry{wwffcd}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{lfeics1?\glossentry{lfeics1}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{ICS Control?\glossentry{ICS Control}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{w2p2cam?\glossentry{w2p2cam}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{l2p2cam?\glossentry{l2p2cam}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{wfefcd?\glossentry{wfefcd}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{wgrccd?\glossentry{wgrccd}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{computer room?\glossentry{computer room}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{lccBoot?\glossentry{lccBoot}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{w2p2cam?\glossentry{w2p2agr}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{l2p2agr?\glossentry{l2p2agr}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{uws2p2?\glossentry{uws2p2}|setentrycounter[]{page}\glsnumberformat}{111}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{112}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{112}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{113}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{113}
+\glossaryentry{FEROS ICS Control?\glossentry{ferosics}|setentrycounter[]{page}\glsnumberformat}{114}
+\glossaryentry{mirr3?\glossentry{mirr3}|setentrycounter[]{page}\glsnumberformat}{114}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{114}
+\glossaryentry{ICS?\glossentry{ics}|setentrycounter[]{page}\glsnumberformat}{114}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{115}
+\glossaryentry{Dome Auxiliary Functions?\glossentry{domefunc}|setentrycounter[]{page}\glsnumberformat}{116}
+\glossaryentry{dome webcam?\glossentry{webcam}|setentrycounter[]{page}\glsnumberformat}{117}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{119}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{Windows desktop?\glossentry{windows}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{telemetry?\glossentry{telemetry}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{ICS?\glossentry{ics}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{120}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{121}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{121}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{TCS?\glossentry{tcs}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{visitor?\glossentry{visitor}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{122}
+\glossaryentry{TCS control panel?\glossentry{TCS control panel}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{focus?\glossentry{focus}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{123}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{AG?\glossentry{ag}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{MPIA?\glossentry{mpia}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{service?\glossentry{service}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{LCU?\glossentry{lcu}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{OB?\glossentry{ob}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{DRS?\glossentry{drs}|setentrycounter[]{page}\glsnumberformat}{124}
+\glossaryentry{FEROS?\glossentry{feros}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{ICS?\glossentry{ics}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{SCCD?\glossentry{sccd}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{SCCD?\glossentry{sccd}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{TCCD?\glossentry{tccd}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{GROND?\glossentry{grond}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{WFI?\glossentry{wfi}|setentrycounter[]{page}\glsnumberformat}{125}
+\glossaryentry{FIERA?\glossentry{fiera}|setentrycounter[]{page}\glsnumberformat}{125}

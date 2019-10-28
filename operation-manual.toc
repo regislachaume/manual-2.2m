@@ -1,0 +1,161 @@
+\babel@toc {english}{}
+\contentsline {chapter}{List of Figures}{9}{chapter*.1}
+\contentsline {chapter}{List of Tables}{11}{chapter*.2}
+\contentsline {chapter}{List of procedures}{13}{chapter*.3}
+\contentsline {chapter}{\numberline {1}Introduction}{17}{chapter.1}
+\contentsline {section}{\numberline {1.1}Control room}{17}{section.1.1}
+\contentsline {section}{\numberline {1.2}Overview of operations}{17}{section.1.2}
+\contentsline {section}{\numberline {1.3}Security}{18}{section.1.3}
+\contentsline {section}{\numberline {1.4}Telescope building}{19}{section.1.4}
+\contentsline {chapter}{\numberline {2}Early afternoon: daily start-up}{23}{chapter.2}
+\contentsline {section}{\numberline {2.1}Outline}{23}{section.2.1}
+\contentsline {section}{\numberline {2.2}WFI startup}{29}{section.2.2}
+\contentsline {section}{\numberline {2.3}TCS startup}{30}{section.2.3}
+\contentsline {section}{\numberline {2.4}FEROS startup}{31}{section.2.4}
+\contentsline {section}{\numberline {2.5}GROND and FEROS AG}{32}{section.2.5}
+\contentsline {section}{\numberline {2.6}FEROS DRS}{32}{section.2.6}
+\contentsline {section}{\numberline {2.7}Additional material}{32}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Harmless error messages}{32}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Display settings}{32}{subsection.2.7.2}
+\contentsline {chapter}{\numberline {3}Afternoon: Day-time calibrations}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}WFI}{35}{section.3.1}
+\contentsline {section}{\numberline {3.2}FEROS}{36}{section.3.2}
+\contentsline {section}{\numberline {3.3}GROND}{37}{section.3.3}
+\contentsline {chapter}{\numberline {4}Sunset: Getting ready}{39}{chapter.4}
+\contentsline {section}{\numberline {4.1}Opening}{39}{section.4.1}
+\contentsline {section}{\numberline {4.2}Telescope readying}{39}{section.4.2}
+\contentsline {section}{\numberline {4.3}Making the instruments ready (at sunset)}{40}{section.4.3}
+\contentsline {section}{\numberline {4.4}Refining the night plan}{41}{section.4.4}
+\contentsline {chapter}{\numberline {5}Twilight: On-sky calibrations}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Outline}{43}{section.5.1}
+\contentsline {section}{\numberline {5.2}WFI}{44}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Sky flats}{44}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Pointing}{45}{subsection.5.2.2}
+\contentsline {subsubsection}{Pointing with FEROS}{45}{section*.5}
+\contentsline {subsubsection}{Pointing and autoguider test with WFI}{45}{section*.6}
+\contentsline {subsection}{\numberline {5.2.3}Focus}{46}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Standard fields (quick tips)}{48}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}FEROS}{49}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Focus}{49}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Focus and spectrophotometric standard}{51}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Radial velocity standards}{51}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}GROND}{51}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Sky flats}{51}{subsection.5.4.1}
+\contentsline {paragraph}{Evening flats}{51}{section*.7}
+\contentsline {paragraph}{Standards}{53}{section*.8}
+\contentsline {paragraph}{Morning flats}{53}{section*.9}
+\contentsline {subsection}{\numberline {5.4.2}Focus}{53}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Photometric standard fields}{54}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}RRM online}{54}{subsection.5.4.4}
+\contentsline {chapter}{\numberline {6}Night: Observing}{55}{chapter.6}
+\contentsline {section}{\numberline {6.1}WFI}{55}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Popup handling}{55}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Switching to WFI}{55}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Refining acquisition}{56}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Guiding}{57}{subsection.6.1.4}
+\contentsline {section}{\numberline {6.2}FEROS}{60}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Switching to FEROS}{60}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Guiding}{62}{subsection.6.2.2}
+\contentsline {paragraph}{On fibre}{62}{section*.10}
+\contentsline {paragraph}{Off fibre}{63}{section*.11}
+\contentsline {paragraph}{Using the WFI autoguider}{64}{section*.12}
+\contentsline {section}{\numberline {6.3}GROND}{65}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Switching to GROND}{65}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}React to an automatic trigger}{66}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Guiding}{67}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}All instruments}{67}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Run an observing block}{67}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Skip the preset}{68}{subsection.6.4.2}
+\contentsline {chapter}{\numberline {7}Morning: Closing \& Calibrations}{69}{chapter.7}
+\contentsline {section}{\numberline {7.1}Panels referred to}{69}{section.7.1}
+\contentsline {section}{\numberline {7.2}Telescope}{69}{section.7.2}
+\contentsline {section}{\numberline {7.3}Instruments}{70}{section.7.3}
+\contentsline {section}{\numberline {7.4}Dome}{70}{section.7.4}
+\contentsline {section}{\numberline {7.5}Tidying folders}{70}{section.7.5}
+\contentsline {section}{\numberline {7.6}Health checks \& internal calibrations}{71}{section.7.6}
+\contentsline {chapter}{\numberline {8}Managing observing blocks}{73}{chapter.8}
+\contentsline {section}{\numberline {8.1}Transferring OBs from one's laptop}{73}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Standard way}{73}{subsection.8.1.1}
+\contentsline {subsection}{\numberline {8.1.2}Loading manually}{73}{subsection.8.1.2}
+\contentsline {section}{\numberline {8.2}OT}{74}{section.8.2}
+\contentsline {chapter}{\numberline {9}Software maintenance}{75}{chapter.9}
+\contentsline {section}{\numberline {9.1}Monthly}{75}{section.9.1}
+\contentsline {section}{\numberline {9.2}Every six months}{76}{section.9.2}
+\contentsline {chapter}{\numberline {10}Troubleshooting}{77}{chapter.10}
+\contentsline {section}{\numberline {10.1}No flux or little flux}{77}{section.10.1}
+\contentsline {section}{\numberline {10.2}Autoguider camera fails}{77}{section.10.2}
+\contentsline {subsection}{\numberline {10.2.1}GROND}{78}{subsection.10.2.1}
+\contentsline {subsection}{\numberline {10.2.2}FEROS}{78}{subsection.10.2.2}
+\contentsline {subsection}{\numberline {10.2.3}WFI}{79}{subsection.10.2.3}
+\contentsline {section}{\numberline {10.3}OB doesn't work}{80}{section.10.3}
+\contentsline {subsection}{\numberline {10.3.1}OB gives an error when started}{80}{subsection.10.3.1}
+\contentsline {subsection}{\numberline {10.3.2}OB stalls before starting to observe}{80}{subsection.10.3.2}
+\contentsline {subsection}{\numberline {10.3.3}Crash before an exposure}{80}{subsection.10.3.3}
+\contentsline {subsection}{\numberline {10.3.4}Crash during an exposure}{82}{subsection.10.3.4}
+\contentsline {subsection}{\numberline {10.3.5}Crash during telescope offset}{82}{subsection.10.3.5}
+\contentsline {subsection}{\numberline {10.3.6}Crash during a telescope focus offset}{82}{subsection.10.3.6}
+\contentsline {subsection}{\numberline {10.3.7}Crash at the beginning of WFI sky flats}{83}{subsection.10.3.7}
+\contentsline {subsection}{\numberline {10.3.8}Crash during filtre change in WFI}{83}{subsection.10.3.8}
+\contentsline {section}{\numberline {10.4}Focus issues}{83}{section.10.4}
+\contentsline {subsection}{\numberline {10.4.1}GROND autoguider defocused}{83}{subsection.10.4.1}
+\contentsline {subsection}{\numberline {10.4.2}Defocused wih FEROS ACS}{83}{subsection.10.4.2}
+\contentsline {subsection}{\numberline {10.4.3}WFI focus sequence fails with a timeout}{83}{subsection.10.4.3}
+\contentsline {subsection}{\numberline {10.4.4}No focus offset when filtres are changed}{84}{subsection.10.4.4}
+\contentsline {section}{\numberline {10.5}FEROS ADC}{84}{section.10.5}
+\contentsline {subsection}{\numberline {10.5.1}ADC cannot be put off}{84}{subsection.10.5.1}
+\contentsline {subsection}{\numberline {10.5.2}Telescope focus is not corrected when ADC enters}{85}{subsection.10.5.2}
+\contentsline {section}{\numberline {10.6}FEROS-DRS}{85}{section.10.6}
+\contentsline {subsection}{\numberline {10.6.1}FEROS exposure number is close to 10\tmspace +\thinmuskip {.1667em}000}{85}{subsection.10.6.1}
+\contentsline {subsection}{\numberline {10.6.2}FEROS DRS fails}{85}{subsection.10.6.2}
+\contentsline {subsection}{\numberline {10.6.3}Problems to restart the FEROS-DRS and data subscriber}{85}{subsection.10.6.3}
+\contentsline {subsection}{\numberline {10.6.4}Data won't show up}{86}{subsection.10.6.4}
+\contentsline {section}{\numberline {10.7}Startup issues}{87}{section.10.7}
+\contentsline {subsection}{\numberline {10.7.1}FEROS}{87}{subsection.10.7.1}
+\contentsline {paragraph}{Timeout}{87}{section*.13}
+\contentsline {paragraph}{Telemetry is not active}{87}{section*.14}
+\contentsline {paragraph}{Instrument stays in STANDBY}{87}{section*.15}
+\contentsline {subsection}{\numberline {10.7.2}WFI}{88}{subsection.10.7.2}
+\contentsline {subsection}{\numberline {10.7.3}Hydraulics cannot be switched on/off}{88}{subsection.10.7.3}
+\contentsline {subsection}{\numberline {10.7.4}TCS}{89}{subsection.10.7.4}
+\contentsline {paragraph}{Start-up fails with \gls {l2p2cam} error}{89}{section*.16}
+\contentsline {paragraph}{Start-up fails with telescope not initialised}{89}{section*.17}
+\contentsline {section}{\numberline {10.8}TCS issues}{89}{section.10.8}
+\contentsline {subsection}{\numberline {10.8.1}Quick TCS restart}{89}{subsection.10.8.1}
+\contentsline {subsection}{\numberline {10.8.2}No connection with VME}{90}{subsection.10.8.2}
+\contentsline {subsection}{\numberline {10.8.3}TCS is OFF on an instrument}{90}{subsection.10.8.3}
+\contentsline {subsection}{\numberline {10.8.4}Telescope doesn't take focus orders}{90}{subsection.10.8.4}
+\contentsline {subsection}{\numberline {10.8.5}TCS Setup panel is stuck}{90}{subsection.10.8.5}
+\contentsline {subsection}{\numberline {10.8.6}Main mirror cover cannot be moved}{90}{subsection.10.8.6}
+\contentsline {subsection}{\numberline {10.8.7}Dome doesn't move}{91}{subsection.10.8.7}
+\contentsline {subsection}{\numberline {10.8.8}Slit does not open or close}{91}{subsection.10.8.8}
+\contentsline {subsection}{\numberline {10.8.9}Dome slit and telescope are not aligned}{91}{subsection.10.8.9}
+\contentsline {section}{\numberline {10.9}GROND issues}{92}{section.10.9}
+\contentsline {subsection}{\numberline {10.9.1}GROND M3 is stuck}{92}{subsection.10.9.1}
+\contentsline {subsection}{\numberline {10.9.2}GROND OB only crashes with TCS on}{92}{subsection.10.9.2}
+\contentsline {subsection}{\numberline {10.9.3}GROND IR exposure won't start}{92}{subsection.10.9.3}
+\contentsline {section}{\numberline {10.10}Freezing issues}{93}{section.10.10}
+\contentsline {subsection}{\numberline {10.10.1}Mouse pointer does not move}{93}{subsection.10.10.1}
+\contentsline {section}{\numberline {10.11}Pointing issues}{93}{section.10.11}
+\contentsline {subsection}{\numberline {10.11.1}Pointing is incorrect}{93}{subsection.10.11.1}
+\contentsline {subsection}{\numberline {10.11.2}Telescope is stuck at low elevation}{94}{subsection.10.11.2}
+\contentsline {section}{\numberline {10.12}Web pages}{94}{section.10.12}
+\contentsline {subsection}{\numberline {10.12.1}2.2m Environmental Monitor stuck}{94}{subsection.10.12.1}
+\contentsline {subsection}{\numberline {10.12.2}All sky camera}{94}{subsection.10.12.2}
+\contentsline {subsection}{\numberline {10.12.3}Dome webcam doesn't show image}{95}{subsection.10.12.3}
+\contentsline {section}{\numberline {10.13}ESO database issues}{95}{section.10.13}
+\contentsline {section}{\numberline {10.14}Miscellaneous}{95}{section.10.14}
+\contentsline {subsection}{\numberline {10.14.1}No sound from bob}{95}{subsection.10.14.1}
+\contentsline {chapter}{\numberline {11}Main systems}{105}{chapter.11}
+\contentsline {section}{\numberline {11.1}Telescope control software}{105}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}Manual preset}{106}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}Manual offset}{106}{subsection.11.1.2}
+\contentsline {subsection}{\numberline {11.1.3}Autoguider}{106}{subsection.11.1.3}
+\contentsline {section}{\numberline {11.2}WFI}{107}{section.11.2}
+\contentsline {section}{\numberline {11.3}FEROS}{107}{section.11.3}
+\contentsline {section}{\numberline {11.4}GROND}{107}{section.11.4}
+\contentsline {section}{\numberline {11.5}P2PP and OT}{107}{section.11.5}
+\contentsline {section}{\numberline {11.6}FEROS reduction software}{107}{section.11.6}
+\contentsline {section}{\numberline {11.7}Dome controls}{107}{section.11.7}
+\contentsline {section}{\numberline {11.8}Computers}{107}{section.11.8}
+\contentsline {chapter}{\leavevmode {\color {ocre}Glossary}}{125}{chapter*.19}
+\contentsfinish 
