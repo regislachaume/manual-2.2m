@@ -11,6 +11,7 @@
 \newacronym{feros}{FEROS}{Fibre-fed Extended Range Optical Spectrograph}
 \newacronym{tccd}{TCCD}{Technical CCD}
 \newacronym{sccd}{SCCD}{Science CDD}
+\newglossaryentry{environment}{name=environment,description={A specific set of computer processes and database values dedicated to a specific job for the instrument and telescope operations.}}
 \newglossaryentry{autoguiding}{name=\texttt{Autoguiding},sort=autoguiding,description={Window controlling the settings of the \acrlong{ag} of \gls{feros} and \gls{grond}}}
 \newglossaryentry{fiera}{name=FIERA,description={Electronics systems controlling the optical detectors}}
 \newglossaryentry{irace}{name=IRACE,description={Electronics systems controlling the infrared detectors.}}
@@ -68,9 +69,10 @@
 \newglossaryentry{grondCS}{name=grondCS,description={Command controlling the shutter of the infrared arm of GROND}}
 \newglossaryentry{grondMC}{name=grondMC,description={Command controlling the main cover (a.k.a. protective cover or main shutter) of GROND}}
 \newglossaryentry{uws2p2}{name=\texttt{uws2p2},sort=uws2p2,description={User workstation of the 2.2m metre telescope. All workstation are virtually run on it.}}
-\newglossaryentry{w2p2tcs}{name=\texttt{w2p2tcs},sort=w2p2tcs,description={Workstation of the Telescope Control software}}
+\newglossaryentry{w2p2tcs}{name=\texttt{w2p2tcs},sort=w2p2tcs,description={Environment (user \texttt{tcs@w2p2tcs}) and eponymous workstation of the Telescope Control software}}
+\newglossaryentry{w2p2wfi}{name=\texttt{w2p2wfi},sort=w2p2wfi,description={Environment corresponding to WFI operations (user \texttt{wfi@w2p2ins}, graphic user \texttt{wfi})}}
 \newglossaryentry{slit}{name=dome slit,description={Dome slit, through which it is observed when open}}
-\newglossaryentry{w2p2ins}{name=\texttt{w2p2ing},sort=w2p2ins,description={Workstation of WFI}}
+\newglossaryentry{w2p2ins}{name=\texttt{w2p2ins},sort=w2p2ins,description={Workstation of WFI}}
 \newglossaryentry{mirr3}{name=mirr3,description={FEROS M3 mirror}}
 \newglossaryentry{grondM3}{name=grondM3,description={GROND M3 mirror and command controlling it}}
 \newglossaryentry{dome flats}{name=dome flat fields,description={Flat fields acquired on the flat field screen on the dome, using a lamp for illumination.}}
@@ -81,27 +83,31 @@
 \newglossaryentry{wgrond}{name=\texttt{wgrond},sort=wgrond,description={Workstation of GROND}}
 \newglossaryentry{wgrondoff}{name=\texttt{wgrondoff},sort=wgrondoff,description={GROND workstation for sound server and offline work}}
 \newglossaryentry{power cycle}{name=power cycle,description={Action consisting of switching off an electronic device, waiting for a few seconds, and switching it back on.}}
-\newglossaryentry{wwffcd}{name=\texttt{wwffcd},sort=wwffcd,description={Workstation controlling the \gls{wfi} detector electronics (\gls{fiera})}}
-\newglossaryentry{wfefcd}{name=\texttt{wfefcd},sort=wfefcd,description={Workstation controlling the \gls{feros} detector electronics (\gls{fiera})}}
-\newglossaryentry{wgrccd}{name=\texttt{wgrccd},sort=wgrccd,description={Workstation controlling the \gls{grond} optical detector electronics (\gls{fiera})}}
+\newglossaryentry{workstation}{name=workstation,description={A computer, with or without a scree attached, that runs some unix or linux flavour.  In opposition to LCU and terminal.}}
+\newglossaryentry{wwffcd}{name=\texttt{wwffcd},sort=wwffcd,description={Environment and eponymous workstation controlling the \gls{wfi} detector electronics (\gls{fiera})}}
+\newglossaryentry{wfefcd}{name=\texttt{wfefcd},sort=wfefcd,description={Environment and eponymous workstation controlling the \gls{feros} detector electronics (\gls{fiera})}}
+\newglossaryentry{wgrccd}{name=\texttt{wgrccd},sort=wgrccd,description={Environment and eponymous workstation controlling the \gls{grond} optical detector electronics (\gls{fiera})}}
 \newglossaryentry{desktop}{name={virtual desktop},description={A virtual desktop, or desktop, is a working environment showing on the screen of the linux/unix workstations. It is possible to switch between them on the same machine, achieving the same result as having more screens.}} 
 \newglossaryentry{M3}{name=M3,description={Tertiary mirror. There are two tertiary mirrors, one for \gls{grond} (trumps FEROS and WFI) and one for \gls{feros} (trumps WFI). \gls{wfi} is at the secondary focus and gets the light if, and only if, neither of the tertiaries is inserted in the optical path.}}
 \newglossaryentry{computer room}{name={computer room},description={Computer room located in the first floor of the telescope building. (There is also a site-wide computer room below the main control room, but we don't have access to it, so it will not be mentioned in this manual.)}}
 \newglossaryentry{control room}{name={control room},description={Control room, located in the New Operation Building below the main building that contains the hotel and dining room.  (There is also an old, partly functional, control room on the first floor of the telescope building, but otherwise specified, this manual refers to the main control room.)}}
+\newglossaryentry{wgrpipe}{name=\texttt{wgrpipe},sort=wgrpipe,description={Workstation controlling the data reduction and the rapid response mode of GROND}}
 \newglossaryentry{wgrdcs}{name=\texttt{wgrdcs},sort=wgrdcs,description={Workstation controlling the \gls{grond} infrared detector electronics (\gls{irace})}}
-\newglossaryentry{w2p2dhs}{name=\texttt{w2p2dhs},sort=w2p2dhs,description={Workstation controlling the \acrlong{ob}s}}
+\newglossaryentry{w2p2dhs}{name=\texttt{w2p2dhs},sort=w2p2dhs,description={Environment and eponymous workstation controlling the \acrlong{ob}s}}
 \newglossaryentry{w2p2off}{name=\texttt{w2p2off},sort=w2p2off,description={Workstation controlling the \gls{feros} \acrlong{drs}}}
 \newglossaryentry{w2p2pl}{name=\texttt{w2p2pl},sort=w2p2pl,description={Workstation controlling the communication with the ESO database}}
-\newglossaryentry{l2p2agr}{name=\texttt{l2p2agr},sort=l2p2agr,description={LCU controlling the GROND autoguider}}
-\newglossaryentry{w2p2cam}{name=\texttt{w2p2cam},sort=w2p2cam,description={Environment corresponding to LCU l2p2cam controlling the FEROS autoguider}}
+\newglossaryentry{w2p2pipe}{name=\texttt{w2p2pipe},sort=w2p2pipe,description={Workstation controlling the CERES reduction pipeline for FEROS (work in progress)}}
+\newglossaryentry{l2p2agr}{name=\texttt{l2p2agr},sort=l2p2agr,description={Environment and eponymous LCU controlling the GROND autoguider}}
+\newglossaryentry{w2p2cam}{name=\texttt{w2p2cam},sort=w2p2cam,description={Environment corresponding to the autoguiders of GROND and FEROS (graphic user \texttt{cam}, workstation user \texttt{cam@w2p2tcs})}}
 \newglossaryentry{w2p2agr}{name=\texttt{w2p2cam},sort=w2p2cam,description={Environment corresponding to LCU l2p2agr controlling the GROND autoguider}}
 \newglossaryentry{lccBoot}{name=\texttt{lccBoot},sort=lccBoot,description={Command to reboot a workstation or a logical control unit (LCU/VME)}}
-\newglossaryentry{l2p2cam}{name=\texttt{l2p2cam},sort=l2p2cam,description={LCU controlling the FEROS autoguider}}
-\newglossaryentry{lfeics1}{name=\texttt{lfeics1},sort=lfeics1,description={LCU of the FEROS instrument control software}}
-\newglossaryentry{lte2p2}{name=\texttt{lte2p2},sort=lte2p2,description={LCU of the telescope control software}}
+\newglossaryentry{l2p2cam}{name=\texttt{l2p2cam},sort=l2p2cam,description={Environment and eponymous LCU controlling the FEROS autoguider}}
+\newglossaryentry{lfeics1}{name=\texttt{lfeics1},sort=lfeics1,description={Environment and eponyous LCU of the FEROS instrument control software}}
+\newglossaryentry{lte2p2}{name=\texttt{lte2p2},sort=lte2p2,description={Environment corresponding to the \texttt{vxte2p2} LCU of the telescope control software}}
+\newglossaryentry{vxte2p2}{name=\texttt{vxte2p2},sort=vxte2p2,description={LCU of the telescope control software}}
 \newglossaryentry{preset}{name=preset,description={Telescope movements (right ascension, declination, and secondary mirror focusing) needed to point at a new source. It is also used as a verb to refer to the action of ordering the telescope to move.}}
 \newglossaryentry{ds}{name=data subscriber,description={Software that fetches the FEROS data for reduction.}}
-\newglossaryentry{lcu}{name=LCU,description={Logical control unit, machine in a rack that controls an instrument or telescope subsystem.}}
+\newglossaryentry{lcu}{name=LCU,description={Local control unit, machine in a rack that controls an instrument or telescope subsystem.}}
 \newglossaryentry{windows}{name=Windows desktop,description={Rightmost computer in the control room that controls the dome.}}
 \newglossaryentry{dome}{name=dome,description={Part of the telescope building on the second floor containing the observing floor, telescope, and enclosure.  It can also refer to the moving part of the enclosure.}}
 \newglossaryentry{adam}{name=ADAM,description={Telescope hydraulics and mirror cover control system.}}
