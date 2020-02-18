@@ -3940,30 +3940,30 @@ If \gls{bob} does not play sounds to indicate pop-ups or observation finishing, 
 \section{Overview of the computing network}
 \begin{figure}[p]
 \centering
-\includegraphics[height=\linewidth,angle=90,origin=c]{computers-2p2.pdf}
-\caption[Overview of the computing network]{Overview of the computing network}
+\includegraphics[height=0.992\linewidth,angle=90,origin=c]{computers-2p2-new.pdf}
+\caption[Overview of the computing network]{Simplified overview of the computing network and its interaction with telescope operations and data handling.}
 \label{fig:network}
 \end{figure}
 
 \subsection{Principles}
 The operations can be separated in ``atomic'' tasks related to hardware such as driving the electronics of the FEROS CCD or managing the mechanics inside the instrument. Figure~\ref{fig:network} displays the hardware tasks in the first row.
 
-Ideally, each of these tasks is driven by a single \gls{workstation} or \gls{lcu} (e.g. \gls{lfeics1} for the internals of the FEROS instrument and \gls{wfefcd} for the detector electronics), which is indicated with a black arrow.  These LCUs and workstations are in turn are controlled by more generic workstations (e.g. \texttt{wferos} for the whole FEROS operations) who also can communicate between themselves. These workstations and LCUs are given in the second and fourth rows in Fig.~\ref{fig:network}.  
+Ideally, each of these tasks is driven by a single \gls{workstation} or \glslink{lcu}{local control unit} (e.g. \gls{lfeics1} for the internals of the FEROS instrument and \gls{wfefcd} for the detector electronics), which is indicated with a black arrow.  These LCUs and workstations are in turn are controlled by more generic workstations (e.g. \texttt{wferos} for the whole FEROS operations) who also can communicate between themselves. These workstations and LCUs are given in the second and fourth rows in Fig.~\ref{fig:network}.  
 
-To facilitate operations, graphical user sessions can be opened from dedicated terminals to access the generic workstations (e.g. graphic user \texttt{feros} will open a session on \texttt{wferos} as user feros).  These sessions are sketched on the third row of Fig.~\ref{fig:network} and logins into the workstation are represented as red arrows.
+To facilitate operations, graphical user sessions can be opened from dedicated terminals to access the generic workstations (e.g. graphic user \texttt{feros} will open a session on \texttt{wferos} as user feros).  These sessions are sketched on the third row of Fig.~\ref{fig:network} and logins into the workstation are represented as red arrows going from the third to the second or fourth row.
 
-The main way the different workstations and LCUs communicate to coordinate operations is via \glspl{environment}---a set of processes and database values.  User \texttt{feros@wferos} on the graphical user session \texttt{feros} will see local environment \gls{wferos} but the remote environements \gls{lfeics1} and \gls{wfefcd} corresponding to the dedicated instrument LCU and detector workstation can be accessed.  Remote control including communication with environments is sketched as dark gold arrows. Environment names, sometimes differing from the workstation or LCU names (in black), are indicated in the same colour.  For the sake of readibility some environments and connections have been displayed for the graphical user session (e.g. \gls{w2p2wfi} for user \texttt{wfi}, 3rd row), but strictly speaking they are defined on the corresponding workstation (e.g. \texttt{wfi} in the workstation \gls{w2p2ins}, 2nd row).
+The main way the different workstations and LCUs communicate to coordinate operations is via \glspl{environment}---a set of processes and database values.  User \texttt{feros@wferos} on the graphical user session \texttt{feros} will see local environment \gls{wferos} but the remote environements \gls{lfeics1} and \gls{wfefcd} corresponding to the dedicated instrument LCU and detector workstation can be accessed.  Remote control including communication with environments is sketched as green arrows between the third and second rows. Environment names, sometimes differing from the workstation or LCU names (in black), are indicated in the same colour.  For the sake of readibility some environments and connections have been displayed for the graphical user session (e.g. \gls{w2p2wfi} for user \texttt{wfi}, 3rd row), but strictly speaking they are defined on the corresponding workstation (e.g. \texttt{wfi} in the workstation \gls{w2p2ins}, 2nd row).
 
 There are quite a few exceptions to this mechanism: some generic workstations can directly control some tasks (e.g. \gls{wgrond} and \gls{w2p2ins} directly control the instruments such as shutter and filtre wheels) and \texttt{wgrond} controls the infrared electronics workstation \gls{wgrdcs} without an environment. Also, several workstations have been virtualised (fourth row).
 
-Last, several workstation deal with software management such as sending the observing blocks for execution, transfering the data to the ESO archive, processing data, or advising about errors via sound alerts.  These software tasks are given in dash-framed boxes on the right of Fig.~\ref{fig:network}.  These software tasks are rarely performed via environments.
+Last, several workstations deal with software management such as sending the observing blocks for execution, transfering the data to another station or the ESO archive, processing data, or advising about errors via sound alerts.  These software tasks are represented by the blue (data transfer) and violet (observing block transfers) arrows of Fig.~\ref{fig:network}.  
 
 \subsection{Naming}
 Workstation and environments follow site-wide naming conventions:
 \begin{itemize}
     \item The first letter is \texttt{w} for a \gls{workstation} and \texttt{l} for an \gls{lcu}.
-    \item The following two or three letters indicate the system: \texttt{2p2} for the telescope, \texttt{wf} for WFI, \texttt{fe} for FEROS and \texttt{gr} for GROND. Sometimes, the name can be in full (\texttt{wferos}, \texttt{wgrond}).
-    \item The last letters indicate the subsystem: \texttt{cam} for guide camera system, \texttt{agr} for the Autoguider of GROND, \texttt{dcs} for the IR detector control software, \texttt{ccd} for a science CCD, \texttt{fcd} for FIERA (optical) software, \texttt{wfi} or \texttt{ins} for WFI, \texttt{ics} for an instrument control software, \texttt{tcs} for the telescope control software, \texttt{dhs} for the data handling server, \texttt{pl} or \texttt{pipe} for the data pipelining, \texttt{off} for the offline data reduction.
+    \item The following two or three letters indicate the system: \texttt{ls} for La Silla, \texttt{2p2} for the telescope, \texttt{wf} for WFI, \texttt{fe} for FEROS, \texttt{gr} for GROND. Sometimes, the name can be in full (\texttt{wferos}, \texttt{wgrond}).
+    \item The last letters indicate the subsystem: \texttt{cam} for guide camera system, \texttt{agr} for the Autoguider of GROND, \texttt{dcs} for the IR detector control software, \texttt{ccd} or \texttt{fcd} for a science CCD with FIERA controller, \texttt{wfi} or \texttt{ins} for WFI, \texttt{ics} for an instrument control software, \texttt{tcs} for the telescope control software, \texttt{dhs} for the data handling system, \texttt{pl} or \texttt{pipe} for the data pipelining, \texttt{off} for the offline data reduction, and \texttt{asm} for the  astronomical site monitoring (meteo).
     \item A number may be suffixed.
 \end{itemize}
 
@@ -4008,9 +4008,24 @@ The telescope operations use eight graphical sessions opened in the terminals av
 \end{itemize}
 It is possible to open these sessions from the observing floor or the old control room in the telescope enclosure.
 
-In addition, it is possible to perform a graphical login into \texttt{wgrondoff} at the control room.  These machines need a reboot from time to time, using \texttt{reboot} in a terminal. For some tidying tasks or reboots, you need to root password (hint: pirate). 
+In addition, it is possible to perform a graphical login into \texttt{wgrondoff} on the dedicated workstation at the control room.  These machines need a reboot from time to time, using \texttt{reboot} in a terminal. For some tidying tasks or reboots, you need to root password.
 
 All these graphical sessions use \glspl{desktop} that can be selected in the dock, each for a subset of tasks or information.  For instance, for \gls{feros} the first desktop is for the general operations (execution of \glspl{ob}), the second one called \texttt{ICS} for the control of the instrument, the third one \texttt{MIDAS} for the MIDAS procedures (focus and linearity checks) etc.
+
+\subsection{Data transfer}
+\paragraph{Astronomical data}
+Data acquired by the three instruments on \gls{wgrond}, \gls{wferos}, and \gls{w2p2ins} (\gls{wfi}) are transferred the the data handling system workstation \gls{w2p2dhs} from where it is sent to the ESO archive.  Reduction pipelines get their data from there: \gls{w2p2off} for the FEROS \gls{drs}, \gls{w2p2pl} for the data Quality Check, \gls{wgrpipe} for GROND.   
+
+The astronomer can download from the ESO archive using the web site, but there may be a delay before the data appears.  They can also secure copy (\texttt{scp}) the data from one of the machines (\texttt{wgrond}, \texttt{wferos}, \texttt{w2p2ins}, \texttt{w2p2off}, \texttt{w2p2dhs}, etc.) to their computers.
+
+\paragraph{Weather and sky quality data}
+Workstation \gls{wlsasm} is responsible to distribute the weather and sky quality data to the telescopes, in particular to \gls{w2p2tcs}.  The different instruments will then obtain these data to include them in the FITS header of the astronomical data.
+
+\paragraph{Observing blocks}
+Data handling system workstation \gls{w2p2dhs} distributes \glspl{ob} to the instruments on their workstations \gls{wgrond}, \gls{w2p2ins}, \gls{wferos}.  It gets them on realtime from the ESO archive and can modify them in the archive. In addition, the \gls{rrm} of \gls{grond} on \gls{wgrpipe} can send OBs directly to \gls{wgrond} for immediate execution.
+
+The astronomer will be able to prepare OBs from any place with immediate repercussion on the ESO archive and thus \gls{w2p2dhs}.
+
 
 \subsection{Computer location and reboot methods}
 \begin{table}[t]
@@ -4055,6 +4070,7 @@ User WS               & \multicolumn{2}{l}{call at Paranal 5959 to reboot \gls{u
 \hline
 \end{tabular}
 \end{table}
+The computers and LCUs may be located on the first floor of the telescope building in three rooms (computer room, FEROS, GROND), in the control room of the New  Operations Building (NOB), or can be virtual.  The observing floor has only low-level electronic devices (e.g. FIERA \& IRACE electronics to control detectors, ADAM module to control hydraulics \&, mirror cover) plus a terminal to login remotely on a workstation.
 
 Prior to a planned power outage or to reboot some detector electronics, it is advisable to shut down some workstations.  \glspl{lcu} are typically rebooted daily as a prophyllactic measure (by the start-up scripts), other stations can be let accumulate an uptime of a few months (manual reboot needed).  Note that virtualised workstations can be rebooted, but if halted, coordination with IT Paranal will be needed to get them up again.
 
