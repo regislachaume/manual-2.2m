@@ -3961,13 +3961,18 @@ Last, several workstations deal with software management such as sending the obs
 \subsection{Naming}
 Workstation and environments follow site-wide naming conventions:
 \begin{itemize}
-    \item The first letter is \texttt{w} for a \gls{workstation} and \texttt{l} for an \gls{lcu}.
+    \item The first letter is \texttt{w} for a \gls{workstation}, \texttt{l} for an \gls{lcu}, and \texttt{o} for other IP devices.
     \item The following two or three letters indicate the system: \texttt{ls} for La Silla, \texttt{2p2} for the telescope, \texttt{wf} for WFI, \texttt{fe} for FEROS, \texttt{gr} for GROND. Sometimes, the name can be in full (\texttt{wferos}, \texttt{wgrond}).
-    \item The last letters indicate the subsystem: \texttt{cam} for guide camera system, \texttt{agr} for the Autoguider of GROND, \texttt{dcs} for the IR detector control software, \texttt{ccd} or \texttt{fcd} for a science CCD with FIERA controller, \texttt{wfi} or \texttt{ins} for WFI, \texttt{ics} for an instrument control software, \texttt{tcs} for the telescope control software, \texttt{dhs} for the data handling system, \texttt{pl} or \texttt{pipe} for the data pipelining, \texttt{off} for the offline data reduction, and \texttt{asm} for the  astronomical site monitoring (meteo).
+    \item The last letters indicate the subsystem: \texttt{cam} for guide camera system, \texttt{agr} for the Autoguider of GROND, \texttt{dcs} for the IR detector control software, \texttt{ccd} or \texttt{fcd} for a science CCD with FIERA controller, \texttt{wfi} or \texttt{ins} for WFI, \texttt{ics} for an instrument control software, \texttt{tcs} for the telescope control software, \texttt{dhs} for the data handling system, \texttt{pl} or \texttt{pipe} for the data pipelining, \texttt{off} for the offline data reduction, \texttt{asm} for the  astronomical site monitoring (meteo), \texttt{ccc} for a closed-cycle cooler, \texttt{ds} for a detector device.
     \item A number may be suffixed.
 \end{itemize}
 
-Example: \texttt{lfeics1} is an LCU and LCU-base environment, for instrument FEROS, serving the instrument control software, and is the first (and only) one for that purpose. 
+Examples:
+\begin{itemize}
+\item \gls{lfeics1} is an LCU and LCU-base environment, for instrument FEROS, serving the instrument control software, and is the first (and only) one for that purpose. 
+\item \texttt{ogrds1} and \texttt{ogrds2} are IP devices controlling some parts of a detector, for instrument GROND (respectively the temperature and motor controller, and the turbopump monitor).
+\item \gls{w2p2dhs} is a workstation of the 2.2m telescope responsible for the data handling system (i.e. sending and receiving \glspl{ob} and archiving data). 
+\end{itemize}
 
 The LCU of the telescope \gls{vxte2p2} and its environment \gls{lte2p2} don not follow these guidelines.
 
