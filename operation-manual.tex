@@ -3176,15 +3176,23 @@ Check that
 \subsection{Problems to restart the FEROS-DRS and data subscriber}
 
 
-If you cannot start the \gls{feros} \gls{drs} this might be for the following reason: when rebooting \gls{w2p2off} without bringing down the pipeline before, a hidden lock file may survive. If all other attempts have failed to start the DRS, follow these steps.
+If you cannot start the \gls{feros} \gls{drs} this might be for the following reason: when rebooting \gls{w2p2off} without bringing down the pipeline before, a hidden watch-dog file and several locks may survive.  It also happens in other contexts and the aetiology is unclear (most likely a bug). If all other attempts have failed to start the DRS, follow these steps.
 
 \procedure{Restart the FEROS data reduction software and data subscriber}
 \label{proc:FEROSDRSrestart}
   \begin{enumerate} 
+    \item If the workstation \gls{w2p2off} was rebooted, remove the watch-dog that may have survived.
+    \begin{enumerate}
+        \item To check when station was last rebooted, you can use \texttt{uptime} in the terminal.
+        \item In a terminal execute \texttt{cd \$DHS\_LOG} (should be \texttt{/data/msg})
+        \item Get root access using \texttt{su}
+        \item Remove the PID files therein with \texttt{rm *.pid}
+        \item Exit root access with \texttt{exit}
+    \end{enumerate}
     \item \label{list:stopDRS}Stop \gls{ds} and \gls{drs} at the \gls{drs} computer (\figref{datasubscriber}).
       \begin{enumerate}
           \item Stop and close the \gls{ds}\\
-                If window is frozen, you can use \texttt{xkill} from a terminal.
+                If window is frozen, you can use \texttt{xkill} from a terminal.\\
           \item Stop and close the \gls{drs} panel\\
                 If window is frozen, you can use \texttt{xkill} from a terminal.
       \end{enumerate}
@@ -3207,20 +3215,16 @@ If you cannot start the \gls{feros} \gls{drs} this might be for the following re
                 \item \texttt{Observer Name: service}
                 \item \texttt{Rename to Keyword: Name on INS ws}
              \end{enumerate}
-        \item \label{list:DRS} Left click start \texttt{FEROS DRS}, start from top to bottom
+        \item \label{list:DRS} Left click start \texttt{FEROS DRS}, and start from top to bottom
             \begin{enumerate}
                 \item Start \texttt{Queue Image Status}
                 \item Start \texttt{\gls{midas} Session Status}
                 \item Start \texttt{Reduced Queued Image}
             \end{enumerate}
+            The statuses may take several dozen of seconds turn \texttt{Online}. 
     \end{enumerate}
 \end{enumerate}
   
-Similarly, when rebooting the \gls{w2p2off} with active \gls{ds}, the watch-dog log file may survive. Do:
-\begin{itemize}
-    \item Start \texttt{cd \$ DHS\_LOG} (which corresponds currently to /data/msg)
-    \item Remove the PID files therein
-\end{itemize}
 
 \begin{figure}[t!]
 \begin{minipage}{0.48\linewidth}
@@ -3271,12 +3275,12 @@ There are a few issues that may pop-up at startup.
 
 If there is an error about process \texttt{feoControl} stating ``accepted PING but did not reply properly within 10000 msec''', you need to restart \gls{environment} using \procref{restartenv} and go on with startup.
 
-\procedure{Restart environment}
+\procedure{Restart FEROS environment}
 \label{proc:restartenv}
 \begin{enumerate}
 \item Type \texttt{vccEnvStop -e \$RTAPENV}
 \item Type \texttt{vccEnvStart -e \$RTAPENV}
-\item Redo the full startup procedure
+\item Redo the full FEROS startup procedure
 \end{enumerate}
  
 \paragraph{Telemetry is not active}
@@ -3358,15 +3362,21 @@ The commonest issues are:
 \end{itemize}
 
 \begin{figure}[ht]
+    \centering
 	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-1.png}
 	\hglue 0.02\linewidth
 	\includegraphics[width=0.45\linewidth]{wfi/wfielectronics-2.png}
-	\caption[WFI electronics: \gls{power cycle} button and boards]{\gls{wfi} electronics.  The box on the right controls the power and can be used to power cycle.
-The box on the left contains the electronics boards that one may need to unplug and replug.}
+	\caption[WFI electronics: power cycle button and boards]{\gls{wfi} electronics.  The box on the right controls the power and can be used to \gls{power cycle}. The box on the left contains the electronics boards that one may need to unplug and replug.}
 	\label{fig:wfielectronics}
 \end{figure}
 
 \procedure{Fix WFI init error}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\linewidth]{wfi/wfiselftest.jpg}
+    \caption{Successful self-test run of WFI electronics}
+    \label{fig:wfiselftest}
+\end{figure}
 \begin{enumerate}
   \item Determine whether WFI passes the hardware self-test
     \begin{enumerate}
@@ -3374,8 +3384,13 @@ The box on the left contains the electronics boards that one may need to unplug 
 	\item If it was not active, choose to inspect the last 500 lines
 	\item Find red error ``Failed to dispatch command for camera LOADED OK''.
 	\item Lines below and above contain ``C40 ping failed'' and ``Could not download \gls{fiera} config''
-	\item You can also check directly whether WFI passes the self-test\\
-              In a terminal, type \texttt{rsh -l fcdrun \gls{wwffcd} "export DISPLAY=\$DISPLAY; fcdtestseq"}
+	\item You can also check directly whether WFI passes the self-test
+            (\figref{wfiselftest})\\
+        \begin{enumerate}
+          \item In a terminal, type \texttt{rsh -l fcdrun \gls{wwffcd} "export DISPLAY=\$DISPLAY; fcdtestseq"}
+          \item Locate a newly opened terminal with a lot of text scrolling
+          \item Wait for the test to finish with \texttt{fcdlDetOnline complete} or with an error message (1--2 min)
+        \end{enumerate} 
     \end{enumerate}
   \item\label{list:wfionline:reboot} Reboot the \gls{fiera} workstation
 	\begin{enumerate}
@@ -3423,7 +3438,7 @@ You need to go to the dome.
 \paragraph{Start-up fails with \gls{l2p2cam} error}
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{tcs/TCS-l2p2cam.jpg}
+    \includegraphics[width=0.8\linewidth]{tcs/TCS-l2p2cam.jpg}
     \caption[TCS restart failing to reboot the FEROS AG LCU]{When TCS restart fails to reboot the \gls{feros} \gls{ag} \gls{lcu}}
 \end{figure}
 
@@ -3950,7 +3965,7 @@ The operations can be separated in ``atomic'' tasks related to hardware such as 
 
 Ideally, each of these tasks is driven by a single \gls{workstation} or \glslink{lcu}{local control unit} (e.g. \gls{lfeics1} for the internals of the FEROS instrument and \gls{wfefcd} for the detector electronics), which is indicated with a black arrow.  These LCUs and workstations are in turn are controlled by more generic workstations (e.g. \texttt{wferos} for the whole FEROS operations) who also can communicate between themselves. These workstations and LCUs are given in the second and fourth rows in Fig.~\ref{fig:network}.  
 
-To facilitate operations, graphical user sessions can be opened from dedicated terminals to access the generic workstations (e.g. graphic user \texttt{feros} will open a session on \texttt{wferos} as user feros).  These sessions are sketched on the third row of Fig.~\ref{fig:network} and logins into the workstation are represented as red arrows going from the third to the second or fourth row.
+To facilitate operations, graphical user sessions can be opened from dedicated terminals to access the generic workstations (e.g. graphic user \texttt{feros} will open a session on \texttt{wferos} as user feros).  These sessions are sketched on the third row of Fig.~\ref{fig:network}.  The graphical environment runs on the user workstation \gls{uws2p2} but menu applications and terminals log into the dedicated workstation (e.g. \gls{wferos} for user \gls{feros}). These logins are represented as red arrows going from the third to the second or fourth row of Fig.~\ref{fig:network}.
 
 The main way the different workstations and LCUs communicate to coordinate operations is via \glspl{environment}---a set of processes and database values.  User \texttt{feros@wferos} on the graphical user session \texttt{feros} will see local environment \gls{wferos} but the remote environements \gls{lfeics1} and \gls{wfefcd} corresponding to the dedicated instrument LCU and detector workstation can be accessed.  Remote control including communication with environments is sketched as green arrows between the third and second rows. Environment names, sometimes differing from the workstation or LCU names (in black), are indicated in the same colour.  For the sake of readibility some environments and connections have been displayed for the graphical user session (e.g. \gls{w2p2wfi} for user \texttt{wfi}, 3rd row), but strictly speaking they are defined on the corresponding workstation (e.g. \texttt{wfi} in the workstation \gls{w2p2ins}, 2nd row).
 
@@ -3963,14 +3978,14 @@ Workstation and environments follow site-wide naming conventions:
 \begin{itemize}
     \item The first letter is \texttt{w} for a \gls{workstation}, \texttt{l} for an \gls{lcu}, and \texttt{o} for other IP devices.
     \item The following two or three letters indicate the system: \texttt{ls} for La Silla, \texttt{2p2} for the telescope, \texttt{wf} for WFI, \texttt{fe} for FEROS, \texttt{gr} for GROND. Sometimes, the name can be in full (\texttt{wferos}, \texttt{wgrond}).
-    \item The last letters indicate the subsystem: \texttt{cam} for guide camera system, \texttt{agr} for the Autoguider of GROND, \texttt{dcs} for the IR detector control software, \texttt{ccd} or \texttt{fcd} for a science CCD with FIERA controller, \texttt{wfi} or \texttt{ins} for WFI, \texttt{ics} for an instrument control software, \texttt{tcs} for the telescope control software, \texttt{dhs} for the data handling system, \texttt{pl} or \texttt{pipe} for the data pipelining, \texttt{off} for the offline data reduction, \texttt{asm} for the  astronomical site monitoring (meteo), \texttt{ccc} for a closed-cycle cooler, \texttt{ds} for a detector device.
+    \item The last letters indicate the subsystem: \texttt{cam} for guide camera system, \texttt{agr} for the Autoguider of GROND, \texttt{dcs} for the IR detector control software, \texttt{ccd} or \texttt{fcd} for a science CCD with FIERA controller, \texttt{wfi} or \texttt{ins} for WFI, \texttt{ics} for an instrument control software, \texttt{tcs} for the telescope control software, \texttt{dhs} for the data handling system, \texttt{pl} or \texttt{pipe} for the data pipelining, \texttt{off} for the offline data reduction, \texttt{asm} for the  astronomical site monitoring (meteo), \texttt{ccc} for a closed-cycle cooler, \texttt{ds} for a detector-related device.
     \item A number may be suffixed.
 \end{itemize}
 
 Examples:
 \begin{itemize}
 \item \gls{lfeics1} is an LCU and LCU-base environment, for instrument FEROS, serving the instrument control software, and is the first (and only) one for that purpose. 
-\item \texttt{ogrds1} and \texttt{ogrds2} are IP devices controlling some parts of a detector, for instrument GROND (respectively the temperature and motor controller, and the turbopump monitor).
+\item \gls{ogrds1} and \gls{ogrds2} are IP devices controlling some parts of a detector, for instrument GROND (respectively the temperature \& motor controller and the turbopump monitor) and \gls{ogrccc} its closed-cycle cooler controller.
 \item \gls{w2p2dhs} is a workstation of the 2.2m telescope responsible for the data handling system (i.e. sending and receiving \glspl{ob} and archiving data). 
 \end{itemize}
 
@@ -4002,14 +4017,14 @@ Computer        & Login    & User     & Monitor(s)                 & Description
 
 The telescope operations use eight graphical sessions opened in the terminals available at the control room, each with a username corresponding to a specific set of tasks. In most cases tasks are gathered in environments---a set of processes and database values. These sessions, sharing the same good seeing password, summed up in Table~\figref{computers}, are
 \begin{itemize}
-    \item \texttt{tcs} opens the account \texttt{tcs@\gls{w2p2tcs}} (environment \texttt{w2p2tcs}) and deals with the telescope and dome movements as well as the WFI autoguider
-    \item \texttt{cam} opens the account \texttt{cam@\gls{w2p2tcs}} (environment \gls{w2p2cam}) and deals the management of the autoguider cameras of FEROS and GROND
-    \item \texttt{feros} opens the account \texttt{feros@\gls{wferos}} (environment \texttt{wferos})
-    \item \texttt{wfi} opens the account \texttt{wfi@\gls{w2p2ins}} (environment \gls{w2p2wfi})
-    \item \texttt{grond} opens the account \texttt{grond@\gls{wgrond}} (environment \texttt{wgrond})
-    \item \texttt{visitor} opens the account \texttt{visitor@\gls{w2p2dhs}} (environment \texttt{w2p2dhs}) and deals with the management of observing blocks
-    \item \texttt{astro} opens the account \texttt{astro@\gls{w2p2off}} and deals with the reduction of FEROS data
-    \item \texttt{pipeline} opens the account \texttt{pipeline@\gls{w2p2pl}} and deals with the transfer of data.
+    \item \texttt{tcs} facilitates access to the account \texttt{tcs@\gls{w2p2tcs}} (environment \texttt{w2p2tcs}) and deals with the telescope and dome movements as well as the WFI autoguider
+    \item \texttt{cam} facilitates access to the account \texttt{cam@\gls{w2p2tcs}} (environment \gls{w2p2cam}) and deals the management of the autoguider cameras of FEROS and GROND
+    \item \texttt{feros} facilitates access to the account \texttt{feros@\gls{wferos}} (environment \texttt{wferos})
+    \item \texttt{wfi} facilitates access to the account \texttt{wfi@\gls{w2p2ins}} (environment \gls{w2p2wfi})
+    \item \texttt{grond} facilitates access to the account \texttt{grond@\gls{wgrond}} (environment \texttt{wgrond})
+    \item \texttt{visitor} facilitates access to the account \texttt{visitor@\gls{w2p2dhs}} (environment \texttt{w2p2dhs}) and deals with the management of observing blocks
+    \item \texttt{astro} facilitates access to the account \texttt{astro@\gls{w2p2off}} and deals with the reduction of FEROS data
+    \item \texttt{pipeline} facilitates access to the account \texttt{pipeline@\gls{w2p2pl}} and deals with the transfer of data.
 \end{itemize}
 It is possible to open these sessions from the observing floor or the old control room in the telescope enclosure.
 
@@ -4022,6 +4037,8 @@ All these graphical sessions use \glspl{desktop} that can be selected in the doc
 Data acquired by the three instruments on \gls{wgrond}, \gls{wferos}, and \gls{w2p2ins} (\gls{wfi}) are transferred the the data handling system workstation \gls{w2p2dhs} from where it is sent to the ESO archive.  Reduction pipelines get their data from there: \gls{w2p2off} for the FEROS \gls{drs}, \gls{w2p2pl} for the data Quality Check, \gls{wgrpipe} for GROND.   
 
 The astronomer can download from the ESO archive using the web site, but there may be a delay before the data appears.  They can also secure copy (\texttt{scp}) the data from one of the machines (\texttt{wgrond}, \texttt{wferos}, \texttt{w2p2ins}, \texttt{w2p2off}, \texttt{w2p2dhs}, etc.) to their computers.
+
+The GROND team also manage data backup with external disks mounted on \gls{wgrpipe2} and regularly shipped back to Germany.
 
 \paragraph{Weather and sky quality data}
 Workstation \gls{wlsasm} is responsible to distribute the weather and sky quality data to the telescopes, in particular to \gls{w2p2tcs}.  The different instruments will then obtain these data to include them in the FITS header of the astronomical data.
