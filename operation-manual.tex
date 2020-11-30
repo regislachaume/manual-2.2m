@@ -96,7 +96,7 @@ First of all, the \gls{control room}, is located below the main ESO building, th
 \begin{figure}[!ht] \includegraphics[width=\linewidth]{saladecontrol.pdf}
 \caption[Layout of the telescope controls]{Layout of the telescope controls.  From right to left: \gls{windows} 
 controlling and monitoring the \gls{dome}, \acrlong{tcs}, \acrshort{wfi} controls,
-\acrshort{feros} controls (bottom) and skype laptop connected to the \acrshort{grond} remote observers (top), GROND controls, \acrshort{p2pp} machine where
+\acrshort{feros} controls (bottom) and skype laptop connected to the \acrshort{grond} remote observers (top), GROND controls, \acrshort{p2}/\acrshort{vot} machine where
 \acrshort{ob}s are crafted and loaded by the visiting astronomer, and,
 finally, the FEROS \acrlong{drs}.}
 \label{fig:saladecontrol} 
@@ -713,7 +713,7 @@ is receiving data in real time (green checkbox).}
 \label{chap:daycal}
 
 The day-time observations use \glspl{ob} either stored in \gls{bob} or in a
-\gls{ot} queue.  Managing \glspl{ob} with \gls{bob} and \gls{ot} is
+\gls{vot} queue.  Managing \glspl{ob} with \gls{bob} and \gls{vot} is
 explained in more detail in \chapref{ob}.
 
 \section{WFI}
@@ -2232,8 +2232,7 @@ When the \gls{rrm} of \gls{grond} is activated, it is possible that the detectio
 
 \subsection{Run an observing block}
 
-There are three ways to run an \gls{ob}: use a \gls{template} in \gls{bob} and modify it on the fly; call it from \gls{p2pp}; call it from the \gls{ot} execution sequence.  The last method allows to automatically fetch and run OBs in a sequence, without lost time, but popups must be attended, of course.
-
+There are two ways to run an \gls{ob}: use a \gls{template} in \gls{bob} and modify it on the fly or call it from the \gls{vot} execution sequence.  The last method allows to automatically fetch and run OBs in a sequence, without lost time, but popups must be attended, of course.
 
 
 \subsection{Skip the preset}
@@ -2389,27 +2388,12 @@ Launch health checks and internal calibrations.
 
 \subsection{Standard way}
 
-\procedure{Transfer OBs from one's computer to the telescope, using p2pp check-in}
+\procedure{Transfer OBs from one's computer to the telescope}
 \begin{itemize}
-\item On your laptop's \gls{p2pp} select all your \glspl{ob}.
-\item Use \wmenu{File}{Check-in}
-\item Use \wmenu{Readme}{CheckIn Readme} if necessary
-\item If using \gls{ot} (advised)
-  \begin{itemize}
-    \item From main \gls{ot} window, use \wmenu{Queues}{Repository Browser}
-    \item Select \texttt{OB name} checkbox in the Repository Browser window
-    \item Empty all fields and enter your \gls{p2pp} username  
-    \item Click \texttt{Query}
-    \item Select all the \glspl{ob} you need with the mouse (they should have status Defined)
-    \item Select \texttt{Mark Status} and chose \texttt{(V)erified}
-    \item Select the same \glspl{ob} again
-    \item Append to queue, typically \texttt{MPIA-YYYY-MM} (named by year and month)
-    \item Find the window corresponding to this queue and use \wmenu{Queue}{Save}
-  \end{itemize}
-\item If using \gls{p2pp}
-  \begin{itemize}
-    \item TBW
-  \end{itemize}
+    \item On your laptop open \gls{p2} in a browswer
+    \item Log in and select all your \glspl{ob}.
+    \item Use \wmenu{File}{Check-in}
+    \item Use \wmenu{Readme}{CheckIn Readme} if necessary
 \end{itemize}
 
 \subsection{Loading manually}
@@ -2422,24 +2406,24 @@ ssh them from your laptop and load them manually into the dhs computer.
   \item Connect it to the cable network.
   \item Find your laptop's IP address.  With linux or mac, 
         \texttt{/sbin/ifconfig} or \texttt{ifconfig} should give it.
-  \item On the \gls{p2pp} machine create a directory let's say \texttt{~/yourname/OBs} 
+  \item On the \gls{p2}/\gls{vot} machine create a directory let's say \texttt{~/yourname/OBs} 
   \item On the same machine, type \texttt{scp -r yourlogin@youripaddress:pathtoOBs ~/yourname/OBs}
         and type your password.
-  \item Open \gls{p2pp} with your credentials
+  \item Open \gls{vot} with your credentials
   \item Select your program ID on the left column
   \item Use \wmenu{File}{Import}
 \end{itemize}
 
-Note: if you cannot activate ssh services on your laptop, use a USB stick and someone else's computer.   Alternatively, send an e-mail you will open on the p2pp machine (not advised). 
+Note: if you cannot activate ssh services on your laptop, use a USB stick and someone else's computer.   Alternatively, send an e-mail you will open on the \gls{p2}/\gls{vot} machine (not advised). 
 
-\section{OT}
+\section{vOT}
 %Ivan: completar
 
-On the \gls{p2pp} machine, there is a \gls{desktop} to use \glspl{ob} from the observing tool (\gls{ot}). In the \texttt{Repository Browser} of the \gls{ot}, find your OB using fields such as instrument, period, ID, username, position, etc.  Click on the OB and then on a tab called \texttt{Execution Sequence} that it is in the same panel.
+On the \gls{p2}/\gls{vot} machine, there is a \gls{desktop} to use \glspl{ob} from the observing tool (\gls{vot}). In the \texttt{Repository Browser} of the \gls{vot}, find your OB using fields such as instrument, period, ID, username, position, etc.  Click on the OB and then on a tab called \texttt{Execution Sequence} that it is in the same panel.
 
 There should be an open window which is called \texttt{Execution Sequence}. The selected \gls{ob} will be listed there, maybe with a list of others. Use the buttons \texttt{move up} (or \texttt{move down})  to move the OB you want to run next to the top of the list since it has to be the first one.
 
-Then, go to \gls{bob} and use the \wmenu{Configure}{Environment}. In the \texttt{Process} tab change \gls{p2pp} by \gls{ot}. Now you can fetch the \gls{ob} from \gls{ot}.
+Then, go to \gls{bob} and use the \wmenu{Configure}{Environment}. In the \texttt{Process} use \gls{vot}. Now you can fetch the \gls{ob} from \gls{vot}.
 
 
 %\section{BOB}
@@ -2458,10 +2442,10 @@ About once a month a software maintenance should be done for prophylaxis.
 \begin{enumerate}
 \item \label{list:soft:stop} Stop some processes and applications (2 min)
   \begin{enumerate}
-     \item On the p2pp/ot screen, exit applications
+     \item On the \texttt{vOT/p2} screen, exit applications
      \begin{enumerate}
-      \item Locate the main \gls{ot} window with the execution sequence and exit it.
-      \item Locate any open \gls{p2pp} window and exit it
+      \item Locate the main \gls{vot} window with the execution sequence and exit it.
+      \item Locate any open web browswer with open \gls{p2} and exit it
      \end{enumerate}
      \item On the pipeline screen, stop pipeline processes
              \begin{enumerate}
@@ -2482,7 +2466,7 @@ About once a month a software maintenance should be done for prophylaxis.
         \item On the \gls{feros} screen, exit the X environment
         \item On the GROND and FEROS \gls{ag} screen, exit the X environment
         \item On the \gls{grond} screen, exit the X environment
-        \item On the p2pp/ot screen, exit the X environment
+        \item On the \texttt{p2/vot screen}, exit the X environment
         \item On the pipeline workstation, exit the X environment
         \item On the FEROS DRS workstation, exit the X environment
     \end{enumerate}
@@ -2494,7 +2478,7 @@ About once a month a software maintenance should be done for prophylaxis.
     \item On the \gls{feros} screen, login as \texttt{feros}
     \item On the FEROS and GROND AG screen, login as \texttt{cam}
     \item On the GROND screen, login as \texttt{grond}
-    \item On the \gls{p2pp}/\gls{ot} workstation, login as \texttt{dhs}
+    \item On the \gls{p2}/\gls{vot} workstation, login as \texttt{dhs}
     \item On the pipeline workstation, login as \texttt{pipeline}
     \item On the FEROS \gls{drs} workstation, login as \texttt{astro}
 \end{enumerate}
@@ -2505,21 +2489,21 @@ About once a month a software maintenance should be done for prophylaxis.
     \item On the \gls{feros} screen, open a feros terminal and type \texttt{reboot}
     \item On the FEROS DRS screen, open a terminal type \texttt{reboot} as root
     \item On the pipeline screen, open a terminal type \texttt{reboot} as root
-    \item On the p2pp/ot screen, open a terminal type \texttt{reboot} as root
+    \item On the \texttt{p2/vot} screen, open a terminal type \texttt{reboot} as root
 \end{enumerate}
 \item Wait for the reboots to complete (20--30 min). You can check with any of the following:
     \begin{itemize}
         \item The terminal disappears when clicked on
         \item From a grond terminal, type \texttt{ping <machine>}.
              \begin{itemize}
-             \item <machine> can be \gls{w2p2tcs}, \gls{w2p2ins} (WFI), \gls{wferos}, \gls{w2p2dhs} (OT/p2pp), \gls{w2p2pl} (pipeline), \gls{w2p2off} (FEROS DRS). 
+             \item <machine> can be \gls{w2p2tcs}, \gls{w2p2ins} (WFI), \gls{wferos}, \gls{w2p2dhs} (vOT/p2), \gls{w2p2pl} (pipeline), \gls{w2p2off} (FEROS DRS). 
              \item Reboot is not done if \texttt{No route to host} is answered.
              \item When ping starts sending internet speed stats reboot is almost complete (less than one minute left).
              \end{itemize}
     \end{itemize}
 \item Restart some processes and applications
     \begin{enumerate}
-        \item On the \gls{p2pp}/\gls{ot} screen, open \gls{ot}
+        \item On the \texttt{vOT/p2} screen, open \gls{vot}
         \item On the pipeline workstation
              \begin{enumerate}
                 \item Open  a terminal
@@ -2783,6 +2767,32 @@ Try in this order
 \end{enumerate}
 
 \section{OB doesn't work}
+
+\subsection{OB doesn't load}
+
+If an \gls{ob} import fails with error message \texttt{Could not communicate with OH}.
+
+\procedure{Fix OB communication issue}
+Try, in the following order
+\begin{enumerate}
+    \item Check that the source is set on \texttt{vot}.
+        \begin{enumerate}
+            \item In \gls{bob} and use the \wmenu{Configure}{Environment}.
+            \item Ensure that \texttt{Process} is set to \gls{vot}.
+        \end{enumerate}
+    \item Check that \gls{vot} is open\label{list:openvot}
+    \begin{enumerate}
+        \item Go to screen \texttt{vOT / p2}
+        \item Open \gls{vot} either from a terminal or the menu
+    \end{enumerate}
+    \item Check that only one \gls{vot} is running
+    \begin{enumerate}
+        \item On screen \texttt{vOT / p2}, locate or open a terminal
+        \item Type \texttt{ps gaux | grep vot}
+        \item For all process listed, type \texttt{kill <pid>} where \texttt{<pid>} is the process number
+        \item Open \gls{vot} (step~\ref{list:openvot}).
+    \end{enumerate}
+\end{enumerate}
 
 \subsection{OB gives an error when started}
 
@@ -4005,7 +4015,7 @@ Computer        & Login    & User     & Monitor(s)                 & Description
                 &          & wfimgr   & ---                        & manager account\\
 \gls{wferos}    & feros    & feros    & FEROS BOB                  & basic user\\
                 &          & ferosmgr & ---                        & manager account\\
-\gls{w2p2dhs}   & visitor  & visitor  & p2 \& vot                 & \gls{visitor} observations\\
+\gls{w2p2dhs}   & visitor  & visitor  & \gls{p2} \& \gls{vot}      & \gls{visitor} observations\\
 \gls{w2p2off}   & astro    & astro    & FEROS pipeline             & data \& pipelines\\
 \gls{w2p2pl}    & pipeline & pipeline & w2p2pl pipeline            & WFI/FEROS data handling\\       
 \gls{wgrond}    & grond    & grondmgr & GROND BOB / \gls{fiera} / \gls{irace}  & default user\\
@@ -4038,13 +4048,13 @@ Data acquired by the three instruments on \gls{wgrond}, \gls{wferos}, and \gls{w
 
 The astronomer can download from the ESO archive using the web site, but there may be a delay before the data appears.  They can also secure copy (\texttt{scp}) the data from one of the machines (\texttt{wgrond}, \texttt{wferos}, \texttt{w2p2ins}, \texttt{w2p2off}, \texttt{w2p2dhs}, etc.) to their computers.
 
-The GROND team also manage data backup with external disks mounted on \gls{wgrpipe2} and regularly shipped back to Germany.
+The GROND team also manage data backup with external disks mounted on \gls{wgrpipe2} (labelled as \gls{wgrsaruman}) and regularly shipped back to Germany.
 
 \paragraph{Weather and sky quality data}
 Workstation \gls{wlsasm} is responsible to distribute the weather and sky quality data to the telescopes, in particular to \gls{w2p2tcs}.  The different instruments will then obtain these data to include them in the FITS header of the astronomical data.
 
 \paragraph{Observing blocks}
-Data handling system workstation \gls{w2p2dhs} distributes \glspl{ob} to the instruments on their workstations \gls{wgrond}, \gls{w2p2ins}, \gls{wferos}.  It gets them on realtime from the ESO archive and can modify them in the archive. In addition, the \gls{rrm} of \gls{grond} on \gls{wgrpipe} can send OBs directly to \gls{wgrond} for immediate execution.
+On the data handling system workstation \gls{w2p2dhs}, the application \gls{vot} distributes \glspl{ob} to the instruments on their workstations \gls{wgrond}, \gls{w2p2ins}, \gls{wferos}.  It gets them on realtime from the ESO archive and can modify them in the archive. In addition, the \gls{rrm} of \gls{grond} on \gls{wgrpipe} can send OBs directly to \gls{wgrond} for immediate execution.
 
 The astronomer will be able to prepare OBs from any place with immediate repercussion on the ESO archive and thus \gls{w2p2dhs}.
 
@@ -4086,7 +4096,7 @@ GROND AG LCU          & computer room & \texttt{\gls{lccBoot} \gls{l2p2agr}}\\
                       &               & \texttt{rsh \gls{l2p2agr} reboot}\\
                       &               & manual reset (not tested)\\
 \hline
-OT/p2 WS              & virtual       & \texttt{reboot} in \texttt{service@w2p2dhs} terminal\\
+\gls{vot}/\gls{p2} WS & virtual       & \texttt{reboot} in \texttt{service@w2p2dhs} terminal\\
 \hline
 User WS               & \multicolumn{2}{l}{call at Paranal 5959 to reboot \gls{uws2p2}, first close all terminals}\\
 \hline
@@ -4272,7 +4282,7 @@ can be switched.}
 
 
 
-\section{P2PP and OT}
+\section{P2 and vOT}
 
 \section{FEROS reduction software}
 

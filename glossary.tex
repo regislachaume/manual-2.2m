@@ -12,6 +12,8 @@
 \newacronym{tccd}{TCCD}{Technical CCD}
 \newacronym{sccd}{SCCD}{Science CDD}
 \newglossaryentry{environment}{name=environment,description={A specific set of computer processes and database values dedicated to a specific job for the instrument and telescope operations.}}
+\newglossaryentry{vot}{name=\texttt{vot},sort=vot,description={Visitor Observing Tool, a graphical user interface on the \gls{w2p2dhs} workstation dealing with the distribution of observing blocks to each instrument.}}
+\newglossaryentry{p2}{name=\texttt{p2},sort=p2,description={Phase 2, a web interface to create observing blocks and organise the execution sequence}}
 \newglossaryentry{autoguiding}{name=\texttt{Autoguiding},sort=autoguiding,description={Window controlling the settings of the \acrlong{ag} of \gls{feros} and \gls{grond}}}
 \newglossaryentry{fiera}{name=FIERA,description={Electronics systems controlling the optical detectors}}
 \newglossaryentry{irace}{name=IRACE,description={Electronics systems controlling the infrared detectors.}}
@@ -34,7 +36,6 @@
 \newglossaryentry{wfiics}{name=\texttt{WFI ICS Control},sort=WFI ICS Control,description={\gls{wfi} \acrlong{ics} panel}}
 \newglossaryentry{ferosics}{name={\texttt{FEROS ICS Control}},sort=FEROS ICS Control,description={\gls{feros} \acrlong{ics} panel}}
 \newglossaryentry{main mirror}{name=main mirror,description={Primary mirror of the telescope.  It has a cover that needs to be open for observing and but should be closed when dome slit is being opened or closed.}}
-\newglossaryentry{ot}{name=\texttt{ot},sort=ot,description={observing tool, the application that can be used to manage the \gls{ob}so for \gls{service} observations}}
 \newglossaryentry{lascam}{name=LASCAM,description={La Silla all-sky camera}}
 \newglossaryentry{standard field}{name=standard field,description={A field containing various standard star with well known magnitudes.  It is used to calibrate the flux response of WFI (Landolt fields) and GROND (Landolt and SDSS fields).}}
 \newglossaryentry{osf2p2StartUp}{name=\texttt{osf2p2StartUp},sort=osf2p2StartUp,description={Command used to do a start-up of the \acrlong{tcs} and the instruments \gls{wfi} \& \gls{feros}.}}
@@ -49,7 +50,6 @@
 \newglossaryentry{TCS status panel}{name=\texttt{TCS Status Panel},sort=TCS status panel,description={Graphical user interface showing the state of the telescope modules and pointing model. Normally placed on the \texttt{Status} virtual desktop of the Telescope Control Software screen.}}
 \newglossaryentry{TCS setup panel}{name=\texttt{TCS Setup Panel},sort=TCS setup panel,description={Graphical user interface allowing to modify the state of the telescope (opening/closing) and WFI autoguiding (parameters). Normally place on the \texttt{Setup} virtual desktop of the  Telescope Control Software screen.}}
 \newglossaryentry{rose diagram}{name=\texttt{rose diagram},sort=rose diagram,description={Diagram of the telescope position, slit orientation, and Moon displayed on the \gls{TCS control panel}.}}
-\newglossaryentry{p2pp}{name=\texttt{p2pp},sort=p2pp,description={phase 2 preparation tool, the application used by \glspl{visitor} and PIs to create their observing blocks and execute them on the mountain.}}
 \newglossaryentry{bob}{name=\texttt{bob},sort=bob,description={broker for observing blocks, the application that reads \acrlong{ob}s and sends commands to the telescope and instrument so that observation is performed. The \texttt{bob} panel is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
 \newglossaryentry{General State}{name=General State,description={The \texttt{General State} panel of each instrument displays its status (integrations going on, basic telemetry, shutters, etc.).  It is usually placed in the first virtual desktop \texttt{bob+gen. state}}}
 \newglossaryentry{ICS Control}{name=\texttt{ICS Control},sort=ICS Control,description={The \texttt{ICS Control} panel of an instrument allows to modify its state (mirrors, shutters, exposures).  It is usually placed in the virtual desktop \texttt{ICS}}}
@@ -117,6 +117,7 @@
 \newglossaryentry{webcam}{name=dome webcam,description={View into the dome given by the \texttt{TRENDNET} tab of mozilla on the \gls{windows}.}}
 \newglossaryentry{domefunc}{name=Dome Auxiliary Functions,description={\texttt{ADAM 6000} tab of mozilla on the \gls{windows} that contains hydraulics and ventilation control of the dome.}}
 \newglossaryentry{wgrpipe2}{name=\texttt{wgrpipe2},sort=wgrpipe2,description={Second pipeline machine for GROND, locally labelled as \texttt{wgrsaruman}.  It is used for data backup on external disks, shipped to Germany on a regular basis.}}
+\newglossaryentry{wgrsaruman}{name=\texttt{wgrsaruman},sort=wgrsaruman,description={Label on the workstation seen as \texttt{wgrpipe2} over the network.}}
 \newglossaryentry{ogrccc}{name=\texttt{ogrccc},sort=ogrccc,description={Closed-cycle cooler controller for GROND.}}
 \newglossaryentry{ogrds1}{name=\texttt{ogrds1},sort=ogrds1,description={IR temperature controllers and primary motor controller for GROND.}}
 \newglossaryentry{ogrds2}{name=\texttt{ogrds2},sort=ogrds2,description={Turbopump monitor.}}
