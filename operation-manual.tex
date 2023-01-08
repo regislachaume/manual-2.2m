@@ -2829,6 +2829,7 @@ In the TCS screen, enter \gls{focus} value in the \gls{TCS control panel} (\figr
 Note: A permanent fix is to restart the \gls{tcs} (see \secref{tcsrestart}).
 \item \textit{(\gls{grond})} If IR exposure does not start after the optical one has, reset the IR \gls{flip mirror}.\\
 In a terminal, type \texttt{\gls{grondFM}}
+\item \textit{(\gls{feros})} If the exposure time is not marking and the Exposure status stays in RUNNING after readout, the scan links must be reinstalled with \texttt{feinsInstallScanLinks wfefcd}.
 \end{itemize}
 
 \subsection{Crash before an exposure}
@@ -3344,6 +3345,29 @@ panel. If it is the case, you have to remove it manually using \procref{ferosadc
     \item Wait for the instrument to be \texttt{ONLINE} (a few seconds to a minute).
 \end{enumerate}
 
+\paragraph{Instrument stays in STANDBY and all devices are OFF}
+\begin{figure}
+\centering
+\includegraphics[width=0.7\linewidth]{feros/FEROS-badscanlinks.jpg}
+\caption[When feinsInstallScanLinks is needed]{FEROS General state when scan links are compromised and need Procedure~\ref{proc:ferosscanlinks}.}
+\end{figure}
+Another reason for the instrument to stay in STANDBY are bad scan links to the ICS LCU \gls{lfeics1}. In that case, the \gls{General State} panel will show several red FAILED statuses for lamps and the \gls{ICS Control} will have all devices OFF.
+
+\procedure{Restore scan links to the FEROS ICS LCU}
+\label{proc:ferosscanlinks}
+\begin{enumerate}
+    \item Install scan links to ICS LCU,
+          In a terminal, type \texttt{feinsInstallScanLinks lfeics1}
+    \item Optional: Install scan links to FEROS FIERA SLCU
+          In a terminal, \texttt{feinsInstallScanLinks wfefcd}
+    \item Optional: Install scan links to the TCS
+          In a terminal, \texttt{feinsInstallScanLinks w2p2tcs}
+    \item Restart the instrument
+\end{enumerate}
+
+The optional steps may shorten troubleshooting as all scan links may have been compromised.
+
+
 \begin{figure}[t!]
 \begin{minipage}{0.48\linewidth}
 \subfigure[\Gls{telemetry} window at \gls{tcs}, should show some graphs normally.]{%
@@ -3360,6 +3384,7 @@ panel. If it is the case, you have to remove it manually using \procref{ferosadc
 \end{minipage}
 \caption[Telemetry window]{\Gls{telemetry} window.}
 \end{figure}
+
 
 \subsection{WFI}
 
