@@ -2529,15 +2529,21 @@ Every six months a weekly software maintenance has an additional step with the r
 \procedure{Biannual software maintenance}
 \begin{enumerate}
 \item Stop processes and exit sessions (steps~\ref{list:soft:stop}--\ref{list:soft:exit} of \procref{monthly})
-\item Have a reboot of the user workstation done (15 min?)
-    \begin{enumerate}
-        \item On any screen open an \gls{uws2p2} terminal\\
-              Use right-click menu \wmenu{Utilities}{User WS xterm}
-        \item Gain root access\\
-              In the terminal, type \texttt{su} and enter the usual root password
-        \item Type \texttt{reboot}
-    \end{enumerate}
+\item Reboot the user workstation (Procedure~\ref{proc:uwsreboot}, 15 min)
 \item Power cycle dell boxes, log into sessions, reboot workstations, restart processes, and start-up TCS (steps~\ref{list:soft:power}--\ref{list:soft:tcs})
+\end{enumerate}
+
+\procedure{Reboot the user workstation}
+\label{proc:uwsreboot}
+\begin{enumerate}
+    \item Ensure that you exit all screens (TCS, WFI, FEROS, AG, GROND, DHS, FEROS DRS, pipeline).
+    \item On any screen open an \gls{uws2p2} terminal\\
+          Use right-click menu \wmenu{Utilities}{User WS xterm}
+    \item Gain root access\\
+          In the terminal, type \texttt{su} and enter the usual root password
+    \item Type \texttt{reboot} and wait 15--20 min
+    \item Powercycle all black boxes connected to the screens
+    \item Enter each session (tcs, wfi, feros, cam, grond, dhs, astro, pipeline)
 \end{enumerate}
 
 
@@ -3814,6 +3820,14 @@ the \gls{ob} \gls{stall}s. If \texttt{grondFM} doesn't solve the issue, this may
 \end{enumerate} 
 
 \section{Freezing issues}
+
+\subsection{Panels and terminals won't open}
+If terminals and panels do not open on several screens (e.g. TCS and WFI), there is a problem with the user workstation \gls{uws2p2}, namely that there are to many defunct \texttt{rsh}/\texttt{remsh} connections from the user WS to the other machines.  
+
+The easiest solution is to reboot the user workstation (Procedure~\ref{proc:uwsreboot}), which will require a full restart, but about one hour will be lost.  
+
+Alternatively, old \texttt{rsh} and/or \texttt{remsh} from the user workstation to \gls{w2p2ins}, \gls{wferos}, \gls{wgrond}, \gls{w2p2tcs} can be killed (use \texttt{kill -9 <pid>}), but your mileage may vary...
+
 
 \subsection{Mouse pointer does not move}
 This is common on the \gls{wfi} screens.
