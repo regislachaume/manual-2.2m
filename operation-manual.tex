@@ -55,6 +55,8 @@
     Iv\'an~Lacerna\\[5pt]
     R\'egis~Lachaume\\
     \texttt{lachaume@astro.puc.cl}\\[5pt]
+    Maren Hempel\\
+    \texttt{maren551@gmail.com}\\[5pt]
     Markus~Rabus}%
 \abstract{Since 2013, the operations at the La Silla 2.2~metres telescope involve minimal support by ESO.  This guide intends to familiarise observers with
 the operations.}%
@@ -553,7 +555,13 @@ Don't forget to rearrange all these windows.
 \caption[Wide field imager restart]{\gls{wfi} restart.  When done, don't forget to take a test bias.}
 \label{fig:wfi-restart}
 \end{figure}
-
+\newpage
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=0.85\linewidth]{wfi/wfi_pulpo_status.png}%
+\caption[WFI pulpo status]{Obtaining the \gls{wfi} pulpo status (e.g. CCD temperatures)}
+\label{fig:wfi_pulpo_status}
+\end{figure}
 \newpage
 \section{TCS startup}
 
@@ -809,13 +817,56 @@ A linearity check is left running in the morning (see Sect.~\ref{sec:clocal}). T
     \end{enumerate}
   \item Check that the \gls{drs} has processed it.  \textbf{While Fabry-Pérot stays installed, it will fail.}
     \begin{enumerate}
-      \item Find a white graphics with title \texttt{OBJ FIB GUESS}.
+      \item Find a white graphics with title \texttt{OBJ FIB GUESS} (\figureref{feros-rms}).
       \item The wavelength solution should have $4 \times 10^{-3}$ Angstrom
          rms or less and look flat.
+      \item The measured flux in both fibers (\figureref{feros-flux}). If the flux in object and sky fiber is very different, it might be necessary to adjust the position of the calibration lamp.
       \item If not, restart calibration if possible.
     \end{enumerate}
 \end{enumerate}
 
+
+One reason for a bad wavelength calibration can be problems with one of the calibration lamps, e.g. flat-lamp (lamp 2). Check if the flat-field exposures recorded any flux above the bias level (\figureref{feros-ff}). If no flux above the bias level is measured, check:
+
+\begin{enumerate}
+\item Position of M3 (should be \texttt{FEROS})
+\item All lamps should be set to "Remote" in the electronic rack (\figureref{feros-rack}). 
+\end{enumerate}
+
+\begin{figure*}
+\subfigure[]{\includegraphics[width=0.45\linewidth]{feros/sky-vs-obj2.png}}
+\hfill
+\subfigure[]{\includegraphics[width=0.45\linewidth]{feros/sky-vs-obj3.png}}
+\caption{RMS of wavelength calibration in object- and sky fiber}
+\label{fig:feros-rms}
+\end{figure*}
+
+\begin{figure*}
+\subfigure[]{\includegraphics[width=0.45\linewidth]{feros/sky-vs-obj4.png}}
+\hfill
+\subfigure[]{\includegraphics[width=0.45\linewidth]{feros/sky-vs-obj5.png}}
+\caption{Flux in object- and sky-fiber}
+\label{fig:feros-flux}
+\end{figure*}
+
+
+\begin{figure*}
+\subfigure[]{\includegraphics[width=0.45\linewidth]{feros/feros_ff_lamp2_on.png}\label{fig:ff-lamp2-on}}
+\hfill
+\subfigure[]{\includegraphics[width=0.45\linewidth]{feros/feros_ff_lamp2_off.png}\label{fig:ff-lamp2-off}}
+\caption{Example of \texttt{FEROS} flat field image, with lamp 2 ON (a) and lamp 2 OFF (b)}
+\label{fig:feros-ff}
+\end{figure*}
+
+
+\begin{figure*}
+\centering
+\includegraphics[width=.5\linewidth]{feros/feros-rack.png}
+\caption{Settings for \texttt{FEROS} calibration lamps (\texttt{FEROS} room in telescope building). }
+\label{fig:feros-rack}
+\end{figure*}
+
+\newpage	
 \section{GROND}
 
 GROND calibrations are left running in the morning after the \gls{dome} has been closed (see Sect.~\ref{sec:clocal}). Some observers may ask for GROND linearity calibration using \gls{dome flats}, providing the observing blocks and a detailed explanation.
@@ -1091,7 +1142,7 @@ If starting with FEROS, you can use the \gls{focus} and/or \gls{spectrophotometr
   \begin{enumerate}
      \item Go to the \texttt{Telescope Control Software} workstation.
      \item Open or use a UNIX terminal.
-     \item Type  \~{}\texttt{/bin/fixPointing.sh}
+     \item Type \texttt{\home/bin/fixPointing.sh}
   \end{enumerate}
   \item Change \gls{pointing model} to FEROS.
   \begin{enumerate}
@@ -1199,7 +1250,7 @@ This procedure lasts a bit less than 10 minutes.
         \item If focusing in another field and filtre, do it manually
         \begin{enumerate}
             \item In the \gls{TCS control panel}, enter the coordinates and click \texttt{Preset} 
-            \item In the \gls{wfiics}, choose the filtre and click \texttt{???} 
+            \item In the \gls{wfiics}, choose the filtre and click \texttt{Apply} 
             \item Wait for telescope and filtre movements to complete (2--3\,min).
             \item In the \gls{TCS control panel} and \gls{skycat}, acquire \acrlong{ag} (\procref{guidewfi}, 1\,min)
         \end{enumerate}
@@ -1323,7 +1374,7 @@ Focusing with \gls{feros} takes about 5 minutes.  It is summed up in \figref{fer
   \item Perform the necessary checks and preparations for FEROS
   \begin{enumerate}
     \item Check that dome and \gls{main mirror} are open (\procref{open}).\label{list:ferosfocus1}
-    \item Check \gls{grond} \gls{M3} and \gls{feros} \gls{mirr3} mirrors (see \secref{insprep}, point~\ref{list:checkmirror}).
+    \item Check \gls{grond} \gls{M3} and \gls{feros} \gls{M3} mirrors (see \secref{insprep}, point~\ref{list:checkmirror}).
     \item Check that the WFI \gls{protective shutter} is open (\secref{insprep}, point~\ref{list:opencov}).
     \item Select instrument \texttt{feros} on the \gls{TCS status panel} (screen \texttt{Telescope Control Software}).
   \end{enumerate}
@@ -2450,7 +2501,6 @@ About once a month a software maintenance should be done for prophylaxis.
      \item On the pipeline screen, stop pipeline processes
              \begin{enumerate}
                 \item Open or locate a terminal
-                \item Type \texttt{dhsSubscribeControl stop pipeline}
                 \item Type \texttt{doControl stop}
                 \item Type \texttt{stopRBS}
              \end{enumerate}
@@ -2507,7 +2557,7 @@ About once a month a software maintenance should be done for prophylaxis.
         \item On the \texttt{vOT/p2} screen, open \gls{vot}
         \item On the pipeline workstation
              \begin{enumerate}
-                \item Open a terminal
+                \item Open  a terminal
                 \item Type \texttt{dhsSubscribeControl start pipeline -backsince <date>}\\
             pick <date> a few days ago
                 \item Type \texttt{doControl start wfi,feros}
@@ -2528,22 +2578,22 @@ Every six months a weekly software maintenance has an additional step with the r
 
 \procedure{Biannual software maintenance}
 \begin{enumerate}
-\item Stop processes and exit sessions (steps~\ref{list:soft:stop}--\ref{list:soft:exit} of \procref{monthly})
-\item Reboot the user workstation (Procedure~\ref{proc:uwsreboot}, 15 min)
-\item Power cycle dell boxes, log into sessions, reboot workstations, restart processes, and start-up TCS (steps~\ref{list:soft:power}--\ref{list:soft:tcs})
+	\item Stop processes and exit sessions (steps~\ref{list:soft:stop}--\ref{list:soft:exit} of \procref{monthly})
+	\item Reboot the user workstation (Procedure~\ref{proc:uwsreboot}, 15 min)
+	\item Power cycle dell boxes, log into sessions, reboot workstations, restart processes, and start-up TCS (steps~\ref{list:soft:power}--\ref{list:soft:tcs})
 \end{enumerate}
 
 \procedure{Reboot the user workstation}
 \label{proc:uwsreboot}
 \begin{enumerate}
-    \item Ensure that you exit all screens (TCS, WFI, FEROS, AG, GROND, DHS, FEROS DRS, pipeline).
-    \item On any screen open an \gls{uws2p2} terminal\\
-          Use right-click menu \wmenu{Utilities}{User WS xterm}
-    \item Gain root access\\
-          In the terminal, type \texttt{su} and enter the usual root password
-    \item Type \texttt{reboot} and wait 15--20 min
-    \item Powercycle all black boxes connected to the screens
-    \item Enter each session (tcs, wfi, feros, cam, grond, dhs, astro, pipeline)
+	\item Ensure that you exit all screens (TCS, WFI, FEROS, AG, GROND, DHS, FEROS DRS, pipeline).
+	\item On any screen open an \gls{uws2p2} terminal\\
+	Use right-click menu \wmenu{Utilities}{User WS xterm}
+	\item Gain root access\\
+	In the terminal, type \texttt{su} and enter the usual root password
+	\item Type \texttt{reboot} and wait 15--20 min
+	\item Powercycle all black boxes connected to the screens
+	\item Enter each session (tcs, wfi, feros, cam, grond, dhs, astro, pipeline)
 \end{enumerate}
 
 
@@ -2630,6 +2680,29 @@ In case of a power outage or a after a switch back to the outer electric network
 \gls{ag} machine.}
 \label{fig:agscanei}
 \end{figure}
+
+
+
+\begin{figure}[t!]
+	\begin{minipage}{0.3\linewidth}
+		\subfigure[\texttt{\gls{feros} \texttt{ccsei} window.}]{%
+			\includegraphics[width=\linewidth]{feros/focus/feros-ccsei-1.jpg}
+			\label{fig:ferosccsei}
+		}
+	\end{minipage}
+	\hspace{0.02\linewidth}
+	\begin{minipage}{0.6\linewidth}
+		\subfigure[\gls{feros} \texttt{M2 in the database.}]{%
+			\includegraphics[width=\linewidth]{feros/focus/feros_m2_db.jpg}
+			\label{fig:ferosM2db}
+		}
+	\end{minipage}
+	\caption[FEROS focus DB]{Writing the M2 position in the \gls{feros} database.}
+\label{fig:ferosccsei_db}	
+\end{figure}
+
+
+
 
 
 The \gls{grond} and \gls{feros} autoguider use the same system on screen \texttt{Autoguider GROND \& FEROS}, between the GROND and FEROS screens.  \gls{wfi} has its own system on screen \texttt{Telescope Control Software}.
@@ -3051,6 +3124,20 @@ If the \gls{grond} \gls{ag} is highly defocused:
   \item If the problem persists, FOC.OFFSET in the \gls{ob} allows a manual workaround.
 \end{itemize}
 
+\subsection{FEROS focus starts with wrong M2 position}
+The \gls{feros} \gls{focus} sequence may start with the wrong M2 position (you see extremely defocused stars in the \gls{feros} AG REal Time Display). In that case, check that M2 Focus value in the \gls{feros} General State panel, the value should be somewhere around 23000. If this is not the case, reset this value in the database (Fig. \figref{ferosccsei_db}): 
+
+\procedure{Fix the FEROS focus start value}
+\label{proc:ferosfocusstartvalue}
+\begin{enumerate}
+	\item in a terminal type \texttt{ccsei}
+	\item Click on CCS database monitor
+	\item Look for \texttt{Appl\_data, TCS, m2 ->} 
+	\item Select checkbox \texttt{Enable Editing}
+	\item set \texttt{focuValue} to 23000
+	\item Close GUI
+\end{enumerate} 
+
 \subsection{Defocused wih FEROS ACS}
 
 See \secref{focusadc}.
@@ -3087,7 +3174,7 @@ The \gls{wfi} \gls{focus} sequence may fail to communicate the focus offsets to 
 be rebooted.
 \end{enumerate}
 
-\subsection{No focus offset when filtres are changed}
+\subsection{No focus offset when filters are changed}
 \label{sec:filfocoffset}
 The \gls{focus} sequence is run for a specific filtre, when changing filtres during an \gls{ob}, the TCS should apply a focus offset, which should be seen in the \gls{TCS control panel}, M2 Focus. If no offset is applied, check if in the \gls{wfi} \gls{state manager}, the Focusing flag should be \texttt{True}. The ESO people were not really clear on that.
 
@@ -3524,7 +3611,7 @@ If the start-up stops with \texttt{telescope not initialised}, you probably forg
             \item Check that the \texttt{Hydr} and \texttt{Drives} buttons are green.
             \item If not, switch the hydraulics and drives on (step~\ref{lab:hydron} in \procref{startup}).
         \end{enumerate}
-    \item Manually initialise the telescope
+    \item Manually initialise the telescope ()
         \begin{enumerate}
             \item\label{lab:notinit1} 
                 In a terminal type \texttt{\home/bin/telinit}
@@ -3562,7 +3649,7 @@ Many \gls{tcs} issues are solved by a fast restart, with a time loss of $\approx
  \item Execute the fast restart.\\
        Type \texttt{e2p2NewStartUp} and wait for it to complete.
  \item Initialise the telescope\\
-       On the \gls{tcs} setup panel (\figref{tcssetup}) press \texttt{Initialize} under \texttt{Telescope}.
+       On the \gls{tcs} setup panel (\figref{tcssetup}) press \texttt{Initialize} under \texttt{Telescope}. On the \gls{tcs} control panel (\figref{tcs}), the VME messages should declare that the command was accepted and finished and Telescope Status will change from \texttt{Initialized} to \texttt{TCS slew}. The TCS Rose Diagram will show the telescope moving and then stop at zenith. Remember to run the  fixPointing script (type \texttt{\home/bin/fixPointing.sh} in a terminal) and to set the \texttt{Dome} back to \texttt{Automatic} in the \gls{tcs} setup panel.
 \end{itemize}
 
 \subsection{No connection with VME}
@@ -3821,15 +3908,6 @@ the \gls{ob} \gls{stall}s. If \texttt{grondFM} doesn't solve the issue, this may
 
 \section{Freezing issues}
 
-\subsection{Panels and terminals won't open}
-If terminals and panels do not open on several screens (e.g. TCS and WFI), there is a problem with the user workstation \gls{uws2p2}, namely that there are to many defunct \texttt{rsh}/\texttt{remsh} connections from the user WS to the other machines.  
-
-The easiest solution is to reboot the user workstation (Procedure~\ref{proc:uwsreboot}), which will require a full restart, but about one hour will be lost.  
-
-Alternatively, old \texttt{rsh} and/or \texttt{remsh} from the user workstation to \gls{w2p2ins}, \gls{wferos}, \gls{wgrond}, \gls{w2p2tcs} can be killed (use \texttt{kill -9 <pid>}), but your mileage may vary...
-
-A regular prophylactic reboot of \gls{uws2p2} once a semester should avoid this issue from occurring at night time.
-
 \subsection{Mouse pointer does not move}
 This is common on the \gls{wfi} screens.
 
@@ -3850,22 +3928,22 @@ This is common on the \gls{wfi} screens.
 \label{sec:trouble:pointing}
 \begin{table}[!bt]
 \centering
-\caption[Pointing model parameters for each instrument]{\Gls{pointing model} parameters for each instrument, as of November 2015.}
+\caption[Pointing model parameters for each instrument]{\Gls{pointing model} parameters for each instrument, as of November 2022.}
 \label{tab:pointingmodelcoeff}
 \small
 \begin{tabular}{lrrr}
 \hline\hline
 Parameter & FEROS      & GROND     & WFI\\\hline
-ID        & $-183.81$  & $-230.04$ & $-157.69$\\
-IH        & $  72.92$  & $ -20.23$ & $  94.11$\\
-CH        & $ 136.07$  & $  28.89$ & $  31.41$\\\hline
-NP        & \multicolumn{3}{r}{$17.13$}\\
-ME        & \multicolumn{3}{r}{$-113.61$}\\
-MA        & \multicolumn{3}{r}{$2.22$}\\
-FO        & \multicolumn{3}{r}{$91.83$}\\
-TX        & \multicolumn{3}{r}{$-26.92$}\\
-HCEC      & \multicolumn{3}{r}{$-18.57$}\\
-HCES      & \multicolumn{3}{r}{$-22.55$}\\\hline
+ID        & $-150.86$  & $-60.04$ & $-294.28$\\
+IH        & $-3802.80$  & $-3787.00$ & $-3793.83$\\
+CH        & $ 110.55$  & $28.89$ & $ -83.18$\\\hline
+NP        & \multicolumn{3}{r}{$15.78$}\\
+ME        & \multicolumn{3}{r}{$-127.72$}\\
+MA        & \multicolumn{3}{r}{$3.79$}\\
+FO        & \multicolumn{3}{r}{$95.55$}\\
+TX        & \multicolumn{3}{r}{$-32.88$}\\
+HCEC      & \multicolumn{3}{r}{$-17.98$}\\
+HCES      & \multicolumn{3}{r}{$-13.24$}\\\hline
 \end{tabular}
 \end{table}
 
