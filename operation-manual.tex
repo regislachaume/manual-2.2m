@@ -2531,9 +2531,11 @@ Every six months a weekly software maintenance has an additional step with the r
 \item Stop processes and exit sessions (steps~\ref{list:soft:stop}--\ref{list:soft:exit} of \procref{monthly})
 \item Have a reboot of the user workstation done (15 min?)
     \begin{enumerate}
-        \item Contact IT at Paranal (Josefina Urrutia) 
-        \item Coordinate a reboot of user workstation \gls{uws2p2}
-        \item Wait for their confirmation that it is done
+        \item On any screen open an \gls{uws2p2} terminal\\
+              Use right-click menu \wmenu{Utilities}{User WS xterm}
+        \item Gain root access\\
+              In the terminal, type \texttt{su} and enter the usual root password
+        \item Type \texttt{reboot}
     \end{enumerate}
 \item Power cycle dell boxes, log into sessions, reboot workstations, restart processes, and start-up TCS (steps~\ref{list:soft:power}--\ref{list:soft:tcs})
 \end{enumerate}
@@ -4124,7 +4126,7 @@ GROND AG LCU          & computer room & \texttt{\gls{lccBoot} \gls{l2p2agr}}\\
 \hline
 \gls{vot}/\gls{p2} WS & virtual       & \texttt{reboot} in \texttt{service@w2p2dhs} terminal\\
 \hline
-User WS               & \multicolumn{2}{l}{call at Paranal 5959 to reboot \gls{uws2p2}, first close all terminals}\\
+User WS               & ?             & \texttt{reboot} in User WS terminal\\
 \hline
 \end{tabular}
 \end{table}
